@@ -1,0 +1,2000 @@
+[
+ {
+  "naam": "Streekweg",
+  "soort": "bus",
+  "lat": 51.8204286,
+  "lon": 5.781678
+ },
+ {
+  "naam": "Nijmegen",
+  "soort": "station",
+  "lat": 51.8431362,
+  "lon": 5.8530913
+ },
+ {
+  "naam": "Station Lent",
+  "soort": "bus",
+  "lat": 51.8631959,
+  "lon": 5.8615228
+ },
+ {
+  "naam": "Viaductweg",
+  "soort": "bus",
+  "lat": 51.825563,
+  "lon": 5.7976683
+ },
+ {
+  "naam": "Viaductweg",
+  "soort": "bus",
+  "lat": 51.825563,
+  "lon": 5.7959765
+ },
+ {
+  "naam": "Streekweg",
+  "soort": "bus",
+  "lat": 51.8207597,
+  "lon": 5.7848409
+ },
+ {
+  "naam": "Woonboulevard",
+  "soort": "bus",
+  "lat": 51.8256857,
+  "lon": 5.8012066
+ },
+ {
+  "naam": "Woonboulevard",
+  "soort": "bus",
+  "lat": 51.8257317,
+  "lon": 5.7999058
+ },
+ {
+  "naam": "Graafsebrug",
+  "soort": "bus",
+  "lat": 51.8258742,
+  "lon": 5.8038585
+ },
+ {
+  "naam": "Dennenstraat",
+  "soort": "bus",
+  "lat": 51.8305922,
+  "lon": 5.8255275
+ },
+ {
+  "naam": "Dennenstraat",
+  "soort": "bus",
+  "lat": 51.8299544,
+  "lon": 5.8275928
+ },
+ {
+  "naam": "Aldenhof 53/14 straat",
+  "soort": "bus",
+  "lat": 51.8055389,
+  "lon": 5.7973958
+ },
+ {
+  "naam": "Aldenhof 13/38 str.",
+  "soort": "bus",
+  "lat": 51.803943,
+  "lon": 5.798846
+ },
+ {
+  "naam": "Sporthal Meijhorst",
+  "soort": "bus",
+  "lat": 51.8106664,
+  "lon": 5.7978907
+ },
+ {
+  "naam": "Meijhorst 13e straat",
+  "soort": "bus",
+  "lat": 51.8130879,
+  "lon": 5.7950372
+ },
+ {
+  "naam": "Tolhuis 10e straat",
+  "soort": "bus",
+  "lat": 51.8188767,
+  "lon": 5.7947578
+ },
+ {
+  "naam": "Weezenhof 10e straat",
+  "soort": "bus",
+  "lat": 51.8024426,
+  "lon": 5.8054284
+ },
+ {
+  "naam": "Aldenhof 12/32 str.",
+  "soort": "bus",
+  "lat": 51.8049821,
+  "lon": 5.8032396
+ },
+ {
+  "naam": "De Doekenborg",
+  "soort": "bus",
+  "lat": 51.8041963,
+  "lon": 5.8058739
+ },
+ {
+  "naam": "De Doekenborg",
+  "soort": "bus",
+  "lat": 51.8047143,
+  "lon": 5.8059161
+ },
+ {
+  "naam": "Weezenhof 10e straat",
+  "soort": "bus",
+  "lat": 51.8024837,
+  "lon": 5.8070115
+ },
+ {
+  "naam": "Weezenhof",
+  "soort": "bus",
+  "lat": 51.8010928,
+  "lon": 5.8091266
+ },
+ {
+  "naam": "Van Apelterenweg",
+  "soort": "bus",
+  "lat": 51.807973,
+  "lon": 5.8031902
+ },
+ {
+  "naam": "Van Apelterenweg",
+  "soort": "bus",
+  "lat": 51.8079916,
+  "lon": 5.8035955
+ },
+ {
+  "naam": "Sportpark De Kluis",
+  "soort": "bus",
+  "lat": 51.8014862,
+  "lon": 5.8502698
+ },
+ {
+  "naam": "Scheidingsweg",
+  "soort": "bus",
+  "lat": 51.8079818,
+  "lon": 5.8526311
+ },
+ {
+  "naam": "Scheidingsweg",
+  "soort": "bus",
+  "lat": 51.8090279,
+  "lon": 5.8533455
+ },
+ {
+  "naam": "Steve Bikoplein",
+  "soort": "bus",
+  "lat": 51.81777,
+  "lon": 5.8006238
+ },
+ {
+  "naam": "Steve Bikoplein",
+  "soort": "bus",
+  "lat": 51.8174864,
+  "lon": 5.8005189
+ },
+ {
+  "naam": "Winkelsteeg",
+  "soort": "bus",
+  "lat": 51.8207668,
+  "lon": 5.8190128
+ },
+ {
+  "naam": "Winkelsteeg",
+  "soort": "bus",
+  "lat": 51.8191811,
+  "lon": 5.8171601
+ },
+ {
+  "naam": "Begraafplaats Jonkerbos",
+  "soort": "bus",
+  "lat": 51.8138384,
+  "lon": 5.8280166
+ },
+ {
+  "naam": "Canisius Wilhelmina Ziekenhuis",
+  "soort": "bus",
+  "lat": 51.8169554,
+  "lon": 5.8293627
+ },
+ {
+  "naam": "Canisius Wilhelmina Ziekenhuis",
+  "soort": "bus",
+  "lat": 51.8178525,
+  "lon": 5.8299018
+ },
+ {
+  "naam": "Sportcentrum Nimma Nova",
+  "soort": "bus",
+  "lat": 51.8230276,
+  "lon": 5.822747
+ },
+ {
+  "naam": "Sportcentrum Nimma Nova",
+  "soort": "bus",
+  "lat": 51.8235312,
+  "lon": 5.8243247
+ },
+ {
+  "naam": "Sint Annastraat / Heiweg",
+  "soort": "bus",
+  "lat": 51.8149391,
+  "lon": 5.8544309
+ },
+ {
+  "naam": "Meentstraat",
+  "soort": "bus",
+  "lat": 51.8201728,
+  "lon": 5.8456459
+ },
+ {
+  "naam": "Kwekerijweg",
+  "soort": "bus",
+  "lat": 51.8168301,
+  "lon": 5.8669176
+ },
+ {
+  "naam": "Spoorkuil",
+  "soort": "bus",
+  "lat": 51.8358545,
+  "lon": 5.8536916
+ },
+ {
+  "naam": "Centrum Zuid",
+  "soort": "bus",
+  "lat": 51.8427088,
+  "lon": 5.8586113
+ },
+ {
+  "naam": "Smetiusstraat",
+  "soort": "bus",
+  "lat": 51.8443776,
+  "lon": 5.8597034
+ },
+ {
+  "naam": "Smetiusstraat",
+  "soort": "bus",
+  "lat": 51.8440781,
+  "lon": 5.8587503
+ },
+ {
+  "naam": "Hugo de Grootstraat",
+  "soort": "bus",
+  "lat": 51.841524,
+  "lon": 5.8759671
+ },
+ {
+  "naam": "Mesdagstraat",
+  "soort": "bus",
+  "lat": 51.8394325,
+  "lon": 5.8796954
+ },
+ {
+  "naam": "Hunnerpark",
+  "soort": "bus",
+  "lat": 51.8456699,
+  "lon": 5.8721577
+ },
+ {
+  "naam": "Hunnerpark",
+  "soort": "bus",
+  "lat": 51.845352,
+  "lon": 5.8723977
+ },
+ {
+  "naam": "Sint Maartenskliniek",
+  "soort": "bus",
+  "lat": 51.8335851,
+  "lon": 5.898292
+ },
+ {
+  "naam": "Sluis Weurt",
+  "soort": "bus",
+  "lat": 51.8539831,
+  "lon": 5.8259085
+ },
+ {
+  "naam": "Haagstraat",
+  "soort": "bus",
+  "lat": 51.8608418,
+  "lon": 5.7810633
+ },
+ {
+  "naam": "Gemeentehuis",
+  "soort": "bus",
+  "lat": 51.8626695,
+  "lon": 5.782272
+ },
+ {
+  "naam": "Gemeentehuis",
+  "soort": "bus",
+  "lat": 51.8626983,
+  "lon": 5.7835464
+ },
+ {
+  "naam": "Van Boetbergweg/Malvert",
+  "soort": "bus",
+  "lat": 51.8052352,
+  "lon": 5.8110717
+ },
+ {
+  "naam": "Van Boetbergweg/Malvert",
+  "soort": "bus",
+  "lat": 51.805109,
+  "lon": 5.8115789
+ },
+ {
+  "naam": "Winkelcentrum Malvert",
+  "soort": "bus",
+  "lat": 51.8096518,
+  "lon": 5.8071008
+ },
+ {
+  "naam": "Thorbeckestraat",
+  "soort": "bus",
+  "lat": 51.8045889,
+  "lon": 5.8282488
+ },
+ {
+  "naam": "Thorbeckestraat",
+  "soort": "bus",
+  "lat": 51.804806,
+  "lon": 5.8288549
+ },
+ {
+  "naam": "Couwenbergstraat",
+  "soort": "bus",
+  "lat": 51.8070262,
+  "lon": 5.8243313
+ },
+ {
+  "naam": "Irene Vorrinkstraat",
+  "soort": "bus",
+  "lat": 51.8068712,
+  "lon": 5.8372
+ },
+ {
+  "naam": "Irene Vorrinkstraat",
+  "soort": "bus",
+  "lat": 51.8071954,
+  "lon": 5.8375711
+ },
+ {
+  "naam": "Groenestraat",
+  "soort": "bus",
+  "lat": 51.8317222,
+  "lon": 5.858388
+ },
+ {
+  "naam": "Groenewoudseweg",
+  "soort": "bus",
+  "lat": 51.8305886,
+  "lon": 5.8741797
+ },
+ {
+  "naam": "Groenewoudseweg",
+  "soort": "bus",
+  "lat": 51.8292702,
+  "lon": 5.8749451
+ },
+ {
+  "naam": "Tunnelweg",
+  "soort": "bus",
+  "lat": 51.8438518,
+  "lon": 5.8551146
+ },
+ {
+  "naam": "Fransestraat",
+  "soort": "bus",
+  "lat": 51.8390601,
+  "lon": 5.8645397
+ },
+ {
+  "naam": "Archipelstraat",
+  "soort": "bus",
+  "lat": 51.834257,
+  "lon": 5.8715212
+ },
+ {
+  "naam": "Archipelstraat",
+  "soort": "bus",
+  "lat": 51.8355338,
+  "lon": 5.8699568
+ },
+ {
+  "naam": "Dekkerswald",
+  "soort": "bus",
+  "lat": 51.8041635,
+  "lon": 5.8972559
+ },
+ {
+  "naam": "Dekkerswald",
+  "soort": "bus",
+  "lat": 51.8031683,
+  "lon": 5.8981969
+ },
+ {
+  "naam": "Hegdambroek",
+  "soort": "bus",
+  "lat": 51.8288311,
+  "lon": 5.7866739
+ },
+ {
+  "naam": "Spijkerhofweg",
+  "soort": "bus",
+  "lat": 51.826544,
+  "lon": 5.7925635
+ },
+ {
+  "naam": "De Voorstenkamp",
+  "soort": "bus",
+  "lat": 51.8290139,
+  "lon": 5.7968797
+ },
+ {
+  "naam": "Zellersacker",
+  "soort": "bus",
+  "lat": 51.8356447,
+  "lon": 5.7851109
+ },
+ {
+  "naam": "Zellersacker",
+  "soort": "bus",
+  "lat": 51.8356818,
+  "lon": 5.7862825
+ },
+ {
+  "naam": "Meeuwseacker",
+  "soort": "bus",
+  "lat": 51.8350486,
+  "lon": 5.7964083
+ },
+ {
+  "naam": "IJpenbroekweg",
+  "soort": "bus",
+  "lat": 51.8347534,
+  "lon": 5.7984992
+ },
+ {
+  "naam": "IJpenbroekweg",
+  "soort": "bus",
+  "lat": 51.8345338,
+  "lon": 5.7986957
+ },
+ {
+  "naam": "Van Boetbergweg/Aldenhof",
+  "soort": "bus",
+  "lat": 51.8023799,
+  "lon": 5.8032892
+ },
+ {
+  "naam": "Van Boetbergweg/Aldenhof",
+  "soort": "bus",
+  "lat": 51.8028682,
+  "lon": 5.8037432
+ },
+ {
+  "naam": "Hatert-Centrum",
+  "soort": "bus",
+  "lat": 51.8082133,
+  "lon": 5.8233616
+ },
+ {
+  "naam": "Treubstraat",
+  "soort": "bus",
+  "lat": 51.8092279,
+  "lon": 5.8282258
+ },
+ {
+  "naam": "Treubstraat",
+  "soort": "bus",
+  "lat": 51.8087485,
+  "lon": 5.8286225
+ },
+ {
+  "naam": "Sanadome",
+  "soort": "bus",
+  "lat": 51.8213861,
+  "lon": 5.8279595
+ },
+ {
+  "naam": "Sanadome",
+  "soort": "bus",
+  "lat": 51.8203478,
+  "lon": 5.8279666
+ },
+ {
+  "naam": "Manningstraat",
+  "soort": "bus",
+  "lat": 51.8286713,
+  "lon": 5.832147
+ },
+ {
+  "naam": "Manningstraat",
+  "soort": "bus",
+  "lat": 51.828365,
+  "lon": 5.8314935
+ },
+ {
+  "naam": "Muntweg/Wezenlaan",
+  "soort": "bus",
+  "lat": 51.8315965,
+  "lon": 5.8445085
+ },
+ {
+  "naam": "Muntweg/Wezenlaan",
+  "soort": "bus",
+  "lat": 51.8315025,
+  "lon": 5.8443428
+ },
+ {
+  "naam": "De Hoefkamp",
+  "soort": "bus",
+  "lat": 51.8336256,
+  "lon": 5.8029161
+ },
+ {
+  "naam": "Dr. de Blecourtstraat",
+  "soort": "bus",
+  "lat": 51.8377604,
+  "lon": 5.8167145
+ },
+ {
+  "naam": "Dr. de Blecourtstraat",
+  "soort": "bus",
+  "lat": 51.8378324,
+  "lon": 5.8163258
+ },
+ {
+  "naam": "Energieweg/Wolfskuilseweg",
+  "soort": "bus",
+  "lat": 51.8438862,
+  "lon": 5.8250189
+ },
+ {
+  "naam": "Energieweg/Wolfskuilseweg",
+  "soort": "bus",
+  "lat": 51.8442417,
+  "lon": 5.8258933
+ },
+ {
+  "naam": "Dobbelmannweg",
+  "soort": "bus",
+  "lat": 51.8307163,
+  "lon": 5.8468773
+ },
+ {
+  "naam": "Thijmstraat",
+  "soort": "bus",
+  "lat": 51.8332556,
+  "lon": 5.847238
+ },
+ {
+  "naam": "Willemsweg/Groenestraat",
+  "soort": "bus",
+  "lat": 51.8315325,
+  "lon": 5.8480168
+ },
+ {
+  "naam": "Thijmstraat",
+  "soort": "bus",
+  "lat": 51.8336118,
+  "lon": 5.8488923
+ },
+ {
+  "naam": "Hertogplein",
+  "soort": "bus",
+  "lat": 51.8439231,
+  "lon": 5.8682693
+ },
+ {
+  "naam": "Hertogplein",
+  "soort": "bus",
+  "lat": 51.844604,
+  "lon": 5.8688074
+ },
+ {
+  "naam": "Hogelandseweg",
+  "soort": "bus",
+  "lat": 51.8454021,
+  "lon": 5.8004481
+ },
+ {
+  "naam": "Lagelandseweg",
+  "soort": "bus",
+  "lat": 51.8409988,
+  "lon": 5.8045819
+ },
+ {
+  "naam": "Lagelandseweg",
+  "soort": "bus",
+  "lat": 51.8417557,
+  "lon": 5.8051069
+ },
+ {
+  "naam": "Hogelandseweg",
+  "soort": "bus",
+  "lat": 51.8437568,
+  "lon": 5.8024452
+ },
+ {
+  "naam": "Waalkade",
+  "soort": "bus",
+  "lat": 51.8497802,
+  "lon": 5.8646745
+ },
+ {
+  "naam": "Lentseveld",
+  "soort": "bus",
+  "lat": 51.8632351,
+  "lon": 5.8646961
+ },
+ {
+  "naam": "Dijkstraat",
+  "soort": "bus",
+  "lat": 51.8690371,
+  "lon": 5.8546237
+ },
+ {
+  "naam": "Dijkstraat",
+  "soort": "bus",
+  "lat": 51.8680882,
+  "lon": 5.8553551
+ },
+ {
+  "naam": "Fluitenkruid",
+  "soort": "bus",
+  "lat": 51.8698716,
+  "lon": 5.8723301
+ },
+ {
+  "naam": "Terwindtstraat",
+  "soort": "bus",
+  "lat": 51.84527,
+  "lon": 5.8748963
+ },
+ {
+  "naam": "Terwindtstraat",
+  "soort": "bus",
+  "lat": 51.8460203,
+  "lon": 5.8749562
+ },
+ {
+  "naam": "Aquilastraat",
+  "soort": "bus",
+  "lat": 51.874468,
+  "lon": 5.8495965
+ },
+ {
+  "naam": "Aquilastraat",
+  "soort": "bus",
+  "lat": 51.8745918,
+  "lon": 5.8495128
+ },
+ {
+  "naam": "Graafsebrug",
+  "soort": "bus",
+  "lat": 51.8257836,
+  "lon": 5.8054914
+ },
+ {
+  "naam": "Akkerlaan",
+  "soort": "bus",
+  "lat": 51.8219626,
+  "lon": 5.8511754
+ },
+ {
+  "naam": "Akkerlaan",
+  "soort": "bus",
+  "lat": 51.822695,
+  "lon": 5.8513824
+ },
+ {
+  "naam": "Archimedesstraat",
+  "soort": "bus",
+  "lat": 51.8097411,
+  "lon": 5.8458576
+ },
+ {
+  "naam": "Aubadestraat",
+  "soort": "bus",
+  "lat": 51.831282,
+  "lon": 5.8175898
+ },
+ {
+  "naam": "Aubadestraat",
+  "soort": "bus",
+  "lat": 51.831766,
+  "lon": 5.8191716
+ },
+ {
+  "naam": "Badhuis",
+  "soort": "bus",
+  "lat": 51.8373034,
+  "lon": 5.876488
+ },
+ {
+  "naam": "Badhuis",
+  "soort": "bus",
+  "lat": 51.837669,
+  "lon": 5.8762855
+ },
+ {
+  "naam": "Beemdstraat",
+  "soort": "bus",
+  "lat": 51.8183601,
+  "lon": 5.8495224
+ },
+ {
+  "naam": "Beemdstraat",
+  "soort": "bus",
+  "lat": 51.8186261,
+  "lon": 5.84977
+ },
+ {
+  "naam": "Spinozagebouw",
+  "soort": "bus",
+  "lat": 51.8207628,
+  "lon": 5.8587459
+ },
+ {
+  "naam": "Spinozagebouw",
+  "soort": "bus",
+  "lat": 51.8209252,
+  "lon": 5.8581334
+ },
+ {
+  "naam": "Beukstraat",
+  "soort": "bus",
+  "lat": 51.8328795,
+  "lon": 5.8900867
+ },
+ {
+  "naam": "Beukstraat",
+  "soort": "bus",
+  "lat": 51.8329414,
+  "lon": 5.8910288
+ },
+ {
+  "naam": "Bekkersland",
+  "soort": "bus",
+  "lat": 51.8688735,
+  "lon": 5.8794386
+ },
+ {
+  "naam": "De Klif",
+  "soort": "bus",
+  "lat": 51.8761047,
+  "lon": 5.8450982
+ },
+ {
+  "naam": "Winkelcentrum Malvert",
+  "soort": "bus",
+  "lat": 51.8090014,
+  "lon": 5.8067492
+ },
+ {
+  "naam": "De Refter",
+  "soort": "bus",
+  "lat": 51.834015,
+  "lon": 5.9064196
+ },
+ {
+  "naam": "De Refter",
+  "soort": "bus",
+  "lat": 51.8342618,
+  "lon": 5.9052325
+ },
+ {
+  "naam": "De Ster",
+  "soort": "bus",
+  "lat": 51.869926,
+  "lon": 5.8686343
+ },
+ {
+  "naam": "De Ster",
+  "soort": "bus",
+  "lat": 51.8700105,
+  "lon": 5.8682527
+ },
+ {
+  "naam": "Distelakkerstraat",
+  "soort": "bus",
+  "lat": 51.8615088,
+  "lon": 5.7925053
+ },
+ {
+  "naam": "Distelakkerstraat",
+  "soort": "bus",
+  "lat": 51.8617083,
+  "lon": 5.7909336
+ },
+ {
+  "naam": "Dominicanenstraat",
+  "soort": "bus",
+  "lat": 51.8396524,
+  "lon": 5.8733369
+ },
+ {
+  "naam": "Doornik",
+  "soort": "bus",
+  "lat": 51.8724219,
+  "lon": 5.8788086
+ },
+ {
+  "naam": "Doornik",
+  "soort": "bus",
+  "lat": 51.8725387,
+  "lon": 5.8788318
+ },
+ {
+  "naam": "Edisonstraat",
+  "soort": "bus",
+  "lat": 51.8099343,
+  "lon": 5.8429701
+ },
+ {
+  "naam": "Edisonstraat",
+  "soort": "bus",
+  "lat": 51.810164,
+  "lon": 5.8421035
+ },
+ {
+  "naam": "Gymnasion",
+  "soort": "bus",
+  "lat": 51.8195318,
+  "lon": 5.8666684
+ },
+ {
+  "naam": "Erasmusgebouw",
+  "soort": "bus",
+  "lat": 51.8201794,
+  "lon": 5.8653315
+ },
+ {
+  "naam": "Fransestraat",
+  "soort": "bus",
+  "lat": 51.8393982,
+  "lon": 5.8637945
+ },
+ {
+  "naam": "Fuchsiastraat",
+  "soort": "bus",
+  "lat": 51.8411129,
+  "lon": 5.839645
+ },
+ {
+  "naam": "Fuchsiastraat",
+  "soort": "bus",
+  "lat": 51.8416412,
+  "lon": 5.8399752
+ },
+ {
+  "naam": "De Gildekamp",
+  "soort": "bus",
+  "lat": 51.8300263,
+  "lon": 5.8013475
+ },
+ {
+  "naam": "De Meerberg",
+  "soort": "bus",
+  "lat": 51.8235619,
+  "lon": 5.9148228
+ },
+ {
+  "naam": "De Meerberg",
+  "soort": "bus",
+  "lat": 51.8240958,
+  "lon": 5.913841
+ },
+ {
+  "naam": "Graafseweg/Wolfskuilseweg",
+  "soort": "bus",
+  "lat": 51.8353962,
+  "lon": 5.8422744
+ },
+ {
+  "naam": "Graafseweg/Wolfskuilseweg",
+  "soort": "bus",
+  "lat": 51.8352151,
+  "lon": 5.841349
+ },
+ {
+  "naam": "Frankrijkstraat",
+  "soort": "bus",
+  "lat": 51.8693608,
+  "lon": 5.8645887
+ },
+ {
+  "naam": "Frankrijkstraat",
+  "soort": "bus",
+  "lat": 51.8694915,
+  "lon": 5.8641906
+ },
+ {
+  "naam": "HAN",
+  "soort": "bus",
+  "lat": 51.8257087,
+  "lon": 5.8645424
+ },
+ {
+  "naam": "HAN",
+  "soort": "bus",
+  "lat": 51.8258612,
+  "lon": 5.864065
+ },
+ {
+  "naam": "Haagstraat",
+  "soort": "bus",
+  "lat": 51.8601263,
+  "lon": 5.7814306
+ },
+ {
+  "naam": "Hamerlaan",
+  "soort": "bus",
+  "lat": 51.8207616,
+  "lon": 5.9194545
+ },
+ {
+  "naam": "Hatert-Centrum",
+  "soort": "bus",
+  "lat": 51.8080692,
+  "lon": 5.8238636
+ },
+ {
+  "naam": "Hatert-Delsenhof",
+  "soort": "bus",
+  "lat": 51.8000182,
+  "lon": 5.8251102
+ },
+ {
+  "naam": "Hatertseweg/Grootstalselaan",
+  "soort": "bus",
+  "lat": 51.8114807,
+  "lon": 5.8317188
+ },
+ {
+  "naam": "Hatertseweg/Grootstalselaan",
+  "soort": "bus",
+  "lat": 51.8116825,
+  "lon": 5.8317606
+ },
+ {
+  "naam": "Hegdambroek",
+  "soort": "bus",
+  "lat": 51.8288036,
+  "lon": 5.7884768
+ },
+ {
+  "naam": "Heideparkseweg",
+  "soort": "bus",
+  "lat": 51.8267238,
+  "lon": 5.8288826
+ },
+ {
+  "naam": "Hengstdalseweg/Broerdijk",
+  "soort": "bus",
+  "lat": 51.8335889,
+  "lon": 5.8854452
+ },
+ {
+  "naam": "Hengstdalseweg/Broerdijk",
+  "soort": "bus",
+  "lat": 51.8335806,
+  "lon": 5.886196
+ },
+ {
+  "naam": "Hengstdalseweg/Sophiaweg",
+  "soort": "bus",
+  "lat": 51.8317308,
+  "lon": 5.8957167
+ },
+ {
+  "naam": "Industrieweg",
+  "soort": "bus",
+  "lat": 51.8489727,
+  "lon": 5.8328068
+ },
+ {
+  "naam": "Industrieweg",
+  "soort": "bus",
+  "lat": 51.8486973,
+  "lon": 5.8335913
+ },
+ {
+  "naam": "Hertstraat",
+  "soort": "bus",
+  "lat": 51.8274768,
+  "lon": 5.8469603
+ },
+ {
+  "naam": "Hertstraat",
+  "soort": "bus",
+  "lat": 51.8277697,
+  "lon": 5.8470635
+ },
+ {
+  "naam": "Eikenlaan",
+  "soort": "bus",
+  "lat": 51.8657528,
+  "lon": 5.8729175
+ },
+ {
+  "naam": "Duitslandstraat",
+  "soort": "bus",
+  "lat": 51.8659109,
+  "lon": 5.8772956
+ },
+ {
+  "naam": "Hillekensacker 10e str.",
+  "soort": "bus",
+  "lat": 51.8339305,
+  "lon": 5.7817546
+ },
+ {
+  "naam": "Hillekensacker 10e str.",
+  "soort": "bus",
+  "lat": 51.8340604,
+  "lon": 5.7813815
+ },
+ {
+  "naam": "Hogendorpstraat",
+  "soort": "bus",
+  "lat": 51.8061876,
+  "lon": 5.8312804
+ },
+ {
+  "naam": "Hogendorpstraat",
+  "soort": "bus",
+  "lat": 51.8068025,
+  "lon": 5.8315045
+ },
+ {
+  "naam": "Horstacker",
+  "soort": "bus",
+  "lat": 51.8347072,
+  "lon": 5.7930282
+ },
+ {
+  "naam": "Horstacker",
+  "soort": "bus",
+  "lat": 51.8343972,
+  "lon": 5.7920455
+ },
+ {
+  "naam": "Jonagoldstraat",
+  "soort": "bus",
+  "lat": 51.878889,
+  "lon": 5.8374408
+ },
+ {
+  "naam": "Jonagoldstraat",
+  "soort": "bus",
+  "lat": 51.878972,
+  "lon": 5.837503
+ },
+ {
+  "naam": "Kronenburgersingel",
+  "soort": "bus",
+  "lat": 51.8479453,
+  "lon": 5.8562566
+ },
+ {
+  "naam": "Kamerlingh Onnesstraat",
+  "soort": "bus",
+  "lat": 51.8145109,
+  "lon": 5.83757
+ },
+ {
+  "naam": "Kanunnik Mijllinckstraat",
+  "soort": "bus",
+  "lat": 51.8134247,
+  "lon": 5.8610464
+ },
+ {
+  "naam": "Merwedestraat",
+  "soort": "bus",
+  "lat": 51.8508931,
+  "lon": 5.8446933
+ },
+ {
+  "naam": "Merwedestraat",
+  "soort": "bus",
+  "lat": 51.8509708,
+  "lon": 5.8444811
+ },
+ {
+  "naam": "Valkhof",
+  "soort": "bus",
+  "lat": 51.8464636,
+  "lon": 5.869463
+ },
+ {
+  "naam": "Valkhof",
+  "soort": "bus",
+  "lat": 51.8465357,
+  "lon": 5.8698521
+ },
+ {
+  "naam": "Kerkstraat",
+  "soort": "bus",
+  "lat": 51.8570893,
+  "lon": 5.8162897
+ },
+ {
+  "naam": "Koningshof",
+  "soort": "bus",
+  "lat": 51.8343433,
+  "lon": 5.8808365
+ },
+ {
+  "naam": "Krekelstraat",
+  "soort": "bus",
+  "lat": 51.8170091,
+  "lon": 5.841403
+ },
+ {
+  "naam": "Krekelstraat",
+  "soort": "bus",
+  "lat": 51.8173466,
+  "lon": 5.8416292
+ },
+ {
+  "naam": "Lankforst 14e str.",
+  "soort": "bus",
+  "lat": 51.8133371,
+  "lon": 5.8095802
+ },
+ {
+  "naam": "Lankforst 14e str.",
+  "soort": "bus",
+  "lat": 51.8137041,
+  "lon": 5.8092917
+ },
+ {
+  "naam": "Leuvensbroek",
+  "soort": "bus",
+  "lat": 51.8324182,
+  "lon": 5.7800749
+ },
+ {
+  "naam": "Eikenlaan",
+  "soort": "bus",
+  "lat": 51.8672897,
+  "lon": 5.8734162
+ },
+ {
+  "naam": "Malvert 13e straat",
+  "soort": "bus",
+  "lat": 51.8062739,
+  "lon": 5.8117644
+ },
+ {
+  "naam": "Malvert 13e straat",
+  "soort": "bus",
+  "lat": 51.8066336,
+  "lon": 5.8117055
+ },
+ {
+  "naam": "Mariënboom",
+  "soort": "bus",
+  "lat": 51.8227228,
+  "lon": 5.8804334
+ },
+ {
+  "naam": "Middachtenstraat",
+  "soort": "bus",
+  "lat": 51.8020753,
+  "lon": 5.8236803
+ },
+ {
+  "naam": "Middachtenstraat",
+  "soort": "bus",
+  "lat": 51.801972,
+  "lon": 5.8232711
+ },
+ {
+  "naam": "Molenweg/Wolfskuilseweg",
+  "soort": "bus",
+  "lat": 51.8388875,
+  "lon": 5.8361944
+ },
+ {
+  "naam": "Meester Franckenstraat",
+  "soort": "bus",
+  "lat": 51.8445462,
+  "lon": 5.8734051
+ },
+ {
+  "naam": "Meester Franckenstraat",
+  "soort": "bus",
+  "lat": 51.8438278,
+  "lon": 5.8734544
+ },
+ {
+  "naam": "Muntweg/Overweg",
+  "soort": "bus",
+  "lat": 51.8307988,
+  "lon": 5.8353643
+ },
+ {
+  "naam": "Muntweg/Overweg",
+  "soort": "bus",
+  "lat": 51.8308834,
+  "lon": 5.8359254
+ },
+ {
+  "naam": "Sionsweg",
+  "soort": "bus",
+  "lat": 51.813097,
+  "lon": 5.8861446
+ },
+ {
+  "naam": "Nocturnestraat",
+  "soort": "bus",
+  "lat": 51.8280841,
+  "lon": 5.8101977
+ },
+ {
+  "naam": "Obrechtstraat",
+  "soort": "bus",
+  "lat": 51.8351164,
+  "lon": 5.8758911
+ },
+ {
+  "naam": "Obrechtstraat",
+  "soort": "bus",
+  "lat": 51.8352979,
+  "lon": 5.8751361
+ },
+ {
+  "naam": "Station Lent/Laauwikstraat",
+  "soort": "bus",
+  "lat": 51.8616369,
+  "lon": 5.8630843
+ },
+ {
+  "naam": "Winkelcentrum Steenbokstraat",
+  "soort": "bus",
+  "lat": 51.8253573,
+  "lon": 5.8480303
+ },
+ {
+  "naam": "Winkelcentrum Steenbokstraat",
+  "soort": "bus",
+  "lat": 51.8258598,
+  "lon": 5.847661
+ },
+ {
+  "naam": "Panovenlaan",
+  "soort": "bus",
+  "lat": 51.8171179,
+  "lon": 5.8818558
+ },
+ {
+  "naam": "Panovenlaan",
+  "soort": "bus",
+  "lat": 51.8183262,
+  "lon": 5.8816476
+ },
+ {
+  "naam": "Kanunnik Faberstraat",
+  "soort": "bus",
+  "lat": 51.8127287,
+  "lon": 5.8646209
+ },
+ {
+  "naam": "Paul Krugerstraat",
+  "soort": "bus",
+  "lat": 51.8342154,
+  "lon": 5.8248019
+ },
+ {
+  "naam": "Paul Krugerstraat",
+  "soort": "bus",
+  "lat": 51.8349895,
+  "lon": 5.8271191
+ },
+ {
+  "naam": "Petuniastraat",
+  "soort": "bus",
+  "lat": 51.8652674,
+  "lon": 5.8701321
+ },
+ {
+  "naam": "Petuniastraat",
+  "soort": "bus",
+  "lat": 51.8651938,
+  "lon": 5.8694153
+ },
+ {
+  "naam": "Plein 1944",
+  "soort": "bus",
+  "lat": 51.8461364,
+  "lon": 5.861716
+ },
+ {
+  "naam": "Polkastraat",
+  "soort": "bus",
+  "lat": 51.8316068,
+  "lon": 5.8105233
+ },
+ {
+  "naam": "Pompweg",
+  "soort": "bus",
+  "lat": 51.8402386,
+  "lon": 5.8934391
+ },
+ {
+  "naam": "Prins Alexanderlaan",
+  "soort": "bus",
+  "lat": 51.8260415,
+  "lon": 5.9091712
+ },
+ {
+  "naam": "Prins Alexanderlaan",
+  "soort": "bus",
+  "lat": 51.826291,
+  "lon": 5.908369
+ },
+ {
+  "naam": "Prins Hendrikstraat",
+  "soort": "bus",
+  "lat": 51.8421265,
+  "lon": 5.8698855
+ },
+ {
+  "naam": "Rosa de Limastraat",
+  "soort": "bus",
+  "lat": 51.8322726,
+  "lon": 5.8204364
+ },
+ {
+  "naam": "Rozenstraat",
+  "soort": "bus",
+  "lat": 51.8365233,
+  "lon": 5.8450048
+ },
+ {
+  "naam": "Rozenstraat",
+  "soort": "bus",
+  "lat": 51.8366787,
+  "lon": 5.8460036
+ },
+ {
+  "naam": "Scheepvaartweg",
+  "soort": "bus",
+  "lat": 51.8492192,
+  "lon": 5.8298752
+ },
+ {
+  "naam": "Scheepvaartweg",
+  "soort": "bus",
+  "lat": 51.8495808,
+  "lon": 5.8307195
+ },
+ {
+  "naam": "Kwakkenbergweg/Sophiaweg",
+  "soort": "bus",
+  "lat": 51.8287612,
+  "lon": 5.8948771
+ },
+ {
+  "naam": "Kwakkenbergweg/Sophiaweg",
+  "soort": "bus",
+  "lat": 51.8293071,
+  "lon": 5.893989
+ },
+ {
+  "naam": "Heidebloemstraat",
+  "soort": "bus",
+  "lat": 51.8159402,
+  "lon": 5.8485067
+ },
+ {
+  "naam": "Heidebloemstraat",
+  "soort": "bus",
+  "lat": 51.8155175,
+  "lon": 5.8484403
+ },
+ {
+  "naam": "Sint Annamolen",
+  "soort": "bus",
+  "lat": 51.8279176,
+  "lon": 5.8574509
+ },
+ {
+  "naam": "Station Heyendaal",
+  "soort": "bus",
+  "lat": 51.826976,
+  "lon": 5.8685323
+ },
+ {
+  "naam": "Tolhuis 11e straat",
+  "soort": "bus",
+  "lat": 51.8164513,
+  "lon": 5.7953095
+ },
+ {
+  "naam": "Tolhuis 11e straat",
+  "soort": "bus",
+  "lat": 51.8166378,
+  "lon": 5.7951586
+ },
+ {
+  "naam": "Tollensstraat",
+  "soort": "bus",
+  "lat": 51.8373006,
+  "lon": 5.8498121
+ },
+ {
+  "naam": "Radboud UMC",
+  "soort": "bus",
+  "lat": 51.8233633,
+  "lon": 5.8573718
+ },
+ {
+  "naam": "Radboud UMC",
+  "soort": "bus",
+  "lat": 51.8236356,
+  "lon": 5.8577001
+ },
+ {
+  "naam": "Ubbergse Holleweg",
+  "soort": "bus",
+  "lat": 51.8372942,
+  "lon": 5.9000738
+ },
+ {
+  "naam": "Huygensgebouw",
+  "soort": "bus",
+  "lat": 51.8228367,
+  "lon": 5.8670073
+ },
+ {
+  "naam": "Van Cranenborchstraat",
+  "soort": "bus",
+  "lat": 51.8250286,
+  "lon": 5.8785469
+ },
+ {
+  "naam": "Van Cranenborchstraat",
+  "soort": "bus",
+  "lat": 51.8259843,
+  "lon": 5.8777104
+ },
+ {
+  "naam": "Van Woerkomstraat",
+  "soort": "bus",
+  "lat": 51.8774429,
+  "lon": 5.8249825
+ },
+ {
+  "naam": "Van Woerkomstraat",
+  "soort": "bus",
+  "lat": 51.8775536,
+  "lon": 5.8251282
+ },
+ {
+  "naam": "Vijverhof",
+  "soort": "bus",
+  "lat": 51.8273711,
+  "lon": 5.9023122
+ },
+ {
+  "naam": "Vuurdoornstraat",
+  "soort": "bus",
+  "lat": 51.8359413,
+  "lon": 5.830948
+ },
+ {
+  "naam": "Vuurdoornstraat",
+  "soort": "bus",
+  "lat": 51.8364815,
+  "lon": 5.8324152
+ },
+ {
+  "naam": "Natte Beek",
+  "soort": "bus",
+  "lat": 51.8329053,
+  "lon": 5.9140863
+ },
+ {
+  "naam": "Biezenstraat",
+  "soort": "bus",
+  "lat": 51.8490622,
+  "lon": 5.8427461
+ },
+ {
+  "naam": "Vlietstraat",
+  "soort": "bus",
+  "lat": 51.8456933,
+  "lon": 5.8385122
+ },
+ {
+  "naam": "Vlietstraat",
+  "soort": "bus",
+  "lat": 51.8459343,
+  "lon": 5.8384778
+ },
+ {
+  "naam": "Wedesteinbroek 12e str.",
+  "soort": "bus",
+  "lat": 51.8277515,
+  "lon": 5.7807776
+ },
+ {
+  "naam": "Havenweg",
+  "soort": "bus",
+  "lat": 51.8504874,
+  "lon": 5.8482931
+ },
+ {
+  "naam": "Havenweg",
+  "soort": "bus",
+  "lat": 51.8500024,
+  "lon": 5.8487319
+ },
+ {
+  "naam": "Winkelcentrum Notenhout",
+  "soort": "bus",
+  "lat": 51.8298436,
+  "lon": 5.8146337
+ },
+ {
+  "naam": "Winkelcentrum Notenhout",
+  "soort": "bus",
+  "lat": 51.8294961,
+  "lon": 5.813373
+ },
+ {
+  "naam": "Zandsepad",
+  "soort": "bus",
+  "lat": 51.8761402,
+  "lon": 5.8769949
+ },
+ {
+  "naam": "Zandsepad",
+  "soort": "bus",
+  "lat": 51.8768216,
+  "lon": 5.8772566
+ },
+ {
+  "naam": "Zwanenveld 10e str.",
+  "soort": "bus",
+  "lat": 51.8193735,
+  "lon": 5.7989196
+ },
+ {
+  "naam": "Zwanenveld 12e str.",
+  "soort": "bus",
+  "lat": 51.8198309,
+  "lon": 5.805665
+ },
+ {
+  "naam": "Zwanenveld 12e str.",
+  "soort": "bus",
+  "lat": 51.8203412,
+  "lon": 5.8049633
+ },
+ {
+  "naam": "van der Duyn van Maasdamstraat",
+  "soort": "bus",
+  "lat": 51.8052018,
+  "lon": 5.8345311
+ },
+ {
+  "naam": "van der Duyn van Maasdamstraat",
+  "soort": "bus",
+  "lat": 51.8059908,
+  "lon": 5.8343289
+ },
+ {
+  "naam": "Van Peltlaan",
+  "soort": "bus",
+  "lat": 51.8193515,
+  "lon": 5.8527728
+ },
+ {
+  "naam": "2e Oude Heselaan",
+  "soort": "bus",
+  "lat": 51.8426861,
+  "lon": 5.844255
+ },
+ {
+  "naam": "2e Oude Heselaan",
+  "soort": "bus",
+  "lat": 51.8429708,
+  "lon": 5.8452838
+ },
+ {
+  "naam": "Broerweg",
+  "soort": "bus",
+  "lat": 51.8367027,
+  "lon": 5.8850516
+ },
+ {
+  "naam": "Broerweg",
+  "soort": "bus",
+  "lat": 51.8374288,
+  "lon": 5.8843377
+ },
+ {
+  "naam": "Caesarstraat",
+  "soort": "bus",
+  "lat": 51.8342588,
+  "lon": 5.8916161
+ },
+ {
+  "naam": "Caesarstraat",
+  "soort": "bus",
+  "lat": 51.8346617,
+  "lon": 5.890855
+ },
+ {
+  "naam": "Joris Ivensplein",
+  "soort": "bus",
+  "lat": 51.848368,
+  "lon": 5.8568085
+ },
+ {
+  "naam": "Joris Ivensplein",
+  "soort": "bus",
+  "lat": 51.8485148,
+  "lon": 5.8566804
+ },
+ {
+  "naam": "Centrum Oost",
+  "soort": "bus",
+  "lat": 51.8442863,
+  "lon": 5.8720291
+ },
+ {
+  "naam": "Centrum Oost",
+  "soort": "bus",
+  "lat": 51.8446959,
+  "lon": 5.8723261
+ },
+ {
+  "naam": "Plein 1944",
+  "soort": "bus",
+  "lat": 51.846246,
+  "lon": 5.8612997
+ },
+ {
+  "naam": "Fluitenkruid",
+  "soort": "bus",
+  "lat": 51.8688343,
+  "lon": 5.8730816
+ },
+ {
+  "naam": "Terracottastraat",
+  "soort": "bus",
+  "lat": 51.8789571,
+  "lon": 5.849578
+ },
+ {
+  "naam": "Terracottastraat",
+  "soort": "bus",
+  "lat": 51.8782997,
+  "lon": 5.8496786
+ },
+ {
+  "naam": "Zwaluwstraat",
+  "soort": "bus",
+  "lat": 51.8444179,
+  "lon": 5.8438137
+ },
+ {
+  "naam": "Zwaluwstraat",
+  "soort": "bus",
+  "lat": 51.8445408,
+  "lon": 5.8437137
+ },
+ {
+  "naam": "Centraal Station",
+  "soort": "bus",
+  "lat": 51.8422722,
+  "lon": 5.8532634
+ },
+ {
+  "naam": "Centraal Station",
+  "soort": "bus",
+  "lat": 51.8425574,
+  "lon": 5.8536348
+ },
+ {
+  "naam": "Burgemeester Daleslaan",
+  "soort": "bus",
+  "lat": 51.8196788,
+  "lon": 5.8356551
+ },
+ {
+  "naam": "Burgemeester Daleslaan",
+  "soort": "bus",
+  "lat": 51.8198909,
+  "lon": 5.8354149
+ },
+ {
+  "naam": "Thermion West",
+  "soort": "bus",
+  "lat": 51.8718191,
+  "lon": 5.8599482
+ },
+ {
+  "naam": "Thermion Oost",
+  "soort": "bus",
+  "lat": 51.872044,
+  "lon": 5.8618175
+ },
+ {
+  "naam": "Nijmegen Goffert",
+  "soort": "station",
+  "lat": 51.8272972,
+  "lon": 5.8224752
+ },
+ {
+  "naam": "Winkelcentrum Meijhorst",
+  "soort": "bus",
+  "lat": 51.8109677,
+  "lon": 5.8033012
+ },
+ {
+  "naam": "Sint Annastraat / Heiweg",
+  "soort": "bus",
+  "lat": 51.8145759,
+  "lon": 5.8545618
+ },
+ {
+  "naam": "Sportpark De Kluis",
+  "soort": "bus",
+  "lat": 51.8022911,
+  "lon": 5.8508482
+ },
+ {
+  "naam": "Galvanistraat",
+  "soort": "bus",
+  "lat": 51.8096459,
+  "lon": 5.8384875
+ },
+ {
+  "naam": "Galvanistraat",
+  "soort": "bus",
+  "lat": 51.8102502,
+  "lon": 5.838857
+ },
+ {
+  "naam": "Groenestraat",
+  "soort": "bus",
+  "lat": 51.8309784,
+  "lon": 5.8584472
+ },
+ {
+  "naam": "Lankforst 16e straat",
+  "soort": "bus",
+  "lat": 51.8162313,
+  "lon": 5.8077549
+ },
+ {
+  "naam": "Lankforst 16e straat",
+  "soort": "bus",
+  "lat": 51.8165557,
+  "lon": 5.8078285
+ },
+ {
+  "naam": "Poort Neerbosch",
+  "soort": "bus",
+  "lat": 51.8380564,
+  "lon": 5.8036542
+ },
+ {
+  "naam": "Poort Neerbosch",
+  "soort": "bus",
+  "lat": 51.838449,
+  "lon": 5.803475
+ },
+ {
+  "naam": "Sint Annamolen",
+  "soort": "bus",
+  "lat": 51.8278808,
+  "lon": 5.8577657
+ },
+ {
+  "naam": "P+R Nijmegen West",
+  "soort": "bus",
+  "lat": 51.8376569,
+  "lon": 5.8024923
+ },
+ {
+  "naam": "P+R Nijmegen West",
+  "soort": "bus",
+  "lat": 51.8366106,
+  "lon": 5.8012498
+ },
+ {
+  "naam": "Voerweg",
+  "soort": "bus",
+  "lat": 51.8468479,
+  "lon": 5.869471
+ },
+ {
+  "naam": "Voerweg",
+  "soort": "bus",
+  "lat": 51.8469881,
+  "lon": 5.8695412
+ },
+ {
+  "naam": "Nijmegen Dukenburg",
+  "soort": "station",
+  "lat": 51.8239417,
+  "lon": 5.7942393
+ },
+ {
+  "naam": "Nijmegen Lent",
+  "soort": "station",
+  "lat": 51.862468,
+  "lon": 5.8596868
+ },
+ {
+  "naam": "Station Dukenburg",
+  "soort": "bus",
+  "lat": 51.8232236,
+  "lon": 5.7932566
+ },
+ {
+  "naam": "Station Dukenburg",
+  "soort": "bus",
+  "lat": 51.8235174,
+  "lon": 5.7931728
+ },
+ {
+  "naam": "Centraal Station",
+  "soort": "bus",
+  "lat": 51.8436983,
+  "lon": 5.8540556
+ },
+ {
+  "naam": "Centraal Station",
+  "soort": "bus",
+  "lat": 51.8438155,
+  "lon": 5.8534392
+ },
+ {
+  "naam": "Meeuwseacker",
+  "soort": "bus",
+  "lat": 51.8348427,
+  "lon": 5.7965031
+ },
+ {
+  "naam": "Laauwikstraat",
+  "soort": "bus",
+  "lat": 51.8643234,
+  "lon": 5.8743526
+ },
+ {
+  "naam": "Turennesingel",
+  "soort": "bus",
+  "lat": 51.8612793,
+  "lon": 5.8717166
+ },
+ {
+  "naam": "Turennesingel",
+  "soort": "bus",
+  "lat": 51.8609129,
+  "lon": 5.8706443
+ },
+ {
+  "naam": "Dalidastraat",
+  "soort": "bus",
+  "lat": 51.8737777,
+  "lon": 5.8617637
+ },
+ {
+  "naam": "Kerkenbos",
+  "soort": "bus",
+  "lat": 51.8239144,
+  "lon": 5.7823893
+ },
+ {
+  "naam": "Kerkenbos",
+  "soort": "bus",
+  "lat": 51.8236688,
+  "lon": 5.7826623
+ },
+ {
+  "naam": "Nijmegen Heyendaal",
+  "soort": "station",
+  "lat": 51.8267778,
+  "lon": 5.8679526
+ },
+ {
+  "naam": "Ferry Portierstraat",
+  "soort": "bus",
+  "lat": 51.8527794,
+  "lon": 5.8462162
+ },
+ {
+  "naam": "Ferry Portierstraat",
+  "soort": "bus",
+  "lat": 51.8521127,
+  "lon": 5.8471253
+ },
+ {
+  "naam": "Cavaljéweg",
+  "soort": "bus",
+  "lat": 51.8316595,
+  "lon": 5.8323157
+ },
+ {
+  "naam": "De Hoefkamp",
+  "soort": "bus",
+  "lat": 51.8333246,
+  "lon": 5.8027254
+ },
+ {
+  "naam": "Veur Lent",
+  "soort": "bus",
+  "lat": 51.8570923,
+  "lon": 5.8682786
+ },
+ {
+  "naam": "Aldenhof 12/32 str.",
+  "soort": "bus",
+  "lat": 51.8047995,
+  "lon": 5.8023005
+ },
+ {
+  "naam": "Italiëstraat",
+  "soort": "bus",
+  "lat": 51.8705574,
+  "lon": 5.8510522
+ },
+ {
+  "naam": "Italiëstraat",
+  "soort": "bus",
+  "lat": 51.8697377,
+  "lon": 5.8507287
+ },
+ {
+  "naam": "Aldenhof 53/14 straat",
+  "soort": "bus",
+  "lat": 51.8056484,
+  "lon": 5.7975043
+ },
+ {
+  "naam": "Nyma",
+  "soort": "bus",
+  "lat": 51.855004,
+  "lon": 5.8363
+ },
+ {
+  "naam": "Nyma",
+  "soort": "bus",
+  "lat": 51.8548301,
+  "lon": 5.8367063
+ },
+ {
+  "naam": "Staddijk",
+  "soort": "bus",
+  "lat": 51.813399,
+  "lon": 5.7849322
+ },
+ {
+  "naam": "Hof van Holland",
+  "soort": "bus",
+  "lat": 51.8660291,
+  "lon": 5.8531047
+ },
+ {
+  "naam": "Station Goffert",
+  "soort": "bus",
+  "lat": 51.8283156,
+  "lon": 5.8222762
+ },
+ {
+  "naam": "Station Goffert",
+  "soort": "bus",
+  "lat": 51.8286243,
+  "lon": 5.8223499
+ }
+]

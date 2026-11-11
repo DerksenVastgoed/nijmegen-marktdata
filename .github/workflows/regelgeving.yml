@@ -1,0 +1,73 @@
+# De verordeningen en wetten volgen waarop de vastgoedbrief rekent.
+#
+# SINDS 11 NOVEMBER IN NIJMEGEN-MARKTDATA. De Huisvestingsverordening, de
+# belastingverordeningen van Nijmegen en de landelijke wetten (Huisvestingswet,
+# Wet betaalbare huur, overdrachtsbelasting) gelden voor iedereen; er zit geen
+# eigen selectie in. Een wijziging komt met datum in regelgeving_meldingen.json,
+# en de brief meldt hem een keer.
+#
+# WANNEER. Zondag 00:05 UTC, voor de weekeditie van de brief, en met de hand
+# na een wijziging aan regelgeving_monitor.py. Een verordening verandert niet
+# dagelijks.
+name: Regelgeving
+
+on:
+  schedule:
+    - cron: "5 0 * * 0"
+  workflow_dispatch:
+
+concurrency:
+  group: regelgeving
+  cancel-in-progress: false
+
+jobs:
+  regelgeving:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Repo ophalen
+        uses: actions/checkout@v4
+
+      - name: Python klaarzetten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencies installeren
+        run: pip install requests
+
+      - name: Regelgeving controleren
+        id: monitor
+        continue-on-error: true
+        run: python regelgeving_monitor.py
+
+      - name: Terugcommitten
+        run: |
+          set -o pipefail
+          ./terugcommitten.sh "Regelgeving $(date -u +%F)" \
+            regelgeving_status.json regelgeving_meldingen.json \
+            2>&1 | tee /tmp/terugcommit.log
+          exit "${PIPESTATUS[0]}"
+
+      - name: Melden in een issue als er iets is mislukt
+        if: failure() || steps.monitor.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          KOP="Regelgeving niet gecontroleerd op $(date -u +%F)"
+          {
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo '```'
+            tail -c 2000 /tmp/terugcommit.log 2>/dev/null || true
+            echo '```'
+          } > /tmp/melding.md
+          BESTAAND=$(gh issue list --state open --search "$KOP in:title" \
+            --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$BESTAAND" ] && [ "$BESTAAND" != "null" ]; then
+            gh issue comment "$BESTAAND" --body-file /tmp/melding.md
+          else
+            gh issue create --title "$KOP" --body-file /tmp/melding.md
+          fi

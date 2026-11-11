@@ -1,0 +1,974 @@
+{
+ "BWBR0002481": {
+  "bron": "landelijk",
+  "geldig_vanaf": "",
+  "gewijzigd": "2016-01-12",
+  "sleutel": "BWBR0002481",
+  "titel": "Uitvoeringswet Nederlands-Duits Executieverdrag",
+  "titel_wijkt_af": true,
+  "url": "https://wetten.overheid.nl/BWBR0002481",
+  "waarom": "Uitvoeringswet huurprijzen woonruimte"
+ },
+ "BWBR0002672": {
+  "bron": "landelijk",
+  "geldig_vanaf": "",
+  "gewijzigd": "2024-07-09",
+  "sleutel": "BWBR0002672",
+  "titel": "Wet op de vennootschapsbelasting 1969",
+  "titel_wijkt_af": true,
+  "url": "https://wetten.overheid.nl/BWBR0002672",
+  "waarom": "Uitvoeringsbesluit belastingen van rechtsverkeer"
+ },
+ "BWBR0002740": {
+  "bron": "landelijk",
+  "geldig_vanaf": "",
+  "gewijzigd": "2024-07-05",
+  "sleutel": "BWBR0002740",
+  "titel": "Wet op belastingen van rechtsverkeer",
+  "titel_wijkt_af": false,
+  "url": "https://wetten.overheid.nl/BWBR0002740",
+  "waarom": "Wet op belastingen van rechtsverkeer, de overdrachtsbelasting"
+ },
+ "BWBR0003237": {
+  "bron": "landelijk",
+  "geldig_vanaf": "",
+  "gewijzigd": "2022-06-22",
+  "sleutel": "BWBR0003237",
+  "titel": "Besluit huurprijzen woonruimte",
+  "titel_wijkt_af": false,
+  "url": "https://wetten.overheid.nl/BWBR0003237",
+  "waarom": "Besluit huurprijzen woonruimte, de huurprijstabel"
+ },
+ "BWBR0035303": {
+  "bron": "landelijk",
+  "geldig_vanaf": "",
+  "gewijzigd": "2018-01-05",
+  "sleutel": "BWBR0035303",
+  "titel": "Huisvestingswet 2014",
+  "titel_wijkt_af": false,
+  "url": "https://wetten.overheid.nl/BWBR0035303",
+  "waarom": "Huisvestingswet 2014"
+ },
+ "CVDR208264_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2013-01-23",
+  "geldig_vanaf": "2012-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "leges",
+  "titel": "Verordening op de heffing en invordering van leges 2012",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR249104_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2014-01-01",
+  "geldig_vanaf": "2013-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "leges",
+  "titel": "Verordening op de heffing en invordering van leges 2013",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR249621_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2014-01-01",
+  "geldig_vanaf": "2013-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en invordering van onroerende-zaakbelastingen 2013",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR249695_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2014-01-01",
+  "geldig_vanaf": "2013-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en invordering van afvalstoffenheffing en reinigingsrechten 2013",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR250136_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2014-01-01",
+  "geldig_vanaf": "2013-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en invordering van de rioolheffing",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR298201_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2017-03-29",
+  "geldig_vanaf": "2013-05-03",
+  "gewijzigd": "2017-11-21",
+  "term": "bouw",
+  "titel": "Verordening Ik Bouw Betaalbaar gemeente Nijmegen 2013",
+  "url": "",
+  "waarom": "Bouwverordening"
+ },
+ "CVDR319441_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2015-01-01",
+  "geldig_vanaf": "2014-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en invordering van de rioolheffing",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR319790_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2014-12-31",
+  "geldig_vanaf": "2014-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsheffing 2014",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR319880_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2015-01-01",
+  "geldig_vanaf": "2014-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "leges",
+  "titel": "Verordening op de heffing en invordering van leges 2014",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR319911_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2015-01-01",
+  "geldig_vanaf": "2014-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en invordering van onroerende-zaakbelasting 2104",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR345516_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2016-01-01",
+  "geldig_vanaf": "2015-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van de rioolheffing",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR345553_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2016-01-01",
+  "geldig_vanaf": "2015-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten 2015",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR345585_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2016-01-01",
+  "geldig_vanaf": "2015-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen 2015",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR345594_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2016-01-01",
+  "geldig_vanaf": "2015-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges 2015",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR372925_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2015-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "huisvesting",
+  "titel": "Verordening voorzieningen huisvesting onderwijs gemeente Nijmegen 2015",
+  "url": "",
+  "waarom": "Huisvestingsverordening: opkoopbescherming, omzetting, onttrekking en de WOZ-grenzen voor kamerverhuur"
+ },
+ "CVDR390433_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2017-01-01",
+  "geldig_vanaf": "2016-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "leges",
+  "titel": "Verordening op de heffing en invordering van leges 2016",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR391845_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2017-01-01",
+  "geldig_vanaf": "2016-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen 2016",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR391848_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2017-01-01",
+  "geldig_vanaf": "2016-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van de rioolheffing 2016",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR391940_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2017-01-01",
+  "geldig_vanaf": "2016-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten 2016",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR43324_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2007-10-01",
+  "gewijzigd": "2017-11-21",
+  "term": "parkeer",
+  "titel": "Parkeerverordening 2007",
+  "url": "",
+  "waarom": "Parkeerverordening: parkeereis en vergunningen bij splitsing"
+ },
+ "CVDR435468_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2018-01-01",
+  "geldig_vanaf": "2017-01-01",
+  "gewijzigd": "2017-12-27",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges 2017",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR435632_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2018-01-01",
+  "geldig_vanaf": "2017-01-01",
+  "gewijzigd": "2017-01-01",
+  "term": "rioolheffing",
+  "titel": "VERORDENING RIOOLHEFFING 2017",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR435661_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2018-01-01",
+  "geldig_vanaf": "2017-01-01",
+  "gewijzigd": "2017-01-01",
+  "term": "onroerende",
+  "titel": "VERORDENING ONROERENDE-ZAAKBELASTINGEN 2017",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR43832_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2015-01-01",
+  "geldig_vanaf": "2007-10-18",
+  "gewijzigd": "2007-10-18",
+  "term": "huisvesting",
+  "titel": "Verordening voorzieningen huisvesting onderwijs",
+  "url": "",
+  "waarom": "Huisvestingsverordening: opkoopbescherming, omzetting, onttrekking en de WOZ-grenzen voor kamerverhuur"
+ },
+ "CVDR450199_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2015-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "leges",
+  "titel": "Beleidsregels vrijstelling leges 2015",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR605834_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2019-01-01",
+  "geldig_vanaf": "2018-01-01",
+  "gewijzigd": "2018-12-24",
+  "term": "onroerende",
+  "titel": "Verordening van de gemeenteraad van de gemeente Nijmegen houdende heffingen Verordening Onroerende zaakbelastingen 2018",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR605866_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2019-01-01",
+  "geldig_vanaf": "2018-01-01",
+  "gewijzigd": "2018-12-24",
+  "term": "rioolheffing",
+  "titel": "Verordening van de gemeenteraad van de gemeente Nijmegen houdende rioolheffing  Verordening Rioolheffing 2018",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR605941_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2019-01-01",
+  "geldig_vanaf": "2018-01-01",
+  "gewijzigd": "2018-12-24",
+  "term": "leges",
+  "titel": "Verordening van de gemeenteraad van de gemeente Nijmegen houdende regels omtrent leges Legesverordening 2018",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR618367_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2020-01-01",
+  "geldig_vanaf": "2019-01-01",
+  "gewijzigd": "2019-01-01",
+  "term": "onroerende",
+  "titel": "Verordening van de gemeenteraad van de gemeente Nijmegen op de heffing en invordering van  Onroerende zaakbelastingen 2019",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR618369_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2020-01-01",
+  "geldig_vanaf": "2019-01-01",
+  "gewijzigd": "2019-01-01",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten 2019",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR618371_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2020-01-01",
+  "geldig_vanaf": "2019-01-01",
+  "gewijzigd": "2019-01-01",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van de rioolheffing 2019",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR618483_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2019-07-01",
+  "geldig_vanaf": "2019-01-01",
+  "gewijzigd": "2019-01-01",
+  "term": "leges",
+  "titel": "Verordening van de gemeenteraad van de gemeente Nijmegen op de heffing en invordering van Leges 2019",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR625577_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2020-01-01",
+  "geldig_vanaf": "2019-07-01",
+  "gewijzigd": "2019-07-01",
+  "term": "leges",
+  "titel": "Verordening van de gemeenteraad van de gemeente Nijmegen op de heffing en invordering van leges 2019 -A(Gewijzigde Legesverordening 2019)",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR633128_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2021-01-01",
+  "geldig_vanaf": "2020-01-01",
+  "gewijzigd": "2020-01-01",
+  "term": "afvalstoffenheffing",
+  "titel": "VERORDENING OP DE HEFFING EN DE INVORDERING VAN AFVALSTOFFENHEFFING EN REINIGINGSRECHTEN GEMEENTE NIJMEGEN 2020",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR633190_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2021-01-01",
+  "geldig_vanaf": "2020-01-01",
+  "gewijzigd": "2020-01-01",
+  "term": "rioolheffing",
+  "titel": "VERORDENING OP DE HEFFING EN DE INVORDERING VAN RIOOLHEFFING GEMEENTE NIJMEGEN 2020",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR633224_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2021-01-01",
+  "geldig_vanaf": "2020-01-01",
+  "gewijzigd": "2020-01-01",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen gemeente Nijmegen 2020",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR633923_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2020-07-01",
+  "geldig_vanaf": "2020-01-01",
+  "gewijzigd": "2020-01-01",
+  "term": "leges",
+  "titel": "VERORDENING OP DE HEFFING EN DE INVORDERING VAN LEGES GEMEENTE NIJMEGEN 2020",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR641699_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2021-01-01",
+  "geldig_vanaf": "2020-07-01",
+  "gewijzigd": "2020-07-01",
+  "term": "leges",
+  "titel": "1e GEWIJZIGDE VERORDENING OP DE HEFFING EN DE INVORDERING VAN LEGES GEMEENTE NIJMEGEN 2020",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR649235_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2022-01-01",
+  "geldig_vanaf": "2021-01-01",
+  "gewijzigd": "2021-01-01",
+  "term": "rioolheffing",
+  "titel": "VERORDENING OP DE HEFFING EN DE INVORDERING VAN RIOOLHEFFING GEMEENTE NIJMEGEN 2021",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR649238_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2022-01-01",
+  "geldig_vanaf": "2021-01-01",
+  "gewijzigd": "2021-01-01",
+  "term": "afvalstoffenheffing",
+  "titel": "VERORDENING OP DE HEFFING EN DE INVORDERING VAN AFVALSTOFFENHEFFING EN REINIGINGSRECHTEN GEMEENTE NIJMEGEN 2021",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR649273_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2022-01-01",
+  "geldig_vanaf": "2021-01-01",
+  "gewijzigd": "2021-01-01",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen gemeente Nijmegen 2021",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR649328_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2022-01-01",
+  "geldig_vanaf": "2021-01-01",
+  "gewijzigd": "2021-01-01",
+  "term": "leges",
+  "titel": "VERORDENING OP DE HEFFING EN DE INVORDERING VAN LEGES GEMEENTE NIJMEGEN 2021",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR658058_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2022-03-15",
+  "geldig_vanaf": "2021-05-28",
+  "gewijzigd": "2021-05-28",
+  "term": "erfgoed",
+  "titel": "Erfgoedverordening Nijmegen 2021",
+  "url": "",
+  "waarom": "Erfgoedverordening: monumenten en beschermde stadsbeelden"
+ },
+ "CVDR658058_2": {
+  "bron": "gemeente",
+  "geldig_tot": "2022-06-29",
+  "geldig_vanaf": "2022-03-15",
+  "gewijzigd": "2022-03-15",
+  "term": "erfgoed",
+  "titel": "Erfgoedverordening Nijmegen 2021",
+  "url": "",
+  "waarom": "Erfgoedverordening: monumenten en beschermde stadsbeelden"
+ },
+ "CVDR658058_3": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-01-01",
+  "geldig_vanaf": "2022-06-29",
+  "gewijzigd": "2022-06-29",
+  "term": "erfgoed",
+  "titel": "Erfgoedverordening Nijmegen 2021",
+  "url": "",
+  "waarom": "Erfgoedverordening: monumenten en beschermde stadsbeelden"
+ },
+ "CVDR658058_4": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-12-24",
+  "geldig_vanaf": "2024-01-01",
+  "gewijzigd": "2024-01-01",
+  "term": "erfgoed",
+  "titel": "Erfgoedverordening Nijmegen 2021",
+  "url": "",
+  "waarom": "Erfgoedverordening: monumenten en beschermde stadsbeelden"
+ },
+ "CVDR659678_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2022-03-11",
+  "geldig_vanaf": "2021-07-05",
+  "gewijzigd": "2021-07-05",
+  "term": "kamerverhuur",
+  "titel": "Beleidsregels Kamerverhuur 2021",
+  "url": "",
+  "waarom": "Beleidsregels Kamerverhuur: insluiting, aaneenschakeling, afval, fietsen en geluid; vervallen per 16 november 2026"
+ },
+ "CVDR659678_2": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-04-24",
+  "geldig_vanaf": "2022-03-11",
+  "gewijzigd": "2022-03-11",
+  "term": "kamerverhuur",
+  "titel": "Beleidsregels Kamerverhuur 2021",
+  "url": "",
+  "waarom": "Beleidsregels Kamerverhuur: insluiting, aaneenschakeling, afval, fietsen en geluid; vervallen per 16 november 2026"
+ },
+ "CVDR659678_3": {
+  "bron": "gemeente",
+  "geldig_tot": "2026-11-16",
+  "geldig_vanaf": "2025-04-24",
+  "gewijzigd": "2025-04-24",
+  "term": "kamerverhuur",
+  "titel": "Beleidsregels Kamerverhuur 2021",
+  "url": "",
+  "waarom": "Beleidsregels Kamerverhuur: insluiting, aaneenschakeling, afval, fietsen en geluid; vervallen per 16 november 2026"
+ },
+ "CVDR669433_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2022-07-13",
+  "geldig_vanaf": "2022-01-01",
+  "gewijzigd": "2022-01-01",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2022",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR669437_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2023-01-01",
+  "geldig_vanaf": "2022-01-01",
+  "gewijzigd": "2022-01-01",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van rioolheffing gemeente Nijmegen 2022",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR669443_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2023-01-01",
+  "geldig_vanaf": "2022-01-01",
+  "gewijzigd": "2022-01-01",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten gemeente Nijmegen 2022",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR669449_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2023-01-01",
+  "geldig_vanaf": "2022-01-01",
+  "gewijzigd": "2022-01-01",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen gemeente Nijmegen 2022",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR679692_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2023-01-01",
+  "geldig_vanaf": "2022-07-19",
+  "gewijzigd": "2022-07-19",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2022-A",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR689100_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-01-01",
+  "geldig_vanaf": "2023-01-01",
+  "gewijzigd": "2023-01-01",
+  "term": "leges",
+  "titel": "Verordening op de heffing en invordering van leges gemeente Nijmegen 2023",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR689110_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-01-01",
+  "geldig_vanaf": "2023-01-01",
+  "gewijzigd": "2023-01-01",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen gemeente Nijmegen 2023",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR689118_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-01-01",
+  "geldig_vanaf": "2023-01-01",
+  "gewijzigd": "2023-01-01",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten gemeente Nijmegen 2023",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR689128_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-01-01",
+  "geldig_vanaf": "2023-01-01",
+  "gewijzigd": "2023-01-01",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van rioolheffing gemeente Nijmegen 2023",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR696550_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-01-22",
+  "geldig_vanaf": "2024-01-01",
+  "gewijzigd": "2026-10-19Z",
+  "term": "omgevingsplan",
+  "titel": "Omgevingsplan gemeente Nijmegen",
+  "url": "",
+  "waarom": "Omgevingsplan: wat op een adres is toegestaan, waaronder een logiesfunctie en regels over short stay"
+ },
+ "CVDR696550_2": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-05-21",
+  "geldig_vanaf": "2024-01-22",
+  "gewijzigd": "2026-10-19Z",
+  "term": "omgevingsplan",
+  "titel": "Omgevingsplan gemeente Nijmegen",
+  "url": "",
+  "waarom": "Omgevingsplan: wat op een adres is toegestaan, waaronder een logiesfunctie en regels over short stay"
+ },
+ "CVDR696550_3": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-11-12",
+  "geldig_vanaf": "2025-05-21",
+  "gewijzigd": "2026-10-19Z",
+  "term": "omgevingsplan",
+  "titel": "Omgevingsplan gemeente Nijmegen",
+  "url": "",
+  "waarom": "Omgevingsplan: wat op een adres is toegestaan, waaronder een logiesfunctie en regels over short stay"
+ },
+ "CVDR696550_4": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-12-24",
+  "geldig_vanaf": "2025-11-12",
+  "gewijzigd": "2026-10-19Z",
+  "term": "omgevingsplan",
+  "titel": "Omgevingsplan gemeente Nijmegen",
+  "url": "",
+  "waarom": "Omgevingsplan: wat op een adres is toegestaan, waaronder een logiesfunctie en regels over short stay"
+ },
+ "CVDR696550_5": {
+  "bron": "gemeente",
+  "geldig_tot": "2026-04-13",
+  "geldig_vanaf": "2025-12-24",
+  "gewijzigd": "2026-10-19Z",
+  "term": "omgevingsplan",
+  "titel": "Omgevingsplan gemeente Nijmegen",
+  "url": "",
+  "waarom": "Omgevingsplan: wat op een adres is toegestaan, waaronder een logiesfunctie en regels over short stay"
+ },
+ "CVDR696550_6": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2026-04-13",
+  "gewijzigd": "2026-10-19Z",
+  "term": "omgevingsplan",
+  "titel": "Omgevingsplan gemeente Nijmegen",
+  "url": "",
+  "waarom": "Omgevingsplan: wat op een adres is toegestaan, waaronder een logiesfunctie en regels over short stay"
+ },
+ "CVDR701976_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2024-01-01",
+  "gewijzigd": "2024-01-01",
+  "term": "omgevingsplan",
+  "titel": "Delegatiebesluit omgevingsplan gemeente Nijmegen",
+  "url": "",
+  "waarom": "Omgevingsplan: wat op een adres is toegestaan, waaronder een logiesfunctie en regels over short stay"
+ },
+ "CVDR711041_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-01-01",
+  "geldig_vanaf": "2024-01-01",
+  "gewijzigd": "2024-01-01",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2024",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR711046_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-01-01",
+  "geldig_vanaf": "2024-01-01",
+  "gewijzigd": "2024-01-01",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van rioolheffing gemeente Nijmegen 2024",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR711051_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-01-01",
+  "geldig_vanaf": "2024-01-01",
+  "gewijzigd": "2024-01-01",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten gemeente Nijmegen 2024",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR711053_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-01-01",
+  "geldig_vanaf": "2024-01-01",
+  "gewijzigd": "2024-01-01",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen gemeente Nijmegen 2024",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR722246_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2024-10-19",
+  "geldig_vanaf": "2024-07-12",
+  "gewijzigd": "2024-07-12",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2024-A",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR722246_2": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-01-01",
+  "geldig_vanaf": "2024-10-19",
+  "gewijzigd": "2024-10-19",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2024-A",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR724445_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-09-01",
+  "geldig_vanaf": "2024-09-18",
+  "gewijzigd": "2024-09-18",
+  "term": "leges",
+  "titel": "Aanwijzingsbesluit heffings- en invorderingsambtenaar centraal loket leges ontheffing nul-emissiezone Nijmegen 2025",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR731592_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2025-07-01",
+  "geldig_vanaf": "2025-01-01",
+  "gewijzigd": "2025-01-01",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2025",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR731592_2": {
+  "bron": "gemeente",
+  "geldig_tot": "2026-01-01",
+  "geldig_vanaf": "2025-07-01",
+  "gewijzigd": "2025-07-01",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2025",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR731601_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2026-01-01",
+  "geldig_vanaf": "2025-01-01",
+  "gewijzigd": "2025-01-01",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten gemeente Nijmegen 2025",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR731605_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2026-01-01",
+  "geldig_vanaf": "2025-01-01",
+  "gewijzigd": "2025-01-01",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van rioolheffing gemeente Nijmegen 2025",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR731606_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2026-01-01",
+  "geldig_vanaf": "2025-01-01",
+  "gewijzigd": "2025-01-01",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen gemeente Nijmegen 2025",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR731607_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2024-12-24",
+  "gewijzigd": "2024-12-24",
+  "term": "erfgoed",
+  "titel": "Erfgoedverordening Nijmegen",
+  "url": "",
+  "waarom": "Erfgoedverordening: monumenten en beschermde stadsbeelden"
+ },
+ "CVDR741257_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2026-01-01",
+  "geldig_vanaf": "2025-09-01",
+  "gewijzigd": "2025-09-01",
+  "term": "leges",
+  "titel": "Besluit van het college van burgemeester en wethouders van de gemeente Nijmegen tot aanwijzing van degene die is belast met de heffing en de invordering van leges voor het door het Centraal Loket in behandeling nemen van aanvragen om een ontheffing voor een nul-emissiezone",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR748986_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2026-01-01",
+  "gewijzigd": "2026-01-01",
+  "term": "leges",
+  "titel": "Besluit van het college van burgemeester en wethouders van de gemeente Nijmegen tot aanwijzing van degene die is belast met de heffing en de invordering van leges voor het door het Centraal Loket in behandeling nemen van aanvragen om een ontheffing voor een nul-emissiezone (Aanwijzingsbesluit Nijmegen heffings- en invorderingsambtenaar leges ontheffing nul-emissiezone Centraal Loket)",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR752069_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2026-01-01",
+  "gewijzigd": "2026-01-01",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van rioolheffing gemeente Nijmegen 2026",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR752071_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2026-01-01",
+  "gewijzigd": "2026-01-01",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten gemeente Nijmegen 2026",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR752072_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2026-03-11",
+  "geldig_vanaf": "2026-01-01",
+  "gewijzigd": "2026-01-01",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2026",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR752072_2": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2026-03-11",
+  "gewijzigd": "2026-03-11",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges gemeente Nijmegen 2026",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR752073_1": {
+  "bron": "gemeente",
+  "geldig_tot": "",
+  "geldig_vanaf": "2026-01-01",
+  "gewijzigd": "2026-01-01",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen gemeente Nijmegen 2026",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "CVDR76331_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2012-01-01",
+  "geldig_vanaf": "2011-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "leges",
+  "titel": "Verordening op de heffing en de invordering van leges 2011",
+  "url": "",
+  "waarom": "Legesverordening: wat een omgevingsvergunning of een omzettingsvergunning kost bij splitsen of verkameren"
+ },
+ "CVDR78379_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2012-01-23",
+  "geldig_vanaf": "2011-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "rioolheffing",
+  "titel": "Verordening op de heffing en de invordering van de rioolheffing",
+  "url": "",
+  "waarom": "Rioolheffing: een vaste last per pand of per gebruiker"
+ },
+ "CVDR78427_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2012-01-23",
+  "geldig_vanaf": "2011-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "afvalstoffenheffing",
+  "titel": "Verordening op de heffing en de invordering van afvalstoffenheffing en reinigingsrechten",
+  "url": "",
+  "waarom": "Afvalstoffenheffing: een vaste last per woning"
+ },
+ "CVDR78478_1": {
+  "bron": "gemeente",
+  "geldig_tot": "2012-01-23",
+  "geldig_vanaf": "2011-01-01",
+  "gewijzigd": "2017-11-21",
+  "term": "onroerende",
+  "titel": "Verordening op de heffing en de invordering van onroerende-zaakbelastingen 2011",
+  "url": "",
+  "waarom": "Verordening onroerendezaakbelastingen: het OZB-tarief voor woningen en niet-woningen, dat per WOZ-waarde doorwerkt in de exploitatiekosten"
+ },
+ "_termen": [
+  "afvalstoffenheffing",
+  "bouw",
+  "erfgoed",
+  "huisvesting",
+  "kamerverhuur",
+  "leges",
+  "omgevingsplan",
+  "onroerende",
+  "parkeer",
+  "rioolheffing"
+ ],
+ "_zoektermen": {
+  "bewust_afwezig": [
+   "leegstand"
+  ],
+  "bron": "meta",
+  "onverwacht": [],
+  "vorm_per_term": {
+   "afvalstoffenheffing": "(creator==\"Nijmegen\") and (title any \"afvalstoffenheffing\")",
+   "bouw": "(creator==\"Nijmegen\") and (title any \"bouw\")",
+   "erfgoed": "(creator==\"Nijmegen\") and (title any \"erfgoedverordening\")",
+   "huisvesting": "(creator==\"Nijmegen\") and (title any \"huisvesting\")",
+   "kamerverhuur": "(creator==\"Nijmegen\") and (title any \"kamerverhuur\")",
+   "leges": "(creator==\"Nijmegen\") and (title any \"leges\")",
+   "omgevingsplan": "(creator==\"Nijmegen\") and (title any \"omgevingsplan\")",
+   "onroerende": "(creator==\"Nijmegen\") and (title any \"onroerende\")",
+   "parkeer": "(creator==\"Nijmegen\") and (title any \"parkeerverordening\")",
+   "rioolheffing": "(creator==\"Nijmegen\") and (title any \"rioolheffing\")"
+  },
+  "zonder_treffer": []
+ }
+}
