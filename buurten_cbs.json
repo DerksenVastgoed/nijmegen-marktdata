@@ -18,7 +18,9 @@
   "leegstand": null,
   "meergezins": 69,
   "met_kinderen": 13,
+  "naam": "Altrade",
   "nietwoningen": 340,
+  "onb": 25,
   "opp": null,
   "over": 14,
   "sociaal_minimum": null,
@@ -28,6 +30,7 @@
   "voor2000": null,
   "won": 2993,
   "woz": 436,
+  "zijde": "oost",
   "zonder_kinderen": 19
  },
  "Benedenstad": {
@@ -49,7 +52,9 @@
   "leegstand": null,
   "meergezins": 77,
   "met_kinderen": 11,
+  "naam": "Benedenstad",
   "nietwoningen": 189,
+  "onb": 12,
   "opp": null,
   "over": 29,
   "sociaal_minimum": null,
@@ -59,6 +64,7 @@
   "voor2000": null,
   "won": 1639,
   "woz": 334,
+  "zijde": "oost",
   "zonder_kinderen": 23
  },
  "Biezen": {
@@ -80,7 +86,9 @@
   "leegstand": null,
   "meergezins": 62,
   "met_kinderen": 19,
+  "naam": "Biezen",
   "nietwoningen": 219,
+  "onb": 21,
   "opp": null,
   "over": 14,
   "sociaal_minimum": null,
@@ -90,6 +98,7 @@
   "voor2000": null,
   "won": 5152,
   "woz": 358,
+  "zijde": "west",
   "zonder_kinderen": 23
  },
  "Bottendaal": {
@@ -111,7 +120,9 @@
   "leegstand": null,
   "meergezins": 77,
   "met_kinderen": 8,
+  "naam": "Bottendaal",
   "nietwoningen": 249,
+  "onb": 23,
   "opp": null,
   "over": 22,
   "sociaal_minimum": null,
@@ -121,6 +132,7 @@
   "voor2000": null,
   "won": 2193,
   "woz": 394,
+  "zijde": "oost",
   "zonder_kinderen": 15
  },
  "Galgenveld": {
@@ -142,7 +154,9 @@
   "leegstand": null,
   "meergezins": 54,
   "met_kinderen": 12,
+  "naam": "Galgenveld",
   "nietwoningen": 355,
+  "onb": 24,
   "opp": null,
   "over": 12,
   "sociaal_minimum": null,
@@ -152,6 +166,7 @@
   "voor2000": null,
   "won": 2749,
   "woz": 553,
+  "zijde": "oost",
   "zonder_kinderen": 18
  },
  "Hunnerberg": {
@@ -173,7 +188,9 @@
   "leegstand": null,
   "meergezins": 64,
   "met_kinderen": 11,
+  "naam": "Hunnerberg",
   "nietwoningen": 202,
+  "onb": 23,
   "opp": null,
   "over": 7,
   "sociaal_minimum": null,
@@ -183,6 +200,7 @@
   "voor2000": null,
   "won": 1951,
   "woz": 614,
+  "zijde": "oost",
   "zonder_kinderen": 27
  },
  "St. Anna": {
@@ -204,7 +222,9 @@
   "leegstand": null,
   "meergezins": 44,
   "met_kinderen": 22,
+  "naam": "St. Anna",
   "nietwoningen": 207,
+  "onb": 24,
   "opp": null,
   "over": 7,
   "sociaal_minimum": null,
@@ -214,6 +234,7 @@
   "voor2000": null,
   "won": 1776,
   "woz": 394,
+  "zijde": "zuid",
   "zonder_kinderen": 23
  },
  "Stadscentrum": {
@@ -235,7 +256,9 @@
   "leegstand": null,
   "meergezins": 93,
   "met_kinderen": 3,
+  "naam": "Stadscentrum",
   "nietwoningen": 1336,
+  "onb": 19,
   "opp": null,
   "over": 42,
   "sociaal_minimum": null,
@@ -245,6 +268,7 @@
   "voor2000": null,
   "won": 4335,
   "woz": 356,
+  "zijde": "oost",
   "zonder_kinderen": 18
  },
  "_nijmegen": {
