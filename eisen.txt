@@ -1,6 +1,9 @@
 # Wat de ophaalrondes van nijmegen-marktdata moeten doen, en vooral wat ze nooit
 # mogen doen.
 #
+# Instellingen voor eisen.py (zie instellingen() daar):
+# instelling: startworkflow = voorraad.yml
+#
 # HERKOMST. Deze eisen stonden tot 11 november in eisen.txt van de vastgoedbrief
 # en verhuisden met hun modules mee naar deze openbare repo. Eisen die ook in
 # de brief worden afgedwongen, staan daar nog met hun eigen proef; dat staat er
