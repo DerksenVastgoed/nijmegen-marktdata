@@ -698057,11 +698057,11 @@
    "adressen_nieuw": 0,
    "adressen_onveranderd": 0,
    "adressen_verwijderd": 0,
-   "buiten_de_ring": 12495,
+   "buiten_de_ring": 8443,
    "datum": "2026-11-11",
    "fouten": 1,
    "historie_overgeslagen": 0,
-   "laatste_fout": "tijdbudget van 600s om in tegel 5.922500,51.777500,5.951250,51.795000 na 10 van de 25 tegels",
+   "laatste_fout": "tijdbudget van 180s om in tegel 5.865000,51.865000,5.922500,51.900000 na 16 van de 28 tegels",
    "met_punt": 0,
    "niet_woningen_bewaard": 2376,
    "niet_woonfunctie": 0,
@@ -698071,7 +698071,7 @@
    "om_een_signaal": 0,
    "opgeleverd": 0,
    "opgeleverde_adressen": [],
-   "opnieuw_gezien": 2048,
+   "opnieuw_gezien": 0,
    "pand_behouden": 0,
    "pand_open": 0,
    "pand_open_totaal": 0,
@@ -698087,16 +698087,16 @@
    "postcodes_totaal": 1517,
    "punt_behouden": 0,
    "ronde_cyclus_begonnen": "2026-11-11",
-   "ronde_cyclus_runs": 1,
-   "ronde_hervat": false,
-   "ronde_objecten": 14543,
-   "ronde_paginas": 21,
+   "ronde_cyclus_runs": 2,
+   "ronde_hervat": true,
+   "ronde_objecten": 8443,
+   "ronde_paginas": 12,
    "ronde_ronde_af": false,
-   "ronde_seconden": 647.5,
-   "ronde_tegels": 10,
-   "ronde_tegels_deze_run": 10,
-   "ronde_tegels_gedeeld": 4,
-   "ronde_tegels_over": 18,
+   "ronde_seconden": 200.2,
+   "ronde_tegels": 16,
+   "ronde_tegels_deze_run": 6,
+   "ronde_tegels_gedeeld": 5,
+   "ronde_tegels_over": 15,
    "statussen": {},
    "terug_in_de_pijplijn": 0,
    "van_soort_gewisseld": 0,
@@ -698131,45 +698131,22 @@
   },
   "panden": {
    "cyclus_begonnen": "2026-11-11",
-   "cyclus_runs": 1,
+   "cyclus_runs": 2,
    "datum": "2026-11-11",
-   "fout": "tijdbudget van 600s om in tegel 5.807500,51.865000,5.865000,51.900000 na 17 van de 25 tegels",
-   "hervat": false,
-   "met_bouwjaar": 68880,
-   "met_status": 68880,
-   "objecten": 72281,
-   "omzettingen": 68880,
-   "paginas": 81,
-   "pandstatussen": {
-    "Bouw gestart": 326,
-    "Bouwvergunning verleend": 722,
-    "Niet gerealiseerd pand": 715,
-    "Pand buiten gebruik": 4,
-    "Pand gesloopt": 6505,
-    "Pand in gebruik": 59915,
-    "Pand in gebruik (niet ingemeten)": 71,
-    "Pand ten onrechte opgevoerd": 392,
-    "Sloopvergunning verleend": 48,
-    "Verbouwing pand": 182
-   },
+   "fout": "tijdbudget van 0s om na 17 van de 28 tegels; de ronde is niet af",
+   "hervat": true,
+   "met_bouwjaar": 0,
+   "met_status": 0,
+   "objecten": 0,
+   "omzettingen": 0,
+   "paginas": 0,
    "ronde_af": false,
-   "seconden": 600.4,
+   "seconden": 0.0,
    "tegels": 17,
-   "tegels_deze_run": 17,
+   "tegels_deze_run": 0,
    "tegels_gedeeld": 4,
    "tegels_over": 11,
-   "velden_in_antwoord": [
-    "aantal_verblijfsobjecten",
-    "bouwjaar",
-    "documentdatum",
-    "documentnummer",
-    "gebruiksdoel",
-    "geconstateerd",
-    "identificatie",
-    "rdf_seealso",
-    "status",
-    "verblijfsobject.href"
-   ]
+   "velden_in_antwoord": []
   },
   "stand": {
    "met_label": 16940,
@@ -819505,7 +819482,7 @@
   "open_panden": {},
   "pand": {
    "begonnen": "2026-11-11",
-   "runs": 1,
+   "runs": 2,
    "tegels_gedeeld": 4,
    "tegels_klaar": 17,
    "tegels_totaal": 28,
@@ -819564,10 +819541,10 @@
     "postcodes": [],
     "woning": []
    },
-   "runs": 1,
-   "tegels_gedeeld": 4,
-   "tegels_klaar": 10,
-   "tegels_totaal": 28,
+   "runs": 2,
+   "tegels_gedeeld": 5,
+   "tegels_klaar": 16,
+   "tegels_totaal": 31,
    "wacht": [
     [
      "5.750000,51.760000,5.807500,51.795000",
@@ -819614,32 +819591,20 @@
      0
     ],
     [
-     "5.865000,51.865000,5.922500,51.900000",
-     0
-    ],
-    [
-     "5.922500,51.760000,5.951250,51.777500",
+     "5.865000,51.865000,5.893750,51.882500",
      1
     ],
     [
-     "5.951250,51.760000,5.980000,51.777500",
+     "5.893750,51.865000,5.922500,51.882500",
      1
     ],
     [
-     "5.922500,51.777500,5.936875,51.786250",
-     2
+     "5.865000,51.882500,5.893750,51.900000",
+     1
     ],
     [
-     "5.936875,51.777500,5.951250,51.786250",
-     2
-    ],
-    [
-     "5.922500,51.786250,5.936875,51.795000",
-     2
-    ],
-    [
-     "5.936875,51.786250,5.951250,51.795000",
-     2
+     "5.893750,51.882500,5.922500,51.900000",
+     1
     ]
    ]
   }
