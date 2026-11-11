@@ -1,0 +1,153 @@
+{
+ "bron": "CBS Wijk- en Buurtkaart 2025 via PDOK; keuzes uit wijken.py",
+ "jaar": "2025",
+ "maakt_niet_uit": {
+  "code": "maakt_niet_uit",
+  "label": "Maakt niet uit"
+ },
+ "keuzes": [
+  {
+   "code": "centrum",
+   "label": "Centrum",
+   "buurten": [
+    "Benedenstad",
+    "Stadscentrum"
+   ]
+  },
+  {
+   "code": "bottendaal",
+   "label": "Bottendaal",
+   "buurten": [
+    "Bottendaal"
+   ]
+  },
+  {
+   "code": "galgenveld",
+   "label": "Galgenveld",
+   "buurten": [
+    "Galgenveld"
+   ]
+  },
+  {
+   "code": "hunnerberg",
+   "label": "Hunnerberg",
+   "buurten": [
+    "Hunnerberg"
+   ]
+  },
+  {
+   "code": "biezen",
+   "label": "De Biezen",
+   "buurten": [
+    "Biezen"
+   ]
+  },
+  {
+   "code": "altrade",
+   "label": "Altrade",
+   "buurten": [
+    "Altrade"
+   ]
+  },
+  {
+   "code": "hengstdal",
+   "label": "Hengstdal",
+   "buurten": [
+    "Hengstdal"
+   ]
+  },
+  {
+   "code": "hees",
+   "label": "Hees en Heseveld",
+   "buurten": [
+    "Hees",
+    "Heseveld"
+   ]
+  },
+  {
+   "code": "heyendaal",
+   "label": "Heyendaal en Brakkenstein",
+   "buurten": [
+    "Brakkenstein",
+    "Heijendaal"
+   ]
+  },
+  {
+   "code": "dukenburg",
+   "label": "Dukenburg en Lindenholt",
+   "buurten": [
+    "'t Acker",
+    "'t Broek",
+    "Aldenhof",
+    "Bijsterhuizen",
+    "De Kamp",
+    "Kerkenbos",
+    "Lankforst",
+    "Malvert",
+    "Meijhorst",
+    "Neerbosch-West",
+    "Staddijk",
+    "Tolhuis",
+    "Vogelzang",
+    "Weezenhof",
+    "Westkanaaldijk",
+    "Zwanenveld"
+   ]
+  },
+  {
+   "code": "noord",
+   "label": "Nijmegen-Noord",
+   "buurten": [
+    "Lent",
+    "Oosterhout",
+    "Ressen"
+   ]
+  }
+ ],
+ "buurt_wijk": {
+  "'t Acker": "Lindenholt",
+  "'t Broek": "Lindenholt",
+  "Aldenhof": "Dukenburg",
+  "Altrade": "Nijmegen-Oost",
+  "Benedenstad": "Nijmegen-Centrum",
+  "Biezen": "Nijmegen-Oud-West",
+  "Bijsterhuizen": "Lindenholt",
+  "Bottendaal": "Nijmegen-Oost",
+  "Brakkenstein": "Nijmegen-Zuid",
+  "De Kamp": "Lindenholt",
+  "Galgenveld": "Nijmegen-Oost",
+  "Goffert": "Nijmegen-Midden",
+  "Groenewoud": "Nijmegen-Oost",
+  "Grootstal": "Nijmegen-Zuid",
+  "Hatert": "Nijmegen-Zuid",
+  "Hatertse Hei": "Nijmegen-Zuid",
+  "Haven- en industrieterrein": "Nijmegen-Nieuw-West",
+  "Hazenkamp": "Nijmegen-Midden",
+  "Hees": "Nijmegen-Nieuw-West",
+  "Heijendaal": "Nijmegen-Midden",
+  "Hengstdal": "Nijmegen-Oost",
+  "Heseveld": "Nijmegen-Nieuw-West",
+  "Hunnerberg": "Nijmegen-Oost",
+  "Kerkenbos": "Lindenholt",
+  "Kwakkenberg": "Nijmegen-Oost",
+  "Lankforst": "Dukenburg",
+  "Lent": "Nijmegen-Noord",
+  "Malvert": "Dukenburg",
+  "Meijhorst": "Dukenburg",
+  "Neerbosch-Oost": "Nijmegen-Nieuw-West",
+  "Neerbosch-West": "Lindenholt",
+  "Nije Veld": "Nijmegen-Midden",
+  "Oosterhout": "Nijmegen-Noord",
+  "Ooyse Schependom": "Nijmegen-Oost",
+  "Ressen": "Nijmegen-Noord",
+  "St. Anna": "Nijmegen-Midden",
+  "Staddijk": "Dukenburg",
+  "Stadscentrum": "Nijmegen-Centrum",
+  "Tolhuis": "Dukenburg",
+  "Vogelzang": "Dukenburg",
+  "Weezenhof": "Dukenburg",
+  "Westkanaaldijk": "Lindenholt",
+  "Wolfskuil": "Nijmegen-Oud-West",
+  "Zwanenveld": "Dukenburg"
+ }
+}
