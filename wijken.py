@@ -52,7 +52,7 @@ PDOK_TMPL = ("https://api.pdok.nl/cbs/wijken-en-buurten-{jaar}/ogc/v1/collection
 # code, label op het zoekprofiel, en waaruit de keuze bestaat. "Nijmegen-Noord"
 # is de hele CBS-wijk (Lent, Oosterhout, Ressen en de rest), niet alleen Lent.
 KEUZES = (
-    ("centrum", "Centrum", {"wijk": ["Centrum"]}),
+    ("centrum", "Centrum", {"wijk": ["Nijmegen-Centrum"]}),
     ("bottendaal", "Bottendaal", {"buurt": ["Bottendaal"]}),
     ("galgenveld", "Galgenveld", {"buurt": ["Galgenveld"]}),
     ("hunnerberg", "Hunnerberg", {"buurt": ["Hunnerberg"]}),
