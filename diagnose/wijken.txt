@@ -1,1 +1,2 @@
 wijkindeling niet ververst: centrum: CBS-wijk 'Centrum' bestaat niet in 2025
+wijkindeling niet ververst: centrum: CBS-wijk 'Centrum' bestaat niet in 2025. CBS-wijken in 2025: Dukenburg, Lindenholt, Nijmegen-Centrum, Nijmegen-Midden, Nijmegen-Nieuw-West, Nijmegen-Noord, Nijmegen-Oost, Nijmegen-Oud-West, Nijmegen-Zuid
