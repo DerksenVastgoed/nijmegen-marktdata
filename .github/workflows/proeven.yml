@@ -1,0 +1,34 @@
+# De eisen nameten bij elke push en elke pull request.
+#
+# Dit is de poort die in de brief als stap in de grote workflow zat. Hier
+# draait hij los, zodat een PR rood staat voordat hij gemerged wordt, en niet
+# pas bij de eerstvolgende ronde.
+name: Proeven
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  eisen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Alle eisen en hun proeven
+        # DE UITKOMST GAAT OOK NAAR DE SAMENVATTING VAN DE RUN. Het joblogboek
+        # is van buiten de runner niet altijd te lezen; de samenvatting staat
+        # bij de run en de PR. Zie leesbaar_kanaal() in eisen.py.
+        run: |
+          set -o pipefail
+          python eisen.py --proef 2>&1 | tee proef.log
+          status=${PIPESTATUS[0]}
+          { echo '## eisen.py --proef'; echo '```'; tail -c 6000 proef.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $status

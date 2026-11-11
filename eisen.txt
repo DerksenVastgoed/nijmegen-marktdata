@@ -1,0 +1,425 @@
+# Wat de ophaalrondes van nijmegen-marktdata moeten doen, en vooral wat ze nooit
+# mogen doen.
+#
+# HERKOMST. Deze eisen stonden tot 11 november in eisen.txt van de vastgoedbrief
+# en verhuisden met hun modules mee naar deze openbare repo. Eisen die ook in
+# de brief worden afgedwongen, staan daar nog met hun eigen proef; dat staat er
+# dan bij onder 'let op'.
+#
+# WAAROM DIT BESTAAT. De regels waaraan de brief zich houdt stonden verspreid
+# over 33.000 regels docstrings en workflowcommentaar, elk opgeschreven op de
+# dag dat het misging. Dat leest niemand terug, en op 11 oktober kostte het
+# twee keer iets: drie sleutelconventies die nergens stonden, en een
+# voorbehoud dat op twee plekken stond en uiteen was gelopen zonder dat
+# iemand het zag.
+#
+# WAAROM HET GEEN MARKDOWN IS. Een overzichtsdocument veroudert stil. Dit
+# bestand wordt gelezen door eisen.py, en elke eis noemt de proef die hem
+# handhaaft. Verwijst een eis naar een controle die niet bestaat of niet
+# draait, dan is eisen.py --proef rood. Een eis die niemand handhaaft hoort
+# dat eerlijk te zeggen in plaats van te suggereren dat hij veilig is.
+#
+# HOE JE EEN EIS TOEVOEGT. Een blok begint met een regel die alleen --- is.
+# Daarna velden, één per regel, als "veld: waarde". Commentaar met #. Een
+# waarde mag doorlopen op de volgende regel als die met twee spaties begint.
+#
+#   Verplicht:
+#     eis        wat er moet gebeuren of nooit mag gebeuren, in één zin.
+#                Schrijf het als een eis en niet als een beschrijving van de
+#                code: "de brief spreekt zichzelf niet tegen", niet "er is
+#                een controle op tegenspraak".
+#     waarom     de datum en de gebeurtenis waardoor deze eis er staat. Zonder
+#                die herkomst wordt een eis bij de eerste verbouwing
+#                weggehaald omdat niemand meer weet waar hij voor stond.
+#     proef      welke controle hem handhaaft, als "module" of
+#                "module:naam van de controle". De naam moet letterlijk in de
+#                bron van die module staan. Staat er "-", dan wordt deze eis
+#                NIET gehandhaafd, en dat is een eerlijk antwoord.
+#
+#   Mag:
+#     soort      brief, gegevens of werking. Alleen voor de groepering in het
+#                gezondheidsrapport.
+#     let op     een waarschuwing bij deze eis, bijvoorbeeld waarom hij niet
+#                verder te handhaven is dan hij nu is.
+
+---
+eis: Eén pand is één record. Een pand staat nooit onder twee sleutels in
+  hetzelfde bestand.
+waarom: 11 oktober. pandgeschiedenis.json had 1.777 records voor 1.721 panden
+  en kamerverhuur_objecten.json 951 voor 947. In de helft die een lezer met de
+  schone sleutel niet vindt, zaten 56 gebeurtenissen, waaronder de onttrekking
+  van 2018 op Professor Molkenboerstraat 18. Voor de kamerverhuurtoets is dat
+  het verschil tussen onttrokken en schoon.
+proef: pandsleutel:de de-vorm is weg
+soort: gegevens
+
+---
+eis: Een opzoeking vindt dit pand, of niets. Nooit de buren.
+waarom: 11 oktober. De zoeklijst die ruim genoeg is om elke oude sleutelvorm
+  te vinden, is ook ruim genoeg om mis te grijpen: met de vorm zonder
+  huisletter erbij kwam "Augustijnenstraat 25B" uit op het record van 25, bij
+  139 van de 2.105 adressen die we kennen.
+proef: pandsleutel:bezette sleutel wordt niet overschreven
+soort: gegevens
+
+---
+eis: Een veld dat bij het gebouw hoort, staat bij het gebouw en verhuist niet
+  naar een adresrecord.
+waarom: 11 oktober. Het samenvoegen van dubbele records vulde lege velden aan
+  uit de andere helft, ook bag_gezien, en dat zette bij 53 panden een datum
+  van acht dagen oud terug op het adresrecord terwijl in _panden de verse
+  datum stond. pandlezer.laad() laat wat bij het adres staat winnen.
+proef: pandsleutel:_panden blijft
+soort: gegevens
+
+---
+eis: Een stap die niets oplevert, meldt dat zelf. Een lege uitkomst is nooit
+  een stille success.
+waarom: 10 oktober, twee keer. De voorraadstap leverde nul adressen op en
+  meldde toch succes, omdat er een "|| echo" achter stond. En het
+  splitsingenblok werd tien dagen lang elke dag gemaakt en door niets gelezen,
+  omdat de stap die het schreef na de stap liep die het moest opnemen.
+proef: voorraad_bag
+soort: werking
+
+---
+eis: Een lege uitkomst van een externe bron wordt nooit opgeschreven als een
+  eigenschap van de woningvoorraad.
+waarom: 10 oktober. De labelfase vroeg 818 adressen op en vond nul labels:
+  803 kwamen terug als "geen label bekend" en 15 als HTTP 400. Die 803 waren
+  geen antwoord maar een veldnaam die niet bestond. De API gaf HTTP 200, de
+  lus zocht alleen "labelLetter" van de zes mogelijke namen, en dat werd
+  opgeschreven alsof die woningen geen label hebben. De pandgeschiedenis kent
+  er met de werkende aanroep 1.384.
+proef: eponline:alle zes veldnamen gelezen
+soort: gegevens
+
+---
+eis: De vorm van een antwoord van buiten wordt vastgelegd uit een echt
+  antwoord, en niet alleen afgeleid uit onze eigen lezers.
+waarom: 10 oktober. De labelfase las een van de zes veldnamen waaronder het
+  label kan staan, en in de repo stond geen enkel echt antwoord van EP-Online
+  om dat tegen te houden. 818 aanroepen, nul labels, en het zag eruit als een
+  eigenschap van de woningvoorraad. Een proef op vormen die wij zelf hebben
+  opgeschreven, ziet een zevende veldnaam niet.
+proef: eponline:een onbekende labelveldnaam wordt gemeld
+soort: gegevens
+let op: Het echte antwoord komt uit de workflow, want de EP-sleutel staat
+  alleen daar. Zolang eponline_antwoordvorm.json er niet is, zegt de proef
+  dat hij over de API zelf niets zegt, en is de controle op de zevende
+  veldnaam alleen nagemeten op een gemaakt antwoord.
+
+---
+eis: Een energielabel wordt nooit met een ander label vergeleken zonder de
+  rekenmethode erbij.
+waarom: 12 oktober. Het eerste echte antwoord van EP-Online dat in de repo
+  terechtkwam, bracht aan het licht dat in pand 0268100000026050 vijf labels
+  staan onder twee methodes: D en D volgens de Rekenmethodiek Definitief
+  Energielabel van 2014, en C, B en C volgens NTA 8800:2024. Wij bewaarden
+  alleen de letter en de datum, dus elke vergelijking tussen die labels liep
+  over twee grondslagen. Zie eponline_antwoordvorm.json.
+proef: eponline:de rekenmethode komt mee
+soort: gegevens
+
+---
+eis: De ring staat op één plek, ring.py, en geen ander script schrijft de
+  lijst van ringbuurten zelf uit.
+waarom: 15 oktober, Mark wilde Hunnerberg en St. Anna erbij. De lijst stond
+  op vijf plekken: marktprijzen_bag, buurten_tabel, drie keer in
+  brief_verhalend, en als terugval in buurtinventaris. Een buurt erbij in
+  marktprijzen_bag had de CBS-tabel, de buurtportretten en de weetjes niet
+  geraakt, en de brief had dan over twee verschillende ringen geschreven.
+  De proef zoekt in elk .py-bestand naar vier of meer ringnamen als losse
+  strings binnen vijf regels; tegen de code van voor deze wijziging vond hij
+  brief_verhalend en marktprijzen_bag.
+proef: ring:schrijft de ring zelf uit
+soort: werking
+
+---
+eis: Een nieuwe ringbuurt wordt dezelfde dag opgehaald, niet pas op zondag.
+waarom: 15 oktober. De postcodes per buurt worden alleen op zondag ververst,
+  en de voorraad zeeft op die postcodes. Een buurt erbij had tot zondag een
+  lege voorraad gegeven, en de labels en de 3D BAG daarna nog later. Beide
+  workflows vragen nu buurtinventaris.py --dekt-ring, en halen de inventaris
+  opnieuw op als er een buurt ontbreekt.
+proef: buurtinventaris:zonder de laatste ringbuurt telt als
+soort: werking
+
+---
+eis: Een inhaalslag op oude records heeft een datumgrens, zodat hij ophoudt.
+waarom: 12 oktober. De rekenmethode wordt sinds vandaag bij een label
+  bewaard, en de 67 labels die er al stonden hebben hem niet. De wachtrij
+  vraagt een gevonden label pas opnieuw als het verloopt, dus zonder
+  inhaalslag blijft die grondslag een jaar onzichtbaar. Maar een inhaalslag
+  op de voorwaarde "zolang het veld ontbreekt" vraagt een adres waarvan de
+  bron dat veld nooit geeft voor altijd opnieuw, elke ronde een aanroep.
+  Dezelfde vorm als GRONDSLAG_VANAF in splitsing_voltooid.py.
+proef: voorraad_bag:de inhaalslag op de rekenmethode
+soort: werking
+
+---
+eis: Een fout van ons wordt opnieuw geprobeerd, een weigering over een adres
+  niet.
+waarom: 10 oktober. De labelfase schreef bij een fout niet op dat het adres
+  gevraagd was, dus bleven de 15 adressen met HTTP 400 elke ronde vooraan in
+  de wachtrij staan. Een netwerkstoring of een 429 is van ons en hoort wel
+  opnieuw; een 400 of 404 op alle routes gaat nooit lukken.
+proef: eponline:400 is definitief
+soort: werking
+
+---
+eis: Wat de brief over een pand zegt, komt uit de pandgegevens en niet uit de
+  objectgegevens. Die twee hebben elk hun eigen status in de BAG.
+waarom: 11 oktober. In het blok over de pijplijn stond "het pand heeft
+  vergunning of de bouw is gestart". Dat is de definitie van het CBS en die
+  gaat over de status van het PAND, terwijl wij de status van het
+  verblijfsOBJECT meten; de pandstatus sloegen we niet eens op. De zin
+  beweerde dus iets wat niet gemeten was. Mark vroeg of dit niet het verschil
+  tussen een pand-id en een object-id was, en dat was het.
+proef: voorraad_bag
+deels: ja
+let op: Dat de tekst geen pandstatus beweert zonder hem te hebben, is niet
+  machinaal te toetsen. Wat de proef wel vasthoudt is de scheiding zelf:
+  objecten met status gevormd horen in de pijplijn en niet in de voorraad.
+  De pandfase schrijft de pandstatus nu op, dus na een volledige ronde is het
+  onderscheid tussen nieuwbouw en transformatie wel te maken.
+soort: brief
+
+---
+eis: Een veld dat een bron meegeeft, wordt opgeschreven of met reden
+  weggelaten, niet stilzwijgend weggegooid.
+waarom: Drie keer dezelfde fout. Op 10 oktober gooide de objectfase het
+  gebruiksdoel weg, waardoor elk adresseerbaar object een woning heette. Op
+  11 oktober las de labelfase een van de zes veldnamen van EP-Online en vond
+  nul labels. En dezelfde dag gooide de pandfase alles weg behalve de
+  identificatie, inclusief de pandstatus die nieuwbouw van transformatie
+  scheidt. De pandfase schrijft nu op welke velden PDOK werkelijk meegeeft,
+  zodat de volgende ronde het vertelt in plaats van dat wij het aannemen.
+proef: voorraad_bag
+deels: ja
+let op: Niet af te dwingen; een proef kan niet weten welk veld een bron
+  meegeeft. Wat er wel is: de pandfase noteert de ontvangen veldnamen in de
+  stand, dus een weggegooid veld is daarna te zien in plaats van te raden.
+soort: werking
+
+---
+eis: Een verblijfsobject kan in meer dan een pand liggen, en dan houden we ze
+  beide.
+waarom: 11 oktober. De omzetting van PDOK's pandsleutel nam de eerste sleutel
+  die oploste en gooide de rest weg met een break. De Waarderingskamer zegt
+  het zo: "In de BAG ligt bij elk verblijfsobject vast in welk pand (of
+  panden) het verblijfsobject is gelegen." Welk pand je te pakken had, hing
+  dus af van de volgorde in het antwoord, en dat raakt alles wat op pand
+  joint: de pandgeschiedenis, de 3D BAG, de bouwblokcontrole bij
+  kamerverhuur, en de pandstatus die nieuwbouw van transformatie scheidt.
+  Hoe vaak het voorkomt konden we niet eens meten, want we bewaarden er een.
+proef: voorraad_bag
+soort: gegevens
+
+---
+eis: Een adres waarover wij een bekendmaking melden, halen we ook op uit de
+  BAG, ook als het buiten de zes focusbuurten ligt.
+waarom: 14 oktober. Mark stond voor Berg en Dalseweg 11, een kernsignaal uit
+  de brief van die ochtend: een aanvraag om splitsingen van 2 naar 4 woningen
+  te legaliseren. Hij vroeg of de vergunning ook over nummer 13 gaat. Wij
+  konden niets zeggen: geen oppervlakte, geen bouwjaar, geen gebruiksdoel,
+  geen aantal eenheden. Dat pand ligt in Hunnerberg en de voorraad dekt zes
+  ringbuurten. Nagemeten over alle signalen: 327 panden in
+  pandgeschiedenis.json hebben een bekendmaking, 150 staan in de voorraad en
+  177 niet; bij 131 van die 177 is nooit gekeken en alle 131 hebben een
+  huisnummer. Over 54 procent van onze eigen signalen stond er dus een
+  vergunningstitel in de brief en verder niets. En het kost geen enkele extra
+  vraag: fase 2 haalt elke ronde alle 164.634 verblijfsobjecten van Nijmegen
+  op en zeeft die daarna op onze postcodes, dus de gegevens van nummer 11
+  waren al binnen en werden weggegooid. De zeef is een regel ruimer gemaakt.
+  Elk record draagt nu herkomst, focusbuurt of bekendmaking, want alles wat
+  per buurt rekent mag alleen de focusbuurten tellen; zonder dat veld is dat
+  onderscheid na het opslaan niet meer te maken. De dekking staat als getal in
+  het gezondheidsrapport, zodat zichtbaar is of de ruimere zeef werkelijk iets
+  oplevert.
+proef: voorraad_bag:EEN PAND WAAR EEN BEKENDMAKING OVER GING
+soort: gegevens
+let op: ook afgedwongen in de brief-repo (gezondheid:DE DEKKING VAN ONZE SIGNALEN).
+  SINDS 11 NOVEMBER NIET GEHANDHAAFD IN DE RONDE: pandgeschiedenis.json staat in de
+  privé brief en niet hier, dus de zeef krijgt geen signaaladressen en zegt
+  dat in de log. Dit herstelt zich als de bekendmakingen naar deze repo komen.
+deels: ja
+
+
+---
+eis: Waar een gebied wordt aangewezen staat in het besluit dat het aanwijst,
+  en niet in een kaartlaag.
+waarom: 14 oktober, 's avonds. Ik schreef dat het gereguleerde gebied uit de
+  gepubliceerde lagen niet te bepalen is en dat dat een telefoontje naar de
+  gemeente zou kosten. Mark vroeg of het dan nergens in de beleidsstukken
+  staat. Het staat er wel, en in het kanaal dat wij al dagelijks lezen: het
+  Besluit tot aanwijzing en uitwerking betaald parkeren, jaarlijks als
+  gemeenteblad gepubliceerd, dat van 2026 als gmb-2025-555465. Artikel 1 noemt
+  het gereguleerd vergunningengebied de gebieden van artikel 2, en artikel 2
+  wijst negentien vergunningenzones met naam aan: Centrum, B, 1e ring, 2e ring
+  west, 2e ring oost en de letters I tot Z. Daarmee is wat de kaartlaag niet
+  kon zeggen alsnog te bepalen: van de 33 vlakken in de laag zijn er 17 een
+  vergunningenzone uit artikel 2, 14 een parkeerterrein uit artikel 15 lid d
+  zoals P8 Vierdaagseplein en De Oude Haven, en 2 onbekend. Die laatste zijn
+  D en V: die staan op de kaart en niet in artikel 2. En omgekeerd staan B, I,
+  T en U in het besluit en niet op de kaart, wat een deel verklaart van de
+  4098 adressen in de Binnenstad die buiten elk vlak vielen. Daarom drie
+  uitkomsten en geen twee: vergunningenzone, parkeerterrein en onbekend. Wat
+  ik hieruit meeneem: voordat ik een gat in de gegevens een gat in de
+  werkelijkheid noem, hoort de vraag te zijn welk besluit het aanwijst.
+proef: parkeerzone:EEN VERGUNNINGENZONE UIT ARTIKEL 2, EEN ONBEKENDE EN EEN TERREIN
+soort: gegevens
+
+---
+eis: Bij elk verblijfsobject bewaren we het punt, en een punt dat we al hadden
+  overleeft een ronde waarin de geometrie ontbreekt.
+waarom: 14 oktober. De parkeernorm verschilt per zone: 0,70 per woning in de
+  binnenstad, 0,8 bij Hatertseweg 338, 1,25 in de schil, en in gereguleerd
+  gebied kan de eis helemaal wegvallen. Zonder de zone van een pand is elke
+  parkeerberekening in de brief een gok. De gemeente publiceert die zones als
+  open data, laag extern_Mobiliteit:MOB_PARKEERNORMERING op
+  services.nijmegen.nl, maar een zone bepalen vraagt een punt, en in
+  voorraad.json stonden 20.045 records zonder een enkele coordinaat. PDOK
+  stuurt de geometrie bij elk verblijfsobject mee in hetzelfde antwoord; die
+  werd weggegooid, net als bij de postcodezeef eerder die dag. Ontbreekt de
+  geometrie, dan blijft het veld leeg en telt de ronde dat: een geraden punt
+  levert een parkeernorm op die klopt zolang niemand hem nameet. Een
+  omgekeerd coordinaat wordt geweigerd, want Nijmegen ligt rond 5,8 oost en
+  51,8 noord. En het punt wordt overgenomen uit het oude record als de ronde
+  er geen vindt, want de ronde bouwt elk record opnieuw op; zonder die regel
+  verdwijnt het zoals op 12 oktober de rekenmethode van 698 labels verdween.
+proef: voorraad_bag:HET PUNT BIJ HET PAND, EN GEEN GERADEN PUNT
+soort: gegevens
+
+---
+eis: Een zone die wij aan een pand hangen komt uit een veld dat is vastgesteld
+  en niet geraden, en bij twijfel komt er geen zone.
+waarom: 14 oktober, de tweede helft van de parkeerzone. De norm verschilt per
+  zone en in gereguleerd gebied kan de eis wegvallen, dus de zone bepaalt de
+  uitkomst. De lagen staan klaar als open data: MOB_PARKEERNORMERING voor de
+  norm en MOB_BETAALDPARKEREN voor het gereguleerde gebied. Maar
+  services.nijmegen.nl is vanuit de werkomgeving niet te bereiken, dus ken ik
+  de veldnamen niet, en een geraden veldnaam levert een zone op die klopt
+  zolang niemand hem nameet. Daarom kiest de module het zonefeld op de inhoud:
+  tekst, meer dan een waarde, niet te veel waarden en geen lege. Blijven er
+  meer kandidaten over, dan kiest hij niet en koppelt hij niets. Een pand dat
+  buiten elke zone valt verliest zijn oude zone, want een zone die blijft
+  staan terwijl hij niet meer geldt is een stille onwaarheid. De asvolgorde
+  wordt gemeten en niet aangenomen: WFS 1.0.0 geeft EPSG:4326 als
+  lengte-breedte en 1.1.0 omgekeerd, en omgewisseld ligt Nijmegen in de
+  Indische Oceaan, waardoor elk pand buiten elke zone zou vallen en de
+  parkeerregel stil uit de brief zou verdwijnen. Vier breuken nagemeten, alle
+  vier gemeld.
+proef: parkeerzone:HET ZONEFELD UIT DE INHOUD; parkeerzone:DE ASVOLGORDE GEMETEN
+soort: gegevens
+
+---
+eis: Een veld heet naar wat het meet en niet naar wat wij willen weten.
+waarom: 14 oktober, 's avonds, en dit is het geval waar ik het bijna in liet
+  staan. De parkeereis bij splitsen valt weg in gereguleerd gebied, dus wilde
+  ik per pand weten of daar betaald parkeren geldt. De gemeente publiceert
+  MOB_BETAALD_PARKEREN, dus zette ik per punt een veld betaald_parkeren op
+  waar of onwaar. Dat leverde 15.645 gereguleerde adressen op, een plausibel
+  getal. Maar er stond ook: 4098 van de 6121 adressen in de Binnenstad liggen
+  buiten elk betaaldvlak. Dat kan niet, want in de Nijmeegse binnenstad geldt
+  overal betaald parkeren. De laag legt het zelf uit: van de 33 vlakken zijn
+  sommige gebieden (Centrum met 160 punten, 1e ring met 177, de lettergebieden
+  D tot Z) en andere losse parkeergarages (P8 Vierdaagseplein met 5 punten,
+  Lage Markt met 5, Doddendaal met 7, Radboud UMC). Een punt in zo'n vlak
+  betekent dus dat daar een parkeerplek ligt, niet dat het adres in
+  gereguleerd gebied valt; in een voetgangersgebied zonder parkeervakken valt
+  een woning erbuiten terwijl er wel betaald parkeren geldt. Het veld heet nu
+  betaald_parkeervlak en draagt de naam van het vlak in plaats van waar of
+  onwaar, en het oude veld wordt bij elke ronde weggehaald. Een waar/onwaar
+  veld met de naam betaald_parkeren leest als "hier valt de parkeereis weg",
+  en dat is precies de bewering die de laag niet waarmaakt. De normlaag doet
+  het wel: 20.292 van de 20.321 adressen vallen in precies een vlak, met veld
+  GEBIED en zes waarden.
+proef: parkeerzone:HET VELD NOEMT HET VLAK EN NIET EEN JA OF NEE
+soort: gegevens
+
+---
+eis: "Geen label" van een kapotte aanroep is geen antwoord, en wordt een keer
+  opnieuw gevraagd.
+waarom: 14 oktober. Tot de reparatie in de nacht van 11 op 12 oktober las de
+  labelfase een veldnaam die EP-Online niet geeft. De adressen die toen
+  werden gevraagd kregen "geen label" en de datum van die dag, en kwamen
+  daardoor pas na 365 dagen terug. Dat waren er 1.097. De pandgeschiedenis
+  kent voor 57 daarvan wel een label (5,2 procent); bij de 5.485 adressen die
+  na de reparatie "geen label" kregen is dat 5 (0,09 procent). De
+  reparatie hield de fout tegen voor nieuwe vragen, maar ruimde de oude
+  antwoorden niet op. Nu worden ze een keer opnieuw gevraagd, vooraan in de
+  rij, begrensd door een datum zodat de inhaalslag ophoudt.
+proef: voorraad_bag:wordt niet opnieuw gevraagd
+soort: werking
+
+---
+eis: Het veld sleutel in de voorraad is de sleutel van pandsleutel, en geen
+  eigen vorm.
+waarom: 14 oktober. adressleutel() in voorraad_bag.py haalde alleen
+  hoofdletters en spaties weg. Punten, accenten en titels bleven staan, en
+  bij 2.692 van de 24.703 records week het veld af van pandsleutel.sleutel():
+  "st.annastraat1d", "professorschrijnenstraat11", "mariënburgsestraat10",
+  "deruyterstraat105". Dat is de vijftiende sleutelfunctie, terwijl
+  pandsleutel.py juist bestaat omdat veertien functies uiteenliepen. Elke
+  lezer die erop joinde moest het zelf opvangen, en twee deden dat ook.
+proef: voorraad_bag:het veld sleutel wijkt af van pandsleutel
+soort: gegevens
+
+---
+eis: Een bekendmaking haalt alleen Nijmeegse objecten binnen; een adres is
+  geen id.
+waarom: 14 oktober. De zeef op bekendmakingen vergeleek straat en huisnummer
+  zonder woonplaats. Daardoor stonden er 29 objecten uit andere gemeenten in
+  de voorraad, Bachstraat 3 drie keer en Schoolstraat 15 vier keer, elk met
+  herkomst "bekendmaking". De gemeentecode staat in het BAG-id zelf (0268
+  voor Nijmegen), dus het id weet wat het adres niet weet.
+proef: voorraad_bag:een object met hetzelfde adres in een andere
+soort: gegevens
+
+---
+eis: Een pand dat we al hadden, overleeft een objectronde waarin de
+  pandfase de sleutel niet kon opzoeken. Kende de pandfase de sleutel wel,
+  dan geldt wat zij zegt, ook als dat geen pand is.
+waarom: 9 november 2026, toets_artikel15 stond rood op Keizer Karelplein 25
+  en 31. De oorzaak zat niet in de toets: de pandfase van 7 november stopte
+  na 9 van de 19 tegels op haar tijdbudget, en de objectronde bouwde daarna
+  elk record opnieuw op met pand "". Zo verloren 7.503 van de 24.440
+  woningen hun pand; in eerdere rondes gebeurde hetzelfde met 8.590 en
+  8.575, telkens tot een volgende volledige ronde. De bouwblokcontrole bij
+  kamerverhuur leest het pand, en zonder pand gaf ze over de hele ring bij
+  10 huisnummers een andere uitkomst, alle op het Keizer Karelplein, waarvan
+  5 keer "gekeken en niets gevonden" bij een geblokkeerde kamerroute. Het is
+  dezelfde fout als met het punt (14 oktober) en de labelvelden (12
+  oktober): een veld uit een andere bron dat een onvolledige ronde wist.
+proef: voorraad_bag:EN EEN PAND DAT WE AL HADDEN, OVERLEEFT EEN AFGEBROKEN PANDFASE
+soort: gegevens
+let op: Het behouden pand is het laatst gekende, niet het pand van vandaag.
+  Een echte pandwijziging komt pas binnen bij een ronde die de sleutel wel
+  kent. Hoe vaak dat behouden voorkomt, staat in de stand als pand_behouden.
+  ook afgedwongen in de brief-repo (toets_artikel15:Keizer Karelplein 31).
+---
+eis: De pandfase en de objectronde hervatten over runs: de rij met tegels die
+  nog wachten staat in voorraad.json onder voortgang, en elke run gaat daar
+  verder. Verwijderen gebeurt pas als de hele cyclus rond is, met alles wat
+  de runs van die cyclus zagen. Een tegel die op het budget stuit nadat hij
+  pagina's gaf, gaat gedeeld terug. Een object zonder pand waarvan de
+  pandfase de sleutel nog niet zag, staat op de open lijst tot een run die
+  hem wel ziet. Midden in een cyclus zijn lege postcodes niet gemeten (None)
+  en geeft het gezondheidsrapport geen FOUT zolang de run tegels afmaakt.
+waarom: 9 november 2026. Tot en met 2 november kostte een pagina bij PDOK 1,2
+  tot 2,8 seconden en kwam een ronde rond in 3,3 tot 9 minuten. Op 3
+  november werden beide collecties tegelijk trager, 3,5 tot 22,5 seconden per
+  pagina, en sindsdien kwam geen enkele ronde meer rond in tien minuten: 8
+  runs op rij, in beide fasen.
+  Gevolg: nooit verwijderd, 7.503 woningen tijdelijk zonder pand (zie de eis
+  hierboven), en elke dag een gezondheidsmelding met 897 "lege" postcodes en
+  het advies de doos ruimer te maken, terwijl de doos goed was en de ronde
+  half. Het oude ontwerp rustte op een meting (twee tot drie minuten per
+  ronde) die niet meer gold.
+proef: voorraad_bag:HERVATTEN OVER RUNS; voorraad_bag:VERWIJDEREN PAS NA DE HELE CYCLUS; voorraad_bag:DE OPEN LIJST; voorraad_bag:EEN TEGEL DIE LANGER DUURT DAN HET HELE BUDGET
+soort: gegevens
+let op: Een cyclus over meer dagen ziet een object dat halverwege verdwijnt
+  of verschijnt pas in de volgende cyclus. Een --buurt-proefdraai gebruikt de
+  voortgang niet; dat staat in de code maar heeft geen proef.
+  ook afgedwongen in de brief-repo (gezondheid:DE RONDE OVER MEER RUNS).
