@@ -33,11 +33,7 @@ except Exception:  # noqa
 
 BRON = "kamervergunningen.json"
 UIT = "vergunningen_per_buurt.json"
-# DE CACHE HEET HIER ANDERS DAN IN DE BRIEF. Tot 11 november deelden dit
-# script en het kamerverhuurregister van de brief straat_buurt_cache.json. Dat
-# register zet er ook straten in uit eigen bronnen, en die horen niet in deze
-# openbare repo. Deze cache bevat alleen de straten uit kamervergunningen.json.
-STRAATCACHE = "straat_buurt_pdok.json"
+STRAATCACHE = "straat_buurt_cache.json"
 PDOK = "https://api.pdok.nl/bzk/locatieserver/search/v3_1/free"
 HEADERS = {"User-Agent": "NijmegenVastgoedMonitor/1.0"}
 

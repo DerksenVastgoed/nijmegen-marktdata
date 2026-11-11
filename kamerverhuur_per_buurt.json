@@ -1,0 +1,233 @@
+{
+ "meldingen_per_jaar": {
+  "2023": 13,
+  "2024": 1,
+  "2025": 102,
+  "2026": 102
+ },
+ "per_buurt": {
+  "'t Acker": {
+   "alleen_melding_of_besluit": 3,
+   "alleen_vergunning": 1,
+   "beide": 0,
+   "totaal": 4
+  },
+  "'t Broek": {
+   "alleen_melding_of_besluit": 0,
+   "alleen_vergunning": 1,
+   "beide": 1,
+   "totaal": 2
+  },
+  "Aldenhof": {
+   "alleen_melding_of_besluit": 1,
+   "alleen_vergunning": 0,
+   "beide": 0,
+   "totaal": 1
+  },
+  "Altrade": {
+   "alleen_melding_of_besluit": 18,
+   "alleen_vergunning": 81,
+   "beide": 5,
+   "totaal": 104
+  },
+  "Benedenstad": {
+   "alleen_melding_of_besluit": 10,
+   "alleen_vergunning": 6,
+   "beide": 0,
+   "totaal": 16
+  },
+  "Biezen": {
+   "alleen_melding_of_besluit": 8,
+   "alleen_vergunning": 37,
+   "beide": 1,
+   "totaal": 46
+  },
+  "Bottendaal": {
+   "alleen_melding_of_besluit": 14,
+   "alleen_vergunning": 61,
+   "beide": 3,
+   "totaal": 78
+  },
+  "Brakkenstein": {
+   "alleen_melding_of_besluit": 3,
+   "alleen_vergunning": 21,
+   "beide": 0,
+   "totaal": 24
+  },
+  "De Kamp": {
+   "alleen_melding_of_besluit": 4,
+   "alleen_vergunning": 7,
+   "beide": 0,
+   "totaal": 11
+  },
+  "Galgenveld": {
+   "alleen_melding_of_besluit": 12,
+   "alleen_vergunning": 57,
+   "beide": 3,
+   "totaal": 72
+  },
+  "Goffert": {
+   "alleen_melding_of_besluit": 8,
+   "alleen_vergunning": 2,
+   "beide": 0,
+   "totaal": 10
+  },
+  "Groenewoud": {
+   "alleen_melding_of_besluit": 2,
+   "alleen_vergunning": 5,
+   "beide": 0,
+   "totaal": 7
+  },
+  "Grootstal": {
+   "alleen_melding_of_besluit": 0,
+   "alleen_vergunning": 12,
+   "beide": 0,
+   "totaal": 12
+  },
+  "Hatert": {
+   "alleen_melding_of_besluit": 7,
+   "alleen_vergunning": 11,
+   "beide": 1,
+   "totaal": 19
+  },
+  "Hatertse Hei": {
+   "alleen_melding_of_besluit": 10,
+   "alleen_vergunning": 23,
+   "beide": 0,
+   "totaal": 33
+  },
+  "Haven- en industrieterrein": {
+   "alleen_melding_of_besluit": 8,
+   "alleen_vergunning": 0,
+   "beide": 0,
+   "totaal": 8
+  },
+  "Hazenkamp": {
+   "alleen_melding_of_besluit": 6,
+   "alleen_vergunning": 29,
+   "beide": 3,
+   "totaal": 38
+  },
+  "Hees": {
+   "alleen_melding_of_besluit": 3,
+   "alleen_vergunning": 11,
+   "beide": 0,
+   "totaal": 14
+  },
+  "Heijendaal": {
+   "alleen_melding_of_besluit": 3,
+   "alleen_vergunning": 3,
+   "beide": 0,
+   "totaal": 6
+  },
+  "Hengstdal": {
+   "alleen_melding_of_besluit": 6,
+   "alleen_vergunning": 18,
+   "beide": 1,
+   "totaal": 25
+  },
+  "Heseveld": {
+   "alleen_melding_of_besluit": 10,
+   "alleen_vergunning": 32,
+   "beide": 1,
+   "totaal": 43
+  },
+  "Hunnerberg": {
+   "alleen_melding_of_besluit": 12,
+   "alleen_vergunning": 38,
+   "beide": 2,
+   "totaal": 52
+  },
+  "Kerkenbos": {
+   "alleen_melding_of_besluit": 1,
+   "alleen_vergunning": 0,
+   "beide": 0,
+   "totaal": 1
+  },
+  "Kwakkenberg": {
+   "alleen_melding_of_besluit": 3,
+   "alleen_vergunning": 1,
+   "beide": 0,
+   "totaal": 4
+  },
+  "Lankforst": {
+   "alleen_melding_of_besluit": 1,
+   "alleen_vergunning": 2,
+   "beide": 1,
+   "totaal": 4
+  },
+  "Lent": {
+   "alleen_melding_of_besluit": 0,
+   "alleen_vergunning": 3,
+   "beide": 0,
+   "totaal": 3
+  },
+  "Malvert": {
+   "alleen_melding_of_besluit": 1,
+   "alleen_vergunning": 1,
+   "beide": 0,
+   "totaal": 2
+  },
+  "Meijhorst": {
+   "alleen_melding_of_besluit": 2,
+   "alleen_vergunning": 2,
+   "beide": 0,
+   "totaal": 4
+  },
+  "Methen": {
+   "alleen_melding_of_besluit": 0,
+   "alleen_vergunning": 1,
+   "beide": 0,
+   "totaal": 1
+  },
+  "Neerbosch-Oost": {
+   "alleen_melding_of_besluit": 5,
+   "alleen_vergunning": 16,
+   "beide": 2,
+   "totaal": 23
+  },
+  "Nije Veld": {
+   "alleen_melding_of_besluit": 4,
+   "alleen_vergunning": 14,
+   "beide": 0,
+   "totaal": 18
+  },
+  "Ressen": {
+   "alleen_melding_of_besluit": 0,
+   "alleen_vergunning": 1,
+   "beide": 0,
+   "totaal": 1
+  },
+  "St. Anna": {
+   "alleen_melding_of_besluit": 7,
+   "alleen_vergunning": 57,
+   "beide": 1,
+   "totaal": 65
+  },
+  "Stadscentrum": {
+   "alleen_melding_of_besluit": 35,
+   "alleen_vergunning": 147,
+   "beide": 6,
+   "totaal": 188
+  },
+  "Tolhuis": {
+   "alleen_melding_of_besluit": 4,
+   "alleen_vergunning": 3,
+   "beide": 0,
+   "totaal": 7
+  },
+  "Wolfskuil": {
+   "alleen_melding_of_besluit": 6,
+   "alleen_vergunning": 20,
+   "beide": 0,
+   "totaal": 26
+  },
+  "Zwanenveld": {
+   "alleen_melding_of_besluit": 2,
+   "alleen_vergunning": 4,
+   "beide": 0,
+   "totaal": 6
+  }
+ },
+ "zonder_buurt": 0
+}

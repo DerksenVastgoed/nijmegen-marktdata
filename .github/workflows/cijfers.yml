@@ -94,7 +94,7 @@ jobs:
           ./terugcommitten.sh "Cijfers $(date -u +%F)" \
             woningprijsindex.json corop_prijzen.json bouwkosten_index.json \
             misdrijven_per_buurt.json vergunningen_per_buurt.json \
-            straat_buurt_pdok.json diagnose/woningprijzen.txt \
+            straat_buurt_cache.json diagnose/woningprijzen.txt \
             diagnose/bouwkosten.txt diagnose/vergunningen.txt 2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
 

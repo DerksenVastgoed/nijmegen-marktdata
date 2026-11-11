@@ -27,7 +27,8 @@ Nodig als repo-secrets: `BAG_API_KEY` (Kadaster) en `EP_API_KEY` (RVO EP-Online)
 | `bekendmakingen_archief.json` | per adres de bekendmakingen over gebruik, verbouwing en handhaving, sinds 2012 |
 | `woningprijsindex.json`, `corop_prijzen.json`, `bouwkosten_index.json`, `misdrijven_per_buurt.json` | cijfers van CBS en Kadaster |
 | `kamervergunningen.json` | de vergunningenlijst kamerverhuur van de gemeente Nijmegen, per adres (zaaknummer, soort, datum) |
-| `vergunningen_per_buurt.json`, `straat_buurt_pdok.json` | vergunningen per buurt, en de buurt per straat volgens PDOK |
+| `vergunningen_per_buurt.json`, `straat_buurt_cache.json` | vergunningen per buurt, en de buurt per straat volgens PDOK |
+| `kamerverhuur_objecten.json`, `kamerverhuur_per_buurt.json` | bekende kamerverhuurpanden: vergunningen plus meldingen brandveilig gebruik en besluiten uit het archief; een ondergrens |
 | `diagnose/*.txt` | wat er bij het ophalen misging, als dat zo is |
 | `bag3d.json` | 3D BAG per pand voor de ring en de adressen met een bekendmaking (TU Delft en 3DGI, CC BY 4.0) |
 | `voorraad.json` | woningen en niet-woningen per adres, met oppervlakte, gebruiksdoel, pand en label |
