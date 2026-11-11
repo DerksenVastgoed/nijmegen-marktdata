@@ -1,0 +1,107 @@
+# De officiële bekendmakingen van Nijmegen ophalen, zonder selectie.
+#
+# WAAROM HIER. Tot 11 november haalde de vastgoedbrief zijn bekendmakingen zelf
+# op, gefilterd op een lijst straten. In die lijst stonden ook de straten van de
+# eigen panden. Deze openbare repo haalt alles van Nijmegen op, en de brief kiest
+# daarna zelf. Zo staat er geen enkele eigen selectie in een openbaar bestand.
+#
+# WAT HIJ MAAKT.
+#   bekendmakingen_recent.json   alle bekendmakingen van de laatste 30 dagen
+#   bekendmakingen_archief.json  per adres: bekendmakingen over gebruik,
+#                                verbouwing en handhaving, sinds 2012
+#
+# WANNEER. Vier keer per dag, en met de hand. De brief start om 02:48 UTC; de
+# ronde van 01:37 is er dan. Een geplande cron vuurt op GitHub soms uren te
+# laat, daarom start de wachter van de brief deze workflow ook van buitenaf
+# voordat hij de brief start. Hoe oud de gegevens zijn, staat in
+# bekendmakingen_recent.json onder "opgehaald".
+name: Publicaties van Nijmegen
+
+on:
+  schedule:
+    - cron: "37 1,7,13,19 * * *"
+  workflow_dispatch:
+    inputs:
+      archief_vanaf:
+        description: "Archief bijwerken vanaf deze datum (leeg = 14 dagen terug)."
+        default: ""
+
+concurrency:
+  group: publicaties
+  cancel-in-progress: false
+
+jobs:
+  publicaties:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Repo ophalen
+        uses: actions/checkout@v4
+
+      - name: Python klaarzetten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencies installeren
+        run: pip install requests
+
+      - name: De proeven, voordat er iets wordt opgehaald
+        run: |
+          python sru.py --proef
+          python bekendmakingen_recent.py --proef
+
+      - name: Bekendmakingen van de laatste 30 dagen
+        # Mislukt dit, dan blijft het vorige bestand staan met zijn eigen
+        # tijdstip en de reden onder "fout". De stap wordt rood, de rest loopt
+        # door, en de meldstap zet het in een issue.
+        id: recent
+        continue-on-error: true
+        run: python bekendmakingen_recent.py --dagen 30
+
+      - name: Archief bijwerken
+        id: archief
+        continue-on-error: true
+        run: |
+          VANAF="${{ github.event.inputs.archief_vanaf }}"
+          if [ -z "$VANAF" ]; then
+            VANAF=$(date -u -d "14 days ago" +%F)
+          fi
+          python bekendmakingen_archief.py --vanaf "$VANAF" --stil
+
+      - name: Terugcommitten
+        # De lus staat in terugcommitten.sh; zie daar waarom hij zo is.
+        run: |
+          set -o pipefail
+          ./terugcommitten.sh "Publicaties $(date -u +%F\ %H:%M)" \
+            bekendmakingen_recent.json bekendmakingen_archief.json \
+            2>&1 | tee /tmp/terugcommit.log
+          exit "${PIPESTATUS[0]}"
+
+      - name: Melden in een issue als er iets is mislukt
+        # Een issue per dag, zodat een storing van een dag een melding is en
+        # geen stapel. Ook bij een mislukte ophaalstap, want die is groen
+        # gemaakt met continue-on-error.
+        if: failure() || steps.recent.outcome == 'failure' || steps.archief.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          KOP="Publicaties niet (volledig) opgehaald op $(date -u +%F)"
+          {
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo "Recent: ${{ steps.recent.outcome }}, archief: ${{ steps.archief.outcome }}"
+            echo '```'
+            python -c "import json;d=json.load(open('bekendmakingen_recent.json'));print('opgehaald', d.get('opgehaald'), 'fout', d.get('fout'))" 2>&1 || true
+            tail -c 2000 /tmp/terugcommit.log 2>/dev/null || true
+            echo '```'
+          } > /tmp/melding.md
+          BESTAAND=$(gh issue list --state open --search "$KOP in:title" \
+            --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$BESTAAND" ] && [ "$BESTAAND" != "null" ]; then
+            gh issue comment "$BESTAAND" --body-file /tmp/melding.md
+          else
+            gh issue create --title "$KOP" --body-file /tmp/melding.md
+          fi

@@ -167,7 +167,8 @@ def _eindigt_op_sys_exit(bron):
     return staart.strip().splitlines()[-1][:60]
 
 
-WORKFLOWS = (os.path.join(".github", "workflows", "voorraad.yml"),)
+WORKFLOWS = (os.path.join(".github", "workflows", "voorraad.yml"),
+             os.path.join(".github", "workflows", "publicaties.yml"))
 BRIEFWORKFLOW = WORKFLOWS[0]
 DAGNAMEN = ("zondag", "maandag", "dinsdag", "woensdag", "donderdag",
             "vrijdag", "zaterdag")
@@ -259,6 +260,19 @@ def commitstap(paden=None):
         # terugschrijft heeft geen commitstap en dus ook geen vangnet nodig.
         # De uitzondering volgt uit de inhoud van het bestand en niet uit een
         # lijst met namen, want zo'n lijst veroudert.
+        # EEN WORKFLOW DIE terugcommitten.sh AANROEPT, wordt op dat script
+        # getoetst: daar staat sinds 11 november de lus, zodat twee workflows
+        # niet elk een eigen kopie hebben.
+        if "terugcommitten.sh" in bron:
+            script = os.path.join(os.path.dirname(os.path.dirname(
+                os.path.dirname(os.path.abspath(pad)))), "terugcommitten.sh")
+            try:
+                with open(script, encoding="utf-8") as f:
+                    bron = bron + "\n" + f.read()
+            except Exception as e:
+                fouten.append(f"{pad} roept terugcommitten.sh aan, maar dat "
+                              f"is niet te lezen: {str(e)[:50]}")
+                continue
         if "git commit" not in bron:
             continue
         gekeken += 1

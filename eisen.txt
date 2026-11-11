@@ -240,10 +240,9 @@ waarom: 14 oktober. Mark stond voor Berg en Dalseweg 11, een kernsignaal uit
 proef: voorraad_bag:EEN PAND WAAR EEN BEKENDMAKING OVER GING
 soort: gegevens
 let op: ook afgedwongen in de brief-repo (gezondheid:DE DEKKING VAN ONZE SIGNALEN).
-  SINDS 11 NOVEMBER NIET GEHANDHAAFD IN DE RONDE: pandgeschiedenis.json staat in de
-  privé brief en niet hier, dus de zeef krijgt geen signaaladressen en zegt
-  dat in de log. Dit herstelt zich als de bekendmakingen naar deze repo komen.
-deels: ja
+  Sinds de splitsing komen de signaaladressen uit bekendmakingen_archief.json
+  in deze repo en niet meer uit pandgeschiedenis.json van de brief: alle
+  Nijmeegse bekendmakingen over gebruik of verbouwing, zonder straatselectie.
 
 
 ---
@@ -423,3 +422,26 @@ let op: Een cyclus over meer dagen ziet een object dat halverwege verdwijnt
   of verschijnt pas in de volgende cyclus. Een --buurt-proefdraai gebruikt de
   voortgang niet; dat staat in de code maar heeft geen proef.
   ook afgedwongen in de brief-repo (gezondheid:DE RONDE OVER MEER RUNS).
+
+---
+eis: Een ophaalronde die mislukt, schrijft nooit een lege lijst. Het vorige
+  bestand blijft staan met zijn eigen tijdstip, en de reden komt erbij.
+waarom: 11 november, bij de splitsing van de bekendmakingen. De oude
+  archiefronde gaf bij een pagina die na vier pogingen niet lukte een halve
+  lijst terug, en een lege dag ziet er voor de lezer uit als een rustige dag.
+  "Niet opgehaald" en "niets gepubliceerd" krijgen nooit hetzelfde woord.
+proef: sru:EEN MISLUKTE PAGINA IS EEN FOUT; bekendmakingen_recent:LAAT HET VORIGE BESTAND STAAN
+soort: gegevens
+
+---
+eis: Deze openbare repo selecteert niet op straat, buurt of pand van de
+  eigenaars. Bekendmakingen worden voor heel Nijmegen opgehaald; welke ertoe
+  doen, beslist de brief in zijn eigen privé repo.
+waarom: 11 november. De brief haalde zijn bekendmakingen op met een lijst van
+  29 straten, met daarin de straten van de eigen panden en van de panden van
+  de familie. Mark: "In de openbare repo wil ik geen privé aspecten terug zien
+  zoals straatnamen waar wij in geïnvesteerd zijn."
+proef: -
+let op: niet in code af te dwingen zonder de privé lijst hier neer te zetten,
+  en dat zou precies de fout zijn. Wie een filter op adres toevoegt, hoort dit
+  te lezen.
