@@ -464,3 +464,199 @@ let op: sinds 11 november schrijft hier alleen inhaal-3dbag.yml bag3d.json;
   de voorraadronde start hem alleen. De samenvoeger blijft nodig voor
   lees_samen() en voor de brief, die zijn eigen bestand met deze samenvoeger
   in git samenvoegt.
+
+---
+eis: Een publicatie zonder zaaknummer verdwijnt niet, en een besluit mag op
+  adres aan een aanvraag worden verbonden als er precies een kandidaat is.
+waarom: 14 oktober. Ik ging op zoek naar de zeven besluiten waarvan de
+  aanvraag nergens in het archief stond, en vond iets groters. Bij
+  Pontanusstraat 42 staan beide publicaties er gewoon: de aanvraag van 20
+  januari 2026 om de woning in twee appartementen te splitsen en het besluit
+  van 18 mei om de woning in 2 zelfstandige appartementen te splitsen.
+  Dezelfde zaak, 118 dagen ertussen, en twee verschillende zaaknummers:
+  Z2026-00000134 en Z2025-00009314. Het zaaknummer van de gemeente is dus niet
+  stabiel over de procedure heen. En erger: van de 93 besluiten in het archief
+  dragen 53 helemaal geen zaaknummer, en koppel() sloeg die over zonder else
+  en zonder teller, dus kwamen ze in geen van de drie uitkomsten terug.
+  Nagemeten na de reparatie: 32 paren op zaaknummer, 61 losse besluiten, 44
+  daarvan met precies een kandidaat op adres, 2 met meer dan een kandidaat en
+  15 zonder. Het aantal paren gaat van 32 naar 76. De regel is streng met
+  opzet, want koppel() koos met goede reden niet op adres: zelfde adres,
+  aanvraag voor het besluit, overlappend signaalsoort, en precies een
+  kandidaat. Van die 44 is de mediane tekstgelijkenis 1,00 en de laagste 0,63,
+  en dat zijn formuleringsvarianten van hetzelfde. Elk paar draagt hoe het is
+  verbonden, want een afgeleid verband mag er niet uitzien als een hard
+  verband. En de dagen ertussen zijn de tijd tussen ONZE TWEE WAARNEMINGEN en
+  niet de doorlooptijd van de gemeente; die twee getallen mogen niet in een
+  mediaan terechtkomen. Mijn eerste meting met een eigen script gaf 64 en 47
+  en was fout: dat script telde de besluiten zonder zaaknummer mee die de
+  module weggooide. Een getal uit een script naast de module is geen meting
+  van de module.
+proef: besluit:KOPPELEN OP ADRES, OP HET ECHTE GEVAL VAN PONTANUSSTRAAT 42
+soort: gegevens
+
+---
+eis: Het dossier van een pand noemt de cultuurhistorische dubbelbestemming
+  met de voorbehouden van de bron, en zegt het verschil tussen niet
+  nagekeken, onleesbaar en niets gevonden.
+waarom: 16 en 17 oktober. Bij Groesbeekseweg 118A bepaalde 'Waarde -
+  Cultuurhistorie 2' de doorlooptijd (213 dagen, afwijken met advies van de
+  Adviescommissie Omgevingskwaliteit), en onze dossiers kenden alleen het
+  beschermd gezicht per buurt. Gemeten over 10.239 panden in de ring: 2.734
+  met een cultuurhistorische dubbelbestemming. De bron is niet volledig, dus
+  niets gevonden is geen uitsluitsel. Archeologie staat bij bijna elk pand en
+  komt daarom alleen als opmerking bij uitbreiden of graven.
+proef: bestemming:niet gevraagd, onleesbaar en niets gevonden krijgen
+soort: gegevens
+
+---
+eis: Of een pand in een rijksbeschermd gezicht ligt, wordt per pand gemeten
+  op het vlak van de RCE, niet per buurt aangenomen.
+waarom: 17 oktober. BESCHERMD_GEZICHT stond per buurt als vaste tekst, met
+  "deels de negentiende-eeuwse schil" voor drie buurten en "niet nagekeken"
+  voor Hunnerberg en St. Anna. De grens van een gezicht volgt de buurtgrens
+  niet, dus bij een pand zei "deels" niets. Nu een keer de vlakken ophalen
+  en lokaal toetsen, met gaten als gaten. De bron kent alleen
+  rijksbeschermde gezichten, dus niet erin is nooit niet beschermd.
+proef: gezicht:een punt in het gat telt als binnen
+soort: gegevens
+
+---
+eis: Het dossier noemt per pand het rijksgezicht en het gemeentelijk
+  voorbeschermd stadsbeeld uit een meting, en zegt bij elk van beide het
+  verschil tussen niet nagekeken, gemeten en geen, en gemeten en wel.
+waarom: 18 oktober. Per buurt bleek de oude tekst niet te kloppen:
+  "grotendeels" in het Stadscentrum was 569 van 1.037 panden, en
+  Hunnerberg, "niet nagekeken", lag voor 159 van 897 panden in de
+  19de-eeuwse Stadsuitleg. Het voorbeschermd stadsbeeld Wederopbouwcentrum
+  geldt sinds 4 september 2026 en stond in geen van onze bronnen: 229
+  panden in het werkingsgebied, 217 daarvan buiten elk rijksgezicht, en 77
+  op een stadsbeeldobject. De GIO's staan in RD en de voorraad in WGS84;
+  de omrekening wordt beproefd op het nulpunt van RD en op Plein 1944.
+proef: gezicht:niet nagekeken, geen en wel krijgen geen eigen tekst
+soort: brief
+
+---
+eis: Het dossier noemt per pand wat het erfgoedregister van de gemeente over
+  dat pand zegt (monument, stadsbeeldobject, in procedure, aandachtspand) en
+  onderscheidt niet nagekeken, niets in het register, en alleen een
+  stadsbeeld.
+waarom: 18 oktober. Tot dan zei het dossier bij elk pand "gemeentelijke
+  monumenten zijn niet nagekeken". Het register bleek te vinden via de
+  KaartViewer van de gemeente (extern_Monumenten): 2.781 objecten, bijgewerkt
+  op 15 oktober. In de ring: 481 panden op een gemeentelijk monument, 119 op
+  een rijksmonument, 1.621 op een stadsbeeldobject, 80 in procedure en 2.513
+  in een gemeentelijk beschermd stadsbeeld. De regel bij een gemeentelijk
+  monument komt uit de Erfgoedverordening, art. 14; die bij een
+  stadsbeeldobject uit art. 19 (19 oktober nagelezen: "in enig opzicht
+  wijzigen", zonder uitzondering voor inpandige wijzigingen; tot dan stond
+  er "de buitenkant"). Het aanwijzingsbesluit per stadsbeeld is niet
+  nagelezen en dat staat erbij.
+proef: gezicht:wordt niet gevonden in het register; gezicht:bij een stadsbeeldobject staat niet de regel van art. 19
+soort: brief
+
+---
+eis: Een archeologisch rijksmonument maakt het gebouw erop geen
+  rijksmonument; het staat apart in het dossier, bij graven en bouwen in de
+  bodem.
+waarom: 18 oktober. Van de 261 RCE-punten zijn er 8 archeologisch (klasse
+  "cultural; archaeological"). Flavus 43 lag op zo'n terrein (RCE 397576) en
+  kreeg daardoor de vlag van rijksmonument, die meetelt in de huurpunten.
+proef: gezicht:een archeologisch rijksmonument geeft het gebouw de
+soort: gegevens
+
+---
+eis: Of een pand in het rijksmonumentvlak van het register ligt, beslist de
+  BAG-pandomtrek en niet het pandpunt: de som van het deel van het pand dat
+  in rijksmonumentvlakken ligt, moet minstens 0,3 zijn.
+waarom: 19 oktober. Het pandpunt van St. Anthoniusplaats 16 viel buiten het
+  vlak van 31169 ("15-16"); het rijksmonumentenregister noemt 15 en 16. Met
+  de omtrek gemeten ligt pand 16 voor 0,913 in het vlak, buurpand 17 voor
+  0,006. De drempel 0,3 ligt in het gat van de meting: geen pand tussen
+  0,215 en 0,453. Zie gezicht._register_per_pand.
+proef: gezicht:een buurpand dat de rand van een monumentvlak raakt
+soort: gegevens
+
+---
+eis: Een gezicht geeft alleen opslag bij een bekend bouwjaar voor 1965; een
+  onbekend bouwjaar geeft geen opslag. "In procedure" en stadsbeeldobject
+  zijn geen gemeentelijk monument.
+waarom: 19 oktober. Art. 8a lid 3 vraagt een aangewezen monument en lid 5
+  een bouwjaar voor 1965. Het model neemt bij twijfel het lagere maximum
+  in plaats van een opslag te beweren die het niet kan onderbouwen.
+proef: gezicht:het gezicht telt niet alleen voor 1965; gezicht:een monument in procedure
+soort: gegevens
+
+---
+eis: De meting per pandomtrek is gesleuteld op het ID van het register, niet
+  op OBJECTID, en bewaart ook panden met overlap 0; afwezig betekent dat de
+  BAG dat pand bij het vlak niet teruggaf.
+waarom: 19 oktober. OBJECTID is niet uniek (2.781 objecten, 2.757
+  OBJECTID's). Onder 3085 stonden "van Berchenstraat 31-35, Parkweg 1" en
+  "Parkweg 1, van Berchenstraat 35"; de tweede overschreef de eerste en
+  nummer 31 en 33 vielen weg. En een pand zonder overlap werd niet bewaard,
+  zodat "niet gemeten" en "gemeten, nul" hetzelfde leken.
+proef: gezicht:ID is niet meer uniek in het erfgoedregister
+soort: gegevens
+
+---
+eis: Ligt een pand maar deels in een gemeentelijk monumentvlak, dan beslist
+  de woning: opslag als het BAG-punt van het verblijfsobject in het vlak
+  ligt EN de titel van het register het adres noemt; geen opslag als beide
+  nee zeggen; zijn ze het oneens, dan "nakijken" zonder opslag.
+waarom: 19 oktober. Bij de 28 deels-panden in de ring (176
+  verblijfsobjecten) waren punt en titel het 157 keer eens en 19 keer
+  oneens (Stockumstraat 10: genoemd, punt erbuiten; Karrengas 44B tot 54A:
+  punt in het vlak van "Molenstraat 94", niet genoemd). Geen van beide is
+  de aanwijzing zelf.
+proef: gezicht:punt en titel worden verkeerd samengenomen; gezicht:leest
+soort: gegevens
+let op: Ook afgedwongen in de brief-repo (marktprijzen_bag:een woning waarover punt en titel het oneens zijn).
+
+---
+eis: De veldenronde noemt per mislukte publicatie het nummer, het soort fout
+  en hoeveel rondes achter elkaar die fout terugkomt. Mislukt alles wat te
+  doen was met een fout die er al drie rondes of langer staat, dan is dat
+  geen storing van vandaag en staat de ronde niet rood; een nieuwe
+  mislukking of een andere fout is dat wel.
+waarom: 19 tot en met 25 oktober 2026, vier issues "Veldenronde mislukt",
+  elk met "0 van 1 nog te doen, 1 mislukt". Nagerekend op main: die ene was
+  steeds gmb-2023-26729, Ligusterstraat 115, 20 januari 2023. Het issue zei
+  niet welke en niet waarom, en de ronde stond rood om één publicatie die
+  nooit lukt. Een melding die elke dag om hetzelfde afgaat leert de lezer het
+  issue over te slaan. Nagespeeld op publicatie_velden.json van 25 oktober
+  met een gesimuleerde 404: ronde 1 en 2 rood, vanaf ronde 3 groen met de
+  regel "BLIJFT MISLUKKEN" in het logboek. De echte fout is niet bekend; die
+  staat na deze wijziging in het eerstvolgende issue.
+proef: publicatievelden:de regel noemt nummer, fout en aantal; publicatievelden:andere fout is weer een storing; publicatievelden:een nieuwe erbij is een storing
+soort: werking
+
+---
+eis: De veldenronde schrijft haar stand ook terug als de ophaalstap rood
+  eindigt; alleen een mislukt nameten of een mislukte proef houdt het
+  terugschrijven tegen.
+waarom: 25 oktober 2026, run 40230114073, de eerste ronde na de telling per
+  publicatie: "Mislukt: gmb-2023-26729, HTTPError 404, 1 ronde achter elkaar",
+  daarna GESTOPT, en de workflow sloeg nameten en terugcommitten over. De
+  telling stond dus alleen op de runner en begon elke ronde opnieuw bij 1;
+  de drempel van drie rondes ging nooit over en het gezondheidsrapport
+  meldde niets. De proef leest de workflow zonder yaml, want deze workflow
+  installeert geen pakketten en een proef die op een import omvalt houdt de
+  hele ronde tegen.
+proef: publicatievelden:nameten loopt ook na een mislukte ophaalstap; publicatievelden:terugcommitten hangt aan het nameten
+soort: werking
+
+---
+eis: Geeft de html van een publicatie een fout, dan probeert de veldenronde
+  de zoekpagina, en lukt ook die niet, dan alleen de metadata om te weten of
+  de publicatie er nog is. Metadata telt nooit als gelezen tekst; de vorm
+  waaruit gelezen is staat bij de publicatie als het niet de html was.
+waarom: 25 oktober 2026, run 40230114073: gmb-2023-26729 (Ligusterstraat
+  115, 20 januari 2023) gaf een 404 op de html, en de ronde probeerde alleen
+  die ene vorm, terwijl ons archief de publicatie via de metadata kent. Vanaf
+  de werkomgeving van Claude is geen van de drie vormen te bereiken
+  (repository.overheid.nl weigert, de zoekpagina geeft een fout), dus moet de
+  ronde het zelf nagaan en in de foutregel zeggen wat elke vorm gaf.
+proef: publicatievelden:zonder html de zoekpagina; publicatievelden:metadata telt niet als tekst
+soort: gegevens
+

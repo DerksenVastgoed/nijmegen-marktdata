@@ -1,0 +1,125 @@
+# De rijksbeschermde gezichten ophalen bij PDOK, los van de brief.
+#
+# Eén keer de vlakken rond de ring, daarna lokaal per pand getoetst; zie
+# gezicht.py voor de bron en de voorbehouden. Eerst als verkenning: het
+# verslag laat per buurt zien hoeveel panden binnen een gezicht vallen, en
+# pas als de Benedenstad daar inderdaad in ligt, gaat het dossier hierop
+# leunen.
+
+name: Beschermde gezichten
+
+on:
+  workflow_dispatch:
+    inputs:
+      verkennen:
+        description: "ja: ook de eenmalige verkenningen (omgevingsplan, Gemeenteblad/Wikidata, KaartViewer)"
+        default: "nee"
+  # Wekelijks, want het erfgoedregister van de gemeente wordt bijgewerkt
+  # (DD_BIJGEWERKT stond op 18 oktober op 15 oktober) en een monument dat
+  # erbij komt hoort in het dossier te staan.
+  schedule:
+    - cron: "17 3 * * 1"
+
+concurrency:
+  group: gezicht
+  cancel-in-progress: false
+
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Proef
+        run: python3 gezicht.py --proef
+
+      - name: Ophalen
+        run: python3 gezicht.py --ophalen
+
+      # Het gemeentelijk voorbeschermd stadsbeeld (Wederopbouwcentrum), zie
+      # stadsbeeld.py. Een verkenning: mislukt hij, dan blijven de
+      # rijksgezichten staan.
+      - name: Stadsbeeld verkennen
+        continue-on-error: true
+        run: python3 stadsbeeld.py --verken
+
+      # Alle geografische informatieobjecten van het omgevingsplan, met de
+      # geometrie van wat op erfgoed wijst. Zie stadsbeeld.py.
+      # DE VERKENNINGEN NIET ELKE WEEK. Ze hebben hun werk gedaan (18 oktober:
+      # het erfgoedregister is gevonden), en twee ervan vragen elke keer
+      # diensten waarvan robots.txt nee zegt. Wekelijks draait alleen wat het
+      # dossier gebruikt: de rijksgezichten, de GIO's van het stadsbeeld en
+      # de WFS van het erfgoedregister.
+      - name: Omgevingsplan verkennen
+        if: github.event.inputs.verkennen == 'ja'
+        continue-on-error: true
+        run: |
+          python3 stadsbeeld.py --proef
+          python3 stadsbeeld.py --omgevingsplan
+          python3 stadsbeeld.py --monumenten
+          python3 stadsbeeld.py --regels
+
+      # Gemeentelijke monumenten uit het Gemeenteblad en Wikidata, zie
+      # monumenten.py.
+      - name: Monumenten verkennen
+        if: github.event.inputs.verkennen == 'ja'
+        continue-on-error: true
+        run: |
+          python3 monumenten.py --proef
+          python3 monumenten.py --verken
+
+      # Het erfgoedregister van de gemeente; dit gebruikt het dossier.
+      - name: Erfgoedregister ophalen
+        continue-on-error: true
+        run: |
+          python3 monumenten.py --proef
+          python3 monumenten.py --wfs
+          python3 monumenten.py --rce
+          python3 monumenten.py --rce-panden
+          python3 monumenten.py --register-panden
+
+      # De KaartViewer van de gemeente is een JavaScript-app; zie
+      # kaartviewer.py.
+      - name: KaartViewer verkennen
+        if: github.event.inputs.verkennen == 'ja'
+        continue-on-error: true
+        run: |
+          pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+          python3 kaartviewer.py --verken
+
+      - name: Terugcommitten
+        run: |
+          git config user.name "vastgoedmonitor-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for f in gezichten.json gezicht_verslag.md stadsbeeld_verslag.md stadsbeeld_*.gml stadsbeeld_*.json omgevingsplan_gio.json omgevingsplan_gio_verslag.md omgevingsplan_gio_*.gml monumenten_verslag.md monumenten_bronnen_verslag.md monumenten_gemeenteblad.json monumenten_wikidata.json kaartviewer_verslag.md kaartviewer_boom.json stadsbeeld_regels.md monumenten_wfs_verslag.md monumenten_his_mon_monument.geojson monumenten_his_mon_beschermde_geb.geojson rijksmonumenten_rce_punten.json rijksmonumenten_rce_verslag.md rijksmonumenten_rce_panden.json rijksmonumenten_rce_panden_verslag.md monumenten_register_panden.json monumenten_register_panden_verslag.md; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then
+            echo "Niets gewijzigd"
+            exit 0
+          fi
+          git commit -m "Beschermde gezichten $(date +%F)"
+          # EEN GEGEVENSCOMMIT RAAKT NOOIT BRONCODE; zie de brief en de voorraad.
+          geen_broncode() {
+            local raakt
+            raakt=$(git diff --name-only HEAD~1 HEAD -- '*.py' '*.yml' 2>/dev/null || true)
+            if [ -n "$raakt" ]; then
+              echo "GESTOPT: deze commit raakt broncode: $raakt"
+              return 1
+            fi
+            return 0
+          }
+          for poging in 1 2 3; do
+            geen_broncode || exit 1
+            if git push; then
+              echo "Teruggecommit gelukt"
+              exit 0
+            fi
+            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort; exit 1; }
+            sleep 5
+          done
+          exit 1

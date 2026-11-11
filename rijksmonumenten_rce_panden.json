@@ -1,0 +1,2010 @@
+{
+ "bron": "RCE-punten via PDOK, gekoppeld aan BAG-pandomtrek (PDOK BAG WFS), vierkant van 1 m rond het punt",
+ "nummers": {
+  "333577": {
+   "naam": "Landhoofd Waalbrug",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523056": {
+   "naam": "Petrus Canisius",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523041": {
+   "naam": "Hollandsch-Duitsch gemaal",
+   "panden": [
+    "0268100000007086"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523030": {
+   "naam": null,
+   "panden": [
+    "0268100000029942"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "386790": {
+   "naam": null,
+   "panden": [
+    "0268100000007323"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522990": {
+   "naam": "Oud-Mariënboom",
+   "panden": [
+    "0268100000017527"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522987": {
+   "naam": null,
+   "panden": [
+    "0268100000001014"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31202": {
+   "naam": null,
+   "panden": [
+    "0268100000024302"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31127": {
+   "naam": null,
+   "panden": [
+    "0268100000010767"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523055": {
+   "naam": "Spoorwegmonument",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31132": {
+   "naam": null,
+   "panden": [
+    "0268100000100479"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31115": {
+   "naam": null,
+   "panden": [
+    "0268100000009942",
+    "0268100000009943"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31177": {
+   "naam": null,
+   "panden": [
+    "0268100000011000"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523031": {
+   "naam": "Bisschop Hamerhuis",
+   "panden": [
+    "0268100000042782"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31126": {
+   "naam": null,
+   "panden": [
+    "0268100000010767"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31138": {
+   "naam": null,
+   "panden": [
+    "0268100000010664"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523067": {
+   "naam": "Waalbrug",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31207": {
+   "naam": "De Witte Molen",
+   "panden": [
+    "0268100000012999"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523032": {
+   "naam": null,
+   "panden": [
+    "0268100000030637"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31201": {
+   "naam": null,
+   "panden": [
+    "0268100000042700"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31150": {
+   "naam": null,
+   "panden": [
+    "0268100000010303"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31152": {
+   "naam": null,
+   "panden": [
+    "0268100000006657"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523033": {
+   "naam": null,
+   "panden": [
+    "0268100000102202"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523005": {
+   "naam": null,
+   "panden": [
+    "0268100000044831"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31205": {
+   "naam": null,
+   "panden": [
+    "0268100000045592"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31161": {
+   "naam": null,
+   "panden": [
+    "0268100000007005"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523015": {
+   "naam": null,
+   "panden": [
+    "0268100000002669"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523065": {
+   "naam": "'Jannetje' en 'Johanna'",
+   "panden": [
+    "0268100000023865"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522999": {
+   "naam": null,
+   "panden": [
+    "0268100000004407"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31169": {
+   "naam": null,
+   "panden": [
+    "0268100000045386",
+    "0268100000047325"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31122": {
+   "naam": null,
+   "panden": [
+    "0268100000011470"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523009": {
+   "naam": null,
+   "panden": [
+    "0268100000004860"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523029": {
+   "naam": null,
+   "panden": [
+    "0268100000002441"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31184": {
+   "naam": "Brouwershuis",
+   "panden": [
+    "0268100000007016"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31120": {
+   "naam": null,
+   "panden": [
+    "0268100000009455",
+    "0268100000010764"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523002": {
+   "naam": null,
+   "panden": [
+    "0268100000007042"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31156": {
+   "naam": null,
+   "panden": [
+    "0268100000002935"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31137": {
+   "naam": "Boterwaag",
+   "panden": [
+    "0268100000009676"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31194": {
+   "naam": "Maarten Schenckpoort",
+   "panden": [
+    "0268100000008133"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31136": {
+   "naam": null,
+   "panden": [
+    "0268100000009940",
+    "0268100000009944"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31183": {
+   "naam": null,
+   "panden": [
+    "0268100000006560"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522985": {
+   "naam": null,
+   "panden": [
+    "0268100000001945",
+    "0268100000001946"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522994": {
+   "naam": null,
+   "panden": [
+    "0268100000013572"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31175": {
+   "naam": null,
+   "panden": [
+    "0268100000106079"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523054": {
+   "naam": "Villa De Wolfskuyl",
+   "panden": [
+    "0268100000014789"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523028": {
+   "naam": "Olde Wehme",
+   "panden": [
+    "0268100000024970"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31208": {
+   "naam": null,
+   "panden": [
+    "0268100000029363"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31142": {
+   "naam": null,
+   "panden": [
+    "0268100000008042",
+    "0268100000008043"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "45810": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural;http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/archaeological",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/b673c8c1-5d93-496d-8f9e-89133d579d77"
+  },
+  "31186": {
+   "naam": null,
+   "panden": [
+    "0268100000006189"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31114": {
+   "naam": null,
+   "panden": [
+    "0268100000009943",
+    "0268100000009944"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523024": {
+   "naam": null,
+   "panden": [
+    "0268100000002709"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523070": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522993": {
+   "naam": null,
+   "panden": [
+    "0268100000021130"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522997": {
+   "naam": "Kinderhuis Villandry",
+   "panden": [
+    "0268100000006031"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31141": {
+   "naam": null,
+   "panden": [
+    "0268100000008133"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31162": {
+   "naam": null,
+   "panden": [
+    "0268100000012108"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31176": {
+   "naam": null,
+   "panden": [
+    "0268100000009784"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523010": {
+   "naam": null,
+   "panden": [
+    "0268100000000075"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523023": {
+   "naam": null,
+   "panden": [
+    "0268100000002683"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31167": {
+   "naam": null,
+   "panden": [
+    "0268100000047324"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31130": {
+   "naam": null,
+   "panden": [
+    "0268100000009939",
+    "0268100000009677"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522992": {
+   "naam": "Sint Jozefkerk",
+   "panden": [
+    "0268100000019937"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31182": {
+   "naam": null,
+   "panden": [
+    "0268100000009359"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523037": {
+   "naam": "Het Slotje",
+   "panden": [
+    "0268100000006250"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523047": {
+   "naam": null,
+   "panden": [
+    "0268100000020019"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523040": {
+   "naam": "De Westerhelling",
+   "panden": [
+    "0268100000003628"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523042": {
+   "naam": "De Varenhof",
+   "panden": [
+    "0268100000019587"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31153": {
+   "naam": null,
+   "panden": [
+    "0268100000010986",
+    "0268100000010997"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "397576": {
+   "naam": null,
+   "panden": [
+    "0268100000009556"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural;http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/archaeological",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/b673c8c1-5d93-496d-8f9e-89133d579d77"
+  },
+  "418950": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31159": {
+   "naam": null,
+   "panden": [
+    "0268100000047301",
+    "0268100000047303"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "531084": {
+   "naam": "Mariënboom",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural;http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/archaeological",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/b673c8c1-5d93-496d-8f9e-89133d579d77"
+  },
+  "31197": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523034": {
+   "naam": "Weurt",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523000": {
+   "naam": "De Vereeniging",
+   "panden": [
+    "0268100000002994"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31154": {
+   "naam": null,
+   "panden": [
+    "0268100000010986"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523045": {
+   "naam": null,
+   "panden": [
+    "0268100000002672"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "530427": {
+   "naam": null,
+   "panden": [
+    "0268100000008042"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31193": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31178": {
+   "naam": null,
+   "panden": [
+    "0268100000106079"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31181": {
+   "naam": null,
+   "panden": [
+    "0268100000009359"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523025": {
+   "naam": null,
+   "panden": [
+    "0268100000001270"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523061": {
+   "naam": null,
+   "panden": [
+    "0268100000040967"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523051": {
+   "naam": null,
+   "panden": [
+    "0268100000031096"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31151": {
+   "naam": null,
+   "panden": [
+    "0268100000010987"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "511804": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural;http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/archaeological",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/b673c8c1-5d93-496d-8f9e-89133d579d77"
+  },
+  "31163": {
+   "naam": null,
+   "panden": [
+    "0268100000009289"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31128": {
+   "naam": "Glashuis",
+   "panden": [
+    "0268100000009723"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523050": {
+   "naam": "Badhuis",
+   "panden": [
+    "0268100000024365"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523022": {
+   "naam": null,
+   "panden": [
+    "0268100000008142"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31160": {
+   "naam": null,
+   "panden": [
+    "0268100000006171"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31116": {
+   "naam": null,
+   "panden": [
+    "0268100000104622",
+    "0268100000104623"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523052": {
+   "naam": null,
+   "panden": [
+    "0268100000021252"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "14952": {
+   "naam": "Fort Boven-Lent",
+   "panden": [
+    "0268100000031493"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31149": {
+   "naam": null,
+   "panden": [
+    "0268100000010766"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31134": {
+   "naam": null,
+   "panden": [
+    "0268100000009941",
+    "0268100000009679"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523044": {
+   "naam": null,
+   "panden": [
+    "0268100000027546"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31125": {
+   "naam": null,
+   "panden": [
+    "0268100000010767"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "14955": {
+   "naam": "Fort Beneden Lent",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "45811": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural;http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/archaeological",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/b673c8c1-5d93-496d-8f9e-89133d579d77"
+  },
+  "31146": {
+   "naam": null,
+   "panden": [
+    "0268100000008125"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31118": {
+   "naam": null,
+   "panden": [
+    "0268100000011008",
+    "0268100000011007"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523036": {
+   "naam": "De Tempelier",
+   "panden": [
+    "0268100000003308",
+    "0268100000002973"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523013": {
+   "naam": null,
+   "panden": [
+    "0268100000005076"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31206": {
+   "naam": null,
+   "panden": [
+    "0268100000045592"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31185": {
+   "naam": null,
+   "panden": [
+    "0268100000006557"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31203": {
+   "naam": null,
+   "panden": [
+    "0268100000024302"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31192": {
+   "naam": "Het Valkhof",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523053": {
+   "naam": null,
+   "panden": [
+    "0268100000036998"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31204": {
+   "naam": null,
+   "panden": [
+    "0268100000006251"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522991": {
+   "naam": null,
+   "panden": [
+    "0268100000009675"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31148": {
+   "naam": null,
+   "panden": [
+    "0268100000006995"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31168": {
+   "naam": null,
+   "panden": [
+    "0268100000047309"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522995": {
+   "naam": null,
+   "panden": [
+    "0268100000004859"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523014": {
+   "naam": null,
+   "panden": [
+    "0268100000005077"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31129": {
+   "naam": null,
+   "panden": [
+    "0268100000009679"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523069": {
+   "naam": null,
+   "panden": [
+    "0268100000002624"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31139": {
+   "naam": null,
+   "panden": [
+    "0268100000009674",
+    "0268100000009676"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523001": {
+   "naam": null,
+   "panden": [
+    "0268100000004367"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523068": {
+   "naam": null,
+   "panden": [
+    "0268100000002467"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522996": {
+   "naam": null,
+   "panden": [
+    "0268100000002667"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523007": {
+   "naam": null,
+   "panden": [
+    "0268100000021602"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523020": {
+   "naam": null,
+   "panden": [
+    "0268100000027537"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31157": {
+   "naam": null,
+   "panden": [
+    "0268100000045637"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523064": {
+   "naam": "Hezelpoort",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31158": {
+   "naam": null,
+   "panden": [
+    "0268100000002938"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523038": {
+   "naam": "Openbare School N0.2 voor U.L.O.",
+   "panden": [
+    "0268100000002093"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523071": {
+   "naam": null,
+   "panden": [
+    "0268100000037828"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523017": {
+   "naam": "Collegium Berchmanianum",
+   "panden": [
+    "0268100000003190"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523046": {
+   "naam": null,
+   "panden": [
+    "0268100000020045"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523016": {
+   "naam": null,
+   "panden": [
+    "0268100000005115"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31179": {
+   "naam": null,
+   "panden": [
+    "0268100000011004"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522989": {
+   "naam": "Trianon",
+   "panden": [
+    "0268100000020265"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31195": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522998": {
+   "naam": null,
+   "panden": [
+    "0268100000021155"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523008": {
+   "naam": "Mariënbosch",
+   "panden": [
+    "0268100000005060"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522986": {
+   "naam": null,
+   "panden": [
+    "0268100000001012"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31165": {
+   "naam": null,
+   "panden": [
+    "0268100000007000"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523011": {
+   "naam": null,
+   "panden": [
+    "0268100000005333"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31188": {
+   "naam": null,
+   "panden": [
+    "0268100000089144"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523004": {
+   "naam": "Heyendaal",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31174": {
+   "naam": null,
+   "panden": [
+    "0268100000009786"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31180": {
+   "naam": null,
+   "panden": [
+    "0268100000009786"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "532210": {
+   "naam": "Stadsschouwburg",
+   "panden": [
+    "0268100000007008"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "46805": {
+   "naam": "Canisius College",
+   "panden": [
+    "0268100000020569"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31199": {
+   "naam": "Sint Annamolen",
+   "panden": [
+    "0268100000011214"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31164": {
+   "naam": null,
+   "panden": [
+    "0268100000006998"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523003": {
+   "naam": null,
+   "panden": [
+    "0268100000002753"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "508798": {
+   "naam": null,
+   "panden": [
+    "0268100000018834"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523057": {
+   "naam": "Vier Jaargetijden",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523060": {
+   "naam": null,
+   "panden": [
+    "0268100000092669"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31133": {
+   "naam": null,
+   "panden": [
+    "0268100000009679"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31147": {
+   "naam": null,
+   "panden": [
+    "0268100000006994"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523063": {
+   "naam": null,
+   "panden": [
+    "0268100000037128"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31123": {
+   "naam": null,
+   "panden": [
+    "0268100000045518"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31119": {
+   "naam": null,
+   "panden": [
+    "0268100000012105"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523026": {
+   "naam": null,
+   "panden": [
+    "0268100000004654"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31171": {
+   "naam": null,
+   "panden": [
+    "0268100000009572"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31196": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31166": {
+   "naam": null,
+   "panden": [
+    "0268100000045385"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31187": {
+   "naam": null,
+   "panden": [
+    "0268100000049293"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523006": {
+   "naam": null,
+   "panden": [
+    "0268100000006847"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31144": {
+   "naam": null,
+   "panden": [
+    "0268100000008045"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523062": {
+   "naam": null,
+   "panden": [
+    "0268100000041200"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523058": {
+   "naam": "Ivensbank",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31145": {
+   "naam": null,
+   "panden": [
+    "0268100000008504"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31198": {
+   "naam": null,
+   "panden": [
+    "0268100000006182"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523019": {
+   "naam": null,
+   "panden": [
+    "0268100000042696"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523021": {
+   "naam": null,
+   "panden": [
+    "0268100000004653"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "45809": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural;http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/archaeological",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/b673c8c1-5d93-496d-8f9e-89133d579d77"
+  },
+  "523018": {
+   "naam": null,
+   "panden": [
+    "0268100000013956"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523066": {
+   "naam": "Mgr. Hamer",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522988": {
+   "naam": "Kantongerecht",
+   "panden": [
+    "0268100000003013"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523059": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31117": {
+   "naam": null,
+   "panden": [
+    "0268100000011007"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31124": {
+   "naam": null,
+   "panden": [
+    "0268100000010767"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "395952": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural;http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/archaeological",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/b673c8c1-5d93-496d-8f9e-89133d579d77"
+  },
+  "31135": {
+   "naam": null,
+   "panden": [
+    "0268100000009940",
+    "0268100000009941"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523035": {
+   "naam": null,
+   "panden": [
+    "0268100000033503"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31155": {
+   "naam": null,
+   "panden": [
+    "0268100000009777"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523012": {
+   "naam": null,
+   "panden": [
+    "0268100000005334"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523027": {
+   "naam": null,
+   "panden": [
+    "0268100000088252"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "476729": {
+   "naam": null,
+   "panden": [
+    "0268100000002585"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523043": {
+   "naam": "Prima Villa",
+   "panden": [
+    "0268100000021437"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31140": {
+   "naam": null,
+   "panden": [
+    "0268100000017355"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "515197": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural;http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/archaeological",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/b673c8c1-5d93-496d-8f9e-89133d579d77"
+  },
+  "31131": {
+   "naam": null,
+   "panden": [
+    "0268100000009677",
+    "0268100000009678"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31170": {
+   "naam": null,
+   "panden": [
+    "0268100000009934"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31173": {
+   "naam": null,
+   "panden": [
+    "0268100000009784"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31143": {
+   "naam": null,
+   "panden": [
+    "0268100000008044"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31121": {
+   "naam": null,
+   "panden": [
+    "0268100000002957"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31172": {
+   "naam": null,
+   "panden": [
+    "0268100000009569"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523039": {
+   "naam": "Bethel",
+   "panden": [
+    "0268100000029358"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523049": {
+   "naam": null,
+   "panden": [
+    "0268100000004032"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "523048": {
+   "naam": "Loge St. Lodewijk",
+   "panden": [
+    "0268100000002798"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522984": {
+   "naam": "Neboklooster",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522983": {
+   "naam": "Neboklooster",
+   "panden": [
+    "0268100000004214"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "525505": {
+   "naam": null,
+   "panden": [
+    "0268100000013468"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "525504": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "524836": {
+   "naam": "H. ANTONIUS VAN PADUA/ST. ANNAKERK",
+   "panden": [
+    "0268100000013467"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522973": {
+   "naam": null,
+   "panden": [
+    "0268100000040128"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522972": {
+   "naam": null,
+   "panden": [
+    "0268100000040128"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522936": {
+   "naam": null,
+   "panden": [
+    "0268100000006033"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522935": {
+   "naam": "Israelitische Begraafplaats aanleg",
+   "panden": [
+    "0268100000006033"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522925": {
+   "naam": "Berg en Eik/ Huize Marie-Louise",
+   "panden": [
+    "0268100000006848"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522924": {
+   "naam": "Berg en Eik/ Huize Marie-Louise",
+   "panden": [
+    "0268100000006848"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522923": {
+   "naam": "Berg en Eik/ Huize Marie-Louise",
+   "panden": [
+    "0268100000006848"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522922": {
+   "naam": "Berg en Eik/ Huize Marie-Louise",
+   "panden": [
+    "0268100000006848"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "529148": {
+   "naam": null,
+   "panden": [
+    "0268100000012465"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "529147": {
+   "naam": null,
+   "panden": [
+    "0268100000017358"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "529146": {
+   "naam": null,
+   "panden": [
+    "0268100000015020"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "529145": {
+   "naam": null,
+   "panden": [
+    "0268100000015205"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "527421": {
+   "naam": null,
+   "panden": [
+    "0268100000050042"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520314": {
+   "naam": null,
+   "panden": [
+    "0268100000050041"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520313": {
+   "naam": null,
+   "panden": [
+    "0268100000015206"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520312": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520311": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520309": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520308": {
+   "naam": null,
+   "panden": [
+    "0268100000015207"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522952": {
+   "naam": null,
+   "panden": [
+    "0268100000018653"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522951": {
+   "naam": null,
+   "panden": [
+    "0268100000018561"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522950": {
+   "naam": "Museum Kam",
+   "panden": [
+    "0268100000018653"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522933": {
+   "naam": "Park Brakkenstein",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522932": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522931": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522930": {
+   "naam": "Schelpenhuis",
+   "panden": [
+    "0268100000009862"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522929": {
+   "naam": null,
+   "panden": [
+    "0268100000010313"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522928": {
+   "naam": "Dressuurstal Brakkenstein",
+   "panden": [
+    "0268100000020216"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522927": {
+   "naam": "Brakkesteyn",
+   "panden": [
+    "0268100000048433"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522955": {
+   "naam": null,
+   "panden": [
+    "0268100000102681"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522954": {
+   "naam": "Onze Lieve Vrouw Geboorte",
+   "panden": [
+    "0268100000036618"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522948": {
+   "naam": null,
+   "panden": [
+    "0268100000002755"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522947": {
+   "naam": "Maria Geboortekerk",
+   "panden": [
+    "0268100000002755"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522981": {
+   "naam": null,
+   "panden": [
+    "0268100000031196"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522980": {
+   "naam": null,
+   "panden": [
+    "0268100000031196"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522979": {
+   "naam": null,
+   "panden": [
+    "0268100000031196"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522978": {
+   "naam": "Salatiga",
+   "panden": [
+    "0268100000031196"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522945": {
+   "naam": "Van Rosendael",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522944": {
+   "naam": "Randag",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522943": {
+   "naam": "Smulders",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522942": {
+   "naam": "Veerkamp",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522941": {
+   "naam": "Van Heukelum",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522940": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522939": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522938": {
+   "naam": "Begraafplaats Altrade aanleg",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522976": {
+   "naam": null,
+   "panden": [
+    "0268100000002678"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522975": {
+   "naam": null,
+   "panden": [
+    "0268100000002678"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522970": {
+   "naam": null,
+   "panden": [
+    "0268100000024389"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522969": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522968": {
+   "naam": "Prins Hendrikkazerne",
+   "panden": [
+    "0268100000024485"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522967": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522966": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522965": {
+   "naam": "Kleedingmagazijn",
+   "panden": [
+    "0268100000048023"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522964": {
+   "naam": "Cantine",
+   "panden": [
+    "0268100000027004"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522963": {
+   "naam": "Generaal Snijderskazerne",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522962": {
+   "naam": "Krayenhoffkazerne",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522960": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522957": {
+   "naam": "Kronenburgerpark",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31190": {
+   "naam": "Het Grote Bolwerk",
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "31189": {
+   "naam": "Kronenburgertoren",
+   "panden": [
+    "0268100000006208"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  }
+ }
+}
