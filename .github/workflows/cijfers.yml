@@ -12,6 +12,7 @@
 #   vergunningen_per_buurt.json kamerverhuurvergunningen per buurt, uit
 #                           kamervergunningen.json (de vergunningenlijst van de
 #                           gemeente) en PDOK
+#   wijken.json             de wijkkeuzes van het zoekprofiel met hun CBS-buurten
 #   diagnose/*.txt          wat er misging, voor het gezondheidsrapport van de brief
 #
 # WANNEER. Elke dag om 01:07 UTC, voor de brief van 02:48. Het CBS publiceert
@@ -113,6 +114,18 @@ jobs:
             python ov_haltes.py --verversen
           fi
 
+      - name: Wijkindeling (als hij ontbreekt, en op de eerste van de maand)
+        # De CBS-buurten per wijkkeuze van het zoekprofiel. Buurtgrenzen
+        # veranderen zelden; een keer per maand kijken is genoeg.
+        id: wijken
+        continue-on-error: true
+        run: |
+          if [ ! -s wijken.json ] || [ "$(date -u +%d)" = "01" ]; then
+            python wijken.py --verversen
+          else
+            echo "Wijkindeling aanwezig, overslaan"
+          fi
+
       - name: Terugcommitten
         run: |
           set -o pipefail
@@ -122,11 +135,12 @@ jobs:
             straat_buurt_cache.json diagnose/woningprijzen.txt \
             diagnose/bouwkosten.txt diagnose/vergunningen.txt \
             buurten_cbs.json begroting_nijmegen.json begroting_meldingen.json \
-            ov_haltes.json diagnose/buurtcijfers.txt diagnose/begroting.txt 2>&1 | tee /tmp/terugcommit.log
+            ov_haltes.json diagnose/buurtcijfers.txt diagnose/begroting.txt \
+            wijken.json diagnose/wijken.txt 2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
 
       - name: Melden in een issue als er iets is mislukt
-        if: failure() || steps.woningprijs.outcome == 'failure' || steps.corop.outcome == 'failure' || steps.bouwkosten.outcome == 'failure' || steps.misdrijven.outcome == 'failure' || steps.vergunningen.outcome == 'failure' || steps.buurten.outcome == 'failure' || steps.begroting.outcome == 'failure' || steps.haltes.outcome == 'failure'
+        if: failure() || steps.woningprijs.outcome == 'failure' || steps.corop.outcome == 'failure' || steps.bouwkosten.outcome == 'failure' || steps.misdrijven.outcome == 'failure' || steps.vergunningen.outcome == 'failure' || steps.buurten.outcome == 'failure' || steps.begroting.outcome == 'failure' || steps.haltes.outcome == 'failure' || steps.wijken.outcome == 'failure'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
