@@ -40,6 +40,7 @@ Nodig als repo-secrets: `BAG_API_KEY` (Kadaster) en `EP_API_KEY` (RVO EP-Online)
 | `begroting_nijmegen.json`, `begroting_meldingen.json` | tarieven en nieuwe regels uit de stadsbegroting |
 | `ov_haltes.json` | ov-haltes in en rond Nijmegen (OpenStreetMap) |
 | `huurtabellen.json` | maximale kale huur per punt, zelfstandig (WWS) en onzelfstandig (WWSO), per jaar; lees met `huurtabel.py` |
+| `wijken.json` | de wijkkeuzes van het zoekprofiel met hun CBS-buurten, en per buurt de CBS-wijk; maak met `wijken.py --verversen`, lees met `wijken.py` |
 | `diagnose/*.txt` | wat er bij het ophalen misging, als dat zo is |
 | `bag3d.json` | 3D BAG per pand voor de ring en de adressen met een bekendmaking (TU Delft en 3DGI, CC BY 4.0) |
 | `voorraad.json` | woningen en niet-woningen per adres, met oppervlakte, gebruiksdoel, pand en label |

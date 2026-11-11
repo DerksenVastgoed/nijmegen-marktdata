@@ -65,7 +65,11 @@ def buurt_van_straat(straat, cache):
     # geen buurtnaam mee. Een adres heeft die wel.
     try:
         r = requests.get(PDOK, params={
-            "q": f"{straat} Nijmegen", "fq": "type:adres", "rows": 1,
+            # Alleen adressen in de gemeente. Zonder dit filter gaf "Beijenstraat
+            # Nijmegen" de buurt Methen, buiten Nijmegen (gevonden door de proef
+            # van wijken.py, 11 november).
+            "q": f"{straat} Nijmegen", "fq": ["type:adres", "gemeentenaam:Nijmegen"],
+            "rows": 1,
             "fl": "buurtnaam wijknaam weergavenaam",
         }, headers=HEADERS, timeout=20)
         r.raise_for_status()

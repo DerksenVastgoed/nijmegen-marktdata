@@ -42,6 +42,14 @@ def zijde(buurt):
     return ZIJDE.get(buurt, "oost")
 
 
+# Bestanden met een eigen lijst van buurten die NIET de ring is. Elk met de
+# reden; een bestand zonder reden hoort hier niet.
+GEEN_RING = {
+    "wijken.py": "de wijkkeuzes van het zoekprofiel (ook Hengstdal, Hees, "
+                 "Dukenburg); een andere indeling dan de ring",
+}
+
+
 def elders_uitgeschreven(map_=".", drempel=4):
     """
     Welke andere .py-bestanden een eigen lijst van de ring bevatten.
@@ -58,7 +66,7 @@ def elders_uitgeschreven(map_=".", drempel=4):
     import re
     gevonden = []
     for pad in sorted(glob.glob(os.path.join(map_, "*.py"))):
-        if os.path.basename(pad) == "ring.py":
+        if os.path.basename(pad) == "ring.py" or os.path.basename(pad) in GEEN_RING:
             continue
         try:
             with open(pad, encoding="utf-8") as f:

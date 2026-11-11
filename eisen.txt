@@ -674,3 +674,19 @@ proef: huurtabel:IJKPUNTEN UIT DE OFFICIELE TABELLEN; huurtabel:HET LOPENDE JAAR
 soort: gegevens
 let op: dat de app en de brief geen eigen kopie hebben, meten die repo's zelf
   na (marktdata_toets.py in de brief, een test in de beheer-app).
+
+---
+eis: De wijkkeuzes van het zoekprofiel staan op een plek, in wijken.json in
+  deze repo, met per keuze de CBS-buurten die erbij horen. De wijk van een
+  adres is de keuze van zijn CBS-buurt (via de PDOK Locatieserver), nooit een
+  gok uit de tekst van het adres.
+waarom: 11 november. De indeling stond op vier plekken (zoekprofiel,
+  wachtlijst, HubSpot, beheer-app) en de wachtlijst raadde de wijk uit de
+  straatnaam. Op de 377 straten van straat_buurt_cache.json werden 239 straten
+  in een wijk van het zoekprofiel niet herkend en kregen er 4 een verkeerde
+  wijk, zoals de Arend Noorduijnstraat (Bottendaal) die "noord" werd.
+proef: wijken:DE STRATEN DIE DE OUDE RAADMETHODE FOUT HAD; wijken:DE PROEF MOET ZIJN EIGEN FOUT ZIEN
+soort: gegevens
+let op: dat het zoekprofiel, HubSpot en de beheer-app geen eigen lijst hebben,
+  meten die repo's zelf na. KEUZES in wijken.py is onze indeling; welke
+  buurten in een CBS-wijk liggen, komt van het CBS en staat niet in de code.
