@@ -1,0 +1,142 @@
+{
+ "gebied": "Arnhem/Nijmegen (CR)",
+ "periode": "2026KW03",
+ "index": 166.2,
+ "kwartaal_pct": 1.3,
+ "jaar_pct": 4.3,
+ "transacties": null,
+ "transacties_jaar_pct": null,
+ "gemiddelde_prijs": 486969.0,
+ "reeks": {
+  "2022KW04": {
+   "index": 132.3,
+   "kwartaal_pct": -2.8,
+   "jaar_pct": 4.9,
+   "transacties": null,
+   "gemiddelde_prijs": 386181.0,
+   "transacties_jaar_pct": null
+  },
+  "2023KW01": {
+   "index": 130.4,
+   "kwartaal_pct": -1.5,
+   "jaar_pct": -2.1,
+   "transacties": null,
+   "gemiddelde_prijs": 396646.0,
+   "transacties_jaar_pct": null
+  },
+  "2023KW02": {
+   "index": 128.4,
+   "kwartaal_pct": -1.5,
+   "jaar_pct": -4.7,
+   "transacties": null,
+   "gemiddelde_prijs": 389695.0,
+   "transacties_jaar_pct": null
+  },
+  "2023KW03": {
+   "index": 129.0,
+   "kwartaal_pct": 0.4,
+   "jaar_pct": -5.3,
+   "transacties": null,
+   "gemiddelde_prijs": 399040.0,
+   "transacties_jaar_pct": null
+  },
+  "2023KW04": {
+   "index": 132.0,
+   "kwartaal_pct": 2.3,
+   "jaar_pct": -0.3,
+   "transacties": null,
+   "gemiddelde_prijs": 397222.0,
+   "transacties_jaar_pct": null
+  },
+  "2024KW01": {
+   "index": 135.0,
+   "kwartaal_pct": 2.3,
+   "jaar_pct": 3.6,
+   "transacties": null,
+   "gemiddelde_prijs": 420245.0,
+   "transacties_jaar_pct": null
+  },
+  "2024KW02": {
+   "index": 139.6,
+   "kwartaal_pct": 3.4,
+   "jaar_pct": 8.7,
+   "transacties": null,
+   "gemiddelde_prijs": 414613.0,
+   "transacties_jaar_pct": null
+  },
+  "2024KW03": {
+   "index": 145.4,
+   "kwartaal_pct": 4.2,
+   "jaar_pct": 12.8,
+   "transacties": null,
+   "gemiddelde_prijs": 434812.0,
+   "transacties_jaar_pct": null
+  },
+  "2024KW04": {
+   "index": 148.8,
+   "kwartaal_pct": 2.3,
+   "jaar_pct": 12.7,
+   "transacties": null,
+   "gemiddelde_prijs": 450098.0,
+   "transacties_jaar_pct": null
+  },
+  "2025KW01": {
+   "index": 152.3,
+   "kwartaal_pct": 2.3,
+   "jaar_pct": 12.8,
+   "transacties": null,
+   "gemiddelde_prijs": 459305.0,
+   "transacties_jaar_pct": null
+  },
+  "2025KW02": {
+   "index": 157.0,
+   "kwartaal_pct": 3.1,
+   "jaar_pct": 12.5,
+   "transacties": null,
+   "gemiddelde_prijs": 446430.0,
+   "transacties_jaar_pct": null
+  },
+  "2025KW03": {
+   "index": 159.3,
+   "kwartaal_pct": 1.5,
+   "jaar_pct": 9.6,
+   "transacties": null,
+   "gemiddelde_prijs": 459609.0,
+   "transacties_jaar_pct": null
+  },
+  "2025KW04": {
+   "index": 160.0,
+   "kwartaal_pct": 0.4,
+   "jaar_pct": 7.6,
+   "transacties": null,
+   "gemiddelde_prijs": 469549.0,
+   "transacties_jaar_pct": null
+  },
+  "2026KW01": {
+   "index": 162.4,
+   "kwartaal_pct": 1.5,
+   "jaar_pct": 6.6,
+   "transacties": null,
+   "gemiddelde_prijs": 478312.0,
+   "transacties_jaar_pct": null
+  },
+  "2026KW02": {
+   "index": 164.1,
+   "kwartaal_pct": 1.1,
+   "jaar_pct": 4.5,
+   "transacties": null,
+   "gemiddelde_prijs": 473989.0,
+   "transacties_jaar_pct": null
+  },
+  "2026KW03": {
+   "index": 166.2,
+   "kwartaal_pct": 1.3,
+   "jaar_pct": 4.3,
+   "transacties": null,
+   "gemiddelde_prijs": 486969.0,
+   "transacties_jaar_pct": null
+  }
+ },
+ "opgehaald": "2026-11-11",
+ "bron": "CBS 85819NED, prijsindex bestaande koopwoningen per COROP"
+}
