@@ -1,0 +1,102 @@
+# Openbare cijfers ophalen die de vastgoedbrief leest: CBS en Kadaster.
+#
+# WAAROM HIER. Tot 11 november haalde de brief deze vier zelf op, in zijn eigen
+# privé repo en dus op betaalde minuten. Het zijn openbare bronnen zonder enige
+# eigen selectie, dus horen ze in deze openbare repo.
+#
+# WAT HIJ MAAKT.
+#   woningprijsindex.json   prijsindex bestaande koopwoningen, landelijk en regio
+#   corop_prijzen.json      prijzen en transacties COROP Arnhem/Nijmegen
+#   bouwkosten_index.json   bouwkostenindex nieuwbouw en onderhoud
+#   misdrijven_per_buurt.json  geregistreerde misdrijven per buurt (jaarcijfers)
+#   diagnose/*.txt          wat er misging, voor het gezondheidsrapport van de brief
+#
+# WANNEER. Elke dag om 01:07 UTC, voor de brief van 02:48. Het CBS publiceert
+# maandelijks; dagelijks kijken kost een minuut en mist niets.
+name: Cijfers van CBS en Kadaster
+
+on:
+  schedule:
+    - cron: "7 1 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: cijfers
+  cancel-in-progress: false
+
+jobs:
+  cijfers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Repo ophalen
+        uses: actions/checkout@v4
+
+      - name: Python klaarzetten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencies installeren
+        run: pip install requests
+
+      - name: Woningprijsindex
+        id: woningprijs
+        continue-on-error: true
+        run: python woningprijsindex.py
+
+      - name: COROP Arnhem/Nijmegen
+        id: corop
+        continue-on-error: true
+        run: python corop_prijzen.py --stil
+
+      - name: Bouwkostenindex
+        id: bouwkosten
+        continue-on-error: true
+        run: python bouwkosten_index.py
+
+      - name: Misdrijven per buurt (alleen als het bestand ontbreekt)
+        # Jaarcijfers. Verversen: verwijder misdrijven_per_buurt.json en start
+        # deze workflow met de hand.
+        id: misdrijven
+        continue-on-error: true
+        run: |
+          if [ -s misdrijven_per_buurt.json ]; then
+            echo "Misdrijfcijfers aanwezig, overslaan"
+          else
+            python misdrijven_buurt.py --jaren 3
+          fi
+
+      - name: Terugcommitten
+        run: |
+          set -o pipefail
+          ./terugcommitten.sh "Cijfers $(date -u +%F)" \
+            woningprijsindex.json corop_prijzen.json bouwkosten_index.json \
+            misdrijven_per_buurt.json diagnose/woningprijzen.txt \
+            diagnose/bouwkosten.txt 2>&1 | tee /tmp/terugcommit.log
+          exit "${PIPESTATUS[0]}"
+
+      - name: Melden in een issue als er iets is mislukt
+        if: failure() || steps.woningprijs.outcome == 'failure' || steps.corop.outcome == 'failure' || steps.bouwkosten.outcome == 'failure' || steps.misdrijven.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          KOP="Cijfers niet (volledig) opgehaald op $(date -u +%F)"
+          {
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo "woningprijsindex: ${{ steps.woningprijs.outcome }}, corop: ${{ steps.corop.outcome }}, bouwkosten: ${{ steps.bouwkosten.outcome }}, misdrijven: ${{ steps.misdrijven.outcome }}"
+            echo '```'
+            cat diagnose/*.txt 2>/dev/null || echo "(geen diagnose)"
+            tail -c 1500 /tmp/terugcommit.log 2>/dev/null || true
+            echo '```'
+          } > /tmp/melding.md
+          BESTAAND=$(gh issue list --state open --search "$KOP in:title" \
+            --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$BESTAAND" ] && [ "$BESTAAND" != "null" ]; then
+            gh issue comment "$BESTAAND" --body-file /tmp/melding.md
+          else
+            gh issue create --title "$KOP" --body-file /tmp/melding.md
+          fi

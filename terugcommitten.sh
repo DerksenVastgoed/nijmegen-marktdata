@@ -32,6 +32,12 @@ voeg_toe() {
     if [ -f "$f" ]; then
       git add "$f"
       echo "  $f ($(wc -c < "$f") bytes)"
+    elif git ls-files --error-unmatch "$f" >/dev/null 2>&1; then
+      # WEG IS OOK EEN UITKOMST. Een diagnosebestand wordt gewist als het
+      # probleem is opgelost. Committen we dat niet, dan blijft de oude melding
+      # in de repo staan en leest de brief een storing die voorbij is.
+      git rm -q --cached "$f"
+      echo "  $f verwijderd"
     else
       echo "  $f ONTBREEKT"
     fi
