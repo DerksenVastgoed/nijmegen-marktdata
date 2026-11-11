@@ -82,12 +82,25 @@ jobs:
           fi
           python bekendmakingen_archief.py --vanaf "$VANAF" ${TOT:+--tot "$TOT"} --stil
 
+      - name: Kamerverhuurregister bijwerken
+        # Vergunningen en meldingen brandveilig gebruik samen, per pand en per
+        # buurt. Na het archief, zodat de meldingen van vandaag meetellen. De
+        # vergunningenlijst gaat tot ongeveer 2013 terug; veel kamerpanden
+        # zijn eerder vergund of staan boven de WOZ-grens. Een melding
+        # brandveilig gebruik (verplicht vanaf vijf kamers) vangt een deel
+        # daarvan op. Samen blijft het een ondergrens.
+        id: register
+        continue-on-error: true
+        run: python kamerverhuur_register.py
+
       - name: Terugcommitten
         # De lus staat in terugcommitten.sh; zie daar waarom hij zo is.
         run: |
           set -o pipefail
           ./terugcommitten.sh "Publicaties $(date -u +%F\ %H:%M)" \
             bekendmakingen_recent.json bekendmakingen_archief.json \
+            kamerverhuur_objecten.json kamerverhuur_per_buurt.json \
+            straat_buurt_cache.json diagnose/kamerverhuur.txt \
             2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
 
@@ -95,14 +108,14 @@ jobs:
         # Een issue per dag, zodat een storing van een dag een melding is en
         # geen stapel. Ook bij een mislukte ophaalstap, want die is groen
         # gemaakt met continue-on-error.
-        if: failure() || steps.recent.outcome == 'failure' || steps.archief.outcome == 'failure'
+        if: failure() || steps.recent.outcome == 'failure' || steps.archief.outcome == 'failure' || steps.register.outcome == 'failure'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           KOP="Publicaties niet (volledig) opgehaald op $(date -u +%F)"
           {
             echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-            echo "Recent: ${{ steps.recent.outcome }}, archief: ${{ steps.archief.outcome }}"
+            echo "Recent: ${{ steps.recent.outcome }}, archief: ${{ steps.archief.outcome }}, register: ${{ steps.register.outcome }}"
             echo '```'
             python -c "import json;d=json.load(open('bekendmakingen_recent.json'));print('opgehaald', d.get('opgehaald'), 'fout', d.get('fout'))" 2>&1 || true
             tail -c 2000 /tmp/terugcommit.log 2>/dev/null || true
