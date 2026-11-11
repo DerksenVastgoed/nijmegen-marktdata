@@ -141,7 +141,8 @@ def bouw(jaar, buurt_wijk):
             al[b] = code
         keuzes.append({"code": code, "label": label, "buurten": sorted(set(buurten))})
     if fouten:
-        raise ValueError("; ".join(fouten))
+        raise ValueError("; ".join(fouten) + f". CBS-wijken in {jaar}: "
+                         + ", ".join(sorted(wijk_namen)))
     return {
         "bron": f"CBS Wijk- en Buurtkaart {jaar} via PDOK; keuzes uit wijken.py",
         "jaar": jaar,
