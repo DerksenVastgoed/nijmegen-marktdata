@@ -79,6 +79,8 @@ jobs:
       # terugcommitten mislukt, is git juist het kanaal dat stuk is, en dan
       # is een issue het enige wat van buiten de run te lezen is.
       issues: write
+      # EN ACTIONS, om de inhaalslag van de 3D BAG te starten.
+      actions: write
     steps:
       - name: Repo ophalen
         uses: actions/checkout@v4
@@ -273,9 +275,23 @@ jobs:
           ./terugcommitten.sh "Voorraad $(date +%F)" $BESTANDEN 2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
 
-      # DE INHAALSLAG VAN DE 3D BAG STARTTE HIER, en staat sinds 11 november
-      # niet meer in deze workflow: bag3d.py en bag3d.json zijn in de brief
-      # gebleven. Zie VERBETERLIJST.md.
+      - name: 3D BAG bijhalen als er panden in de wachtrij staan
+        # De inhaalslag is de enige schrijver van bag3d.json. Deze ronde voegt
+        # woningen en adressen met een bekendmaking toe; staan daar panden
+        # tussen zonder 3D BAG, dan start hij de inhaalslag. Alleen op de
+        # hoofdtak.
+        if: github.ref_name == github.event.repository.default_branch
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git pull -q origin "${GITHUB_REF_NAME}" || true
+          N=$(python bag3d.py --wachtrij)
+          echo "3D BAG: $N panden nog op te halen"
+          if [ "$N" -gt 0 ]; then
+            gh workflow run inhaal-3dbag.yml -f minuten=150 -f keten=0 \
+              && echo "Inhaalslag gestart"
+          fi
 
       - name: Melden in een issue als er iets is mislukt
         # WAAROM DIT EEN ISSUE IS EN GEEN REGEL IN DE LOG. Op 12 oktober

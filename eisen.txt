@@ -448,3 +448,19 @@ proef: -
 let op: niet in code af te dwingen zonder de privé lijst hier neer te zetten,
   en dat zou precies de fout zijn. Wie een filter op adres toevoegt, hoort dit
   te lezen.
+
+---
+eis: Twee workflows die hetzelfde gegevensbestand aanvullen, wissen bij een
+  botsing elkaars werk niet; bag3d.json wordt samengevoegd, niet overschreven.
+waarom: 15 oktober. De inhaalslag van de 3D BAG haalt duizenden panden op
+  terwijl de brief er 300 per dag bij doet. Bij een botsing zette de brief
+  "de versie van deze run" neer, en die kende het werk van de inhaalslag niet.
+  Er komen alleen panden bij, dus de vereniging is altijd juist. De
+  samenvoeger staat in bag3d.py en is in een echte rebase nagedaan: vier
+  panden na, niet twee.
+proef: bag3d:bij het samenvoegen valt een pand weg
+soort: werking
+let op: sinds 11 november schrijft hier alleen inhaal-3dbag.yml bag3d.json;
+  de voorraadronde start hem alleen. De samenvoeger blijft nodig voor
+  lees_samen() en voor de brief, die zijn eigen bestand met deze samenvoeger
+  in git samenvoegt.

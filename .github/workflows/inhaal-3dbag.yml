@@ -1,0 +1,91 @@
+# De 3D BAG van de ring en van de adressen met een bekendmaking ophalen.
+#
+# SINDS 11 NOVEMBER IN NIJMEGEN-MARKTDATA, en de enige workflow die bag3d.json
+# schrijft. De voorraadronde start hem als er panden in de wachtrij staan. De
+# brief haalt de 3D BAG van zijn eigen panden (uit aanbod en verkoop) zelf op,
+# in een eigen privé bestand; die selectie hoort niet in deze openbare repo.
+#
+# De 3D BAG van de hele ring in een keer binnenhalen, los van de brief.
+#
+# WAAROM DIT EEN EIGEN WORKFLOW IS. Op 15 oktober 2026 kende bag3d.json 1.347
+# van de 8.876 panden in de ring; er stonden er 7.529 in de wachtrij. De brief
+# haalt er 300 per dag op, dus dat duurde nog 26 dagen. Zonder bouwlagen telt
+# het splitsen niet per etage, en die regel raakte op de 201 woningen met
+# bekende lagen 139 keer de uitkomst.
+#
+# Mark, 15 oktober: nu inladen, zolang de repo openbaar is. Actions-minuten
+# zijn op een openbare repo gratis; privé is het 2.000 per maand, en de
+# gewone runs gebruikten er al 2.898 in zeven dagen.
+#
+# Hij keten zichzelf door tot de wachtrij leeg is, met een teller tegen
+# rondzingen, in een eigen concurrency-groep.
+#
+# HIJ BLIJFT STAAN. Op 15 oktober deed hij de hele ring in 59 minuten, en
+# dezelfde avond de 1.944 panden van Hunnerberg en St. Anna in 28 minuten. Er
+# kan nog een buurt bij komen; dan start de voorraadworkflow hem vanzelf
+# zodra de wachtrij groter is dan de 300 die de brief per dag doet. Een
+# workflow die niet draait kost niets.
+
+name: Inhaalslag 3D BAG
+
+on:
+  workflow_dispatch:
+    inputs:
+      minuten:
+        description: "Tijdbudget voor het ophalen, in minuten."
+        default: "150"
+      keten:
+        description: "Volgnummer in de keten; niet met de hand invullen."
+        default: "0"
+
+concurrency:
+  group: inhaal-3dbag
+  cancel-in-progress: false
+
+jobs:
+  inhalen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Proef
+        run: python3 bag3d.py --proef
+
+      - name: Ophalen
+        run: |
+          python3 bag3d.py --per-ronde 100000 \
+            --minuten "${{ github.event.inputs.minuten }}" --rest /tmp/rest.json
+          cat /tmp/rest.json; echo
+          # Ook in de samenvatting van de run, want het joblogboek is van
+          # buiten niet altijd te lezen (zie leesbaar_kanaal() in eisen.py).
+          { echo "## 3D BAG"; echo '```'; cat /tmp/rest.json; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Terugcommitten
+        # De lus staat in terugcommitten.sh. Sinds 11 november is deze workflow
+        # de enige die bag3d.json schrijft (de voorraadronde start hem alleen),
+        # dus de samenvoeger voor twee schrijvers is hier niet meer nodig.
+        run: |
+          set -o pipefail
+          ./terugcommitten.sh "3D BAG inhaalslag $(date -u +%F)" bag3d.json \
+            2>&1 | tee /tmp/terugcommit.log
+          exit "${PIPESTATUS[0]}"
+
+      - name: Vervolgronde
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REST=$(python3 -c "import json;print(json.load(open('/tmp/rest.json')).get('rest',0))")
+          OPGEHAALD=$(python3 -c "import json;print(json.load(open('/tmp/rest.json')).get('opgehaald',0))")
+          KETEN="${{ github.event.inputs.keten }}"
+          echo "Nog $REST te gaan, deze ronde $OPGEHAALD opgehaald, schakel $KETEN"
+          # Alleen door als deze ronde iets opleverde: een bron die niets
+          # meer geeft, moet de keten stoppen en niet twintig keer proberen.
+          if [ "$REST" -gt 0 ] && [ "$OPGEHAALD" -gt 0 ] && [ "$KETEN" -lt 15 ]; then
+            gh workflow run inhaal-3dbag.yml -f keten="$((KETEN + 1))" \
+              -f minuten="${{ github.event.inputs.minuten }}"
+            echo "Vervolgronde gestart"
+          fi
