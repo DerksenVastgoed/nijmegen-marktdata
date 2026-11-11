@@ -88,6 +88,31 @@ jobs:
             echo "Koppeling aanwezig ($AANTAL buurten)"
           fi
 
+      - name: Buurtcijfers CBS
+        id: buurten
+        continue-on-error: true
+        run: python buurtcijfers.py
+
+      - name: Stadsbegroting
+        # Haalt hooguit een keer per week op; meldt alleen nieuwe regels, met
+        # datum, in begroting_meldingen.json.
+        id: begroting
+        continue-on-error: true
+        run: python begroting_monitor.py
+
+      - name: Ov-haltes (alleen als het bestand ontbreekt)
+        # Haltes veranderen zelden. Verversen: verwijder ov_haltes.json en start
+        # deze workflow met de hand. De looptijden naar adressen rekent de
+        # lezer zelf uit, met zijn eigen adressen.
+        id: haltes
+        continue-on-error: true
+        run: |
+          if [ -s ov_haltes.json ]; then
+            echo "Haltes aanwezig, overslaan"
+          else
+            python ov_haltes.py --verversen
+          fi
+
       - name: Terugcommitten
         run: |
           set -o pipefail
@@ -95,11 +120,13 @@ jobs:
             woningprijsindex.json corop_prijzen.json bouwkosten_index.json \
             misdrijven_per_buurt.json vergunningen_per_buurt.json \
             straat_buurt_cache.json diagnose/woningprijzen.txt \
-            diagnose/bouwkosten.txt diagnose/vergunningen.txt 2>&1 | tee /tmp/terugcommit.log
+            diagnose/bouwkosten.txt diagnose/vergunningen.txt \
+            buurten_cbs.json begroting_nijmegen.json begroting_meldingen.json \
+            ov_haltes.json diagnose/buurtcijfers.txt diagnose/begroting.txt 2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
 
       - name: Melden in een issue als er iets is mislukt
-        if: failure() || steps.woningprijs.outcome == 'failure' || steps.corop.outcome == 'failure' || steps.bouwkosten.outcome == 'failure' || steps.misdrijven.outcome == 'failure' || steps.vergunningen.outcome == 'failure'
+        if: failure() || steps.woningprijs.outcome == 'failure' || steps.corop.outcome == 'failure' || steps.bouwkosten.outcome == 'failure' || steps.misdrijven.outcome == 'failure' || steps.vergunningen.outcome == 'failure' || steps.buurten.outcome == 'failure' || steps.begroting.outcome == 'failure' || steps.haltes.outcome == 'failure'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

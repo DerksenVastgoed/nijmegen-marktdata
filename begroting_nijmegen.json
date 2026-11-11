@@ -1,0 +1,42 @@
+{
+ "jaar": 2027,
+ "basis": "https://nijmegen.begroting-2027.nl",
+ "gebouwd": "10/27/2026 09:58:28",
+ "opgehaald": "2026-11-05",
+ "paginas": {
+  "Wonen en stedelijke ontwikkeling": {
+   "url": "https://nijmegen.begroting-2027.nl/p64119/wonen-en-stedelijke-ontwikkeling",
+   "regels": [
+    "We zijn een stad met gemengde wijken en een gevarieerd woningaanbod dat aansluit bij de vraag van alle nieuwe en bestaande bewoners Doelen * We realiseren onze woningbouwopgave uit de omgevingsvisie en het woonbeleid * We hebben voldoende beschikbaar aanbod van betaalbare woonruimten * We hebben voldoende goede woonruimte voor aandachtsgroepen, waaronder ouderen en studenten."
+   ]
+  },
+  "Investeringen": {
+   "url": "https://nijmegen.begroting-2027.nl/p64096/beleid",
+   "regels": [
+    "Investeringen met eigen dekking krijgen dekking uit een reserve of worden gedekt door jaarlijkse opbrengsten, zoals de rioolheffing."
+   ]
+  },
+  "Lokale heffingen": {
+   "url": "https://nijmegen.begroting-2027.nl/p64063/beleid",
+   "regels": [
+    "Voorbeelden zijn de Onroerendezaakbelasting (OZB) en de toeristenbelasting.",
+    "Voorbeelden zijn havengelden en leges.",
+    "Kwijtschelding wordt vanaf 1 januari 2023 alleen nog verleend voor de leges voor een gehandicaptenparkeerplaats of ‐ kaart."
+   ]
+  },
+  "Grondbeleid": {
+   "url": "https://nijmegen.begroting-2027.nl/p63838/beleid",
+   "regels": [
+    "De realisatie van grote woningbouwlocaties zoals de Waalsprong, Stationsdistrict (inclusief Waalfront en de binnenstad), Kanaalzone-Zuid (Winkelsteeg, Dukenburg, Lindenholt, Neerbosch Oost en Hatert), Vlaams kwartier en Valkhofkwartier.",
+    "De extra woningen komen vooral op een aantal grote woningbouwlocaties De extra woningen en werkplekken komen vooral op een aantal grote woningbouwlocaties: Waalsprong, Stationsdistrict(inclusief Waalfront en de binnenstad) en Kanaalzone Zuid(Winkelsteeg, Dukenburg, Lindenholt, Neerbosch Oost en Hatert)."
+   ]
+  },
+  "Wonen en stedelijke ontwikkeling € 118.284.854 begrote inkomsten € 146.864.019 begrote uitgaven": {
+   "url": "https://nijmegen.begroting-2027.nl/p64119/wonen-en-stedelijke-ontwikkeling",
+   "regels": [
+    "We zijn een stad met gemengde wijken en een gevarieerd woningaanbod dat aansluit bij de vraag van alle nieuwe en bestaande bewoners Doelen * We realiseren onze woningbouwopgave uit de omgevingsvisie en het woonbeleid * We hebben voldoende beschikbaar aanbod van betaalbare woonruimten * We hebben voldoende goede woonruimte voor aandachtsgroepen, waaronder ouderen en studenten."
+   ]
+  }
+ },
+ "tarieven": {}
+}

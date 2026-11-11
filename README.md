@@ -13,11 +13,12 @@ panden, kosten of plannen; die gegevens staan in een privé repo.
 |---|---|---|
 | `voorraad.yml` | elke dag 04:40 UTC, en met de hand | BAG, energielabels, parkeerzones, buurtinventaris → `voorraad.json` |
 | `publicaties.yml` | 01:37, 07:37, 13:37 en 19:37 UTC, en met de hand | alle bekendmakingen van Nijmegen → `bekendmakingen_recent.json`, `bekendmakingen_archief.json` |
-| `cijfers.yml` | elke dag 01:07 UTC, en met de hand | CBS, Kadaster en PDOK → woningprijsindex, COROP, bouwkostenindex, misdrijven en kamerverhuurvergunningen per buurt |
+| `cijfers.yml` | elke dag 01:07 UTC, en met de hand | CBS, Kadaster, PDOK, gemeente en OpenStreetMap → woningprijsindex, COROP, bouwkostenindex, misdrijven en vergunningen per buurt, buurtcijfers, begroting, ov-haltes |
 | `inhaal-3dbag.yml` | gestart door de voorraadronde als er panden zonder 3D BAG zijn | hoogtes, oppervlakken en bouwlagen → `bag3d.json` |
 | `bestemming.yml` | met de hand | bestemmingen per pand (PDOK) → `bestemmingen.json` |
 | `gezicht.yml` | maandag, en met de hand | beschermde gezichten, monumenten, stadsbeeld (PDOK, RCE, gemeente) |
 | `publicatievelden.yml` | elke dag | velden uit de tekst van bekendmakingen → `publicatie_velden.json` |
+| `regelgeving.yml` | zondag 00:05 UTC, en met de hand | verordeningen en wetten volgen → `regelgeving_status.json`, `regelgeving_meldingen.json` |
 | `proeven.yml` | bij elke push en PR | `python eisen.py --proef` |
 
 Nodig als repo-secrets: `BAG_API_KEY` (Kadaster) en `EP_API_KEY` (RVO EP-Online).
@@ -35,6 +36,9 @@ Nodig als repo-secrets: `BAG_API_KEY` (Kadaster) en `EP_API_KEY` (RVO EP-Online)
 | `gezichten.json`, `monumenten_*`, `rijksmonumenten_*`, `omgevingsplan_gio*`, `stadsbeeld_*` | erfgoed en beschermde gezichten per pand |
 | `bestemmingen.json` | bestemmingen per pand |
 | `publicatie_velden.json` | velden uit bekendmakingen: zaaknummer, uitkomst, aantallen |
+| `buurten_cbs.json` | cijfers per ringbuurt uit de CBS Wijk- en Buurtkaart |
+| `begroting_nijmegen.json`, `begroting_meldingen.json` | tarieven en nieuwe regels uit de stadsbegroting |
+| `ov_haltes.json` | ov-haltes in en rond Nijmegen (OpenStreetMap) |
 | `diagnose/*.txt` | wat er bij het ophalen misging, als dat zo is |
 | `bag3d.json` | 3D BAG per pand voor de ring en de adressen met een bekendmaking (TU Delft en 3DGI, CC BY 4.0) |
 | `voorraad.json` | woningen en niet-woningen per adres, met oppervlakte, gebruiksdoel, pand en label |
