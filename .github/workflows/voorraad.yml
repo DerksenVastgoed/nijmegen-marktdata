@@ -259,142 +259,18 @@ jobs:
           # buiten wordt geweigerd, dus de oorzaak was niet te achterhalen:
           # alleen dat de stap twee seconden duurde. Daarom gaat alles nu ook
           # naar een bestand, dat de meldstap hieronder in een issue zet.
+          # DE LUS ZELF STAAT IN terugcommitten.sh, met de drie fouten die hem
+          # vormden (12 en 13 oktober). Hier staat alleen welke bestanden.
           set -o pipefail
-          terugcommitten() {
-          set -x
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           BESTANDEN="voorraad.json voorraad_stand.json eponline_antwoordvorm.json parkeerzones.json parkeerzones_verslag.md buurtinventaris.json"
           if [ "${GITHUB_REF_NAME}" != "${DEFAULT_BRANCH}" ]; then
-            # Op een branch gaat de voorraad van ruim vijf megabyte niet terug
-            # (die zou uit een tussenversie van de code komen), maar de stand
-            # en het vastgelegde antwoord wel: samen een paar kilobyte, en het
-            # zijn juist de twee bestanden waarvoor een branchrun wordt
-            # gestart. Zonder het antwoord erbij is die run niet te lezen,
-            # want de log is van buiten niet bereikbaar.
+            # Op een tak gaat de voorraad van ruim vijf megabyte niet terug (die
+            # komt uit een tussenversie van de code), wel de stand en het
+            # vastgelegde antwoord: daarvoor wordt een takrun gestart.
             BESTANDEN="voorraad_stand.json eponline_antwoordvorm.json parkeerzones_verslag.md"
             echo "Niet op ${DEFAULT_BRANCH}: alleen de stand en de antwoordvorm gaan terug"
           fi
-          for f in $BESTANDEN; do
-            if [ -f "$f" ]; then
-              git add "$f"
-              echo "  $f ($(wc -c < "$f") bytes)"
-            else
-              echo "  $f ONTBREEKT"
-            fi
-          done
-          if git diff --cached --quiet; then
-            echo "Niets gewijzigd, niets te committen"
-            return 0
-          fi
-          git commit -m "Voorraad $(date +%F)"
-          # OPNIEUW BOVENOP DE REMOTE ZETTEN, NIET REBASEN. Hier stond een
-          # lus met "git pull --rebase --autostash || true", en op 12 oktober
-          # kostte dat een ronde van negentig minuten. Nagemaakt in een
-          # sandbox, met deze uitkomst in een seconde:
-          #
-          #   poging 1: push geweigerd
-          #             git pull --rebase -> CONFLICT in voorraad.json
-          #   poging 2: fatal: You are not currently on a branch.
-          #   poging 3: idem
-          #
-          # De mislukte rebase werd ingeslikt door de "|| true", de repo bleef
-          # halverwege een rebase staan, en daardoor faalden de volgende twee
-          # pushes direct. Een geplande run gebruikt de commit van het moment
-          # waarop hij werd AANGEMAAKT, dus bij twee rondes op een dag is zijn
-          # basis altijd verschoven en botst hij op voorraad.json.
-          #
-          # Rebasen is hier ook het verkeerde gereedschap. Deze bestanden
-          # worden in hun geheel door de ronde gemaakt en niet regel voor
-          # regel bijgewerkt, dus er valt niets samen te voegen: de nieuwste
-          # ronde heeft alles wat de vorige had en meer. Daarom: de index met
-          # ONZE bestanden houden, HEAD naar de remote zetten, en opnieuw
-          # committen. Dan is de push altijd een fast-forward en kan er geen
-          # conflict bestaan. Alleen de bestanden die wij hebben toegevoegd
-          # zitten in die index, dus de rest van de repo blijft zoals de
-          # remote hem heeft.
-          # EEN GEGEVENSCOMMIT RAAKT NOOIT BRONCODE. Deze toets staat los van
-          # de lijst hierboven en van de resetmodus eronder: wat er ook gebeurt,
-          # een ronde die data terugschrijft mag geen .py of .yml veranderen.
-          # Op 13 oktober deed hij dat wel, en dat was aan niets te zien.
-          geen_broncode() {
-            local raakt
-            raakt=$(git diff --name-only HEAD~1 HEAD -- '*.py' '*.yml' 2>/dev/null || true)
-            if [ -n "$raakt" ]; then
-              echo "GESTOPT: deze commit raakt broncode: $raakt"
-              echo "Een ronde die gegevens terugschrijft hoort geen code te veranderen."
-              return 1
-            fi
-            return 0
-          }
-          for poging in 1 2 3; do
-            geen_broncode || return 1
-            if git push; then
-              echo "Teruggecommit gelukt"
-              return 0
-            fi
-            echo "Push mislukt, poging $poging; opnieuw bovenop de remote"
-            # Een half afgebroken rebase van een eerdere poging opruimen,
-            # want die laat de repo los van elke branch staan.
-            git rebase --abort 2>/dev/null || true
-            # Met een eigen melding erbij. Zonder deze regel sterft de stap
-            # op een kale gitcode 128 als de branch niet op de remote staat,
-            # en dan staat er in het issue geen reden maar een cijfer.
-            if ! git fetch origin "${GITHUB_REF_NAME}"; then
-              echo "Kan ${GITHUB_REF_NAME} niet ophalen van de remote; staat die branch daar wel?"
-              return 1
-            fi
-            # MIXED EN NIET SOFT, EN DAARNA NAMETEN.
-            #
-            # Hier stond "git reset --soft", met het commentaar hierboven dat
-            # alleen onze eigen bestanden in de index zouden zitten. Dat is
-            # precies wat --soft NIET doet: die zet alleen HEAD en laat de
-            # hele index van de oude checkout staan. De commit schrijft die
-            # index als nieuwe boom, dus elk bestand dat tijdens de ronde op
-            # de remote veranderde, wordt teruggedraaid naar de versie van het
-            # moment waarop de ronde begon.
-            #
-            # Op 13 oktober gebeurde dat. De ronde van 07:04 duurde 102
-            # minuten; in dat uur werden PR 56 en PR 57 gemerged. Zijn commit
-            # van 08:46 draaide beide volledig terug: zes broncodebestanden en
-            # drie eisen. Alle proeven bleven groen, want de eisen die ernaar
-            # verwezen waren met dezelfde commit verdwenen.
-            #
-            # Nagemaakt in een sandbox, in een seconde:
-            #   --soft:  code.py na de commit = "versie 1"  (fix verdwenen)
-            #   mixed :  code.py na de commit = "versie 2 MET MIJN FIX"
-            #
-            # En dan nog nameten dat de commit werkelijk niets buiten de lijst
-            # aanraakt. Een reset-modus is te makkelijk terug te draaien; deze
-            # toets houdt het tegen, wat voor reset er ook boven staat.
-            git reset "origin/${GITHUB_REF_NAME}"
-            for f in $BESTANDEN; do
-              [ -f "$f" ] && git add "$f"
-            done
-            LIJST=" $(echo $BESTANDEN) "
-            VREEMD=""
-            for f in $(git diff --cached --name-only); do
-              case "$LIJST" in
-                *" $f "*) ;;
-                *) VREEMD="$VREEMD $f" ;;
-              esac
-            done
-            if [ -n "$VREEMD" ]; then
-              echo "GESTOPT: deze commit zou bestanden buiten de lijst veranderen:$VREEMD"
-              echo "Dat is de fout van 13 oktober: een ronde draait werk terug"
-              echo "dat tijdens zijn looptijd is gemerged."
-              return 1
-            fi
-            if git diff --cached --quiet; then
-              echo "Na het bijtrekken is er niets meer te committen"
-              return 0
-            fi
-            git commit -m "Voorraad $(date +%F)"
-          done
-          echo "Terugcommitten mislukt na drie pogingen"
-          return 1
-          }
-          terugcommitten 2>&1 | tee /tmp/terugcommit.log
+          ./terugcommitten.sh "Voorraad $(date +%F)" $BESTANDEN 2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
 
       # DE INHAALSLAG VAN DE 3D BAG STARTTE HIER, en staat sinds 11 november

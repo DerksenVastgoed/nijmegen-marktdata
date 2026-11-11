@@ -3,29 +3,18 @@
 De eisen aan nijmegen-marktdata lezen, en nameten of ze werkelijk gehandhaafd
 worden.
 
-HERKOMST EN SCHULD. Dit is een kopie van eisen.py uit de vastgoedbrief, van 11
-november, toen de ophaalrondes naar deze openbare repo verhuisden. Drie
-controles die alleen over de brief gaan staan hier uit: de kaartschakelaar, de
-kennisblokken van bronnen.py en de startdagen van de briefworkflow; die laatste
-meet hier de voorraadworkflow. Twee kopieën van dezelfde controles lopen
-uiteen. Dat staat als schuld in VERBETERLIJST.md: dit bestand hoort de enige
-implementatie te worden, en de brief hoort het hiervandaan te gebruiken.
+EEN IMPLEMENTATIE VOOR BEIDE REPO'S. Dit bestand staat in nijmegen-marktdata
+en wordt sinds 11 november ook door de vastgoedbrief gebruikt, die het via
+marktdata/ ophaalt en draait vanuit zijn eigen map: `python marktdata/eisen.py
+--proef`. Het leest eisen.txt, de workflows en de modules van de map waarin het
+draait. Een paar controles gelden maar voor een van de twee; welke, staat
+bovenin eisen.txt van die repo als regels "# instelling: naam = waarde" (zie
+instellingen()). Zo zegt elke repo zelf wat er voor hem geldt, en staat er
+geen lijst met repo's in de code.
 
-WAT DIT OPLOST. De regels waaraan de brief zich houdt stonden verspreid over
-33.000 regels docstrings en workflowcommentaar, elk opgeschreven op de dag dat
-het misging. Een losse lijst in markdown zou dat niet oplossen: die veroudert
-stil, en stil verouderen is precies de fout die we deze week vijf keer hebben
-gezien.
-
-Daarom noemt elke eis in eisen.txt de controle die hem handhaaft, en meet dit
-bestand na of die controle bestaat, groen staat, en de naam draagt waar de eis
-naar verwijst. Wordt zo'n controle weggehaald of omgedoopt, dan is dit rood.
-
-WAT HET NIET DOET. Het toetst niet of een controle werkelijk meet wat de eis
-zegt; dat kan geen programma. Een eis zonder proef staat er met "proef: -" en
-dat is een eerlijker antwoord dan een verwijzing die niets afdwingt. Het
-verschil tussen wat we willen en wat gecontroleerd wordt, hoort zichtbaar te
-zijn in plaats van impliciet.
+Daarvoor stonden er een dag twee kopieën van dit bestand. De brief-kopie zag
+toen de kopie hier als "twee implementaties" in marktdata.py --proef, en dat
+legde de poort van de brief stil. Precies de fout waartegen die proef bestaat.
 """
 import argparse
 import glob
@@ -140,11 +129,48 @@ def _vlag(module):
 
 
 def _bron(module):
+    """
+    De bron van een module: eerst in de map waarin we draaien, en voor eisen
+    zelf het bestand naast dit script. Zo vindt een eis die naar "eisen:..."
+    verwijst zijn label ook als dit bestand uit marktdata/ komt.
+    """
+    paden = [f"{module}.py"]
+    if module == "eisen":
+        paden.append(os.path.abspath(__file__))
+    for pad in paden:
+        try:
+            with open(pad, encoding="utf-8") as f:
+                return f.read()
+        except Exception:
+            continue
+    return None
+
+
+def instellingen(pad=PAD):
+    """
+    De regels "# instelling: naam = waarde" bovenin eisen.txt.
+
+    Bekend:
+      startworkflow    de workflow die elke dag moet starten (startdagen())
+      kaartschakelaar  ja: de toets op de kaartlink draait (alleen de brief)
+      kennisblokken    ja: de toetsen op bronnen.py draaien (alleen de brief)
+    Een onbekende naam is een fout in proef(), anders typt iemand
+    "kaartschakelar" en draait de toets stil niet.
+    """
+    uit = {}
     try:
-        with open(f"{module}.py", encoding="utf-8") as f:
-            return f.read()
+        with open(pad, encoding="utf-8") as f:
+            for regel in f:
+                m = re.match(r"#\s*instelling:\s*([a-z_]+)\s*=\s*(.+?)\s*$",
+                             regel)
+                if m:
+                    uit[m.group(1)] = m.group(2)
     except Exception:
-        return None
+        pass
+    return uit
+
+
+BEKENDE_INSTELLINGEN = ("startworkflow", "kaartschakelaar", "kennisblokken")
 
 
 def _eindigt_op_sys_exit(bron):
@@ -167,8 +193,10 @@ def _eindigt_op_sys_exit(bron):
     return staart.strip().splitlines()[-1][:60]
 
 
-WORKFLOWS = (os.path.join(".github", "workflows", "voorraad.yml"),)
-BRIEFWORKFLOW = WORKFLOWS[0]
+# De workflow die elke dag moet starten, uit eisen.txt van deze repo. De naam
+# BRIEFWORKFLOW is gebleven omdat gezondheid.py hem zo importeert.
+BRIEFWORKFLOW = os.path.join(".github", "workflows",
+                             instellingen().get("startworkflow", ""))
 DAGNAMEN = ("zondag", "maandag", "dinsdag", "woensdag", "donderdag",
             "vrijdag", "zaterdag")
 
@@ -259,6 +287,19 @@ def commitstap(paden=None):
         # terugschrijft heeft geen commitstap en dus ook geen vangnet nodig.
         # De uitzondering volgt uit de inhoud van het bestand en niet uit een
         # lijst met namen, want zo'n lijst veroudert.
+        # EEN WORKFLOW DIE terugcommitten.sh AANROEPT, wordt op dat script
+        # getoetst: daar staat sinds 11 november de lus, zodat twee workflows
+        # niet elk een eigen kopie hebben.
+        if "terugcommitten.sh" in bron:
+            script = os.path.join(os.path.dirname(os.path.dirname(
+                os.path.dirname(os.path.abspath(pad)))), "terugcommitten.sh")
+            try:
+                with open(script, encoding="utf-8") as f:
+                    bron = bron + "\n" + f.read()
+            except Exception as e:
+                fouten.append(f"{pad} roept terugcommitten.sh aan, maar dat "
+                              f"is niet te lezen: {str(e)[:50]}")
+                continue
         if "git commit" not in bron:
             continue
         gekeken += 1
@@ -1088,7 +1129,19 @@ def proef(snel=False):
 
     # Een kaartlink die stil wegvalt leest als een keuze. Zie
     # kaartschakelaar().
-    # Niet in deze repo: de kaartschakelaar hoort bij de brief.
+    inst = instellingen()
+    for naam in inst:
+        if naam not in BEKENDE_INSTELLINGEN:
+            fouten.append(f"onbekende instelling in eisen.txt: {naam!r}; "
+                          f"bekend zijn {', '.join(BEKENDE_INSTELLINGEN)}")
+    if not inst.get("startworkflow"):
+        fouten.append("eisen.txt noemt geen startworkflow; dan zijn de "
+                      "startdagen niet na te meten")
+    # De kaartschakelaar en de kennisblokken gelden alleen waar eisen.txt dat
+    # zegt. Staan ze uit, dan staat dat er; dat is "niet van toepassing" en
+    # niet "gekeken en goed".
+    if inst.get("kaartschakelaar") == "ja":
+        fouten.extend(kaartschakelaar())
 
     # COMMENTAAR MAG DE TOETS NIET GROEN MAKEN. Het blok hieronder noemt
     # pipefail wel in de uitleg en zet het niet aan. Zonder dit geval zou
@@ -1134,7 +1187,9 @@ def proef(snel=False):
     # Elk kennisblok hoort trefwoorden en een bron te hebben, en dezelfde
     # regel hoort niet op twee plaatsen te staan. Zie kennis_compleet() en
     # dubbele_kennis() voor wat dat op 13 oktober kostte.
-    # Niet in deze repo: bronnen.py en zijn kennisblokken staan in de brief.
+    if inst.get("kennisblokken") == "ja":
+        fouten.extend(kennis_compleet())
+        fouten.extend(dubbele_kennis())
 
     # Elke dag van de week moet een geplande start van de brief hebben. Een
     # dag zonder cron heeft geen terugval, en dat valt pas op als niemand

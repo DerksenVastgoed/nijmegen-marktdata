@@ -1,8 +1,8 @@
 # nijmegen-marktdata
 
-Openbare gegevens over de woningvoorraad van Nijmegen, automatisch opgehaald:
-oppervlakte en gebruiksdoel uit de BAG, energielabels uit EP-Online,
-parkeerzones van de gemeente en de postcodes van de ringbuurten.
+Openbare gegevens over Nijmegen, automatisch opgehaald: de officiële
+bekendmakingen van de gemeente, oppervlakte en gebruiksdoel uit de BAG,
+energielabels uit EP-Online, parkeerzones en de postcodes van de ringbuurten.
 
 Alles in deze repo komt uit een openbare bron. Er staat niets in over eigen
 panden, kosten of plannen; die gegevens staan in een privé repo.
@@ -12,6 +12,7 @@ panden, kosten of plannen; die gegevens staan in een privé repo.
 | Workflow | Wanneer | Wat |
 |---|---|---|
 | `voorraad.yml` | elke dag 04:40 UTC, en met de hand | BAG, energielabels, parkeerzones, buurtinventaris → `voorraad.json` |
+| `publicaties.yml` | 01:37, 07:37, 13:37 en 19:37 UTC, en met de hand | alle bekendmakingen van Nijmegen → `bekendmakingen_recent.json`, `bekendmakingen_archief.json` |
 | `proeven.yml` | bij elke push en PR | `python eisen.py --proef` |
 
 Nodig als repo-secrets: `BAG_API_KEY` (Kadaster) en `EP_API_KEY` (RVO EP-Online).
@@ -20,11 +21,13 @@ Nodig als repo-secrets: `BAG_API_KEY` (Kadaster) en `EP_API_KEY` (RVO EP-Online)
 
 | Bestand | Inhoud |
 |---|---|
+| `bekendmakingen_recent.json` | alle bekendmakingen van de gemeente van de laatste 30 dagen, met tijdstip van ophalen |
+| `bekendmakingen_archief.json` | per adres de bekendmakingen over gebruik, verbouwing en handhaving, sinds 2012 |
 | `voorraad.json` | woningen en niet-woningen per adres, met oppervlakte, gebruiksdoel, pand en label |
 | `voorraad_stand.json` | verslag van de laatste ronde |
 | `buurtinventaris.json` | postcodes per ringbuurt |
 | `parkeerzones.json` | parkeerzones per pand |
 | `eponline_antwoordvorm.json` | vastgelegde echte antwoorden van EP-Online, voor de proef |
 
-Bronnen: Kadaster BAG, RVO EP-Online, gemeente Nijmegen, PDOK. Zie de docstrings
+Bronnen: officiële bekendmakingen (overheid.nl), Kadaster BAG, RVO EP-Online, gemeente Nijmegen, PDOK. Zie de docstrings
 van de modules voor de voorwaarden per bron.

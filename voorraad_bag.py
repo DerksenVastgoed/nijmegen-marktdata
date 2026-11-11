@@ -421,7 +421,11 @@ def _normaliseer(p):
     }
 
 
-SIGNAALBRON = "pandgeschiedenis.json"
+SIGNAALBRON = "bekendmakingen_archief.json"
+
+
+def _kaal(tekst):
+    return "".join(c for c in (tekst or "").lower() if c.isalnum())
 
 
 def signaaladressen(pad=SIGNAALBRON):
@@ -445,12 +449,20 @@ def signaaladressen(pad=SIGNAALBRON):
     verblijfsobjecten van Nijmegen op, 164.634 stuks, en zeeft die daarna op
     onze postcodes. De gegevens van nummer 11 zijn dus al binnen en worden
     weggegooid. Dit maakt de zeef één regel ruimer.
+
+    SINDS 11 NOVEMBER UIT HET ARCHIEF VAN BEKENDMAKINGEN. Tot de splitsing las
+    dit pandgeschiedenis.json van de vastgoedbrief. Dat bestand staat privé,
+    want er staan ook verkopen en aanbod van platforms in. Nu komt het uit
+    bekendmakingen_archief.json in deze repo: alle Nijmeegse bekendmakingen
+    over het gebruik of de verbouwing van een pand, zonder selectie op straat.
+    Dat zijn er meer dan de signalen van de brief (op 11 november 748 adressen
+    in het archief tegen 327 panden met een bekendmaking in de brief), en ze
+    komen allemaal uit een openbare bron.
+
+    De vorm is die van waarom_houden(): kleine letters, alleen letters en
+    cijfers, straat plus huisnummer. Het archief laat een lidwoord uit de titel
+    staan ("de Pijnboomstraat"); de BAG niet. Daarom staan beide vormen erin.
     """
-    # SINDS DE SPLITSING NIET MEER HIER. Op 11 november verhuisde deze module
-    # naar de openbare repo nijmegen-marktdata; pandgeschiedenis.json bleef in
-    # de privé brief. Tot de bekendmakingen hier ook worden opgehaald, ontbreekt
-    # het bestand en haalt de ronde alleen de ring op. Dat zeggen we hardop:
-    # "niet gekeken" mag niet lijken op "geen signalen".
     if not os.path.exists(pad):
         print(f"LET OP: {pad} ontbreekt, dus adressen met een bekendmaking "
               f"buiten de ring worden deze ronde niet opgehaald",
@@ -459,20 +471,22 @@ def signaaladressen(pad=SIGNAALBRON):
     try:
         with open(pad, encoding="utf-8") as f:
             d = json.load(f)
-    except Exception:
+    except Exception as e:
+        print(f"LET OP: {pad} onleesbaar ({str(e)[:60]}), dus geen "
+              f"signaaladressen deze ronde", file=sys.stderr)
         return set()
+    import bekendmakingen_archief as _ba
     uit = set()
-    for sleutel, pand in (d or {}).items():
-        if not isinstance(pand, dict):
-            continue
-        if not any((e or {}).get("soort") == "bekendmaking"
-                   for e in (pand.get("gebeurtenissen") or [])):
-            continue
-        uit.add(str(sleutel))
-        adres = pand.get("adres") or ""
-        kaal = "".join(c for c in adres.lower() if c.isalnum())
-        if kaal:
-            uit.add(kaal)
+    for items in (d or {}).values():
+        for it in items or []:
+            adres = _ba.adres_uit_titel(it.get("titel") or "")
+            if not adres:
+                continue
+            straat, nr = adres
+            uit.add(_kaal(straat + nr))
+            for lw in ("de ", "het ", "'t ", "den "):
+                if straat.lower().startswith(lw):
+                    uit.add(_kaal(straat[len(lw):] + nr))
     return uit
 
 
