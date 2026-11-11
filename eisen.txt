@@ -660,3 +660,17 @@ waarom: 25 oktober 2026, run 40230114073: gmb-2023-26729 (Ligusterstraat
 proef: publicatievelden:zonder html de zoekpagina; publicatievelden:metadata telt niet als tekst
 soort: gegevens
 
+
+---
+eis: De maximale huur per punt staat op een plek in het hele ecosysteem, in
+  huurtabellen.json in deze repo. De beheer-app en de vastgoedbrief lezen hem
+  hiervandaan en hebben geen eigen kopie.
+waarom: 11 november. De tabel stond drie keer: in de beheer-app, en twee keer
+  in wwso.py van de brief. Die benaderde de WWSO-tabel boven 100 punten met
+  een vaste stap en week bij 137 van de 150 puntenaantallen af van de
+  officiele tabel, tot 13 cent. Elk jaar per 1 januari verandert de tabel;
+  met drie kopieen rekenen app en brief dan met verschillende maxima.
+proef: huurtabel:IJKPUNTEN UIT DE OFFICIELE TABELLEN; huurtabel:HET LOPENDE JAAR MOET ER ZIJN
+soort: gegevens
+let op: dat de app en de brief geen eigen kopie hebben, meten die repo's zelf
+  na (marktdata_toets.py in de brief, een test in de beheer-app).
