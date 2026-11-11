@@ -1,0 +1,4129 @@
+{
+ "bron": [
+  "https://kaart.nijmegen.nl/admin/v2/kaartviewerapi/bookmark/10/tree"
+ ],
+ "bomen": {
+  "https://kaart.nijmegen.nl/admin/v2/kaartviewerapi/bookmark/10/tree": [
+   {
+    "ID": 234,
+    "BookmarkGroupCopyID": null,
+    "Sorting": 0,
+    "DomainID": null,
+    "BackgroundColor": "",
+    "Type": 1,
+    "BookmarkViewTypeID": 1,
+    "Icon": null,
+    "Checked": null,
+    "BookmarkGroupSupportID": null,
+    "BoundingBoxType": null,
+    "Description": null,
+    "branch": [
+     {
+      "ID": 309,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 0,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Historische (lucht)foto's",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 297,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 0,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": "",
+        "Checked": null,
+        "BookmarkGroupSupportID": "",
+        "BoundingBoxType": "",
+        "Description": null,
+        "label": "Luchtfoto's",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 2935,
+          "presentationID": 586,
+          "Sorting": 0,
+          "label": "Luchtfoto 1936",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "179876.0204873505863361061,424974.7645739910076372325,191124.0122786145657300949,432025.1233183856238611042",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 2936,
+          "presentationID": 587,
+          "Sorting": 1,
+          "label": "Luchtfoto 1949",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180752.04097470123,421949.57399103139,193248.11078345144,436050.29147982062,0.49321399624053602,-0.49327354260089679",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3326,
+          "presentationID": 910,
+          "Sorting": 2,
+          "label": "Luchtfoto 1953-1954",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "179850.9439840508275665343,422278.9771869214018806815,193067.0371662121906410903,435032.2158663758891634643",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 2937,
+          "presentationID": 588,
+          "Sorting": 3,
+          "label": "Luchtfoto 1964",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180628.1076875194266904145,422924.4409572381409816444,191871.6308745721471495926,436575.6178893683827482164",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3327,
+          "presentationID": 911,
+          "Sorting": 4,
+          "label": "Luchtfoto 1969",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "51.80802313011987791924184,5.750565395072975150014827,51.91558454680200895836606,5.940023869475911766357967",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 2938,
+          "presentationID": 591,
+          "Sorting": 5,
+          "label": "Luchtfoto 1974",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180628.10768751943,421424.44095723814,191871.63087457215,435075.61788936838,0.64737005913477264,-0.64731267163593564",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3328,
+          "presentationID": 912,
+          "Sorting": 6,
+          "label": "Luchtfoto 1974 v2",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "51.7853802863587588944938,5.755925555575700514054915,51.91783084969229378202726,5.929539781150435118206588",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3329,
+          "presentationID": 913,
+          "Sorting": 7,
+          "label": "Luchtfoto 1981",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "51.77908052885001666254539,5.755106600078364387229612,51.90259140243664148783864,5.92088264877738712499422",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3333,
+          "presentationID": 917,
+          "Sorting": 8,
+          "label": "Luchtfoto 1983",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "51.78124588967794039717774,5.748290578416813900730631,51.90189642821945881223655,5.940294383222885166162541",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3330,
+          "presentationID": 914,
+          "Sorting": 9,
+          "label": "Luchtfoto 1986",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "179665.3523789726023096591,421157.2884188977768644691,194161.4545437255292199552,434990.9848769009695388377",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3332,
+          "presentationID": 916,
+          "Sorting": 10,
+          "label": "Luchtfoto 1989",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "51.78149409718201923169545,5.749747048922707826079659,51.9010976963189136768051,5.949056654241785757619709",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3331,
+          "presentationID": 915,
+          "Sorting": 11,
+          "label": "Luchtfoto 1992",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180478.1899852565838955343,421416.2718208371661603451,193966.70112174007226713,434905.1728662972454912961",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3334,
+          "presentationID": 918,
+          "Sorting": 12,
+          "label": "Luchtfoto 1995",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "51.78137622417122543083678,5.760004400128710955186762,51.90102624835930100744008,5.914987405746412463258821",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3335,
+          "presentationID": 919,
+          "Sorting": 13,
+          "label": "Luchtfoto 1997-1998",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "51.78082566898100225216695,5.740952613221507405683042,51.90103132113282669024557,5.940982779605593400162888",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3079,
+          "presentationID": 101,
+          "Sorting": 14,
+          "label": "Luchtfoto 2008",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180000.00000000003,422000,192000.00000000003,435000,0.10000000000000001,-0.10000000000000001",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3080,
+          "presentationID": 102,
+          "Sorting": 15,
+          "label": "Luchtfoto 2009",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "177000,419999.97499999998,192000,435500,0.074999999999999997,-0.074999999999999997",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3081,
+          "presentationID": 103,
+          "Sorting": 16,
+          "label": "Luchtfoto 2010",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "176549.9999999982828740031,419499.9750000011990778148,192299.9999999982828740031,435999.9750000011990778148",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3082,
+          "presentationID": 104,
+          "Sorting": 17,
+          "label": "Luchtfoto 2011",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "177000,419750,192000,435500",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3083,
+          "presentationID": 105,
+          "Sorting": 18,
+          "label": "Luchtfoto 2012",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "177000,420000,192000,435500,0.10000000000000001,-0.10000000000000001",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3084,
+          "presentationID": 106,
+          "Sorting": 19,
+          "label": "Luchtfoto 2013",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "177000,419999.99999999994,192000.52499999999,435500.02499999997,0.074999999999999969,-0.075000000000000108",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3085,
+          "presentationID": 107,
+          "Sorting": 20,
+          "label": "Luchtfoto 2014",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "176000,419000,193000,436500,0.050000000000000003,-0.050000000000000003",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3086,
+          "presentationID": 108,
+          "Sorting": 21,
+          "label": "Luchtfoto 2015",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "176000,419000,193000,436500",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3087,
+          "presentationID": 109,
+          "Sorting": 22,
+          "label": "Luchtfoto 2016",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "176000,419000,193000,436500",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3088,
+          "presentationID": 110,
+          "Sorting": 23,
+          "label": "Luchtfoto 2017",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "176000,419500,193000,436000,0.050000000000000003,-0.050000000000000003",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3089,
+          "presentationID": 111,
+          "Sorting": 24,
+          "label": "Luchtfoto 2018",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "177000,420000,192000,435500,0.050000000000000003,-0.050000000000000003",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3090,
+          "presentationID": 112,
+          "Sorting": 25,
+          "label": "Luchtfoto 2019",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "177000,420000,192000,435500,0.050000000000000003,-0.050000000000000003",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3127,
+          "BookmarkGroupCopyID": null,
+          "Sorting": 28,
+          "DomainID": 29,
+          "label": "Luchtfoto 2021",
+          "folder": true,
+          "checkbox": 1,
+          "open": 1,
+          "radio": false,
+          "bookmark": 130,
+          "key": 130,
+          "label_original": "Luchtfoto 2021",
+          "selected": false,
+          "Type": 2,
+          "branch": [
+           {
+            "ID": 3127,
+            "presentationID": 626,
+            "Sorting": 27,
+            "label": "Luchtfoto 2021",
+            "filter_forms": [],
+            "mutation_forms": [],
+            "userRights": [
+             1,
+             2
+            ],
+            "checked": null,
+            "domainID": 29,
+            "serviceType": "WMS",
+            "bbox": "176999.97500000001,420000.02500000002,191999.97500000001,435500.02500000002,0.050000000000000003,-0.050000000000000003",
+            "is3D": false,
+            "Tags": null,
+            "folder": false,
+            "CheckedItem": null,
+            "Merged": true,
+            "DefaultValue": true
+           },
+           {
+            "ID": 3128,
+            "presentationID": 626,
+            "Sorting": 28,
+            "label": "Luchtfoto 2021",
+            "filter_forms": [],
+            "mutation_forms": [],
+            "userRights": [
+             1,
+             2
+            ],
+            "checked": null,
+            "domainID": 29,
+            "serviceType": "WMS",
+            "bbox": "176999.97500000001,420000.02500000002,191999.97500000001,435500.02500000002,0.050000000000000003,-0.050000000000000003",
+            "is3D": false,
+            "Tags": null,
+            "folder": false,
+            "CheckedItem": null,
+            "Merged": true,
+            "DefaultValue": true
+           }
+          ]
+         },
+         {
+          "ID": 3267,
+          "presentationID": 729,
+          "Sorting": 29,
+          "label": "Luchtfoto 2022",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "176999.97500000001,420000.02500000002,191999.97500000001,435500.02500000002,0.050000000000000003,-0.050000000000000003",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3346,
+          "presentationID": 864,
+          "Sorting": 30,
+          "label": "Luchtfoto 2023",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "177000,420000,192000,435500",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3378,
+          "presentationID": 926,
+          "Sorting": 31,
+          "label": "Luchtfoto 2024",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "176999.9750000000058207661,420000.0250000000232830644,191999.9750000000058207661,435500.0250000000232830644",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 297,
+        "key": 297,
+        "label_original": "Luchtfoto's",
+        "selected": false
+       },
+       {
+        "ID": 1002,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 1,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": null,
+        "Checked": null,
+        "BookmarkGroupSupportID": null,
+        "BoundingBoxType": null,
+        "Description": null,
+        "label": "Foto's Collage van de stad",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 3206,
+          "presentationID": 746,
+          "Sorting": 0,
+          "label": "Collage vd stad",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": null,
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 1002,
+        "key": 1002,
+        "label_original": "Foto's Collage van de stad",
+        "selected": false
+       },
+       {
+        "ID": 340,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 2,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": null,
+        "Checked": null,
+        "BookmarkGroupSupportID": null,
+        "BoundingBoxType": null,
+        "Description": null,
+        "label": "Overige foto's",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 781,
+          "presentationID": 270,
+          "Sorting": 0,
+          "label": "Foto&apos;s Vierdaagse",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "178351.0,424354.0,188512.824,435898.843",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 782,
+          "presentationID": 282,
+          "Sorting": 1,
+          "label": "Foto&apos;s 19e eeuwse panden",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "184857.87079679,425627.711140353,189637.200909629,429118.477309819",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 340,
+        "key": 340,
+        "label_original": "Overige foto's",
+        "selected": false
+       }
+      ],
+      "bookmark": 309,
+      "key": 309,
+      "label_original": "Historische (lucht)foto's",
+      "selected": false
+     },
+     {
+      "ID": 305,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 1,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Historische kaarten",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 306,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 0,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": "",
+        "Checked": null,
+        "BookmarkGroupSupportID": "",
+        "BoundingBoxType": "",
+        "Description": null,
+        "label": "16e - 18e eeuw",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 814,
+          "presentationID": 356,
+          "Sorting": 0,
+          "label": "1557a (J. van Deventer)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "185249.7232482430117670447,426729.9721240911167114973,189835.566382466844515875,430995.1756714867078699172",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 813,
+          "presentationID": 355,
+          "Sorting": 1,
+          "label": "1557b (J. van Deventer)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "187047.65155338714,427842.9320156927,189297.58905347245,430104.77576563222,1.0093932257,-1.0515312644999999",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 815,
+          "presentationID": 357,
+          "Sorting": 2,
+          "label": "1639 (Van Geelkercken)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "187183.1226217354997061193,428131.0543533438467420638,188697.7319967694929800928,429473.335603454033844173",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3425,
+          "presentationID": 992,
+          "Sorting": 3,
+          "label": "1668 (Feltman)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "186857.1396999999997206032,427749.7435999999870546162,188763.969799999991664663,430002.0167999999830499291",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 1938,
+          "presentationID": 571,
+          "Sorting": 4,
+          "label": "1672a (Beleg Fransen)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "186889.74707195064,427491.0368335346,190043.93457182572,430111.25558358978,0.75585609870000003,-0.94866717960000002",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 816,
+          "presentationID": 358,
+          "Sorting": 5,
+          "label": "1672b (Beleg Fransen)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "186676.02378751466,427583.00941354153,190226.20041188659,430203.20466124226,0.60624600826023434,-0.60624600826023345",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 817,
+          "presentationID": 359,
+          "Sorting": 6,
+          "label": "1783 (J. Hottinger)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "183033.98235395059,424870.55314877565,191594.1386038838,432736.02189874923,5.2227920988000003,-4.9812974984",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 818,
+          "presentationID": 360,
+          "Sorting": 7,
+          "label": "1794 (Beleg Fransen)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "182270.97233882669,423096.87736439187,191449.40983882587,431319.47111444769,3.8053223466000001,-3.6922288954",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 306,
+        "key": 306,
+        "label_original": "16e - 18e eeuw",
+        "selected": false
+       },
+       {
+        "ID": 307,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 1,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": null,
+        "Checked": null,
+        "BookmarkGroupSupportID": null,
+        "BoundingBoxType": null,
+        "Description": null,
+        "label": "19e eeuw",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 820,
+          "presentationID": 362,
+          "Sorting": 0,
+          "label": "1806 (M. de Man)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180647.16216947278,421298.7007201722,191998.17649947869,434170.76954816381,1.1611103038058421,-1.1611103038058459",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 819,
+          "presentationID": 361,
+          "Sorting": 1,
+          "label": "1820 (J. Tranchot en F. Von Muffling)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "184371.64657103241,422343.54078899778,191522.2715711412,431505.38453907857,3.0506079352,-3.1440781572000001",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 1939,
+          "presentationID": 572,
+          "Sorting": 2,
+          "label": "1822 Oost (Kadaster)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "187473.8161100063298363239,427969.3511336931260302663,188672.4626576953160110861,429311.7743171305046416819",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 1940,
+          "presentationID": 573,
+          "Sorting": 3,
+          "label": "1822 West (Kadaster)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "187286.73205156674,428217.17332189658,187996.14091540637,429389.39009538788,0.10778013731990811,-0.10778013731990571",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 821,
+          "presentationID": 363,
+          "Sorting": 6,
+          "label": "1833 (Staal)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "187199.3984848485,428324.72174898488,188560.39848476849,429453.09674887889,0.51553030300000002,-0.5059977578",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 822,
+          "presentationID": 364,
+          "Sorting": 7,
+          "label": "1850 (Topografische kaart)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180202.5038179659459274262,424270.0530757377273403108,189719.816317875258391723,431019.9280756342341192067",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 823,
+          "presentationID": 365,
+          "Sorting": 8,
+          "label": "1850 - 1851",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180238.26979164901,418505.74631997891,194466.60812569229,437239.86661750276,2.1223655032880782,-2.1223655032880768",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 824,
+          "presentationID": 366,
+          "Sorting": 9,
+          "label": "1871 (Waterkaart)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "184327.35566698731,427983.23413255508,192233.30879204892,433691.76538254309,3.2886660254,-3.2807650862000002",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 1941,
+          "presentationID": 367,
+          "Sorting": 10,
+          "label": "1879 (Topografische kaart)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180347.19414745146,422382.67698473617,195038.74102248397,432553.98948467965,5.7054550970999998,-5.6664693592999997",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 826,
+          "presentationID": 368,
+          "Sorting": 11,
+          "label": "1890 (Toonen)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "183271.7098422239942010492,424618.4201114538009278476,192562.0180675338488072157,431055.7672201613313518465",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 827,
+          "presentationID": 369,
+          "Sorting": 12,
+          "label": "1894 (Tram- en treinlijnen)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "184987.6538149350380990654,422791.5243168735760264099,194097.6538150822452735156,430318.7430670751491561532",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 1942,
+          "presentationID": 370,
+          "Sorting": 13,
+          "label": "1897a (Stadsplattegrond)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "186659.0919491778186056763,427436.7013550478732213378,189232.6524351603584364057,429547.5910147886024788022",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 1943,
+          "presentationID": 371,
+          "Sorting": 14,
+          "label": "1897b (Stadsplattegrond)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "186220.0539665032410994172,426801.3450766089372336864,189632.2102166407275944948,429592.282576650963164866",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 307,
+        "key": 307,
+        "label_original": "19e eeuw",
+        "selected": false
+       },
+       {
+        "ID": 308,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 2,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": null,
+        "Checked": null,
+        "BookmarkGroupSupportID": null,
+        "BoundingBoxType": null,
+        "Description": null,
+        "label": "20e eeuw",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 830,
+          "presentationID": 372,
+          "Sorting": 0,
+          "label": "1900 (Smulders)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "186193.896468429738888517,426862.2739348637405782938,189724.7402182882360648364,429787.7739346442394889891",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 831,
+          "presentationID": 373,
+          "Sorting": 1,
+          "label": "1908 (Thieme)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "186427.1830560296075418591,426007.1939120163442566991,189354.4955559560039546341,429715.6001619096496142447",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 1944,
+          "presentationID": 574,
+          "Sorting": 2,
+          "label": "1910 (Topogr. kaart)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180312.3452929385530296713,420982.1227829291601665318,190424.6303595257631968707,433499.8820756843779236078",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 832,
+          "presentationID": 374,
+          "Sorting": 3,
+          "label": "1925 (Stadsplattegrond)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "185641.2309047514572739601,425673.0102680790587328374,190512.809029721247497946,429705.3852681753342039883",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 833,
+          "presentationID": 375,
+          "Sorting": 4,
+          "label": "1927 (Geurts)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "183266.0705714612558949739,423530.0742081432836130261,191452.2736966087541077286,430529.3242081506759859622",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 834,
+          "presentationID": 376,
+          "Sorting": 5,
+          "label": "1930 (Topografische kaart)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180225.2197282779088709503,420899.729712886328343302,190342.3935050778964068741,433557.2748132319538854063",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 2260,
+          "presentationID": 575,
+          "Sorting": 6,
+          "label": "1938 (H. Deckers)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "183127.0374728046008385718,423158.3298071282333694398,191540.8812226605950854719,430975.2048069022130221128",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 835,
+          "presentationID": 377,
+          "Sorting": 7,
+          "label": "1950 (Van Diehlen)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "177226.5853776141593698412,414734.0451573927421122789,196774.710377449868246913,431040.1389073919272050261",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 3172,
+          "presentationID": 788,
+          "Sorting": 8,
+          "label": "1950 (oorlogsschade)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           2,
+           1
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "187267.863803128944709897,428145.3631342803710140288,188603.2585507339681498706,429317.7253840634948574007",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 2261,
+          "presentationID": 576,
+          "Sorting": 9,
+          "label": "1957 (Topogr. kaart)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "179963.3517841451102867723,418923.9830276053980924189,190061.3149322165118064731,437567.073305329424329102",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 2262,
+          "presentationID": 577,
+          "Sorting": 10,
+          "label": "1967 (Topogr. kaart)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "179957.2758390769304241985,418960.3034821360488422215,190061.7288105592306237668,437553.4913301715278066695",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 2263,
+          "presentationID": 578,
+          "Sorting": 11,
+          "label": "1977 (Topogr. kaart)",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180006.0495623271563090384,418958.3315210264408960938,190051.455812176049221307,437513.3933468284667469561",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 308,
+        "key": 308,
+        "label_original": "20e eeuw",
+        "selected": false
+       }
+      ],
+      "bookmark": 305,
+      "key": 305,
+      "label_original": "Historische kaarten",
+      "selected": false
+     },
+     {
+      "ID": 339,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 2,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Archeologie",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 799,
+        "presentationID": 310,
+        "Sorting": 0,
+        "label": "Romeinse limes",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "187856.362120098,426171.232648982,190184.636841156,429110.399756579",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 2991,
+        "presentationID": 616,
+        "Sorting": 1,
+        "label": "Archeologische beleidskaart (ABK)",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180537.13445896,422522.385340303,190924.016,434116.192000001",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       }
+      ],
+      "bookmark": 339,
+      "key": 339,
+      "label_original": "Archeologie",
+      "selected": false
+     },
+     {
+      "ID": 311,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 3,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Landschap",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 843,
+        "presentationID": 480,
+        "Sorting": 0,
+        "label": "Landschappelijke ondergrond",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180484.182002295,422500.335,190949.680000715,434116.192",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 842,
+        "presentationID": 478,
+        "Sorting": 1,
+        "label": "Cultuurlandschap Noord",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "185155.349999526,429445.59899997,189129.408999655,434057.289998492",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       }
+      ],
+      "bookmark": 311,
+      "key": 311,
+      "label_original": "Landschap",
+      "selected": false
+     },
+     {
+      "ID": 997,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 4,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Gebiedsindelingen",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 3131,
+        "presentationID": 121,
+        "Sorting": 0,
+        "label": "Stadsdelen",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         2,
+         1
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180537.097,422522.403000002,190924.016,434116.192",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 3132,
+        "presentationID": 120,
+        "Sorting": 1,
+        "label": "Wijken",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         2,
+         1
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180537.097,422522.403000002,190924.016,434116.192",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       }
+      ],
+      "bookmark": 997,
+      "key": 997,
+      "label_original": "Gebiedsindelingen",
+      "selected": false
+     },
+     {
+      "ID": 312,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 5,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Stadsontwikkeling",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 844,
+        "presentationID": 481,
+        "Sorting": 0,
+        "label": "Stadsontwikkeling",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180537.097,422522.403,190924.016,432754.676046347",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       }
+      ],
+      "bookmark": 312,
+      "key": 312,
+      "label_original": "Stadsontwikkeling",
+      "selected": false
+     },
+     {
+      "ID": 298,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 6,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Historische gebouwen en locaties",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 898,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 0,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": null,
+        "Checked": null,
+        "BookmarkGroupSupportID": null,
+        "BoundingBoxType": null,
+        "Description": null,
+        "label": "Monumenten",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 2992,
+          "presentationID": 431,
+          "Sorting": 0,
+          "label": "Beschermde objecten",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "181154.137,423303.008,190813.611,433550.522",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 2993,
+          "presentationID": 430,
+          "Sorting": 1,
+          "label": "Beschermde gebieden",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "185001.512337804,426996.367,189403.767,429431.949594158",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 898,
+        "key": 898,
+        "label_original": "Monumenten",
+        "selected": false
+       },
+       {
+        "ID": 2968,
+        "presentationID": 613,
+        "Sorting": 2,
+        "label": "Gebouwendossier (inzoomen)",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180685.883,423047.773,190871.257,434003.03",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 2610,
+        "presentationID": 477,
+        "Sorting": 3,
+        "label": "Gebouwde omgeving",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "181139.68077171,423315.800999982,190509.804940451,433676.580611274",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 783,
+        "presentationID": 281,
+        "Sorting": 4,
+        "label": "Begraafplaatsen",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "183467.395144311,424299.678997971,189332.772000722,431492.238002245",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 785,
+        "presentationID": 326,
+        "Sorting": 5,
+        "label": "Oorlogsmonumenten",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "170170.523023576,419060.296519707,200456.809786301,435629.238794507",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 786,
+        "presentationID": 475,
+        "Sorting": 6,
+        "label": "Bouwhistorische waarden",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "187400.163,428413.521,188446.268,429138.528",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 784,
+        "presentationID": 283,
+        "Sorting": 7,
+        "label": "Middeleeuwse vrouwenkloosters",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "183448.278094564,426774.671410914,188232.330628353,429072.102409847",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 788,
+        "presentationID": 479,
+        "Sorting": 8,
+        "label": "Parken en landgoederen",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "182637.385000716,422772.859999966,189587.844997625,432141.2037858",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       }
+      ],
+      "bookmark": 298,
+      "key": 298,
+      "label_original": "Historische gebouwen en locaties",
+      "selected": false
+     },
+     {
+      "ID": 299,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 7,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Percelen, eigenaren en bewoners",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 789,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 1,
+        "DomainID": 29,
+        "label": "14e-16e eeuw",
+        "folder": true,
+        "checkbox": 1,
+        "open": 1,
+        "radio": false,
+        "bookmark": 130,
+        "key": 130,
+        "label_original": "14e-16e eeuw",
+        "selected": false,
+        "Type": 2,
+        "branch": [
+         {
+          "ID": 789,
+          "presentationID": 271,
+          "Sorting": 0,
+          "label": "14e-16e eeuw",
+          "filter_forms": [
+           {
+            "ID": 181,
+            "PresentationID": 271,
+            "PresentationLinkedID": 289,
+            "FormLinkedID": 1173,
+            "TabID": "Info",
+            "Sorting": 0,
+            "IsShowMoreInfoVisible": 1,
+            "LoadAfterClick": 0,
+            "IsCollapsed": 0,
+            "ParentFormID": null,
+            "IsCollapsedDefault": 0,
+            "form": {
+             "ID": 1173,
+             "Name": "14e-16e eeuw"
+            }
+           }
+          ],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "187407.21375,428674.269506617,188229.229875,429105.3885",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null,
+          "Merged": true,
+          "DefaultValue": true
+         },
+         {
+          "ID": 790,
+          "presentationID": 272,
+          "Sorting": 1,
+          "label": "14e-16e eeuw",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "187403.382,428671.3815,188231.54175,429111.4455",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null,
+          "Merged": true,
+          "DefaultValue": true
+         }
+        ]
+       },
+       {
+        "ID": 791,
+        "presentationID": 273,
+        "Sorting": 2,
+        "label": "1655-1832 Nijmegen",
+        "filter_forms": [
+         {
+          "ID": 117,
+          "PresentationID": 273,
+          "PresentationLinkedID": 295,
+          "FormLinkedID": 878,
+          "TabID": "Info",
+          "Sorting": 0,
+          "IsShowMoreInfoVisible": 1,
+          "LoadAfterClick": 0,
+          "IsCollapsed": 0,
+          "ParentFormID": null,
+          "IsCollapsedDefault": 0,
+          "form": {
+           "ID": 878,
+           "Name": "1832 eigenaren"
+          }
+         }
+        ],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180389.917401756,422703.780800323,191009.119519084,434416.598478903",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 793,
+        "presentationID": 275,
+        "Sorting": 3,
+        "label": "1655-1832 Nijmegen Woningen",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180520.033525746,422925.550638171,190041.758197785,433843.320623706",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 792,
+        "presentationID": 274,
+        "Sorting": 4,
+        "label": "1832 Ubbergen",
+        "filter_forms": [
+         {
+          "ID": 182,
+          "PresentationID": 274,
+          "PresentationLinkedID": 322,
+          "FormLinkedID": 1174,
+          "TabID": "Info",
+          "Sorting": 0,
+          "IsShowMoreInfoVisible": 1,
+          "LoadAfterClick": 0,
+          "IsCollapsed": 0,
+          "ParentFormID": null,
+          "IsCollapsedDefault": 0,
+          "form": {
+           "ID": 1174,
+           "Name": "1832 Ubbergen"
+          }
+         }
+        ],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "188984.096667248,425700.991323553,193408.578789136,428522.423370276",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 794,
+        "presentationID": 276,
+        "Sorting": 5,
+        "label": "1832 Ubbergen Woningen",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "189246.121237943,425827.056295539,193094.493401117,428381.123976333",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 795,
+        "presentationID": 277,
+        "Sorting": 6,
+        "label": "1921-1945 woningkaarten",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "180587.782875,423303.008,190681.42453,429856.887687",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       }
+      ],
+      "bookmark": 299,
+      "key": 299,
+      "label_original": "Percelen, eigenaren en bewoners",
+      "selected": false
+     },
+     {
+      "ID": 313,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 8,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Verdedigingswerken",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 847,
+        "presentationID": 482,
+        "Sorting": 0,
+        "label": "Verdedigingswerken",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "51.83728482653859,5.850252605454689,51.857012154717765,5.878345600779618",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       },
+       {
+        "ID": 845,
+        "presentationID": 284,
+        "Sorting": 2,
+        "label": "Stadsmuur 1870-1880",
+        "filter_forms": [],
+        "mutation_forms": [],
+        "userRights": [
+         1,
+         2
+        ],
+        "checked": null,
+        "domainID": 29,
+        "serviceType": "WMS",
+        "bbox": "187032.758682637,427812.693253101,189223.030787202,429198.884078313",
+        "is3D": false,
+        "Tags": null,
+        "folder": false,
+        "CheckedItem": null
+       }
+      ],
+      "bookmark": 313,
+      "key": 313,
+      "label_original": "Verdedigingswerken",
+      "selected": false
+     },
+     {
+      "ID": 301,
+      "BookmarkGroupCopyID": null,
+      "Sorting": 9,
+      "DomainID": null,
+      "BackgroundColor": "",
+      "Type": 1,
+      "BookmarkViewTypeID": 1,
+      "Icon": "",
+      "Checked": null,
+      "BookmarkGroupSupportID": "",
+      "BoundingBoxType": "",
+      "Description": null,
+      "label": "Tweede Wereldoorlog",
+      "folder": true,
+      "checkbox": 1,
+      "open": 0,
+      "branch": [
+       {
+        "ID": 810,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 2,
+        "DomainID": 29,
+        "label": "Bebouwing 1944",
+        "folder": true,
+        "checkbox": 1,
+        "open": 1,
+        "radio": false,
+        "bookmark": 130,
+        "key": 130,
+        "label_original": "Bebouwing 1944",
+        "selected": false,
+        "Type": 2,
+        "branch": [
+         {
+          "ID": 810,
+          "presentationID": 278,
+          "Sorting": 0,
+          "label": "Bebouwing 1944",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180524.59821357,422968.57954343,190681.424529526,430136.569",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null,
+          "Merged": true,
+          "DefaultValue": true
+         },
+         {
+          "ID": 812,
+          "presentationID": 280,
+          "Sorting": 1,
+          "label": "Bebouwing 1944",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180727.975018,423196.691,190617.556,429855.054",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null,
+          "Merged": true,
+          "DefaultValue": true
+         },
+         {
+          "ID": 811,
+          "presentationID": 279,
+          "Sorting": 2,
+          "label": "Bebouwing 1944",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "180592.58081,423315.801,190672.121,429798.33922",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null,
+          "Merged": true,
+          "DefaultValue": true
+         }
+        ]
+       },
+       {
+        "ID": 304,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 3,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": null,
+        "Checked": null,
+        "BookmarkGroupSupportID": null,
+        "BoundingBoxType": null,
+        "Description": null,
+        "label": "Oorlogsdoden",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 808,
+          "presentationID": 327,
+          "Sorting": 0,
+          "label": "Per woonadres",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "181446.142269,424105.891735,190644.726501,429739.243293",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 809,
+          "presentationID": 328,
+          "Sorting": 1,
+          "label": "Per gebeurtenis",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "184297.41419743,426461.812727605,190465.824759663,430198.5823351",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 304,
+        "key": 304,
+        "label_original": "Oorlogsdoden",
+        "selected": false
+       },
+       {
+        "ID": 303,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 4,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": null,
+        "Checked": null,
+        "BookmarkGroupSupportID": null,
+        "BoundingBoxType": null,
+        "Description": null,
+        "label": "Oorlogsschade",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 807,
+          "presentationID": 325,
+          "Sorting": 0,
+          "label": "Oorlogsschade onderzoek 2012",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "51.82593112639385,5.82684158290569,51.849922206209456,5.895566955192483",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 303,
+        "key": 303,
+        "label_original": "Oorlogsschade",
+        "selected": false
+       },
+       {
+        "ID": 302,
+        "BookmarkGroupCopyID": null,
+        "Sorting": 5,
+        "DomainID": null,
+        "BackgroundColor": "",
+        "Type": 1,
+        "BookmarkViewTypeID": 1,
+        "Icon": null,
+        "Checked": null,
+        "BookmarkGroupSupportID": null,
+        "BoundingBoxType": null,
+        "Description": null,
+        "label": "Bijzondere locaties",
+        "folder": true,
+        "checkbox": 1,
+        "open": 0,
+        "branch": [
+         {
+          "ID": 806,
+          "presentationID": 324,
+          "Sorting": 0,
+          "label": "Door Duitsers gevorderde panden",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "184663.624364765,424905.465110345,189641.409626618,429202.539356545",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         },
+         {
+          "ID": 805,
+          "presentationID": 323,
+          "Sorting": 1,
+          "label": "Dagboeken",
+          "filter_forms": [],
+          "mutation_forms": [],
+          "userRights": [
+           1,
+           2
+          ],
+          "checked": null,
+          "domainID": 29,
+          "serviceType": "WMS",
+          "bbox": "178584.752346099,419880.079512285,192497.67455645,429620.610443253",
+          "is3D": false,
+          "Tags": null,
+          "folder": false,
+          "CheckedItem": null
+         }
+        ],
+        "bookmark": 302,
+        "key": 302,
+        "label_original": "Bijzondere locaties",
+        "selected": false
+       }
+      ],
+      "bookmark": 301,
+      "key": 301,
+      "label_original": "Tweede Wereldoorlog",
+      "selected": false
+     }
+    ],
+    "bookmark": 234,
+    "key": 234,
+    "label": "Atlaz",
+    "label_original": "Atlaz",
+    "open": 1,
+    "selected": false
+   }
+  ]
+ },
+ "presentaties": {
+  "Beschermde objecten": {
+   "Layer": "HIS_MON_MONUMENT",
+   "Type": "WMS",
+   "DisplayName": "Beschermde objecten",
+   "ClickAsWms": 0,
+   "InfoBoxWidth": "40rem",
+   "Interval": 0,
+   "BoundingBoxType": null,
+   "Url": "https://services.nijmegen.nl/geoservices/extern_Monumenten/wms?",
+   "Legend": "https://services.nijmegen.nl/geoservices/extern_Monumenten/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image/png&width=20&height=20&layer=HIS_MON_MONUMENT&style=CSS_HIS_MON_MONUMENT_extern",
+   "ShowLegendAsRadioButton": 0,
+   "ClusterColor": null,
+   "ShowMultipleRecordsInTable": null,
+   "IsBookmarkGroupSupportVisible": 0,
+   "Opacity": 7.5,
+   "MinResolution": 0,
+   "MaxResolution": 100000000,
+   "MaxZoom": 0,
+   "Untiled": 1,
+   "bbox": "181154.137,423303.008,190813.611,433550.522",
+   "extent": [
+    181154.137,
+    423303.008,
+    190813.611,
+    433550.522
+   ],
+   "Snap": null,
+   "HeatMap": 0,
+   "Filter": {
+    "Filter": "",
+    "ExportExtensions": [],
+    "OrderColumns": [],
+    "OrderDirection": null,
+    "ConvertAbsoluteNumbersToPercentage": 0,
+    "MarkResult": 0
+   },
+   "PrimaryKeyName": null,
+   "PrimaryKeyNameDisplay": null,
+   "GeometryName": "GEOMETRIE",
+   "GeometryHeightName": null,
+   "Forms": [
+    {
+     "Name": "Object informatie",
+     "ID": 472,
+     "FormTypeTypeID": 0,
+     "FormAttributes": [
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3964,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3964,
+        "Attribute": "BESCHERMINGS_OMS",
+        "Display": "Bescherming",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3961,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3961,
+        "Attribute": "ADRES_BIJ_AANWIJZING",
+        "Display": "Adres bij aanwijzing",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3968,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3968,
+        "Attribute": "COMPLEXNAAM",
+        "Display": "Complexnaam",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3959,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3959,
+        "Attribute": "OBJECTNAAM",
+        "Display": "Objectnaam",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3965,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3965,
+        "Attribute": "GEZICHTNAAM",
+        "Display": "Gezichtnaam",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3966,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3966,
+        "Attribute": "STATUS_OMS",
+        "Display": "Status",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3963,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3963,
+        "Attribute": "OPMERKINGEN",
+        "Display": "Opmerkingen",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": 1,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3970,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3970,
+        "Attribute": "STATUS_DATUM",
+        "Display": "Status datum",
+        "Type": 402
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": 1,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3973,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3973,
+        "Attribute": "DD_BIJGEWERKT",
+        "Display": "Datum bijgewerkt",
+        "Type": 402
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3962,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3962,
+        "Attribute": "BRONNEN",
+        "Display": "Bronnen",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3974,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3974,
+        "Attribute": "GEOMETRIE",
+        "Display": "Geometrie",
+        "Type": 21
+       }
+      },
+      {
+       "FormID": 472,
+       "AttributeTypeID": null,
+       "Action": "",
+       "ActionAdvancedSecond": 1,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3972,
+       "DefaultValue": null,
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3972,
+        "Attribute": "REDENGEVENDE_OMS",
+        "Display": "Redengevende omschrijving",
+        "Type": 1
+       }
+      }
+     ]
+    },
+    {
+     "Name": "Informatie onderdeel",
+     "ID": 475,
+     "FormTypeTypeID": 0,
+     "PresentationLinkedID": 434,
+     "LinkedLayer": {
+      "keyColumn": "PARENT_ID",
+      "keyColumnAttributeType": 0,
+      "keyColumnValue": "GEOVISIA_ID",
+      "keyColumnLayerID": 368,
+      "keyColumnValueLayerID": 365,
+      "keyColumnType": 1,
+      "keyColumnLinkedType": 2,
+      "linkedTypeChild": {
+       "ID": 2,
+       "AttributeAndFunctionTypeID": 2,
+       "Name": 1,
+       "Show": 1,
+       "AttributeAndFunctionTypeTypeID": 0,
+       "Value": 1,
+       "HasDistance": null
+      },
+      "linkedTypeParent": {
+       "ID": 1,
+       "AttributeAndFunctionTypeID": 1,
+       "Name": "n",
+       "Show": 1,
+       "AttributeAndFunctionTypeTypeID": 0,
+       "Value": "n",
+       "HasDistance": null
+      },
+      "distance": ""
+     },
+     "FormAttributes": [
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4001,
+       "DefaultValue": null,
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4001,
+        "Attribute": "OBJECTNAAM",
+        "Display": "Objectnaam",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4006,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4006,
+        "Attribute": "BESCHERMINGS_OMS",
+        "Display": "Bescherming",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4003,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4003,
+        "Attribute": "ADRES_BIJ_AANWIJZING",
+        "Display": "Adres bij aanwijzing",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4010,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4010,
+        "Attribute": "COMPLEXNAAM",
+        "Display": "Complexnaam",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4007,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4007,
+        "Attribute": "GEZICHTNAAM",
+        "Display": "Gezichtnaam",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4008,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4008,
+        "Attribute": "STATUS_OMS",
+        "Display": "Status",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4012,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4012,
+        "Attribute": "STATUS_DATUM",
+        "Display": "Status datum",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4005,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4005,
+        "Attribute": "OPMERKINGEN",
+        "Display": "Opmerkingen",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4004,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4004,
+        "Attribute": "BRONNEN",
+        "Display": "Bronnen",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 475,
+       "AttributeTypeID": null,
+       "Action": "",
+       "ActionAdvancedSecond": 1,
+       "ActionAdvancedThird": null,
+       "AttributeID": 4016,
+       "DefaultValue": null,
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 4016,
+        "Attribute": "REDENGEVENDE_OMS",
+        "Display": "Redengevende omschrijving",
+        "Type": 1
+       }
+      }
+     ]
+    },
+    {
+     "Name": "Afbeeldingen",
+     "ID": 474,
+     "FormTypeTypeID": 0,
+     "PresentationLinkedID": 433,
+     "LinkedLayer": {
+      "keyColumn": "PARENT_ID",
+      "keyColumnAttributeType": 0,
+      "keyColumnValue": "GEOVISIA_ID",
+      "keyColumnLayerID": 367,
+      "keyColumnValueLayerID": 365,
+      "keyColumnType": 1,
+      "keyColumnLinkedType": 2,
+      "linkedTypeChild": {
+       "ID": 2,
+       "AttributeAndFunctionTypeID": 2,
+       "Name": 1,
+       "Show": 1,
+       "AttributeAndFunctionTypeTypeID": 0,
+       "Value": 1,
+       "HasDistance": null
+      },
+      "linkedTypeParent": {
+       "ID": 1,
+       "AttributeAndFunctionTypeID": 1,
+       "Name": "n",
+       "Show": 1,
+       "AttributeAndFunctionTypeTypeID": 0,
+       "Value": "n",
+       "HasDistance": null
+      },
+      "distance": ""
+     },
+     "FormAttributes": [
+      {
+       "FormID": 474,
+       "AttributeTypeID": null,
+       "Action": "",
+       "ActionAdvancedSecond": 1,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3992,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3992,
+        "Attribute": "DOCNAAM",
+        "Display": "Foto",
+        "Type": 1
+       }
+      },
+      {
+       "FormID": 474,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3993,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3993,
+        "Attribute": "DOC_OMS",
+        "Display": "Omschrijving",
+        "Type": 0
+       }
+      }
+     ]
+    },
+    {
+     "Name": "Adressen",
+     "ID": 473,
+     "FormTypeTypeID": 0,
+     "PresentationLinkedID": 432,
+     "LinkedLayer": {
+      "keyColumn": "PARENT_ID",
+      "keyColumnAttributeType": 0,
+      "keyColumnValue": "GEOVISIA_ID",
+      "keyColumnLayerID": 366,
+      "keyColumnValueLayerID": 365,
+      "keyColumnType": 1,
+      "keyColumnLinkedType": 1,
+      "linkedTypeChild": {
+       "ID": 1,
+       "AttributeAndFunctionTypeID": 1,
+       "Name": "n",
+       "Show": 1,
+       "AttributeAndFunctionTypeTypeID": 0,
+       "Value": "n",
+       "HasDistance": null
+      },
+      "linkedTypeParent": {
+       "ID": 1,
+       "AttributeAndFunctionTypeID": 1,
+       "Name": "n",
+       "Show": 1,
+       "AttributeAndFunctionTypeTypeID": 0,
+       "Value": "n",
+       "HasDistance": null
+      },
+      "distance": ""
+     },
+     "FormAttributes": [
+      {
+       "FormID": 473,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3978,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3978,
+        "Attribute": "STRAAT",
+        "Display": "Adres",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 473,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3979,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3979,
+        "Attribute": "HUISNUMMER",
+        "Display": "Huisnummer",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 473,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3980,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3980,
+        "Attribute": "HUISLETTER",
+        "Display": "Huisletter",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 473,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3981,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3981,
+        "Attribute": "HUISNUMMERTOEVOEGING",
+        "Display": "Huisnummertoevoeging",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 473,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3982,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3982,
+        "Attribute": "POSTK_N",
+        "Display": "Postcode",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 473,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3983,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3983,
+        "Attribute": "POSTK_A",
+        "Display": "Postk a",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 473,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3984,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3984,
+        "Attribute": "WOONPLAATS",
+        "Display": "Woonplaats",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 473,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3986,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3986,
+        "Attribute": "WIJK_OMS",
+        "Display": "Wijk",
+        "Type": 0
+       }
+      }
+     ]
+    }
+   ],
+   "Styles": [
+    "CSS_HIS_MON_MONUMENT_extern"
+   ],
+   "StyleActive": "CSS_HIS_MON_MONUMENT_extern",
+   "StyleList": [
+    {
+     "Value": "CSS_HIS_MON_MONUMENT_extern",
+     "Name": "CSS_HIS_MON_MONUMENT_extern"
+    }
+   ],
+   "Visible": true,
+   "Service": {
+    "Projection": "EPSG:28992",
+    "Proxy": 0,
+    "PrintDirectly": 0,
+    "Version": "1.3.0",
+    "RunGetMapViaPost": 0,
+    "OutputFormat": "text/plain"
+   },
+   "WfsStyle": {
+    "automatic": null,
+    "attribute": null,
+    "styles": {
+     "pointRadius": 12,
+     "graphicName": "circle",
+     "externalGraphic": "",
+     "fillColor": "#a80a2d",
+     "fillOpacity": 0.5,
+     "strokeColor": "#000000",
+     "strokeOpacity": 1,
+     "strokeWidth": 1,
+     "fontColor": "#000000",
+     "fontSize": 12,
+     "label": "",
+     "labelOutlineColor": "#000000",
+     "labelOutlineWidth": 1,
+     "labelXOffset": 20,
+     "labelYOffset": 20,
+     "labelOverflow": 0,
+     "LegendImage": "",
+     "LegendBackgroundColor": "#ffffff",
+     "SelectPointRadius": 12,
+     "SelectGraphicName": "circle",
+     "SelectExternalGraphic": "",
+     "SelectFillColor": "#000000",
+     "SelectFillOpacity": 0.05,
+     "SelectStrokeColor": "#FF0000",
+     "SelectStrokeOpacity": 1,
+     "SelectStrokeWidth": 3,
+     "SelectFontColor": "#000000",
+     "SelectFontSize": 12,
+     "SelectLabel": "",
+     "SelectLabelOutlineColor": "#000000",
+     "SelectLabelOutlineWidth": 1,
+     "SelectLabelXOffset": 20,
+     "SelectLabelYOffset": 20,
+     "SelectLabelOverflow": 0,
+     "FilterPointRadius": 8,
+     "FilterGraphicName": "circle",
+     "FilterExternalGraphic": "",
+     "FilterFillColor": "#c90233",
+     "FilterFillOpacity": 0.1,
+     "FilterStrokeColor": "#c20209",
+     "FilterStrokeOpacity": 1,
+     "FilterStrokeWidth": 3,
+     "LocationSearchMarkerPointRadius": 16,
+     "LocationSearchMarkerGraphicName": "circle",
+     "LocationSearchMarkerExternalGraphic": "kaartviewer/assets/img/marker.png",
+     "LocationSearchMarkerFillColor": "#ffd939",
+     "LocationSearchMarkerFillOpacity": 0.1,
+     "LocationSearchMarkerStrokeColor": "#ffd939",
+     "LocationSearchMarkerStrokeOpacity": 1,
+     "LocationSearchMarkerStrokeWidth": 2
+    }
+   },
+   "BookmarkPresentationID": 2992,
+   "PresentationID": 431,
+   "MetaData": [
+    {
+     "Name": "Aantallen in deze set",
+     "meta_data": [
+      {
+       "meta_data_geo_standard": {
+        "Name": "Aantal rijen"
+       },
+       "Waarde": "-"
+      },
+      {
+       "Waarde": 12,
+       "meta_data_geo_standard": {
+        "Name": "Aantal kolommen"
+       }
+      }
+     ]
+    },
+    {
+     "Name": "Aantal keer bekeken",
+     "meta_data": [
+      {
+       "meta_data_geo_standard": {
+        "Name": "Deze maand"
+       },
+       "Waarde": 167
+      }
+     ]
+    },
+    {
+     "Name": "Overig",
+     "meta_data": [
+      {
+       "ID": 619,
+       "Layer": 365,
+       "Metadata": "Omschrijving",
+       "Show": 1,
+       "Waarde": "Monumenten zijn van cultuurhistorische, architectuurhistorische, stedenbouwkundige en/of bouwhistorische betekenis voor Nijmegen. Monumenten zijn beschermd om ze voor toekomstige generaties te behouden. Monumenten zijn onder andere woonhuizen, kerken, kastelen en molens. Ook bruggen, begraafplaatsen, parken, standbeelden kunnen monument zijn.\r\nDeze kaartlaag toont de monumentale objecten binnen de gemeente Nijmegen.",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null,
+       "meta_data_geo_standard_group": null
+      },
+      {
+       "ID": 620,
+       "Layer": 365,
+       "Metadata": "Intern / openbaar",
+       "Show": 1,
+       "Waarde": "Openbaar",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      },
+      {
+       "ID": 621,
+       "Layer": 365,
+       "Metadata": "Mutatiefrequentie",
+       "Show": 1,
+       "Waarde": "Handmatig",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      },
+      {
+       "ID": 622,
+       "Layer": 365,
+       "Metadata": "Beheerapplicatie",
+       "Show": 1,
+       "Waarde": "N.v.t.",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      },
+      {
+       "ID": 623,
+       "Layer": 365,
+       "Metadata": "Leverancier",
+       "Show": 1,
+       "Waarde": "N.v.t.",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      },
+      {
+       "ID": 624,
+       "Layer": 365,
+       "Metadata": "Webservice",
+       "Show": 1,
+       "Waarde": "https://services.nijmegen.nl/geoservices/extern_Monumenten/wms?",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      }
+     ]
+    }
+   ],
+   "zIndex": 0,
+   "Checked": null,
+   "CopyRights": {},
+   "ID": 2992,
+   "DomainID": 29,
+   "Sorting": 0,
+   "SortingParent": 0,
+   "HasInfo": true
+  },
+  "Beschermde gebieden": {
+   "Layer": "HIS_MON_BESCHERMDE_GEB",
+   "Type": "WMS",
+   "DisplayName": "Beschermde gebieden",
+   "ClickAsWms": 0,
+   "InfoBoxWidth": null,
+   "Interval": 0,
+   "BoundingBoxType": null,
+   "Url": "https://services.nijmegen.nl/geoservices/extern_Monumenten/wms?",
+   "Legend": "https://services.nijmegen.nl/geoservices/extern_Monumenten/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=HIS_MON_BESCHERMDE_GEB",
+   "ShowLegendAsRadioButton": 0,
+   "ClusterColor": null,
+   "ShowMultipleRecordsInTable": null,
+   "IsBookmarkGroupSupportVisible": 0,
+   "Opacity": 10,
+   "MinResolution": 0,
+   "MaxResolution": 100000000,
+   "MaxZoom": 0,
+   "Untiled": 1,
+   "bbox": "185001.512337804,426996.367,189403.767,429431.949594158",
+   "extent": [
+    185001.512337804,
+    426996.367,
+    189403.767,
+    429431.949594158
+   ],
+   "Snap": null,
+   "HeatMap": 0,
+   "Filter": {
+    "Filter": "",
+    "ExportExtensions": [],
+    "OrderColumns": [],
+    "OrderDirection": null,
+    "ConvertAbsoluteNumbersToPercentage": 0,
+    "MarkResult": 0
+   },
+   "PrimaryKeyName": null,
+   "PrimaryKeyNameDisplay": null,
+   "GeometryName": "GEOMETRIE",
+   "GeometryHeightName": null,
+   "Forms": [
+    {
+     "Name": "Informatie",
+     "ID": 471,
+     "FormTypeTypeID": 0,
+     "FormAttributes": [
+      {
+       "FormID": 471,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3951,
+       "DefaultValue": null,
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3951,
+        "Attribute": "SOORT",
+        "Display": "Soort",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 471,
+       "AttributeTypeID": null,
+       "Action": 1,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3953,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3953,
+        "Attribute": "DD_BIJGEWERKT",
+        "Display": "Datum bijgewerkt",
+        "Type": 402
+       }
+      },
+      {
+       "FormID": 471,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3954,
+       "DefaultValue": null,
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3954,
+        "Attribute": "GEOMETRIE",
+        "Display": "Geometrie",
+        "Type": 21
+       }
+      }
+     ]
+    }
+   ],
+   "Styles": [
+    ""
+   ],
+   "StyleActive": "",
+   "StyleList": [],
+   "Visible": true,
+   "Service": {
+    "Projection": "EPSG:28992",
+    "Proxy": 0,
+    "PrintDirectly": 0,
+    "Version": "1.3.0",
+    "RunGetMapViaPost": 0,
+    "OutputFormat": "text/plain"
+   },
+   "WfsStyle": {
+    "automatic": 0,
+    "attribute": "SOORT",
+    "styles": [
+     {
+      "ID": 2241,
+      "DomainListID": 95,
+      "Name": "Rijksbeschermd_stadsgezicht",
+      "Value": "Rijksbeschermd_stadsgezicht",
+      "Value2": null,
+      "Color": null,
+      "Sorting": 1,
+      "Active": 1,
+      "EmailDomainListID": null,
+      "EmailSubject": null,
+      "EmailMessage": null,
+      "style_settings": {
+       "pointRadius": 12,
+       "graphicName": "circle",
+       "externalGraphic": "",
+       "fillColor": "#a80a2d",
+       "fillOpacity": 0.5,
+       "strokeColor": "#000000",
+       "strokeOpacity": 1,
+       "strokeWidth": 1,
+       "fontColor": "#000000",
+       "fontSize": 12,
+       "label": "",
+       "labelOutlineColor": "#000000",
+       "labelOutlineWidth": 1,
+       "labelXOffset": 20,
+       "labelYOffset": 20,
+       "labelOverflow": 0,
+       "LegendImage": "",
+       "LegendBackgroundColor": "#ffffff",
+       "SelectPointRadius": 12,
+       "SelectGraphicName": "circle",
+       "SelectExternalGraphic": "",
+       "SelectFillColor": "#000000",
+       "SelectFillOpacity": 0.05,
+       "SelectStrokeColor": "#FF0000",
+       "SelectStrokeOpacity": 1,
+       "SelectStrokeWidth": 3,
+       "SelectFontColor": "#000000",
+       "SelectFontSize": 12,
+       "SelectLabel": "",
+       "SelectLabelOutlineColor": "#000000",
+       "SelectLabelOutlineWidth": 1,
+       "SelectLabelXOffset": 20,
+       "SelectLabelYOffset": 20,
+       "SelectLabelOverflow": 0,
+       "FilterPointRadius": 8,
+       "FilterGraphicName": "circle",
+       "FilterExternalGraphic": "",
+       "FilterFillColor": "#c90233",
+       "FilterFillOpacity": 0.1,
+       "FilterStrokeColor": "#c20209",
+       "FilterStrokeOpacity": 1,
+       "FilterStrokeWidth": 3,
+       "LocationSearchMarkerPointRadius": 16,
+       "LocationSearchMarkerGraphicName": "circle",
+       "LocationSearchMarkerExternalGraphic": "kaartviewer/assets/img/marker.png",
+       "LocationSearchMarkerFillColor": "#ffd939",
+       "LocationSearchMarkerFillOpacity": 0.1,
+       "LocationSearchMarkerStrokeColor": "#ffd939",
+       "LocationSearchMarkerStrokeOpacity": 1,
+       "LocationSearchMarkerStrokeWidth": 2
+      },
+      "domain_list_item_style_settings": []
+     },
+     {
+      "ID": 2242,
+      "DomainListID": 95,
+      "Name": "gembeschermd_stadsbeeld",
+      "Value": "gembeschermd_stadsbeeld",
+      "Value2": null,
+      "Color": null,
+      "Sorting": 1,
+      "Active": 1,
+      "EmailDomainListID": null,
+      "EmailSubject": null,
+      "EmailMessage": null,
+      "style_settings": {
+       "pointRadius": 12,
+       "graphicName": "circle",
+       "externalGraphic": "",
+       "fillColor": "#a80a2d",
+       "fillOpacity": 0.5,
+       "strokeColor": "#000000",
+       "strokeOpacity": 1,
+       "strokeWidth": 1,
+       "fontColor": "#000000",
+       "fontSize": 12,
+       "label": "",
+       "labelOutlineColor": "#000000",
+       "labelOutlineWidth": 1,
+       "labelXOffset": 20,
+       "labelYOffset": 20,
+       "labelOverflow": 0,
+       "LegendImage": "",
+       "LegendBackgroundColor": "#ffffff",
+       "SelectPointRadius": 12,
+       "SelectGraphicName": "circle",
+       "SelectExternalGraphic": "",
+       "SelectFillColor": "#000000",
+       "SelectFillOpacity": 0.05,
+       "SelectStrokeColor": "#FF0000",
+       "SelectStrokeOpacity": 1,
+       "SelectStrokeWidth": 3,
+       "SelectFontColor": "#000000",
+       "SelectFontSize": 12,
+       "SelectLabel": "",
+       "SelectLabelOutlineColor": "#000000",
+       "SelectLabelOutlineWidth": 1,
+       "SelectLabelXOffset": 20,
+       "SelectLabelYOffset": 20,
+       "SelectLabelOverflow": 0,
+       "FilterPointRadius": 8,
+       "FilterGraphicName": "circle",
+       "FilterExternalGraphic": "",
+       "FilterFillColor": "#c90233",
+       "FilterFillOpacity": 0.1,
+       "FilterStrokeColor": "#c20209",
+       "FilterStrokeOpacity": 1,
+       "FilterStrokeWidth": 3,
+       "LocationSearchMarkerPointRadius": 16,
+       "LocationSearchMarkerGraphicName": "circle",
+       "LocationSearchMarkerExternalGraphic": "kaartviewer/assets/img/marker.png",
+       "LocationSearchMarkerFillColor": "#ffd939",
+       "LocationSearchMarkerFillOpacity": 0.1,
+       "LocationSearchMarkerStrokeColor": "#ffd939",
+       "LocationSearchMarkerStrokeOpacity": 1,
+       "LocationSearchMarkerStrokeWidth": 2
+      },
+      "domain_list_item_style_settings": []
+     }
+    ]
+   },
+   "BookmarkPresentationID": 2993,
+   "PresentationID": 430,
+   "MetaData": [
+    {
+     "Name": "Aantallen in deze set",
+     "meta_data": [
+      {
+       "meta_data_geo_standard": {
+        "Name": "Aantal rijen"
+       },
+       "Waarde": "-"
+      },
+      {
+       "Waarde": 3,
+       "meta_data_geo_standard": {
+        "Name": "Aantal kolommen"
+       }
+      }
+     ]
+    },
+    {
+     "Name": "Aantal keer bekeken",
+     "meta_data": [
+      {
+       "meta_data_geo_standard": {
+        "Name": "Deze maand"
+       },
+       "Waarde": 28
+      }
+     ]
+    },
+    {
+     "Name": "Overig",
+     "meta_data": [
+      {
+       "ID": 613,
+       "Layer": 364,
+       "Metadata": "Omschrijving",
+       "Show": 1,
+       "Waarde": "Monumenten zijn van cultuurhistorische, architectuurhistorische, stedenbouwkundige en/of bouwhistorische betekenis voor Nijmegen. Monumenten zijn beschermd om ze voor toekomstige generaties te behouden. 'Gemeentelijk beschermd stadsbeeld' en 'Rijksbeschermd stadsgezicht' zijn monumentale, beschermde gebieden binnen de gemeente Nijmegen.",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null,
+       "meta_data_geo_standard_group": null
+      },
+      {
+       "ID": 614,
+       "Layer": 364,
+       "Metadata": "Intern / openbaar",
+       "Show": 1,
+       "Waarde": "Openbaar",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      },
+      {
+       "ID": 615,
+       "Layer": 364,
+       "Metadata": "Mutatiefrequentie",
+       "Show": 1,
+       "Waarde": "Handmatig",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      },
+      {
+       "ID": 616,
+       "Layer": 364,
+       "Metadata": "Beheerapplicatie",
+       "Show": 1,
+       "Waarde": "N.v.t.",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      },
+      {
+       "ID": 617,
+       "Layer": 364,
+       "Metadata": "Leverancier",
+       "Show": 1,
+       "Waarde": "N.v.t.",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      },
+      {
+       "ID": 618,
+       "Layer": 364,
+       "Metadata": "Webservice",
+       "Show": 1,
+       "Waarde": "https://services.nijmegen.nl/geoservices/extern_Monumenten/wms?",
+       "Sorting": 2,
+       "AttributeTypeID": 0,
+       "MetaDataGeoStandardID": null,
+       "MetaDataGeoStandardGroupID": null,
+       "meta_data_geo_standard": null
+      }
+     ]
+    }
+   ],
+   "zIndex": 0,
+   "Checked": null,
+   "CopyRights": {},
+   "ID": 2993,
+   "DomainID": 29,
+   "Sorting": 1,
+   "SortingParent": 0,
+   "HasInfo": true
+  },
+  "Oorlogsmonumenten": {
+   "Layer": "WO2_OORLOGSMONUMENTEN_SQL",
+   "Type": "WMS",
+   "DisplayName": "Oorlogsmonumenten",
+   "ClickAsWms": 0,
+   "InfoBoxWidth": null,
+   "Interval": 0,
+   "BoundingBoxType": null,
+   "Url": "https://services.nijmegen.nl/geoservices/extern_wo2/wms?",
+   "Legend": "https://services.nijmegen.nl/geoservices/extern_wo2/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=WO2_OORLOGSMONUMENTEN_SQL",
+   "ShowLegendAsRadioButton": 0,
+   "ClusterColor": null,
+   "ShowMultipleRecordsInTable": null,
+   "IsBookmarkGroupSupportVisible": 0,
+   "Opacity": 10,
+   "MinResolution": 0,
+   "MaxResolution": 100000000,
+   "MaxZoom": 0,
+   "Untiled": 1,
+   "bbox": "170170.523023576,419060.296519707,200456.809786301,435629.238794507",
+   "extent": [
+    170170.523023576,
+    419060.296519707,
+    200456.809786301,
+    435629.238794507
+   ],
+   "Snap": null,
+   "HeatMap": 0,
+   "Filter": {
+    "Filter": "",
+    "ExportExtensions": [],
+    "OrderColumns": [],
+    "OrderDirection": null,
+    "ConvertAbsoluteNumbersToPercentage": 0,
+    "MarkResult": 0
+   },
+   "PrimaryKeyName": null,
+   "PrimaryKeyNameDisplay": null,
+   "GeometryName": "GEOMETRIE",
+   "GeometryHeightName": null,
+   "Forms": [
+    {
+     "Name": "Informatie",
+     "ID": 367,
+     "FormTypeTypeID": 0,
+     "FormAttributes": [
+      {
+       "FormID": 367,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3528,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3528,
+        "Attribute": "TITLE",
+        "Display": "Titel",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 367,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3542,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3542,
+        "Attribute": "ARTIST",
+        "Display": "Kunstenaar",
+        "Type": 0
+       }
+      },
+      {
+       "FormID": 367,
+       "AttributeTypeID": null,
+       "Action": "",
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3520,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3520,
+        "Attribute": "DATASOURCE",
+        "Display": "www.4en5mei.nl",
+        "Type": 3
+       }
+      },
+      {
+       "FormID": 367,
+       "AttributeTypeID": null,
+       "Action": null,
+       "ActionAdvancedSecond": null,
+       "ActionAdvancedThird": null,
+       "AttributeID": 3554,
+       "DefaultValue": "",
+       "ShowInSearchBar": null,
+       "Display": null,
+       "attribute": {
+        "ID": 3554,
+        "Attribute": "GEOMETRIE",
+        "Display": "Geometrie",
+        "Type": 21
+       }
+      }
+     ]
+    }
+   ],
+   "Styles": [
+    ""
+   ],
+   "StyleActive": "",
+   "StyleList": [],
+   "Visible": true,
+   "Service": {
+    "Projection": "EPSG:28992",
+    "Proxy": 0,
+    "PrintDirectly": 0,
+    "Version": "1.3.0",
+    "RunGetMapViaPost": 0,
+    "OutputFormat": "text/plain"
+   },
+   "WfsStyle": {
+    "automatic": null,
+    "attribute": null,
+    "styles": {
+     "pointRadius": 12,
+     "graphicName": "circle",
+     "externalGraphic": "",
+     "fillColor": "#a80a2d",
+     "fillOpacity": 0.5,
+     "strokeColor": "#000000",
+     "strokeOpacity": 1,
+     "strokeWidth": 1,
+     "fontColor": "#000000",
+     "fontSize": 12,
+     "label": "",
+     "labelOutlineColor": "#000000",
+     "labelOutlineWidth": 1,
+     "labelXOffset": 20,
+     "labelYOffset": 20,
+     "labelOverflow": 0,
+     "LegendImage": "",
+     "LegendBackgroundColor": "#ffffff",
+     "SelectPointRadius": 12,
+     "SelectGraphicName": "circle",
+     "SelectExternalGraphic": "",
+     "SelectFillColor": "#000000",
+     "SelectFillOpacity": 0.05,
+     "SelectStrokeColor": "#FF0000",
+     "SelectStrokeOpacity": 1,
+     "SelectStrokeWidth": 3,
+     "SelectFontColor": "#000000",
+     "SelectFontSize": 12,
+     "SelectLabel": "",
+     "SelectLabelOutlineColor": "#000000",
+     "SelectLabelOutlineWidth": 1,
+     "SelectLabelXOffset": 20,
+     "SelectLabelYOffset": 20,
+     "SelectLabelOverflow": 0,
+     "FilterPointRadius": 8,
+     "FilterGraphicName": "circle",
+     "FilterExternalGraphic": "",
+     "FilterFillColor": "#c90233",
+     "FilterFillOpacity": 0.1,
+     "FilterStrokeColor": "#c20209",
+     "FilterStrokeOpacity": 1,
+     "FilterStrokeWidth": 3,
+     "LocationSearchMarkerPointRadius": 16,
+     "LocationSearchMarkerGraphicName": "circle",
+     "LocationSearchMarkerExternalGraphic": "kaartviewer/assets/img/marker.png",
+     "LocationSearchMarkerFillColor": "#ffd939",
+     "LocationSearchMarkerFillOpacity": 0.1,
+     "LocationSearchMarkerStrokeColor": "#ffd939",
+     "LocationSearchMarkerStrokeOpacity": 1,
+     "LocationSearchMarkerStrokeWidth": 2
+    }
+   },
+   "BookmarkPresentationID": 785,
+   "PresentationID": 326,
+   "MetaData": [
+    {
+     "Name": "Aantallen in deze set",
+     "meta_data": [
+      {
+       "meta_data_geo_standard": {
+        "Name": "Aantal rijen"
+       },
+       "Waarde": "-"
+      },
+      {
+       "Waarde": 4,
+       "meta_data_geo_standard": {
+        "Name": "Aantal kolommen"
+       }
+      }
+     ]
+    },
+    {
+     "Name": "Aantal keer bekeken",
+     "meta_data": [
+      {
+       "meta_data_geo_standard": {
+        "Name": "Deze maand"
+       },
+       "Waarde": 11
+      }
+     ]
+    }
+   ],
+   "zIndex": 0,
+   "Checked": null,
+   "CopyRights": {},
+   "ID": 785,
+   "DomainID": 29,
+   "Sorting": 5,
+   "SortingParent": 6,
+   "HasInfo": true
+  }
+ }
+}

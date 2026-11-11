@@ -1,0 +1,77 @@
+# De bestemmingen per pand ophalen bij PDOK, los van de brief.
+#
+# WAAROM EEN EIGEN WORKFLOW. De bron verandert twee keer per jaar, dus dit
+# hoeft niet dagelijks. Eerst draait hij met modus "verken": een handvol
+# panden waarvan we uit een besluit weten wat er ligt, met het ruwe antwoord
+# in bestemming_verslag.md. Pas als dat verslag laat zien dat de bron
+# Groesbeekseweg 118A als cultuurhistorie herkent, draait hij met "alles".
+# Zie bestemming.py voor de bron en de voorbehouden.
+
+name: Bestemmingen per pand
+
+on:
+  workflow_dispatch:
+    inputs:
+      modus:
+        description: "verken (een paar bekende panden) of alles (de ring)"
+        default: "verken"
+      minuten:
+        description: "Tijdbudget bij alles, in minuten."
+        default: "120"
+
+concurrency:
+  group: bestemming
+  cancel-in-progress: false
+
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Proef
+        run: python3 bestemming.py --proef
+
+      - name: Ophalen
+        run: |
+          if [ "${{ github.event.inputs.modus }}" = "alles" ]; then
+            python3 bestemming.py --minuten "${{ github.event.inputs.minuten }}"
+          else
+            python3 bestemming.py --verken
+          fi
+
+      - name: Terugcommitten
+        run: |
+          git config user.name "vastgoedmonitor-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for f in bestemmingen.json bestemming_verslag.md; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then
+            echo "Niets gewijzigd"
+            exit 0
+          fi
+          git commit -m "Bestemmingen $(date +%F)"
+          # EEN GEGEVENSCOMMIT RAAKT NOOIT BRONCODE; zie de brief en de voorraad.
+          geen_broncode() {
+            local raakt
+            raakt=$(git diff --name-only HEAD~1 HEAD -- '*.py' '*.yml' 2>/dev/null || true)
+            if [ -n "$raakt" ]; then
+              echo "GESTOPT: deze commit raakt broncode: $raakt"
+              return 1
+            fi
+            return 0
+          }
+          for poging in 1 2 3; do
+            geen_broncode || exit 1
+            if git push; then
+              echo "Teruggecommit gelukt"
+              exit 0
+            fi
+            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort; exit 1; }
+            sleep 5
+          done
+          exit 1

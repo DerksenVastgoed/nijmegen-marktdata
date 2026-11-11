@@ -15,6 +15,9 @@ panden, kosten of plannen; die gegevens staan in een privé repo.
 | `publicaties.yml` | 01:37, 07:37, 13:37 en 19:37 UTC, en met de hand | alle bekendmakingen van Nijmegen → `bekendmakingen_recent.json`, `bekendmakingen_archief.json` |
 | `cijfers.yml` | elke dag 01:07 UTC, en met de hand | CBS, Kadaster en PDOK → woningprijsindex, COROP, bouwkostenindex, misdrijven en kamerverhuurvergunningen per buurt |
 | `inhaal-3dbag.yml` | gestart door de voorraadronde als er panden zonder 3D BAG zijn | hoogtes, oppervlakken en bouwlagen → `bag3d.json` |
+| `bestemming.yml` | met de hand | bestemmingen per pand (PDOK) → `bestemmingen.json` |
+| `gezicht.yml` | maandag, en met de hand | beschermde gezichten, monumenten, stadsbeeld (PDOK, RCE, gemeente) |
+| `publicatievelden.yml` | elke dag | velden uit de tekst van bekendmakingen → `publicatie_velden.json` |
 | `proeven.yml` | bij elke push en PR | `python eisen.py --proef` |
 
 Nodig als repo-secrets: `BAG_API_KEY` (Kadaster) en `EP_API_KEY` (RVO EP-Online).
@@ -29,6 +32,9 @@ Nodig als repo-secrets: `BAG_API_KEY` (Kadaster) en `EP_API_KEY` (RVO EP-Online)
 | `kamervergunningen.json` | de vergunningenlijst kamerverhuur van de gemeente Nijmegen, per adres (zaaknummer, soort, datum) |
 | `vergunningen_per_buurt.json`, `straat_buurt_cache.json` | vergunningen per buurt, en de buurt per straat volgens PDOK |
 | `kamerverhuur_objecten.json`, `kamerverhuur_per_buurt.json` | bekende kamerverhuurpanden: vergunningen plus meldingen brandveilig gebruik en besluiten uit het archief; een ondergrens |
+| `gezichten.json`, `monumenten_*`, `rijksmonumenten_*`, `omgevingsplan_gio*`, `stadsbeeld_*` | erfgoed en beschermde gezichten per pand |
+| `bestemmingen.json` | bestemmingen per pand |
+| `publicatie_velden.json` | velden uit bekendmakingen: zaaknummer, uitkomst, aantallen |
 | `diagnose/*.txt` | wat er bij het ophalen misging, als dat zo is |
 | `bag3d.json` | 3D BAG per pand voor de ring en de adressen met een bekendmaking (TU Delft en 3DGI, CC BY 4.0) |
 | `voorraad.json` | woningen en niet-woningen per adres, met oppervlakte, gebruiksdoel, pand en label |

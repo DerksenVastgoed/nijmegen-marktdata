@@ -1,0 +1,210 @@
+name: Velden uit de bekendmakingen
+
+# WAT DEZE RONDE DOET EN WAAROM HIJ APART STAAT.
+#
+# Van elke bekendmaking die wij al volgen leest hij de tekst uit en legt vast
+# wat erin staat: het zaaknummer, de uitkomst, de besluitdatum, de
+# ontvangstdatum, de verwachte beslisdatum en tot wanneer de stukken ter
+# inzage liggen. Dat zijn de velden waarmee een voorspelling van ons achteraf
+# meetbaar wordt.
+#
+# Hij staat apart en niet in de briefworkflow, want die draait elke ochtend
+# en mag niet omvallen door een ronde die honderden pagina's ophaalt. En niet
+# in de voorraadronde, want die gaat over de BAG en de labels; twee
+# onderwerpen in een workflow betekent dat je bij een storing niet weet welk
+# van de twee stuk is.
+#
+# Hij raakt alleen publicaties op overheid.nl. De stukken zelf staan in een
+# viewer die geautomatiseerd ophalen niet toestaat, en daar blijft hij vanaf.
+
+on:
+  schedule:
+    # Na de voorraadronde van 04:40, zodat die twee elkaar niet in de weg
+    # zitten bij het terugcommitten.
+    - cron: "25 5 * * *"
+  workflow_dispatch:
+    inputs:
+      minuten:
+        description: "Tijdbudget in minuten"
+        required: false
+        default: "10"
+      max:
+        description: "Niet meer dan dit aantal publicaties (0 is alles)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  velden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Repo ophalen
+        uses: actions/checkout@v4
+
+      - name: Python klaarzetten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: De eigen logica nameten voordat er iets wordt opgehaald
+        # Geen secrets bij deze stap: deze proef raakt geen netwerk. Hij meet
+        # onder meer dat een publicatie zonder uitspraak niet als verleend
+        # wordt geteld, en dat de doorlooptijd van ontvangst tot besluit
+        # loopt en niet van publicatie tot publicatie.
+        run: |
+          python besluit.py --proef
+          python publicatievelden.py --proef
+
+      - name: De velden ophalen
+        id: ophalen
+        run: |
+          # PIPEFAIL, ANDERS IS DE EXITCODE DIE VAN tee.
+          #
+          # Zonder deze regel meldde deze stap "gelukt" terwijl python met
+          # een traceback stierf: de uitvoer ging door de pijp naar tee, en
+          # die slaagt altijd. De ronde deed dus niets, de stap stond groen,
+          # en de meldstap ging niet af omdat er formeel geen mislukking
+          # was. Dat kostte vanavond drie rondes om te vinden.
+          set -o pipefail
+          python publicatievelden.py \
+            --minuten "${{ github.event.inputs.minuten || '10' }}" \
+            --max "${{ github.event.inputs.max || '0' }}" \
+            2>&1 | tee "$RUNNER_TEMP/ronde.log"
+
+      - name: Nameten of er werkelijk iets is bijgekomen
+        id: nameten
+        # OOK NA EEN RODE RONDE. 25 oktober 2026: publicatievelden.py
+        # telt per publicatie hoeveel rondes achter elkaar ze mislukt, in
+        # publicatie_velden_stand.json. Maar een ronde die op GESTOPT eindigt
+        # sloeg deze stap over, dus die telling werd nooit teruggeschreven en
+        # bleef op 1 (gmb-2023-26729, run 40230114073). Na een mislukte
+        # ophaalstap lopen nameten en terugschrijven dus gewoon door; de
+        # meldstap gaat af omdat de ophaalstap rood staat. Na een mislukte
+        # proef (dan is de ophaalstap overgeslagen) niet.
+        if: ${{ !cancelled() && (steps.ophalen.outcome == 'success' || steps.ophalen.outcome == 'failure') }}
+        # EEN STAP DIE GROEN STAAT EN NIETS DEED, IS HET PROBLEEM ZELF.
+        # De eerste echte ronde meldde gelukt en committeerde niets, en toen
+        # was er geen aanknopingspunt: het joblogboek is van buiten niet te
+        # lezen en de meldstap gaat alleen af bij een mislukking. Deze stap
+        # kijkt of de twee bestanden er werkelijk staan en of er iets in zit.
+        run: |
+          for f in publicatie_velden.json publicatie_velden_stand.json; do
+            if [ ! -s "$f" ]; then
+              echo "GESTOPT: $f ontbreekt of is leeg na de ronde."
+              ls -la
+              exit 1
+            fi
+            echo "$f: $(wc -c < "$f") bytes"
+          done
+          python - <<'EOF'
+          import json, sys
+          d = json.load(open("publicatie_velden.json", encoding="utf-8"))
+          if not d:
+              print("GESTOPT: er staan nul publicaties in het bestand.")
+              sys.exit(1)
+          print(f"{len(d)} publicaties vastgelegd")
+          EOF
+
+      - name: De velden terugcommitten
+        # OOK NA EEN RODE RONDE. 25 oktober 2026: publicatievelden.py
+        # telt per publicatie hoeveel rondes achter elkaar ze mislukt, in
+        # publicatie_velden_stand.json. Maar een ronde die op GESTOPT eindigt
+        # sloeg deze stap over, dus die telling werd nooit teruggeschreven en
+        # bleef op 1 (gmb-2023-26729, run 40230114073). Na een mislukte
+        # ophaalstap lopen nameten en terugschrijven dus gewoon door; de
+        # meldstap gaat af omdat de ophaalstap rood staat. Na een mislukte
+        # proef (dan is de ophaalstap overgeslagen) niet.
+        # En alleen als het nameten de bestanden goed vond.
+        if: ${{ !cancelled() && steps.nameten.outcome == 'success' }}
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -o pipefail
+          terugcommitten() {
+          set -x
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in publicatie_velden.json publicatie_velden_stand.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then
+            echo "Niets gewijzigd, niets te committen"
+            return 0
+          fi
+          git commit -m "Velden uit de bekendmakingen $(date +%F)"
+          # EEN RONDE DIE GEGEVENS TERUGSCHRIJFT VERANDERT GEEN BRONCODE.
+          # Op 13 oktober draaide een ronde van 102 minuten zes
+          # broncodebestanden en drie eisen terug, omdat zij de hele index
+          # van haar eigen checkout committeerde. Deze toets houdt dat tegen.
+          geen_broncode() {
+            local raakt
+            raakt=$(git diff --name-only HEAD~1 HEAD -- '*.py' '*.yml' 2>/dev/null || true)
+            if [ -n "$raakt" ]; then
+              echo "GESTOPT: deze commit raakt broncode: $raakt"
+              echo "Een ronde die gegevens terugschrijft hoort geen code te veranderen."
+              return 1
+            fi
+            return 0
+          }
+          for poging in 1 2 3; do
+            geen_broncode || return 1
+            if git push; then
+              echo "Teruggecommit gelukt"
+              return 0
+            fi
+            echo "Push mislukt, poging $poging; opnieuw bovenop de remote"
+            git rebase --abort 2>/dev/null || true
+            if ! git fetch origin "${GITHUB_REF_NAME}"; then
+              echo "Kan ${GITHUB_REF_NAME} niet ophalen van de remote"
+              return 1
+            fi
+            # MIXED EN NIET SOFT. Soft laat de hele index van de oude
+            # checkout staan, en dan schrijft de commit die index als nieuwe
+            # boom terug: alles wat tijdens de ronde is gemerged gaat dan
+            # weg. Mixed zet de index leeg en daarna voegen wij alleen onze
+            # eigen bestanden weer toe.
+            git reset "origin/${GITHUB_REF_NAME}"
+            for f in publicatie_velden.json publicatie_velden_stand.json; do
+              [ -f "$f" ] && git add "$f"
+            done
+            # NAMETEN DAT ER NIETS ANDERS IN DE INDEX STAAT. Beloven is niet
+            # genoeg; dit is te toetsen.
+            VREEMD=$(git diff --cached --name-only | grep -v -E '^publicatie_velden(_stand)?\.json$' || true)
+            if [ -n "$VREEMD" ]; then
+              echo "GESTOPT: er staan andere bestanden klaar: $VREEMD"
+              return 1
+            fi
+            if git diff --cached --quiet; then
+              echo "Na het opnieuw zetten is er niets te committen"
+              return 0
+            fi
+            git commit -m "Velden uit de bekendmakingen $(date +%F)"
+          done
+          echo "Na drie pogingen niet gelukt"
+          return 1
+          }
+          terugcommitten 2>&1 | tee -a "$RUNNER_TEMP/ronde.log"
+
+      - name: Melden in een issue als er iets is mislukt
+        # De reden van een mislukking hoort in een kanaal dat van buiten te
+        # lezen is. Het joblogboek is dat niet.
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          {
+            echo "## Velden uit de bekendmakingen mislukt"
+            echo
+            echo "De staart van de ronde:"
+            echo
+            echo '```'
+            tail -c 4000 "$RUNNER_TEMP/ronde.log" 2>/dev/null || echo "geen logboek"
+            echo '```'
+          } > "$RUNNER_TEMP/melding.md"
+          gh issue create \
+            --title "Veldenronde mislukt op $(date -u '+%Y-%m-%d %H:%M UTC')" \
+            --body-file "$RUNNER_TEMP/melding.md"
