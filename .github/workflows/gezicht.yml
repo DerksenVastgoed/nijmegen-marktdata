@@ -93,33 +93,9 @@ jobs:
 
       - name: Terugcommitten
         run: |
-          git config user.name "vastgoedmonitor-bot"
-          git config user.email "bot@users.noreply.github.com"
-          for f in gezichten.json gezicht_verslag.md stadsbeeld_verslag.md stadsbeeld_*.gml stadsbeeld_*.json omgevingsplan_gio.json omgevingsplan_gio_verslag.md omgevingsplan_gio_*.gml monumenten_verslag.md monumenten_bronnen_verslag.md monumenten_gemeenteblad.json monumenten_wikidata.json kaartviewer_verslag.md kaartviewer_boom.json stadsbeeld_regels.md monumenten_wfs_verslag.md monumenten_his_mon_monument.geojson monumenten_his_mon_beschermde_geb.geojson rijksmonumenten_rce_punten.json rijksmonumenten_rce_verslag.md rijksmonumenten_rce_panden.json rijksmonumenten_rce_panden_verslag.md monumenten_register_panden.json monumenten_register_panden_verslag.md; do
-            [ -f "$f" ] && git add "$f"
-          done
-          if git diff --cached --quiet; then
-            echo "Niets gewijzigd"
-            exit 0
-          fi
-          git commit -m "Beschermde gezichten $(date +%F)"
-          # EEN GEGEVENSCOMMIT RAAKT NOOIT BRONCODE; zie de brief en de voorraad.
-          geen_broncode() {
-            local raakt
-            raakt=$(git diff --name-only HEAD~1 HEAD -- '*.py' '*.yml' 2>/dev/null || true)
-            if [ -n "$raakt" ]; then
-              echo "GESTOPT: deze commit raakt broncode: $raakt"
-              return 1
-            fi
-            return 0
-          }
-          for poging in 1 2 3; do
-            geen_broncode || exit 1
-            if git push; then
-              echo "Teruggecommit gelukt"
-              exit 0
-            fi
-            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort; exit 1; }
-            sleep 5
-          done
-          exit 1
+          # De lus staat in terugcommitten.sh (11 november); daarvoor had deze
+          # workflow een eigen kopie, met git pull --rebase.
+          set -o pipefail
+          ./terugcommitten.sh "Gezichten $(date -u +%F)" gezichten.json gezicht_verslag.md stadsbeeld_verslag.md stadsbeeld_*.gml stadsbeeld_*.json omgevingsplan_gio.json omgevingsplan_gio_verslag.md omgevingsplan_gio_*.gml monumenten_verslag.md monumenten_bronnen_verslag.md monumenten_gemeenteblad.json monumenten_wikidata.json kaartviewer_verslag.md kaartviewer_boom.json stadsbeeld_regels.md monumenten_wfs_verslag.md monumenten_his_mon_monument.geojson monumenten_his_mon_beschermde_geb.geojson rijksmonumenten_rce_punten.json rijksmonumenten_rce_verslag.md rijksmonumenten_rce_panden.json rijksmonumenten_rce_panden_verslag.md monumenten_register_panden.json monumenten_register_panden_verslag.md \
+            2>&1 | tee /tmp/terugcommit.log
+          exit "${PIPESTATUS[0]}"

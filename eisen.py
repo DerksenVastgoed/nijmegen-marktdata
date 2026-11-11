@@ -152,7 +152,6 @@ def instellingen(pad=PAD):
 
     Bekend:
       startworkflow    de workflow die elke dag moet starten (startdagen())
-      kaartschakelaar  ja: de toets op de kaartlink draait (alleen de brief)
       kennisblokken    ja: de toetsen op bronnen.py draaien (alleen de brief)
     Een onbekende naam is een fout in proef(), anders typt iemand
     "kaartschakelar" en draait de toets stil niet.
@@ -170,7 +169,7 @@ def instellingen(pad=PAD):
     return uit
 
 
-BEKENDE_INSTELLINGEN = ("startworkflow", "kaartschakelaar", "kennisblokken")
+BEKENDE_INSTELLINGEN = ("startworkflow", "kennisblokken")
 
 
 def _eindigt_op_sys_exit(bron):
@@ -343,8 +342,10 @@ def leesbaar_kanaal(paden=None):
     joblogboek niet. De lijst komt uit de inhoud van het bestand en niet uit
     een lijst met workflownamen, want zo'n lijst wordt niet bijgewerkt.
     """
-    KANALEN = ("git commit", "gh issue", "gh api", "upload-artifact",
-               "MAIL_USERNAME", "GITHUB_STEP_SUMMARY")
+    # terugcommitten.sh committeert; sinds 11 november staat "git commit" daar
+    # en niet meer in de workflow zelf.
+    KANALEN = ("git commit", "terugcommitten.sh", "gh issue", "gh api",
+               "upload-artifact", "MAIL_USERNAME", "GITHUB_STEP_SUMMARY")
     fouten = []
     paden = paden if paden is not None else _alle_workflows()
     if not paden:
@@ -388,49 +389,6 @@ def _modules_die_importeren(naam, map_pad="."):
                      re.M):
             uit.append(n)
     return uit
-
-
-def kaartschakelaar():
-    """
-    Of de workflow die een kaartmodule aanroept ook REPO_PRIVE meegeeft.
-
-    WAT HIER SPEELT. De drie kaarten in de brief staan op GitHub Pages, en
-    Pages werkt alleen bij een publieke repo. kaartlink.py laat de link weg
-    zodra REPO_PRIVE "true" is, en ook als hij niet is gezet, want een dode
-    link in een brief naar pa is erger dan geen link.
-
-    DAAROM DEZE TOETS. Die voorzichtige kant heeft een keerzijde: zet niemand
-    de variabele, dan vallen de kaarten stil uit de brief en lijkt dat op een
-    bewuste keuze. "Niet gezet" en "op prive gezet" mogen niet hetzelfde
-    lezen. Dus toetst dit dat elke workflow die zo'n module aanroept de
-    variabele werkelijk meegeeft.
-
-    De lijst modules komt uit de map en niet uit een opsomming hier: wie
-    kaartlink gaat importeren, valt er vanzelf onder.
-    """
-    fouten = []
-    modules = _modules_die_importeren("kaartlink")
-    if not modules:
-        # Geen enkele module gebruikt de schakelaar. Dat kan kloppen, maar dan
-        # toetst dit niets en hoort dat te blijken.
-        return ["geen enkele module importeert kaartlink; dan staat de "
-                "Pages-url weer los in de scripts of is de schakelaar weg"]
-    for pad in _alle_workflows():
-        try:
-            with open(pad, encoding="utf-8") as f:
-                bron = f.read()
-        except Exception as e:
-            fouten.append(f"{pad} niet te lezen: {str(e)[:50]}")
-            continue
-        roept = [m for m in modules if f"python {m}" in bron or
-                 f"python3 {m}" in bron]
-        if not roept:
-            continue
-        if "REPO_PRIVE" not in bron:
-            fouten.append(f"{pad} roept {', '.join(roept)} aan en geeft "
-                          f"REPO_PRIVE niet mee. Dan vallen de kaartlinks "
-                          f"stil uit de brief, ook als de repo publiek is.")
-    return fouten
 
 
 def pijp_zonder_vangnet(paden=None):
@@ -1127,8 +1085,7 @@ def proef(snel=False):
     # tegelijk was.
     fouten.extend(leesbaar_kanaal())
 
-    # Een kaartlink die stil wegvalt leest als een keuze. Zie
-    # kaartschakelaar().
+    # Instellingen uit eisen.txt; zie instellingen().
     inst = instellingen()
     for naam in inst:
         if naam not in BEKENDE_INSTELLINGEN:
@@ -1137,11 +1094,9 @@ def proef(snel=False):
     if not inst.get("startworkflow"):
         fouten.append("eisen.txt noemt geen startworkflow; dan zijn de "
                       "startdagen niet na te meten")
-    # De kaartschakelaar en de kennisblokken gelden alleen waar eisen.txt dat
-    # zegt. Staan ze uit, dan staat dat er; dat is "niet van toepassing" en
-    # niet "gekeken en goed".
-    if inst.get("kaartschakelaar") == "ja":
-        fouten.extend(kaartschakelaar())
+    # De kennisblokken gelden alleen waar eisen.txt dat zegt. Staat het uit,
+    # dan staat dat er; dat is "niet van toepassing" en niet "gekeken en goed".
+    # (De kaartschakelaar is op 11 november vervallen, met de kaarten.)
 
     # COMMENTAAR MAG DE TOETS NIET GROEN MAKEN. Het blok hieronder noemt
     # pipefail wel in de uitleg en zet het niet aan. Zonder dit geval zou
