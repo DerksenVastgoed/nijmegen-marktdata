@@ -9,6 +9,9 @@
 #   corop_prijzen.json      prijzen en transacties COROP Arnhem/Nijmegen
 #   bouwkosten_index.json   bouwkostenindex nieuwbouw en onderhoud
 #   misdrijven_per_buurt.json  geregistreerde misdrijven per buurt (jaarcijfers)
+#   vergunningen_per_buurt.json kamerverhuurvergunningen per buurt, uit
+#                           kamervergunningen.json (de vergunningenlijst van de
+#                           gemeente) en PDOK
 #   diagnose/*.txt          wat er misging, voor het gezondheidsrapport van de brief
 #
 # WANNEER. Elke dag om 01:07 UTC, voor de brief van 02:48. Het CBS publiceert
@@ -70,24 +73,40 @@ jobs:
             python misdrijven_buurt.py --jaren 3
           fi
 
+      - name: Vergunningen aan buurten koppelen (alleen als het nodig is)
+        # Straten verhuizen niet; de koppeling wordt alleen opnieuw opgebouwd
+        # als hij minder dan drie buurten bevat. Een leeg bestand met {} telt
+        # anders als aanwezig, en dan wordt hij nooit gemaakt.
+        id: vergunningen
+        continue-on-error: true
+        run: |
+          AANTAL=$(python -c "import json;print(len(json.load(open('vergunningen_per_buurt.json'))))" 2>/dev/null || echo 0)
+          if [ "$AANTAL" -lt 3 ] && [ -s kamervergunningen.json ]; then
+            echo "Koppeling bevat $AANTAL buurten, opnieuw opbouwen"
+            python vergunningen_buurten.py
+          else
+            echo "Koppeling aanwezig ($AANTAL buurten)"
+          fi
+
       - name: Terugcommitten
         run: |
           set -o pipefail
           ./terugcommitten.sh "Cijfers $(date -u +%F)" \
             woningprijsindex.json corop_prijzen.json bouwkosten_index.json \
-            misdrijven_per_buurt.json diagnose/woningprijzen.txt \
-            diagnose/bouwkosten.txt 2>&1 | tee /tmp/terugcommit.log
+            misdrijven_per_buurt.json vergunningen_per_buurt.json \
+            straat_buurt_pdok.json diagnose/woningprijzen.txt \
+            diagnose/bouwkosten.txt diagnose/vergunningen.txt 2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
 
       - name: Melden in een issue als er iets is mislukt
-        if: failure() || steps.woningprijs.outcome == 'failure' || steps.corop.outcome == 'failure' || steps.bouwkosten.outcome == 'failure' || steps.misdrijven.outcome == 'failure'
+        if: failure() || steps.woningprijs.outcome == 'failure' || steps.corop.outcome == 'failure' || steps.bouwkosten.outcome == 'failure' || steps.misdrijven.outcome == 'failure' || steps.vergunningen.outcome == 'failure'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           KOP="Cijfers niet (volledig) opgehaald op $(date -u +%F)"
           {
             echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-            echo "woningprijsindex: ${{ steps.woningprijs.outcome }}, corop: ${{ steps.corop.outcome }}, bouwkosten: ${{ steps.bouwkosten.outcome }}, misdrijven: ${{ steps.misdrijven.outcome }}"
+            echo "woningprijsindex: ${{ steps.woningprijs.outcome }}, corop: ${{ steps.corop.outcome }}, bouwkosten: ${{ steps.bouwkosten.outcome }}, misdrijven: ${{ steps.misdrijven.outcome }}, vergunningen: ${{ steps.vergunningen.outcome }}"
             echo '```'
             cat diagnose/*.txt 2>/dev/null || echo "(geen diagnose)"
             tail -c 1500 /tmp/terugcommit.log 2>/dev/null || true

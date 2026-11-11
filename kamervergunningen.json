@@ -1,0 +1,7246 @@
+{
+ "abeelstraat4": [
+  {
+   "adres": "Abeelstraat 4",
+   "datum": "2017-10-05",
+   "omschrijving": "reeds 1988 geschikt voor kamerverhuur, vergunning is niet meer vindbaar",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z15.003036"
+  }
+ ],
+ "acaciastraat2": [
+  {
+   "adres": "Acaciastraat 2",
+   "datum": "2017-10-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.105905.01"
+  }
+ ],
+ "acaciastraat4": [
+  {
+   "adres": "Acaciastraat 4",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105624.01"
+  }
+ ],
+ "achterdewiemelpoort5": [
+  {
+   "adres": "Achter de Wiemelpoort 5D",
+   "datum": "2018-02-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100338.01"
+  }
+ ],
+ "ahornstraat3": [
+  {
+   "adres": "Ahornstraat 3",
+   "datum": "2017-02-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.101366.01"
+  }
+ ],
+ "antiloopstraat57": [
+  {
+   "adres": "Antiloopstraat 57",
+   "datum": "2018-04-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103308.01"
+  }
+ ],
+ "archipelstraat292": [
+  {
+   "adres": "Archipelstraat 292",
+   "datum": "2015-10-16",
+   "omschrijving": "het wijzigen van kantoorruimten naar kamerverhuur (23 kamers)",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z15.028440"
+  }
+ ],
+ "arendnoorduijnstraat32": [
+  {
+   "adres": "Arend Noorduijnstraat 32",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105089.01"
+  }
+ ],
+ "arksteestraat7": [
+  {
+   "adres": "Arksteestraat 7",
+   "datum": "2018-02-19",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100062.01"
+  }
+ ],
+ "aubadestraat12": [
+  {
+   "adres": "Aubadestraat 12",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103299.01"
+  }
+ ],
+ "aubadestraat16": [
+  {
+   "adres": "Aubadestraat 16",
+   "datum": "2018-08-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103274.01"
+  }
+ ],
+ "aubadestraat192": [
+  {
+   "adres": "Aubadestraat 192",
+   "datum": "2019-09-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106455.01"
+  }
+ ],
+ "aubadestraat302": [
+  {
+   "adres": "Aubadestraat 302",
+   "datum": "2018-08-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102332.01"
+  }
+ ],
+ "aubadestraat46": [
+  {
+   "adres": "Aubadestraat 46",
+   "datum": "2018-07-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102613.01"
+  }
+ ],
+ "augustijnenstraat25": [
+  {
+   "adres": "Augustijnenstraat 25B",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105622.01"
+  }
+ ],
+ "augustijnenstraat37": [
+  {
+   "adres": "Augustijnenstraat 37",
+   "datum": "2018-09-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106496.01"
+  }
+ ],
+ "avilastraat10": [
+  {
+   "adres": "Avilastraat 10C",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105874.01"
+  }
+ ],
+ "balistraat13": [
+  {
+   "adres": "Balistraat 13",
+   "datum": "2018-02-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108733.01"
+  }
+ ],
+ "baljuwstraat17": [
+  {
+   "adres": "Baljuwstraat 17",
+   "datum": "2018-09-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103658.01"
+  }
+ ],
+ "balladestraat8": [
+  {
+   "adres": "Balladestraat 8",
+   "datum": "2018-04-09",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108237.01"
+  }
+ ],
+ "bankastraat10": [
+  {
+   "adres": "Bankastraat 10",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106146.01"
+  }
+ ],
+ "bankastraat19": [
+  {
+   "adres": "Bankastraat 19",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103974.01"
+  }
+ ],
+ "barbarossastraat12": [
+  {
+   "adres": "Barbarossastraat 12",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105087.01"
+  }
+ ],
+ "barbarossastraat6": [
+  {
+   "adres": "Barbarossastraat 6",
+   "datum": "2018-05-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103846.01"
+  }
+ ],
+ "barbarossastraat8": [
+  {
+   "adres": "Barbarossastraat 8",
+   "datum": "2018-03-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102234.01"
+  }
+ ],
+ "beijensstraat1": [
+  {
+   "adres": "Beijensstraat 1",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104965.01"
+  }
+ ],
+ "beijensstraat4": [
+  {
+   "adres": "Beijensstraat 4",
+   "datum": "2017-01-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104726.01"
+  }
+ ],
+ "beijensstraat49": [
+  {
+   "adres": "Beijensstraat 49",
+   "datum": "2020-10-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105167.01"
+  }
+ ],
+ "beijenstraat2": [
+  {
+   "adres": "Beijenstraat 2",
+   "datum": "2017-01-13",
+   "omschrijving": "realiseren van kamerverhuur 8 kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z16.103401.01"
+  }
+ ],
+ "bergendalseweg100": [
+  {
+   "adres": "Berg en Dalseweg 100",
+   "datum": "2018-02-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100745.01"
+  }
+ ],
+ "bergendalseweg176": [
+  {
+   "adres": "Berg en Dalseweg 176",
+   "datum": "2018-03-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100982.01"
+  }
+ ],
+ "bergendalseweg210": [
+  {
+   "adres": "Berg en Dalseweg 210",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106340.01"
+  }
+ ],
+ "bergendalseweg213": [
+  {
+   "adres": "Berg en Dalseweg 213E",
+   "datum": "2018-12-21",
+   "omschrijving": "splitsen van het bestaande pand in twee kamerverhuurpanden met ieder twee onzelfstandige kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.109442.01"
+  }
+ ],
+ "bergendalseweg232": [
+  {
+   "adres": "Berg en Dalseweg 232A",
+   "datum": "2017-08-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.105059.01"
+  }
+ ],
+ "bergendalseweg362": [
+  {
+   "adres": "Berg en Dalseweg 362",
+   "datum": "2018-08-29",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103574.01"
+  }
+ ],
+ "bergendalseweg41": [
+  {
+   "adres": "Berg en Dalseweg 41",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105408.01"
+  }
+ ],
+ "bergendalseweg72": [
+  {
+   "adres": "Berg en Dalseweg 72",
+   "datum": "2018-06-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104999.01"
+  }
+ ],
+ "bergendalseweg8": [
+  {
+   "adres": "Berg en Dalseweg 8",
+   "datum": "2018-10-18",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106367.01"
+  }
+ ],
+ "biezendwarsstraat18": [
+  {
+   "adres": "Biezendwarsstraat 18",
+   "datum": "2016-12-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.104163.01"
+  }
+ ],
+ "biezenstraat138": [
+  {
+   "adres": "Biezenstraat 138",
+   "datum": "2016-04-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z15.101848.01"
+  }
+ ],
+ "biezenstraat36": [
+  {
+   "adres": "Biezenstraat 36",
+   "datum": "2018-08-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106536.01"
+  }
+ ],
+ "bijleveldsingel1": [
+  {
+   "adres": "Bijleveldsingel 1T",
+   "datum": "2020-02-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.109569.01"
+  }
+ ],
+ "bijleveldsingel30": [
+  {
+   "adres": "Bijleveldsingel 30",
+   "datum": "2019-11-05",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.106303.01"
+  }
+ ],
+ "bijleveldsingel6": [
+  {
+   "adres": "Bijleveldsingel 6N",
+   "datum": "2025-02-28",
+   "omschrijving": "het omzetten van zeven kamers voor kamerverhuur naar drie woningen",
+   "soort": "omgevingsvergunning",
+   "zaak": "AB24.02314"
+  }
+ ],
+ "bilderdijkstraat78": [
+  {
+   "adres": "Bilderdijkstraat 78",
+   "datum": "2016-06-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.100648.01"
+  }
+ ],
+ "bloemerstraat121": [
+  {
+   "adres": "Bloemerstraat 121",
+   "datum": "2018-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105077.01"
+  }
+ ],
+ "bloemerstraat129": [
+  {
+   "adres": "Bloemerstraat 129",
+   "datum": "2018-08-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106250.01"
+  }
+ ],
+ "bloemerstraat62": [
+  {
+   "adres": "Bloemerstraat 62A",
+   "datum": "2018-07-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105819.01"
+  }
+ ],
+ "bloemerstraat91": [
+  {
+   "adres": "Bloemerstraat 91",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103555.01"
+  }
+ ],
+ "boetselaersborgstraat8": [
+  {
+   "adres": "Boetselaersborgstraat 8",
+   "datum": "2017-10-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.105498.01"
+  }
+ ],
+ "bolerostraat5": [
+  {
+   "adres": "Bolerostraat 5",
+   "datum": "2017-01-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104416.01"
+  }
+ ],
+ "borneostraat23": [
+  {
+   "adres": "Borneostraat 23",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105638.01"
+  }
+ ],
+ "braamhof1": [
+  {
+   "adres": "Braamhof 1",
+   "datum": "2018-04-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103311.01"
+  }
+ ],
+ "brakkensteinweg52": [
+  {
+   "adres": "Brakkensteinweg 52",
+   "datum": "2019-02-20",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.107178.01"
+  }
+ ],
+ "bredestraat16": [
+  {
+   "adres": "Bredestraat 16",
+   "datum": "2018-07-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105536.01"
+  }
+ ],
+ "broerdijk10": [
+  {
+   "adres": "Broerdijk 10",
+   "datum": "2018-02-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100206.01"
+  }
+ ],
+ "broerdijk6": [
+  {
+   "adres": "Broerdijk 6",
+   "datum": "2018-04-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103184.01"
+  }
+ ],
+ "broerweg82": [
+  {
+   "adres": "Broerweg 82",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104734.01"
+  }
+ ],
+ "bronsgeeststraat12": [
+  {
+   "adres": "Bronsgeeststraat 12",
+   "datum": "2018-07-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105703.01"
+  }
+ ],
+ "bronsgeeststraat22": [
+  {
+   "adres": "Bronsgeeststraat 22",
+   "datum": "2018-02-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100835.01"
+  }
+ ],
+ "burchtstraat140": [
+  {
+   "adres": "Burchtstraat 140",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103558.01"
+  }
+ ],
+ "burchtstraat146": [
+  {
+   "adres": "Burchtstraat 146",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105705.01"
+  }
+ ],
+ "burchtstraat152": [
+  {
+   "adres": "Burchtstraat 152",
+   "datum": "2018-08-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105941.01"
+  }
+ ],
+ "burchtstraat63": [
+  {
+   "adres": "Burchtstraat 63E",
+   "datum": "2017-12-05",
+   "omschrijving": "wijzigen van de winkel en kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.105349.01"
+  },
+  {
+   "adres": "Burchtstraat 63E",
+   "datum": "2018-07-17",
+   "omschrijving": "wijzigen van de winkel en het kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.102463.01"
+  }
+ ],
+ "burchtstraat71": [
+  {
+   "adres": "Burchtstraat 71B",
+   "datum": "2017-06-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.102319.01"
+  }
+ ],
+ "burchtstraat82": [
+  {
+   "adres": "Burchtstraat 82",
+   "datum": "2018-03-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.101250.01"
+  }
+ ],
+ "burchtstraat84": [
+  {
+   "adres": "Burchtstraat 84",
+   "datum": "2018-05-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103890.01"
+  }
+ ],
+ "burchtstraat86": [
+  {
+   "adres": "Burchtstraat 86",
+   "datum": "2018-11-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105739.01"
+  }
+ ],
+ "burchtstraat96": [
+  {
+   "adres": "Burchtstraat 96",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105484.01"
+  }
+ ],
+ "burghardtvandenberghstraat119": [
+  {
+   "adres": "Burghardt van den Berghstraat 119",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105412.01"
+  }
+ ],
+ "burghardtvandenberghstraat131": [
+  {
+   "adres": "Burghardt van den Berghstraat 131",
+   "datum": "2016-12-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.104219.01"
+  }
+ ],
+ "burghardtvandenberghstraat133": [
+  {
+   "adres": "Burghardt van den Berghstraat 133",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105399.01"
+  }
+ ],
+ "burghardtvandenberghstraat145": [
+  {
+   "adres": "Burghardt van den Berghstraat 145",
+   "datum": "2018-03-22",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102453.01"
+  }
+ ],
+ "burghardtvandenberghstraat177": [
+  {
+   "adres": "Burghardt van den Berghstraat 177",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105892.01"
+  }
+ ],
+ "burghardtvandenberghstraat29": [
+  {
+   "adres": "Burghardt van den Berghstraat 29",
+   "datum": "2018-03-13",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108653.01"
+  }
+ ],
+ "burghardtvandenberghstraat41": [
+  {
+   "adres": "Burghardt van den Berghstraat 41T",
+   "datum": "2019-11-05",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.100933.01"
+  }
+ ],
+ "burghardtvandenberghstraat67": [
+  {
+   "adres": "Burghardt van den Berghstraat 67",
+   "datum": "2018-03-01",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108756.01"
+  }
+ ],
+ "burghustingstraat294": [
+  {
+   "adres": "burg hustingstraat 294",
+   "datum": "2018-04-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103355.01"
+  }
+ ],
+ "burghustinxstraat84": [
+  {
+   "adres": "Burg. Hustinxstraat 84",
+   "datum": "2018-08-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106429.01"
+  }
+ ],
+ "buurmansweg45": [
+  {
+   "adres": "Buurmansweg 45",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106210.01"
+  }
+ ],
+ "carmelhof3": [
+  {
+   "adres": "Carmelhof 3",
+   "datum": "2019-03-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.110016.01"
+  }
+ ],
+ "cimbaalstraat36": [
+  {
+   "adres": "Cimbaalstraat 36",
+   "datum": "2018-10-23",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104935.01"
+  },
+  {
+   "adres": "Cimbaalstraat 36",
+   "datum": "2018-10-23",
+   "omschrijving": "het omzetten van de woning naar een kamerverhuur pand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.107145.01"
+  }
+ ],
+ "cimbaalstraat48": [
+  {
+   "adres": "Cimbaalstraat 48",
+   "datum": "2018-12-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104934.01"
+  }
+ ],
+ "citroenvlinderstraat27": [
+  {
+   "adres": "Citroenvlinderstraat 27",
+   "datum": "2017-10-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.106310.01"
+  }
+ ],
+ "citroenvlinderstraat31": [
+  {
+   "adres": "Citroenvlinderstraat 31",
+   "datum": "2018-06-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100060.02"
+  }
+ ],
+ "citroenvlinderstraat33": [
+  {
+   "adres": "Citroenvlinderstraat 33",
+   "datum": "2019-06-20",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106191.01"
+  }
+ ],
+ "coehoornstraat29": [
+  {
+   "adres": "Coehoornstraat 29",
+   "datum": "2018-03-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102424.01"
+  }
+ ],
+ "coehoornstraat31": [
+  {
+   "adres": "Coehoornstraat 31",
+   "datum": "2018-07-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106030.01"
+  }
+ ],
+ "coehoornstraat34": [
+  {
+   "adres": "Coehoornstraat 34T",
+   "datum": "2023-08-01",
+   "omschrijving": "kamerverhuurpand verbouwen naar 6 woningen",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z22.109919.01"
+  }
+ ],
+ "corduwenerstraat29": [
+  {
+   "adres": "Corduwenerstraat 29",
+   "datum": "2018-07-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105633.01"
+  }
+ ],
+ "csardasstraat43": [
+  {
+   "adres": "Csardasstraat 43",
+   "datum": "2017-02-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104942.01"
+  }
+ ],
+ "curacaoweg9": [
+  {
+   "adres": "Curacaoweg 9",
+   "datum": "2016-10-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.101798.01"
+  }
+ ],
+ "daalsedwarsweg1": [
+  {
+   "adres": "Daalsedwarsweg 1",
+   "datum": "2018-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105913.01"
+  }
+ ],
+ "daalseweg105": [
+  {
+   "adres": "Daalseweg 105",
+   "datum": "2018-04-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103059.01"
+  }
+ ],
+ "daalseweg171": [
+  {
+   "adres": "Daalseweg 171",
+   "datum": "2018-08-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106079.01"
+  }
+ ],
+ "daalseweg207": [
+  {
+   "adres": "Daalseweg 207",
+   "datum": "2018-10-18",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106665.01"
+  }
+ ],
+ "daalseweg209": [
+  {
+   "adres": "Daalseweg 209",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106105.01"
+  }
+ ],
+ "daalseweg216": [
+  {
+   "adres": "Daalseweg 216",
+   "datum": "2016-11-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104036.01"
+  },
+  {
+   "adres": "Daalseweg 216",
+   "datum": "2018-03-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102106.01"
+  }
+ ],
+ "daalseweg229": [
+  {
+   "adres": "Daalseweg 229A",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105076.01"
+  }
+ ],
+ "daalseweg243": [
+  {
+   "adres": "Daalseweg 243",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105652.01"
+  }
+ ],
+ "daalseweg295": [
+  {
+   "adres": "Daalseweg 295",
+   "datum": "2018-03-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.101271.01"
+  }
+ ],
+ "daalseweg297": [
+  {
+   "adres": "Daalseweg 297",
+   "datum": "2018-03-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102012.01"
+  }
+ ],
+ "daalseweg307": [
+  {
+   "adres": "Daalseweg 307",
+   "datum": "2020-07-14",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.100003.01"
+  }
+ ],
+ "daalseweg350": [
+  {
+   "adres": "Daalseweg 350",
+   "datum": "2017-06-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.103769.01"
+  }
+ ],
+ "daalseweg372": [
+  {
+   "adres": "Daalseweg 372",
+   "datum": "2021-04-22",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104661.01"
+  }
+ ],
+ "daalseweg48": [
+  {
+   "adres": "Daalseweg 48A",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105043.01"
+  }
+ ],
+ "dacostastraat22": [
+  {
+   "adres": "da Costastraat 22",
+   "datum": "2018-01-31",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107993.01"
+  }
+ ],
+ "delistraat45": [
+  {
+   "adres": "Delistraat 45",
+   "datum": "2018-04-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103279.01"
+  }
+ ],
+ "delistraat88": [
+  {
+   "adres": "Delistraat 88",
+   "datum": "2018-02-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100644.01"
+  }
+ ],
+ "derdevanhezewijkstraat21": [
+  {
+   "adres": "Derde van Hezewijkstraat 21",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106245.01"
+  }
+ ],
+ "derdewalstraat105": [
+  {
+   "adres": "Derde Walstraat 105",
+   "datum": "2018-09-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103939.01"
+  }
+ ],
+ "derdewalstraat107": [
+  {
+   "adres": "Derde Walstraat 107",
+   "datum": "2018-09-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104293.01"
+  }
+ ],
+ "derdewalstraat109": [
+  {
+   "adres": "Derde Walstraat 109",
+   "datum": "2018-09-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104519.01"
+  }
+ ],
+ "derdewalstraat113": [
+  {
+   "adres": "Derde Walstraat 113",
+   "datum": "2018-09-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104297.01"
+  }
+ ],
+ "derdewalstraat51": [
+  {
+   "adres": "Derde Walstraat 51",
+   "datum": "2016-07-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.101771.01"
+  }
+ ],
+ "derdewalstraat89": [
+  {
+   "adres": "Derde Walstraat 89",
+   "datum": "2019-01-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.108102.01"
+  }
+ ],
+ "dikkeboomweg36": [
+  {
+   "adres": "Dikkeboomweg 36",
+   "datum": "2021-02-22",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.109155.01"
+  }
+ ],
+ "distelstraat94": [
+  {
+   "adres": "Distelstraat 94",
+   "datum": "2018-02-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108741.01"
+  }
+ ],
+ "dobbelmannweg2": [
+  {
+   "adres": "Dobbelmannweg 2",
+   "datum": "2015-09-10",
+   "omschrijving": "VOOROVERLEG het verbouwen van een pand naar kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z15.031238"
+  }
+ ],
+ "dobbelmannweg21": [
+  {
+   "adres": "Dobbelmannweg 21",
+   "datum": "2019-01-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.107086.01"
+  }
+ ],
+ "dobbelmannweg29": [
+  {
+   "adres": "Dobbelmannweg 29",
+   "datum": "2019-01-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100470.01"
+  },
+  {
+   "adres": "Dobbelmannweg 29",
+   "datum": "2019-01-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.108813.01"
+  }
+ ],
+ "doddendaal16": [
+  {
+   "adres": "Doddendaal 16",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105537.01"
+  }
+ ],
+ "doddendaal6": [
+  {
+   "adres": "Doddendaal 6",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106445.01"
+  }
+ ],
+ "dominicanenstraat143": [
+  {
+   "adres": "Dominicanenstraat 143",
+   "datum": "2018-07-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106198.01"
+  }
+ ],
+ "dominicanenstraat145": [
+  {
+   "adres": "Dominicanenstraat 145",
+   "datum": "2018-07-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106224.01"
+  }
+ ],
+ "dominicanenstraat147": [
+  {
+   "adres": "Dominicanenstraat 147A",
+   "datum": "2018-07-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106205.01"
+  }
+ ],
+ "dominicanenstraat60": [
+  {
+   "adres": "Dominicanenstraat 60",
+   "datum": "2015-03-18",
+   "omschrijving": "woningonttrekking, samenvoegen van meerdere woonruimte",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z15.004946"
+  }
+ ],
+ "dommervanpoldersveldtweg214": [
+  {
+   "adres": "Dommer van Poldersveldtweg 214",
+   "datum": "2018-07-31",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105563.01"
+  },
+  {
+   "adres": "Dommer van Poldersveldtweg 214",
+   "datum": "2013-10-29",
+   "omschrijving": "verbouwen bovenwoning tot kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z13.004840"
+  }
+ ],
+ "dommervanpoldersveldtweg34": [
+  {
+   "adres": "Dommer van Poldersveldtweg 34",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104693.01"
+  }
+ ],
+ "dommervanpoldersveldtweg37": [
+  {
+   "adres": "Dommer van Poldersveldtweg 37",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100069.02"
+  }
+ ],
+ "dommervanpoldersveldtweg44": [
+  {
+   "adres": "Dommer van Poldersveldtweg 44",
+   "datum": "2018-05-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103434.01"
+  }
+ ],
+ "drakensteinstraat9": [
+  {
+   "adres": "Drakensteinstraat 9",
+   "datum": "2021-10-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z21.105492.01"
+  }
+ ],
+ "drclaasnoorduijnstraat1": [
+  {
+   "adres": "Dr. Claas Noorduijnstraat 1",
+   "datum": "2018-02-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108677.01"
+  }
+ ],
+ "driehuizerweg312": [
+  {
+   "adres": "Driehuizerweg 312",
+   "datum": "2018-08-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105932.01"
+  }
+ ],
+ "drjanberendsstraat15": [
+  {
+   "adres": "Dr. Jan Berendsstraat 15",
+   "datum": "2016-01-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z15.102094.01"
+  }
+ ],
+ "drjanberendsstraat2": [
+  {
+   "adres": "Dr. Jan Berendsstraat 2",
+   "datum": "2018-03-12",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108683.01"
+  }
+ ],
+ "drjanberendsstraat6": [
+  {
+   "adres": "Dr. Jan Berendsstraat 6",
+   "datum": "2018-08-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103786.01"
+  }
+ ],
+ "eersteoudeheselaan182": [
+  {
+   "adres": "Eerste Oude Heselaan 182",
+   "datum": "2017-10-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.105397.01"
+  }
+ ],
+ "eersteoudeheselaan312": [
+  {
+   "adres": "Eerste Oude Heselaan 312",
+   "datum": "2018-05-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104596.01"
+  }
+ ],
+ "eerstewalstraat51": [
+  {
+   "adres": "Eerste Walstraat 51",
+   "datum": "2018-06-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104165.01"
+  }
+ ],
+ "eerstewalstraat68": [
+  {
+   "adres": "Eerste Walstraat 68",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105877.01"
+  }
+ ],
+ "eilbrachtstraat2": [
+  {
+   "adres": "Eilbrachtstraat 2",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100095.01"
+  }
+ ],
+ "eilbrachtstraat4": [
+  {
+   "adres": "Eilbrachtstraat 4",
+   "datum": "2020-10-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105897.01"
+  }
+ ],
+ "einsteinstraat103": [
+  {
+   "adres": "Einsteinstraat 103",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100821.01"
+  }
+ ],
+ "einsteinstraat115": [
+  {
+   "adres": "Einsteinstraat 115",
+   "datum": "2018-05-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104280.01"
+  }
+ ],
+ "einsteinstraat129": [
+  {
+   "adres": "Einsteinstraat 129",
+   "datum": "2018-11-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105751.01"
+  }
+ ],
+ "einsteinstraat135": [
+  {
+   "adres": "Einsteinstraat 135",
+   "datum": "2018-10-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.107786.01"
+  }
+ ],
+ "einsteinstraat137": [
+  {
+   "adres": "Einsteinstraat 137",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102539.01"
+  }
+ ],
+ "einsteinstraat16": [
+  {
+   "adres": "Einsteinstraat 16",
+   "datum": "2018-02-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100176.01"
+  }
+ ],
+ "einsteinstraat51": [
+  {
+   "adres": "Einsteinstraat 51",
+   "datum": "2018-08-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105809.01"
+  }
+ ],
+ "einsteinstraat55": [
+  {
+   "adres": "Einsteinstraat 55",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105229.01"
+  }
+ ],
+ "einsteinstraat57": [
+  {
+   "adres": "Einsteinstraat 57",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106411.01"
+  }
+ ],
+ "emaushof3": [
+  {
+   "adres": "Emaushof 3",
+   "datum": "2018-04-09",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100002.01"
+  }
+ ],
+ "engelenstraat4": [
+  {
+   "adres": "Engelenstraat 4",
+   "datum": "2016-04-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.002779.01"
+  },
+  {
+   "adres": "Engelenstraat 4",
+   "datum": "2016-12-07",
+   "omschrijving": "inpandig wijzigen ten behoeve van kamerverhuur 5 kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z16.102168.01"
+  }
+ ],
+ "evertsenstraat17": [
+  {
+   "adres": "Evertsenstraat 17",
+   "datum": "2018-06-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104745.01"
+  }
+ ],
+ "evertsenstraat19": [
+  {
+   "adres": "Evertsenstraat 19A",
+   "datum": "2018-02-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100762.01"
+  },
+  {
+   "adres": "Evertsenstraat 19",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106149.01"
+  }
+ ],
+ "evertsenstraat3": [
+  {
+   "adres": "Evertsenstraat 3",
+   "datum": "2018-10-11",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105795.01"
+  }
+ ],
+ "evertsenstraat33": [
+  {
+   "adres": "Evertsenstraat 33",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104815.01"
+  }
+ ],
+ "evertsenstraat40": [
+  {
+   "adres": "Evertsenstraat 40",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105276.01"
+  }
+ ],
+ "evertsenstraat42": [
+  {
+   "adres": "Evertsenstraat 42",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104281.01"
+  }
+ ],
+ "evertsenstraat48": [
+  {
+   "adres": "Evertsenstraat 48",
+   "datum": "2018-08-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106718.01"
+  }
+ ],
+ "evertsenstraat5": [
+  {
+   "adres": "Evertsenstraat 5",
+   "datum": "2018-02-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100212.01"
+  }
+ ],
+ "evertsenstraat7": [
+  {
+   "adres": "Evertsenstraat 7",
+   "datum": "2018-02-16",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108656.01"
+  }
+ ],
+ "evertsenstraat8": [
+  {
+   "adres": "Evertsenstraat 8",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105226.01"
+  }
+ ],
+ "fagelstraat6": [
+  {
+   "adres": "Fagelstraat 6",
+   "datum": "2019-04-09",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100162.01"
+  },
+  {
+   "adres": "Fagelstraat 6E",
+   "datum": "2019-03-19",
+   "omschrijving": "verbouwen van het pand tot kamerverhuurpand 7 kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.110224.01"
+  }
+ ],
+ "fagelstraat86": [
+  {
+   "adres": "Fagelstraat 86",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106075.01"
+  }
+ ],
+ "fagelstraat88": [
+  {
+   "adres": "Fagelstraat 88",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106076.01"
+  }
+ ],
+ "fanfarestraat32": [
+  {
+   "adres": "Fanfarestraat 32N",
+   "datum": "2023-12-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z23.102315.01"
+  }
+ ],
+ "fanfarestraat38": [
+  {
+   "adres": "Fanfarestraat 38",
+   "datum": "2018-04-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100246.01"
+  }
+ ],
+ "floraweg61": [
+  {
+   "adres": "Floraweg 61P",
+   "datum": "2016-04-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.100052.01"
+  }
+ ],
+ "fortkijkindepotstraat48": [
+  {
+   "adres": "Fort Kijk in de Potstraat 48",
+   "datum": "2018-07-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105636.01"
+  }
+ ],
+ "fortstraat10": [
+  {
+   "adres": "Fortstraat 10",
+   "datum": "2018-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105750.01"
+  }
+ ],
+ "fransestraat12": [
+  {
+   "adres": "Fransestraat 12",
+   "datum": "2018-08-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105514.01"
+  }
+ ],
+ "galvanistraat22": [
+  {
+   "adres": "Galvanistraat 22",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105091.01"
+  }
+ ],
+ "geerkamp1610": [
+  {
+   "adres": "Geerkamp 1610",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102871.01"
+  }
+ ],
+ "geerkamp1652": [
+  {
+   "adres": "De Geerkamp 1652",
+   "datum": "2018-04-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102862.01"
+  }
+ ],
+ "gerardnoodtstraat10": [
+  {
+   "adres": "Gerard Noodtstraat 10",
+   "datum": "2018-03-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100091.01"
+  },
+  {
+   "adres": "Gerard Noodtstraat 10",
+   "datum": "2014-02-17",
+   "omschrijving": "plaatsen van een dakopbouw tbv kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.021536"
+  }
+ ],
+ "gerardnoodtstraat42": [
+  {
+   "adres": "Gerard Noodtstraat 42",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105073.01"
+  }
+ ],
+ "gerardnoodtstraat46": [
+  {
+   "adres": "Gerard Noodtstraat 46",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105905.01"
+  }
+ ],
+ "gerardnoodtstraat48": [
+  {
+   "adres": "Gerard Noodtstraat 48",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105885.01"
+  }
+ ],
+ "gerardnoodtstraat54": [
+  {
+   "adres": "Gerard Noodtstraat 54",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105635.01"
+  }
+ ],
+ "gerardnoodtstraat72": [
+  {
+   "adres": "Gerard Noodtstraat 72",
+   "datum": "2018-12-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104539.01"
+  }
+ ],
+ "gerardnoodtstraat74": [
+  {
+   "adres": "Gerard Noodtstraat 74",
+   "datum": "2018-09-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104536.01"
+  }
+ ],
+ "gildekamp6006": [
+  {
+   "adres": "de Gildekamp 6006",
+   "datum": "2018-11-21",
+   "omschrijving": "wijzigen van het huidige bedrijfsgedeelte in gedeeltelijke kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.108926.01"
+  }
+ ],
+ "gitaarstraat29": [
+  {
+   "adres": "Gitaarstraat 29",
+   "datum": "2017-06-22",
+   "leefbaarheidsonderzoek": false,
+   "soort": "samenvoeging",
+   "zaak": "W.Z17.103026.01"
+  }
+ ],
+ "glashuis11": [
+  {
+   "adres": "Glashuis 11",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106412.01"
+  }
+ ],
+ "glashuis12": [
+  {
+   "adres": "Glashuis 12",
+   "datum": "2018-07-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106413.01"
+  }
+ ],
+ "glimwormstraat8": [
+  {
+   "adres": "Glimwormstraat 8",
+   "datum": "2016-03-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.002141.01"
+  }
+ ],
+ "goemanborgesiusstraat88": [
+  {
+   "adres": "Goeman Borgesiusstraat 88N",
+   "datum": "2025-02-12",
+   "omschrijving": "de woning uitbreiden en verbouwen en splitsen in 3 zelfstandige woningen met elk 2 wooneenheden voor kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "AB24.00126"
+  }
+ ],
+ "gorisstraat18": [
+  {
+   "adres": "Gorisstraat 18",
+   "datum": "2018-03-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102429.01"
+  }
+ ],
+ "gorisstraat37": [
+  {
+   "adres": "Gorisstraat 37",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105511.01"
+  }
+ ],
+ "goselingstraat27": [
+  {
+   "adres": "Goselingstraat 27",
+   "datum": "2018-02-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107743.01"
+  }
+ ],
+ "graadtvanroggenstraat22": [
+  {
+   "adres": "Graadt van Roggenstraat 22",
+   "datum": "2018-07-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105662.01"
+  }
+ ],
+ "graadtvanroggenstraat6": [
+  {
+   "adres": "Graadt van Roggenstraat 6",
+   "datum": "2020-06-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.102273.01"
+  }
+ ],
+ "graafseweg1": [
+  {
+   "adres": "Graafseweg 1A",
+   "datum": "2014-12-05",
+   "omschrijving": "interne verbouwing ten behoeve van kamerverhuur (20 kamers)",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.010277"
+  }
+ ],
+ "graafseweg128": [
+  {
+   "adres": "Graafseweg 128",
+   "datum": "2018-03-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100259.01"
+  }
+ ],
+ "graafseweg141": [
+  {
+   "adres": "Graafseweg 141",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106314.01"
+  }
+ ],
+ "graafseweg195": [
+  {
+   "adres": "Graafseweg 195",
+   "datum": "2018-08-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106266.01"
+  }
+ ],
+ "graafseweg213": [
+  {
+   "adres": "Graafseweg 213B",
+   "datum": "2016-04-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.000044.01"
+  }
+ ],
+ "graafseweg241": [
+  {
+   "adres": "Graafseweg 241",
+   "datum": "2016-01-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z15.101623.01"
+  }
+ ],
+ "graafseweg257": [
+  {
+   "adres": "Graafseweg 257",
+   "datum": "2015-12-31",
+   "omschrijving": "verbouwen van een woning naar kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z13.040362"
+  }
+ ],
+ "graafseweg259": [
+  {
+   "adres": "Graafseweg 259",
+   "datum": "2018-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108102.02"
+  },
+  {
+   "adres": "Graafseweg 259",
+   "datum": "2018-06-28",
+   "omschrijving": "toestaan van kamerverhuur ondanks bestemming wonen",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.102490.01"
+  }
+ ],
+ "graafseweg29": [
+  {
+   "adres": "Graafseweg 29E",
+   "datum": "2015-12-31",
+   "omschrijving": "Herinrichten en verbouwen kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z10.013083"
+  }
+ ],
+ "graafseweg31": [
+  {
+   "adres": "Graafseweg 31",
+   "datum": "2015-10-16",
+   "omschrijving": "verbouwen kamerverhuurpand (45 kamers)",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.021740"
+  }
+ ],
+ "graafseweg35": [
+  {
+   "adres": "Graafseweg 35E",
+   "datum": "2014-09-22",
+   "omschrijving": "verbouw van kamerverhuurpand naar 7 appartementen",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.049160"
+  }
+ ],
+ "graafseweg385": [
+  {
+   "adres": "Graafseweg 385A",
+   "datum": "2016-04-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z15.101444.01"
+  }
+ ],
+ "graafseweg405": [
+  {
+   "adres": "Graafseweg 405",
+   "datum": "2018-10-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100011.01"
+  }
+ ],
+ "graafseweg64": [
+  {
+   "adres": "Graafseweg 64N",
+   "datum": "2025-06-30",
+   "omschrijving": "het omzetten van het pand van tien kamers voor kamerverhuur naar zes zelfstandige woningen",
+   "soort": "omgevingsvergunning",
+   "zaak": "AB24.02428"
+  }
+ ],
+ "graafseweg66": [
+  {
+   "adres": "Graafseweg 66",
+   "datum": "2019-06-18",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106378.01"
+  }
+ ],
+ "graafseweg73": [
+  {
+   "adres": "Graafseweg 73E",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100208.01"
+  }
+ ],
+ "graafseweg76": [
+  {
+   "adres": "Graafseweg 76",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102044.01"
+  }
+ ],
+ "graafseweg82": [
+  {
+   "adres": "Graafseweg 82",
+   "datum": "2018-02-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108745.01"
+  }
+ ],
+ "graafseweg91": [
+  {
+   "adres": "Graafseweg 91",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100093.01"
+  }
+ ],
+ "graafseweg98": [
+  {
+   "adres": "Graafseweg 98",
+   "datum": "2018-08-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106119.01"
+  }
+ ],
+ "griftdijk47": [
+  {
+   "adres": "Griftdijk 47",
+   "datum": "2016-11-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103047.01"
+  },
+  {
+   "adres": "Griftdijk 47",
+   "datum": "2017-06-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.103857.01"
+  }
+ ],
+ "griftdijknoord14": [
+  {
+   "adres": "Griftdijk Noord 14T",
+   "datum": "2019-05-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.103779.01"
+  }
+ ],
+ "groenestraat118": [
+  {
+   "adres": "Groenestraat 118",
+   "datum": "2015-09-10",
+   "omschrijving": "verbouwing pand naar kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z15.033487"
+  }
+ ],
+ "groenestraat160": [
+  {
+   "adres": "Groenestraat 160",
+   "datum": "2017-11-30",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.105443.01"
+  },
+  {
+   "adres": "Groenestraat 160",
+   "datum": "2017-11-24",
+   "omschrijving": "onderkelderen van een woonhuis tbv kamerverhuur 6 kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.105235.01"
+  }
+ ],
+ "groenestraat18": [
+  {
+   "adres": "Groenestraat 18",
+   "datum": "2017-05-29",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.103771.01"
+  }
+ ],
+ "groenestraat195": [
+  {
+   "adres": "Groenestraat 195",
+   "datum": "2018-08-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106423.01"
+  }
+ ],
+ "groenestraat198": [
+  {
+   "adres": "Groenestraat 198",
+   "datum": "2016-03-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z15.101927.01"
+  }
+ ],
+ "groenestraat321": [
+  {
+   "adres": "Groenestraat 321",
+   "datum": "2019-12-05",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.107250.01"
+  }
+ ],
+ "groenestraat323": [
+  {
+   "adres": "Groenestraat 323",
+   "datum": "2017-12-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107339.01"
+  }
+ ],
+ "groenestraat331": [
+  {
+   "adres": "Groenestraat 331",
+   "datum": "2016-10-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.102548.01"
+  }
+ ],
+ "groenestraat339": [
+  {
+   "adres": "Groenestraat 339",
+   "datum": "2018-09-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103161.01"
+  }
+ ],
+ "groenewoudseweg20": [
+  {
+   "adres": "Groenewoudseweg 20",
+   "datum": "2018-02-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100929.01"
+  }
+ ],
+ "groenewoudseweg334": [
+  {
+   "adres": "Groenewoudseweg 334",
+   "datum": "2019-03-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.110187.01"
+  }
+ ],
+ "groenewoudseweg60": [
+  {
+   "adres": "Groenewoudseweg 60",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105404.01"
+  }
+ ],
+ "groesbeeksedwarsweg106": [
+  {
+   "adres": "Groesbeeksedwarsweg 106T",
+   "datum": "2020-06-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.105801.01"
+  }
+ ],
+ "groesbeeksedwarsweg13": [
+  {
+   "adres": "Groesbeeksedwarsweg 13",
+   "datum": "2017-08-02",
+   "omschrijving": "Herbouw van een gemeentelijk monument tbv kamerverhuur 20 kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.103038.01"
+  }
+ ],
+ "groesbeeksedwarsweg143": [
+  {
+   "adres": "Groesbeeksedwarsweg 143",
+   "datum": "2018-02-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108299.02"
+  }
+ ],
+ "groesbeeksedwarsweg183": [
+  {
+   "adres": "Groesbeeksedwarsweg 183",
+   "datum": "2018-03-08",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100163.01"
+  }
+ ],
+ "groesbeeksedwarsweg228": [
+  {
+   "adres": "Groesbeeksedwarsweg 228",
+   "datum": "2018-07-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105828.01"
+  }
+ ],
+ "groesbeeksedwarsweg304": [
+  {
+   "adres": "Groesbeeksedwarsweg 304",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106333.01"
+  }
+ ],
+ "groesbeeksedwarsweg50": [
+  {
+   "adres": "Groesbeeksedwarsweg 50",
+   "datum": "2018-06-25",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104903.01"
+  }
+ ],
+ "groesbeeksedwarsweg9": [
+  {
+   "adres": "Groesbeeksedwarsweg 9",
+   "datum": "2018-12-20",
+   "omschrijving": "aanleggen kelder herbouwen gemeentelijke monument en wijzigen kamerverhuur naar logiesfunctie",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.104045.01"
+  }
+ ],
+ "groesbeekseweg102": [
+  {
+   "adres": "Groesbeekseweg 102",
+   "datum": "2018-12-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100400.01"
+  }
+ ],
+ "groesbeekseweg106": [
+  {
+   "adres": "Groesbeekseweg 106",
+   "datum": "2018-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105852.01"
+  }
+ ],
+ "groesbeekseweg107": [
+  {
+   "adres": "Groesbeekseweg 107A",
+   "datum": "2018-06-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105079.01"
+  }
+ ],
+ "groesbeekseweg147": [
+  {
+   "adres": "Groesbeekseweg 147",
+   "datum": "2020-07-22",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.101744.01"
+  }
+ ],
+ "groesbeekseweg204": [
+  {
+   "adres": "Groesbeekseweg 204",
+   "datum": "2018-08-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106326.01"
+  }
+ ],
+ "groesbeekseweg38": [
+  {
+   "adres": "Groesbeekseweg 38",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105923.01"
+  }
+ ],
+ "groesbeekseweg4": [
+  {
+   "adres": "Groesbeekseweg 4",
+   "datum": "2020-06-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.100186.01"
+  }
+ ],
+ "groesbeekseweg40": [
+  {
+   "adres": "Groesbeekseweg 40",
+   "datum": "2018-02-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108674.01"
+  }
+ ],
+ "groesbeekseweg51": [
+  {
+   "adres": "Groesbeekseweg 51",
+   "datum": "2019-02-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.109975.01"
+  },
+  {
+   "adres": "Groesbeekseweg 51",
+   "datum": "2019-01-21",
+   "omschrijving": "bestemmingsplan in verband met de onttrekkingsvergunning voor het kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.110402.01"
+  }
+ ],
+ "groesbeekseweg55": [
+  {
+   "adres": "Groesbeekseweg 55",
+   "datum": "2018-04-03",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100205.01"
+  }
+ ],
+ "groesbeekseweg80": [
+  {
+   "adres": "Groesbeekseweg 80",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106101.01"
+  }
+ ],
+ "grotemarkt20": [
+  {
+   "adres": "Grote markt 20",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106261.01"
+  }
+ ],
+ "gruitberg43": [
+  {
+   "adres": "Gruitberg 43A",
+   "datum": "2018-09-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103685.01"
+  }
+ ],
+ "guldenstraat9": [
+  {
+   "adres": "Guldenstraat 9",
+   "datum": "2019-12-03",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.108144.01"
+  }
+ ],
+ "guyotstraat11": [
+  {
+   "adres": "Guyotstraat 11",
+   "datum": "2015-12-31",
+   "omschrijving": "vervangen van kozijnen en interne wijziging van kantoor naar kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.041414"
+  }
+ ],
+ "hatertseveldweg194": [
+  {
+   "adres": "Hatertseveldweg 194",
+   "datum": "2017-02-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104004.01"
+  },
+  {
+   "adres": "Hatertseveldweg 194",
+   "datum": "2017-02-22",
+   "omschrijving": "afwijken van de voorschriften van het geldende bestemmingsplan tbv kamerverhuur 5 kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z16.104059.01"
+  }
+ ],
+ "hatertseveldweg214": [
+  {
+   "adres": "Hatertseveldweg 214",
+   "datum": "2018-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104726.01"
+  }
+ ],
+ "hatertseveldweg263": [
+  {
+   "adres": "Hatertseveldweg 263",
+   "datum": "2018-10-16",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106007.01"
+  }
+ ],
+ "hatertseveldweg265": [
+  {
+   "adres": "Hatertseveldweg 265",
+   "datum": "2019-01-22",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105231.01"
+  }
+ ],
+ "hatertseweg134": [
+  {
+   "adres": "Hatertseweg 134",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106313.01"
+  }
+ ],
+ "hatertseweg15": [
+  {
+   "adres": "Hatertseweg 15",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108651.01"
+  }
+ ],
+ "hatertseweg175": [
+  {
+   "adres": "Hatertseweg 175",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105191.01"
+  }
+ ],
+ "hatertseweg195": [
+  {
+   "adres": "Hatertseweg 195",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108680.01"
+  }
+ ],
+ "hatertseweg25": [
+  {
+   "adres": "Hatertseweg 25",
+   "datum": "2016-05-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.100417.01"
+  }
+ ],
+ "hatertseweg338": [
+  {
+   "adres": "Hatertseweg 338",
+   "datum": "2018-08-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106431.01"
+  }
+ ],
+ "hatertseweg459": [
+  {
+   "adres": "Hatertseweg 459",
+   "datum": "2018-10-04",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.107209.01"
+  }
+ ],
+ "hatertseweg499": [
+  {
+   "adres": "Hatertseweg 499",
+   "datum": "2020-09-02",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.102269.01"
+  }
+ ],
+ "hatertseweg542": [
+  {
+   "adres": "Hatertseweg 542",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106074.01"
+  }
+ ],
+ "hatertseweg544": [
+  {
+   "adres": "Hatertseweg 544",
+   "datum": "2018-05-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103715.01"
+  }
+ ],
+ "hatertseweg556": [
+  {
+   "adres": "Hatertseweg 556",
+   "datum": "2014-08-05",
+   "omschrijving": "VOOROVERLEG 1e verdieping ombouwen tot ruimte met 3 slaapkamers t.b.v. kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.024456"
+  }
+ ],
+ "hatertseweg69": [
+  {
+   "adres": "Hatertseweg 69",
+   "datum": "2020-11-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.103419.01"
+  }
+ ],
+ "hatertseweg721": [
+  {
+   "adres": "Hatertseweg 721E",
+   "datum": "2016-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.002612.01"
+  }
+ ],
+ "hatertseweg745": [
+  {
+   "adres": "Hatertseweg 745",
+   "datum": "2018-07-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103232.01"
+  }
+ ],
+ "hatertseweg783": [
+  {
+   "adres": "Hatertseweg 783",
+   "datum": "2015-12-31",
+   "omschrijving": "verbouwen pand tot 8 studio's (kamerverhuur)",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z11.008404"
+  }
+ ],
+ "hatertseweg813": [
+  {
+   "adres": "Hatertseweg 813A",
+   "datum": "2019-09-05",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.106015.01"
+  }
+ ],
+ "hatertseweg84": [
+  {
+   "adres": "Hatertseweg 84",
+   "datum": "2017-02-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.105098.01"
+  },
+  {
+   "adres": "Hatertseweg 84",
+   "datum": "2017-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.104287.01"
+  }
+ ],
+ "hazenhof3": [
+  {
+   "adres": "Hazenhof 3E",
+   "datum": "2016-01-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "samenvoeging",
+   "zaak": "W.Z15.101050.01"
+  }
+ ],
+ "heidebloemstraat103": [
+  {
+   "adres": "Heidebloemstraat 103",
+   "datum": "2018-06-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104998.01"
+  }
+ ],
+ "heidebloemstraat107": [
+  {
+   "adres": "Heidebloemstraat 107",
+   "datum": "2018-07-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105949.01"
+  }
+ ],
+ "heidebloemstraat137": [
+  {
+   "adres": "Heidebloemstraat 137",
+   "datum": "2018-03-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102537.01"
+  }
+ ],
+ "heidebloemstraat5": [
+  {
+   "adres": "Heidebloemstraat 5",
+   "datum": "2017-11-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107270.01"
+  }
+ ],
+ "heidebloemstraat55": [
+  {
+   "adres": "Heidebloemstraat 55",
+   "datum": "2016-12-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104584.01"
+  }
+ ],
+ "heidebloemstraat91": [
+  {
+   "adres": "Heidebloemstraat 91",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105533.01"
+  }
+ ],
+ "heidevenstraat105": [
+  {
+   "adres": "Heidevenstraat 105",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105225.01"
+  }
+ ],
+ "heidevenstraat152": [
+  {
+   "adres": "Heidevenstraat 152",
+   "datum": "2022-10-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z21.105941.01"
+  }
+ ],
+ "heidevenstraat20": [
+  {
+   "adres": "Heidevenstraat 20",
+   "datum": "2019-09-26",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.104440.01"
+  }
+ ],
+ "heidevenstraat22": [
+  {
+   "adres": "Heidevenstraat 22",
+   "datum": "2018-01-29",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107622.01"
+  },
+  {
+   "adres": "Heidevenstraat 22",
+   "datum": "2017-12-08",
+   "omschrijving": "plaatsen van 2 dakkapellen en functie naar kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.106468.01"
+  }
+ ],
+ "heiweg197": [
+  {
+   "adres": "Heiweg 197",
+   "datum": "2019-04-11",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.109615.01"
+  }
+ ],
+ "hendrikhof12": [
+  {
+   "adres": "Hendrikhof 12",
+   "datum": "2018-07-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106092.01"
+  }
+ ],
+ "hendrikhoogersstraat2": [
+  {
+   "adres": "Hendrik Hoogersstraat 2",
+   "datum": "2016-01-18",
+   "omschrijving": "verbouwen van het pand tot kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z15.100975.02"
+  }
+ ],
+ "hengstdalseweg124": [
+  {
+   "adres": "Hengstdalseweg 124",
+   "datum": "2019-04-16",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.110911.01"
+  }
+ ],
+ "hengstdalseweg127": [
+  {
+   "adres": "Hengstdalseweg 127",
+   "datum": "2018-10-08",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108685.01"
+  }
+ ],
+ "hengstdalseweg139": [
+  {
+   "adres": "Hengstdalseweg 139",
+   "datum": "2016-04-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.002651.01"
+  }
+ ],
+ "hengstdalseweg58": [
+  {
+   "adres": "Hengstdalseweg 58",
+   "datum": "2019-09-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.104812.01"
+  }
+ ],
+ "hermanoolbekkinkstraat6": [
+  {
+   "adres": "Herman Oolbekkinkstraat 6",
+   "datum": "2018-02-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102011.01"
+  }
+ ],
+ "hertogstraat126": [
+  {
+   "adres": "Hertogstraat 126",
+   "datum": "2016-02-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.001731.01"
+  }
+ ],
+ "hertogstraat128": [
+  {
+   "adres": "Hertogstraat 128A",
+   "datum": "2018-02-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100722.01"
+  }
+ ],
+ "hertogstraat139": [
+  {
+   "adres": "Hertogstraat 139A",
+   "datum": "2020-01-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.107468.01"
+  }
+ ],
+ "hertogstraat14": [
+  {
+   "adres": "Hertogstraat 14",
+   "datum": "2018-12-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100447.01"
+  }
+ ],
+ "hertogstraat33": [
+  {
+   "adres": "Hertogstraat 33A",
+   "datum": "2018-05-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104662.01"
+  },
+  {
+   "adres": "Hertogstraat 33B",
+   "datum": "2018-11-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105342.01"
+  },
+  {
+   "adres": "Hertogstraat 33",
+   "datum": "2019-01-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100452.01"
+  }
+ ],
+ "hertogstraat37": [
+  {
+   "adres": "Hertogstraat 37",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106278.01"
+  }
+ ],
+ "hertogstraat38": [
+  {
+   "adres": "Hertogstraat 38",
+   "datum": "2018-03-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100358.01"
+  }
+ ],
+ "hertogstraat45": [
+  {
+   "adres": "Hertogstraat 45",
+   "datum": "2013-08-30",
+   "omschrijving": "wijziging pand voor kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.002390"
+  }
+ ],
+ "hertogstraat60": [
+  {
+   "adres": "Hertogstraat 60",
+   "datum": "2018-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106391.01"
+  }
+ ],
+ "heyendaalseweg203": [
+  {
+   "adres": "Heyendaalseweg 203",
+   "datum": "2018-03-29",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100043.01"
+  }
+ ],
+ "heyendaalseweg227": [
+  {
+   "adres": "Heyendaalseweg 227",
+   "datum": "2022-11-22",
+   "omschrijving": "verbouwen en uitbreiden pand naar kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z21.105297.01"
+  }
+ ],
+ "heyendaalseweg252": [
+  {
+   "adres": "Heyendaalseweg 252",
+   "datum": "2020-01-07",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.108007.01"
+  }
+ ],
+ "heyendaalseweg278": [
+  {
+   "adres": "Heyendaalseweg 278",
+   "datum": "2015-12-31",
+   "omschrijving": "uitbreiding kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z11.009695"
+  }
+ ],
+ "hobbemastraat5": [
+  {
+   "adres": "Hobbemastraat 5",
+   "datum": "2018-05-31",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102181.01"
+  }
+ ],
+ "holtermanstraat2": [
+  {
+   "adres": "Holtermanstraat 2",
+   "datum": "2014-04-24",
+   "omschrijving": "realisatie kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z13.027641"
+  }
+ ],
+ "houthof4": [
+  {
+   "adres": "Houthof 4",
+   "datum": "2018-03-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100180.02"
+  }
+ ],
+ "houtlaan119": [
+  {
+   "adres": "Houtlaan 119",
+   "datum": "2017-01-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.100959.01"
+  }
+ ],
+ "houtlaan13": [
+  {
+   "adres": "Houtlaan 13",
+   "datum": "2017-02-01",
+   "omschrijving": "splitsen van een gebouw in kamers voor kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z11.005327"
+  }
+ ],
+ "houtlaan3": [
+  {
+   "adres": "Houtlaan 3",
+   "datum": "2018-04-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103106.01"
+  }
+ ],
+ "houtlaan73": [
+  {
+   "adres": "Houtlaan 73",
+   "datum": "2020-04-20",
+   "omschrijving": "verbouwen woning tot kamerverhuur met 4 onzelfstandige kamers 4 bergingen en 1 fietsenstalling",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z19.110532.01"
+  }
+ ],
+ "houtstraat43": [
+  {
+   "adres": "Houtstraat 43",
+   "datum": "2018-03-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102746.01"
+  }
+ ],
+ "hugodegrootstraat100": [
+  {
+   "adres": "Hugo de Grootstraat 100",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105343.01"
+  }
+ ],
+ "hugodegrootstraat35": [
+  {
+   "adres": "Hugo de Grootstraat 35",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106071.01"
+  }
+ ],
+ "hugodegrootstraat44": [
+  {
+   "adres": "Hugo de Grootstraat 44",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106207.01"
+  }
+ ],
+ "hugodegrootstraat5": [
+  {
+   "adres": "Hugo de Grootstraat 5",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104902.01"
+  }
+ ],
+ "hugodegrootstraat54": [
+  {
+   "adres": "Hugo de Grootstraat 54",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100223.01"
+  }
+ ],
+ "hugodegrootstraat78": [
+  {
+   "adres": "Hugo de Grootstraat 78",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106349.01"
+  }
+ ],
+ "hugodegrootstraat96": [
+  {
+   "adres": "Hugo de Grootstraat 96",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105341.01"
+  }
+ ],
+ "indebetouwstraat13": [
+  {
+   "adres": "In De Betouwstraat 13A",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106260.01"
+  }
+ ],
+ "indebetouwstraat36": [
+  {
+   "adres": "In de Betouwstraat 36",
+   "datum": "2018-08-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105866.01"
+  }
+ ],
+ "indebetouwstraat9": [
+  {
+   "adres": "In de Betouwstraat 9E",
+   "datum": "2015-01-12",
+   "omschrijving": "verbouwen van kantoor naar kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z11.007311"
+  }
+ ],
+ "jacobcanisstraat28": [
+  {
+   "adres": "Jacob Canisstraat 28E",
+   "datum": "2019-12-10",
+   "omschrijving": "woning splitsen door een interne verbouwing in 2 zelfstandige kamerverhuurpanden met elk 2 kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z19.100457.01"
+  }
+ ],
+ "jacobcanisstraat36": [
+  {
+   "adres": "Jacob Canisstraat 36",
+   "datum": "2018-07-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106258.01"
+  }
+ ],
+ "jacobcanisstraat48": [
+  {
+   "adres": "Jacob Canisstraat 48",
+   "datum": "2018-04-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103358.01"
+  }
+ ],
+ "jacobcanisstraat60": [
+  {
+   "adres": "Jacob Canisstraat 60",
+   "datum": "2016-10-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103129.01"
+  }
+ ],
+ "jandewittstraat49": [
+  {
+   "adres": "Jan de Wittstraat 49E",
+   "datum": "2016-11-29",
+   "leefbaarheidsonderzoek": false,
+   "soort": "samenvoeging",
+   "zaak": "W.Z16.104103.01"
+  }
+ ],
+ "jandewittstraat6": [
+  {
+   "adres": "Jan de Wittstraat 6",
+   "datum": "2014-06-03",
+   "omschrijving": "Herinrichten kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z10.020405"
+  }
+ ],
+ "jandewittstraat8": [
+  {
+   "adres": "Jan de Wittstraat 8A",
+   "datum": "2015-10-01",
+   "omschrijving": "plan voor de verbouw van een kamerverhuurpand naar 34 onzelfstandige woonruimten",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z15.026636"
+  },
+  {
+   "adres": "Jan de Wittstraat 8A",
+   "datum": "2015-11-02",
+   "omschrijving": "plan voor de verbouw van een kamerverhuurpand naar 34 onzelfstandige woonruimten",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z15.026636.03"
+  }
+ ],
+ "janvangalenstraat82": [
+  {
+   "adres": "Jan van Galenstraat 82",
+   "datum": "2019-11-25",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.104307.01"
+  }
+ ],
+ "janvangoyenstraat46": [
+  {
+   "adres": "Jan van Goyenstraat 46",
+   "datum": "2018-05-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104568.01"
+  }
+ ],
+ "janvangoyenstraat48": [
+  {
+   "adres": "Jan van Goyenstraat 48",
+   "datum": "2018-07-02",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104572.01"
+  }
+ ],
+ "janvangoyenstraat50": [
+  {
+   "adres": "Jan van Goyenstraat 50",
+   "datum": "2018-07-02",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104592.01"
+  }
+ ],
+ "janwillempasstraat133": [
+  {
+   "adres": "Jan Willem Passtraat 133",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103985.01"
+  }
+ ],
+ "janwillempasstraat51": [
+  {
+   "adres": "Jan Willem Passtraat 51",
+   "datum": "2016-11-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103546.01"
+  }
+ ],
+ "janwillempasstraat95": [
+  {
+   "adres": "Jan Willem Passtraat 95",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105735.01"
+  }
+ ],
+ "jasmijnstraat2": [
+  {
+   "adres": "Jasmijnstraat 2E",
+   "datum": "2015-10-09",
+   "omschrijving": "realiseren extra kamerverhuur door middel van een onderkeldering onder een bestaande woning",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z13.003195"
+  }
+ ],
+ "johannesvijghstraat1": [
+  {
+   "adres": "Johannes Vijghstraat 1",
+   "datum": "2017-01-31",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.101237.01"
+  }
+ ],
+ "johannesvijghstraat16": [
+  {
+   "adres": "Johannes Vijghstraat 16",
+   "datum": "2017-01-31",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104765.01"
+  }
+ ],
+ "johannesvijghstraat18": [
+  {
+   "adres": "Johannes Vijghstraat 18",
+   "datum": "2016-12-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104787.01"
+  },
+  {
+   "adres": "Johannes Vijghstraat 18",
+   "datum": "2018-04-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103297.01"
+  }
+ ],
+ "johannesvijghstraat46": [
+  {
+   "adres": "Johannes Vijghstraat 46",
+   "datum": "2018-03-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102812.01"
+  }
+ ],
+ "jonckerhof4": [
+  {
+   "adres": "Jonckerhof 4",
+   "datum": "2018-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105916.01"
+  }
+ ],
+ "kaaplandstraat33": [
+  {
+   "adres": "Kaaplandstraat 33",
+   "datum": "2019-09-05",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.104661.01"
+  },
+  {
+   "adres": "Kaaplandstraat 33",
+   "datum": "2019-08-05",
+   "omschrijving": "handelen in strijd met regels ruimtelijke ordening - kamerverhuur -",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z19.105569.01"
+  }
+ ],
+ "kannunikboenenstraat30": [
+  {
+   "adres": "Kannunik Boenenstraat 30B",
+   "datum": "2022-10-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.108675.04"
+  }
+ ],
+ "kannunikvandeputstraat70": [
+  {
+   "adres": "Kannunik van de Putstraat 70",
+   "datum": "2018-02-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100281.01"
+  }
+ ],
+ "kanunnikboenenstraat20": [
+  {
+   "adres": "Kanunnik Boenenstraat 20A",
+   "datum": "2018-04-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103188.01"
+  }
+ ],
+ "kanunnikboenenstraat22": [
+  {
+   "adres": "Kanunnik Boenenstraat 22A",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103743.01"
+  }
+ ],
+ "kanunnikboenenstraat26": [
+  {
+   "adres": "Kanunnik Boenenstraat 26B",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104963.01"
+  }
+ ],
+ "kanunnikboenenstraat8": [
+  {
+   "adres": "Kanunnik Boenenstraat 8B",
+   "datum": "2018-03-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.101001.01"
+  }
+ ],
+ "karbouwstraat25": [
+  {
+   "adres": "Karbouwstraat 25",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102240.01"
+  }
+ ],
+ "karbouwstraat39": [
+  {
+   "adres": "Karbouwstraat 39",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105803.01"
+  }
+ ],
+ "karbouwstraat4": [
+  {
+   "adres": "Karbouwstraat 4",
+   "datum": "2019-05-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.100123.01"
+  }
+ ],
+ "karbouwstraat67": [
+  {
+   "adres": "Karbouwstraat 67",
+   "datum": "2018-05-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104081.01"
+  }
+ ],
+ "karbouwstraat69": [
+  {
+   "adres": "Karbouwstraat 69",
+   "datum": "2018-10-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105620.01"
+  }
+ ],
+ "karrengas74": [
+  {
+   "adres": "Karrengas 74",
+   "datum": "2018-07-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106405.01"
+  }
+ ],
+ "keizerkarelplein22": [
+  {
+   "adres": "Keizer Karelplein 22",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106215.01"
+  }
+ ],
+ "keizerkarelplein23": [
+  {
+   "adres": "Keizer Karelplein 23",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103887.01"
+  }
+ ],
+ "keizerkarelplein24": [
+  {
+   "adres": "Keizer Karelplein 24",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105920.01"
+  }
+ ],
+ "keizerkarelplein29": [
+  {
+   "adres": "Keizer Karelplein 29",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103885.01"
+  }
+ ],
+ "keplerstraat225": [
+  {
+   "adres": "Keplerstraat 225",
+   "datum": "2018-02-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100735.01"
+  }
+ ],
+ "kerkegasje5": [
+  {
+   "adres": "Kerkegasje 5",
+   "datum": "2018-07-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106042.01"
+  }
+ ],
+ "klaverstraat23": [
+  {
+   "adres": "Klaverstraat 23",
+   "datum": "2019-02-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105448.01"
+  }
+ ],
+ "klimopstraat12": [
+  {
+   "adres": "Klimopstraat 12",
+   "datum": "2016-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z15.000224.03"
+  },
+  {
+   "adres": "Klimopstraat 12",
+   "datum": "2016-01-27",
+   "omschrijving": "woningomzetting naar kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z15.000224.01"
+  }
+ ],
+ "klimopstraat8": [
+  {
+   "adres": "Klimopstraat 8",
+   "datum": "2015-12-31",
+   "omschrijving": "veranderen bovenwoningen naar kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z11.003177"
+  }
+ ],
+ "kluijskamp1281": [
+  {
+   "adres": "De Kluijskamp 1281",
+   "datum": "2018-11-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104673.01"
+  }
+ ],
+ "kluijskamp1401": [
+  {
+   "adres": "de Kluijskamp 1401",
+   "datum": "2023-06-29",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z22.109165.01"
+  },
+  {
+   "adres": "de Kluijskamp 1401N",
+   "datum": "2024-10-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "AB24.01543"
+  }
+ ],
+ "koninginnelaan163": [
+  {
+   "adres": "Koninginnelaan 163",
+   "datum": "2017-05-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.100938.03"
+  },
+  {
+   "adres": "Koninginnelaan 163",
+   "datum": "2017-05-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "samenvoeging",
+   "zaak": "W.Z17.100938.07"
+  },
+  {
+   "adres": "Koninginnelaan 163",
+   "datum": "2017-05-23",
+   "omschrijving": "realiseren van 7 studios kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.100938.02"
+  }
+ ],
+ "koningshofje6": [
+  {
+   "adres": "Koningshofje 6B",
+   "datum": "2018-03-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102431.01"
+  }
+ ],
+ "koningstraat25": [
+  {
+   "adres": "Koningstraat 25",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104138.01"
+  }
+ ],
+ "koolemansbeynenstraat146": [
+  {
+   "adres": "Koolemans Beynenstraat 146",
+   "datum": "2018-06-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104710.01"
+  }
+ ],
+ "koolemansbeynenstraat24": [
+  {
+   "adres": "Koolemans Beynenstraat 24",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105634.01"
+  }
+ ],
+ "koolemansbeynenstraat68": [
+  {
+   "adres": "Koolemans Beynenstraat 68",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106243.01"
+  }
+ ],
+ "koolwitjeshof12": [
+  {
+   "adres": "Koolwitjeshof 12",
+   "datum": "2018-03-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103089.01"
+  }
+ ],
+ "krayenhofflaan210": [
+  {
+   "adres": "Krayenhofflaan 210",
+   "datum": "2018-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106226.01"
+  }
+ ],
+ "krayenhofflaan275": [
+  {
+   "adres": "Krayenhofflaan 275",
+   "datum": "2018-05-31",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105097.01"
+  }
+ ],
+ "krayenhofflaan277": [
+  {
+   "adres": "Krayenhofflaan 277",
+   "datum": "2014-06-12",
+   "omschrijving": "Herstellen van de brandscheiding en verbouwen tot kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.014037"
+  }
+ ],
+ "krayenhofflaan28": [
+  {
+   "adres": "Krayenhofflaan 28",
+   "datum": "2014-07-11",
+   "omschrijving": "wijzigen van 3 appartementen naar één woning (kamerverhuur)",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z11.007562"
+  }
+ ],
+ "krayenhofflaan337": [
+  {
+   "adres": "Krayenhofflaan 337A",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102616.01"
+  }
+ ],
+ "krayenhofflaan40": [
+  {
+   "adres": "Krayenhofflaan 40",
+   "datum": "2018-10-08",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105939.01"
+  }
+ ],
+ "kronenburgersingel147": [
+  {
+   "adres": "Kronenburgersingel 147",
+   "datum": "2018-09-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106499.01"
+  }
+ ],
+ "langehezelstraat24": [
+  {
+   "adres": "Lange Hezelstraat 24",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106270.01"
+  }
+ ],
+ "langehezelstraat6": [
+  {
+   "adres": "Lange Hezelstraat 6",
+   "datum": "2018-08-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106264.01"
+  }
+ ],
+ "langehezelstraat71": [
+  {
+   "adres": "Lange Hezelstraat 71",
+   "datum": "2018-03-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102229.01"
+  }
+ ],
+ "langehezelstraat74": [
+  {
+   "adres": "Lange Hezelstraat 74",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104972.01"
+  }
+ ],
+ "langehezelstraat75": [
+  {
+   "adres": "Lange Hezelstraat 75",
+   "datum": "2015-12-31",
+   "omschrijving": "de realisatie van kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.015492"
+  }
+ ],
+ "langehezelstraat8": [
+  {
+   "adres": "Lange Hezelstraat 8",
+   "datum": "2018-08-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106263.01"
+  }
+ ],
+ "langehezelstraat95": [
+  {
+   "adres": "Lange Hezelstraat 95",
+   "datum": "2016-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.102280.01"
+  }
+ ],
+ "lankforst1154": [
+  {
+   "adres": "Lankforst 1154N",
+   "datum": "2024-03-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z23.105204.01"
+  }
+ ],
+ "lankforst2912": [
+  {
+   "adres": "Lankforst 2912",
+   "datum": "2017-05-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.102792.01"
+  }
+ ],
+ "lankforst4119": [
+  {
+   "adres": "Lankforst 4119",
+   "datum": "2016-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.100234.01"
+  }
+ ],
+ "leuvensbroek3404": [
+  {
+   "adres": "Leuvensbroek 3404",
+   "datum": "2023-02-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z22.106733.01"
+  },
+  {
+   "adres": "Leuvensbroek 3404N",
+   "datum": "2023-12-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z23.108513.01"
+  }
+ ],
+ "lierstraat2": [
+  {
+   "adres": "Lierstraat 2",
+   "datum": "2016-09-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.002524.01"
+  }
+ ],
+ "ligusterstraat25": [
+  {
+   "adres": "ligusterstraat 25",
+   "datum": "2018-08-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100760.01"
+  }
+ ],
+ "loevesteinstraat61": [
+  {
+   "adres": "Loevesteinstraat 61",
+   "datum": "2017-10-16",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.105756.01"
+  }
+ ],
+ "loevesteinstraat93": [
+  {
+   "adres": "Loevesteinstraat 93",
+   "datum": "2017-01-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104884.01"
+  }
+ ],
+ "maasstraat7": [
+  {
+   "adres": "Maasstraat 7",
+   "datum": "2019-01-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106121.01"
+  }
+ ],
+ "malvert6647": [
+  {
+   "adres": "Malvert 6647",
+   "datum": "2018-03-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102911.01"
+  }
+ ],
+ "marialaan111": [
+  {
+   "adres": "Marialaan 111",
+   "datum": "2016-09-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.102614.01"
+  }
+ ],
+ "marialaan147": [
+  {
+   "adres": "Marialaan 147",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103911.01"
+  }
+ ],
+ "marialaan159": [
+  {
+   "adres": "Marialaan 159",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103918.01"
+  }
+ ],
+ "marialaan3": [
+  {
+   "adres": "Marialaan 3",
+   "datum": "2016-03-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.002395.01"
+  }
+ ],
+ "marialaan50": [
+  {
+   "adres": "Marialaan 50",
+   "datum": "2018-05-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104699.01"
+  }
+ ],
+ "marialaan60": [
+  {
+   "adres": "Marialaan 60",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100256.01"
+  }
+ ],
+ "marialaan64": [
+  {
+   "adres": "Marialaan 64",
+   "datum": "2018-08-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104675.01"
+  }
+ ],
+ "marialaan69": [
+  {
+   "adres": "Marialaan 69",
+   "datum": "2018-06-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105271.01"
+  }
+ ],
+ "marialaan7": [
+  {
+   "adres": "Marialaan 7",
+   "datum": "2018-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105834.01"
+  }
+ ],
+ "marialaan74": [
+  {
+   "adres": "Marialaan 74",
+   "datum": "2018-06-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105174.01"
+  }
+ ],
+ "marialaan80": [
+  {
+   "adres": "Marialaan 80A",
+   "datum": "2018-07-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105561.01"
+  }
+ ],
+ "marialaan85": [
+  {
+   "adres": "Marialaan 85",
+   "datum": "2018-02-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100840.01"
+  }
+ ],
+ "marialaan88": [
+  {
+   "adres": "Marialaan 88",
+   "datum": "2016-10-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.102282.01"
+  }
+ ],
+ "marienburg74": [
+  {
+   "adres": "Marienburg 74",
+   "datum": "2018-04-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103027.01"
+  }
+ ],
+ "marienburgsestraat45": [
+  {
+   "adres": "Marienburgsestraat 45",
+   "datum": "2018-02-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100355.01"
+  }
+ ],
+ "mazurkastraat2": [
+  {
+   "adres": "Mazurkastraat 2T",
+   "datum": "2019-09-10",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.103052.01"
+  }
+ ],
+ "meijhorst5413": [
+  {
+   "adres": "Meijhorst 5413",
+   "datum": "2016-12-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.103934.01"
+  }
+ ],
+ "meijhorst9233": [
+  {
+   "adres": "Meijhorst 9233",
+   "datum": "2018-07-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104921.01"
+  }
+ ],
+ "mesdagstraat70": [
+  {
+   "adres": "Mesdagstraat 70",
+   "datum": "2018-03-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108229.02"
+  }
+ ],
+ "moeflonstraat19": [
+  {
+   "adres": "Moeflonstraat 19",
+   "datum": "2019-04-03",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.111120.02"
+  }
+ ],
+ "moeflonstraat49": [
+  {
+   "adres": "Moeflonstraat 49",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108043.02"
+  }
+ ],
+ "molenstraat103": [
+  {
+   "adres": "Molenstraat 103",
+   "datum": "2016-04-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.001963.01"
+  }
+ ],
+ "molenstraat128": [
+  {
+   "adres": "Molenstraat 128",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106352.01"
+  }
+ ],
+ "molenstraat37": [
+  {
+   "adres": "Molenstraat 37",
+   "datum": "2018-03-13",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108466.01"
+  }
+ ],
+ "molenstraat78": [
+  {
+   "adres": "Molenstraat 78A",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106384.01"
+  },
+  {
+   "adres": "Molenstraat 78",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106386.01"
+  }
+ ],
+ "molenweg107": [
+  {
+   "adres": "Molenweg 107E",
+   "datum": "2018-10-11",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102065.01"
+  }
+ ],
+ "molenweg148": [
+  {
+   "adres": "Molenweg 148",
+   "datum": "2018-07-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103218.01"
+  }
+ ],
+ "molenweg239": [
+  {
+   "adres": "Molenweg 239",
+   "datum": "2016-12-22",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.104080.01"
+  }
+ ],
+ "molenweg249": [
+  {
+   "adres": "Molenweg 249",
+   "datum": "2018-08-29",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102149.01"
+  }
+ ],
+ "molenweg26": [
+  {
+   "adres": "Molenweg 26",
+   "datum": "2018-05-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103202.01"
+  }
+ ],
+ "molenweg42": [
+  {
+   "adres": "Molenweg 42",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106223.01"
+  }
+ ],
+ "molenweg44": [
+  {
+   "adres": "Molenweg 44",
+   "datum": "2018-05-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104588.01"
+  }
+ ],
+ "molenweg64": [
+  {
+   "adres": "Molenweg 64",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106222.01"
+  }
+ ],
+ "molenweg94": [
+  {
+   "adres": "Molenweg 94",
+   "datum": "2018-05-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103669.01"
+  }
+ ],
+ "molukkenstraat154": [
+  {
+   "adres": "Molukkenstraat 154",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103693.01"
+  }
+ ],
+ "molukkenstraat156": [
+  {
+   "adres": "Molukkenstraat 156",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106324.01"
+  }
+ ],
+ "molukkenstraat16": [
+  {
+   "adres": "Molukkenstraat 16",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106325.01"
+  }
+ ],
+ "molukkenstraat160": [
+  {
+   "adres": "Molukkenstraat 160",
+   "datum": "2018-04-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103965.01"
+  }
+ ],
+ "molukkenstraat162": [
+  {
+   "adres": "Molukkenstraat 162",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103970.01"
+  }
+ ],
+ "molukkenstraat178": [
+  {
+   "adres": "Molukkenstraat 178",
+   "datum": "2020-07-30",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106401.01"
+  }
+ ],
+ "molukkenstraat190": [
+  {
+   "adres": "Molukkenstraat 190",
+   "datum": "2018-04-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103556.01"
+  }
+ ],
+ "molukkenstraat208": [
+  {
+   "adres": "Molukkenstraat 208",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103963.01"
+  }
+ ],
+ "molukkenstraat218": [
+  {
+   "adres": "Molukkenstraat 218",
+   "datum": "2018-04-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103201.01"
+  }
+ ],
+ "molukkenstraat30": [
+  {
+   "adres": "Molukkenstraat 30",
+   "datum": "2018-01-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107830.01"
+  }
+ ],
+ "molukkenstraat40": [
+  {
+   "adres": "Molukkenstraat 40",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104627.01"
+  }
+ ],
+ "molukkenstraat50": [
+  {
+   "adres": "Molukkenstraat 50",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105284.01"
+  }
+ ],
+ "molukkenstraat86": [
+  {
+   "adres": "Molukkenstraat 86",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105268.01"
+  }
+ ],
+ "molukkenstraat90": [
+  {
+   "adres": "Molukkenstraat 90",
+   "datum": "2018-12-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100526.01"
+  }
+ ],
+ "mrfranckenstraat10": [
+  {
+   "adres": "Mr. Franckenstraat 10",
+   "datum": "2019-08-29",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.105594.01"
+  }
+ ],
+ "mrfranckenstraat20": [
+  {
+   "adres": "Mr. Franckenstraat 20",
+   "datum": "2018-03-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102440.01"
+  }
+ ],
+ "mrfranckenstraat21": [
+  {
+   "adres": "Mr. Franckenstraat 21",
+   "datum": "2018-03-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100990.01"
+  }
+ ],
+ "mrfranckenstraat22": [
+  {
+   "adres": "Mr. Franckenstraat 22",
+   "datum": "2018-09-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106128.01"
+  }
+ ],
+ "mrfranckenstraat28": [
+  {
+   "adres": "Mr. Franckenstraat 28",
+   "datum": "2018-06-11",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102435.01"
+  }
+ ],
+ "mrfranckenstraat48": [
+  {
+   "adres": "Mr. Franckenstraat 48",
+   "datum": "2022-02-16",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z21.107294.01"
+  }
+ ],
+ "mrfranckenstraat60": [
+  {
+   "adres": "Mr. Franckenstraat 60",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106236.01"
+  }
+ ],
+ "mrfranckenstraat62": [
+  {
+   "adres": "Mr. Franckenstraat 62",
+   "datum": "2018-05-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103973.01"
+  }
+ ],
+ "mrfranckenstraat76": [
+  {
+   "adres": "Mr. Franckenstraat 76",
+   "datum": "2017-02-16",
+   "omschrijving": "verbouwen ten behoeve van kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.015832"
+  }
+ ],
+ "mrfranckenstraat8": [
+  {
+   "adres": "Mr. Franckenstraat 8",
+   "datum": "2019-11-14",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.107727.01"
+  }
+ ],
+ "mrfranckenstraat88": [
+  {
+   "adres": "Mr. Franckenstraat 88",
+   "datum": "2017-03-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "samenvoeging",
+   "zaak": "W.Z17.101313.01"
+  }
+ ],
+ "mrfrankenstraat42": [
+  {
+   "adres": "Mr. Frankenstraat 42",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106132.01"
+  }
+ ],
+ "muntmeesterlaan4": [
+  {
+   "adres": "Muntmeesterlaan 4",
+   "datum": "2018-11-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.107107.01"
+  }
+ ],
+ "muntweg364": [
+  {
+   "adres": "Muntweg 364",
+   "datum": "2016-02-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.001741.01"
+  }
+ ],
+ "muntweg414": [
+  {
+   "adres": "Muntweg 414",
+   "datum": "2016-12-22",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104032.01"
+  }
+ ],
+ "muntweg456": [
+  {
+   "adres": "Muntweg 456",
+   "datum": "2016-09-22",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.102902.01"
+  }
+ ],
+ "museumkamstraat23": [
+  {
+   "adres": "Museum Kamstraat 23",
+   "datum": "2018-11-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104937.01"
+  }
+ ],
+ "niersstraat72": [
+  {
+   "adres": "Niersstraat 72T",
+   "datum": "2020-05-25",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.100002.01"
+  }
+ ],
+ "nieuwemollenhutseweg117": [
+  {
+   "adres": "Nieuwe Mollenhutseweg 117T",
+   "datum": "2019-08-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.100409.01"
+  }
+ ],
+ "nieuwenonnendaalseweg173": [
+  {
+   "adres": "Nieuwe Nonnendaalseweg 173",
+   "datum": "2018-03-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100094.01"
+  }
+ ],
+ "nieuwenonnendaalseweg45": [
+  {
+   "adres": "Nieuwe Nonnendaalseweg 45",
+   "datum": "2019-07-22",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.103709.01"
+  }
+ ],
+ "nieuwstadweg3": [
+  {
+   "adres": "Nieuwstadweg 3",
+   "datum": "2018-08-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105509.01"
+  }
+ ],
+ "ninasimonestraat98": [
+  {
+   "adres": "Nina Simonestraat 98",
+   "datum": "2020-10-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103567.01"
+  }
+ ],
+ "oranjesingel21": [
+  {
+   "adres": "Oranjesingel 21",
+   "datum": "2019-05-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.101079.01"
+  }
+ ],
+ "oranjesingel25": [
+  {
+   "adres": "Oranjesingel 25",
+   "datum": "2017-05-18",
+   "omschrijving": "verbouwen en uitbreiden van een kantoorpand tot kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.101486.01"
+  }
+ ],
+ "oranjesingel43": [
+  {
+   "adres": "Oranjesingel 43",
+   "datum": "2018-02-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108748.01"
+  }
+ ],
+ "oranjesingel61": [
+  {
+   "adres": "Oranjesingel 61",
+   "datum": "2020-01-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.107469.01"
+  }
+ ],
+ "oranjesingel68": [
+  {
+   "adres": "Oranjesingel 68",
+   "datum": "2017-05-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.102104.01"
+  }
+ ],
+ "oranjesingel72": [
+  {
+   "adres": "Oranjesingel 72",
+   "datum": "2015-12-31",
+   "omschrijving": "verbouwen van pand tot kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.004103"
+  }
+ ],
+ "oudeazaleastraat16": [
+  {
+   "adres": "Oude Azaleastraat 16",
+   "datum": "2018-11-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106330.01"
+  }
+ ],
+ "oudeazaleastraat46": [
+  {
+   "adres": "Oude Azaleastraat 46",
+   "datum": "2016-01-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.000199.01"
+  }
+ ],
+ "oudemolenweg301": [
+  {
+   "adres": "Oude Molenweg 301",
+   "datum": "2018-05-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104520.01"
+  }
+ ],
+ "paddepoelseweg4": [
+  {
+   "adres": "Paddepoelseweg 4",
+   "datum": "2018-09-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102792.01"
+  }
+ ],
+ "palmstraat28": [
+  {
+   "adres": "Palmstraat 28",
+   "datum": "2018-05-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103313.01"
+  }
+ ],
+ "palmstraat30": [
+  {
+   "adres": "Palmstraat 30",
+   "datum": "2018-03-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108684.01"
+  }
+ ],
+ "papaverstraat17": [
+  {
+   "adres": "Papaverstraat 17",
+   "datum": "2018-03-16",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100170.01"
+  }
+ ],
+ "papengas2": [
+  {
+   "adres": "Papengas 2",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105919.01"
+  }
+ ],
+ "papengas3": [
+  {
+   "adres": "papengas 3B",
+   "datum": "2018-06-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108233.01"
+  },
+  {
+   "adres": "Papengas 3C",
+   "datum": "2018-06-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108235.01"
+  }
+ ],
+ "parkweg110": [
+  {
+   "adres": "Parkweg 110",
+   "datum": "2018-10-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104773.01"
+  }
+ ],
+ "parkweg122": [
+  {
+   "adres": "Parkweg 122",
+   "datum": "2016-03-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.002432.01"
+  }
+ ],
+ "paterbrugmanstraat41": [
+  {
+   "adres": "Pater Brugmanstraat 41E",
+   "datum": "2018-07-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105405.01"
+  }
+ ],
+ "paterbrugmanstraat74": [
+  {
+   "adres": "Pater Brugmanstraat 74",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105942.01"
+  }
+ ],
+ "paukenstraat105": [
+  {
+   "adres": "Paukenstraat 105N",
+   "datum": "2024-03-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z23.107852.01"
+  }
+ ],
+ "pauwelstraat2": [
+  {
+   "adres": "Pauwelstraat 2",
+   "datum": "2018-04-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102326.01"
+  }
+ ],
+ "pauwelstraat6": [
+  {
+   "adres": "Pauwelstraat 6",
+   "datum": "2018-04-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102873.01"
+  }
+ ],
+ "piersonstraat75": [
+  {
+   "adres": "Piersonstraat 75",
+   "datum": "2018-02-23",
+   "omschrijving": "verbouwen van bedrijfspanden tot deels zelfstandige en deels onzelfstandige eenheden kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.045185"
+  }
+ ],
+ "plein1944": [
+  {
+   "adres": "Plein 1944N",
+   "datum": "2018-04-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103020.01"
+  },
+  {
+   "adres": "Plein 1944N",
+   "datum": "2018-04-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103296.01"
+  },
+  {
+   "adres": "Plein 1944N",
+   "datum": "2018-04-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103356.01"
+  },
+  {
+   "adres": "Plein 1944N",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103987.01"
+  },
+  {
+   "adres": "Plein 1944N",
+   "datum": "2018-06-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105000.01"
+  },
+  {
+   "adres": "Plein 1944N",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106430.01"
+  },
+  {
+   "adres": "Plein 1944",
+   "datum": "2019-11-08",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.102975.01"
+  }
+ ],
+ "plutostraat62": [
+  {
+   "adres": "Plutostraat 62",
+   "datum": "2018-08-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104367.01"
+  }
+ ],
+ "pontanusstraat29": [
+  {
+   "adres": "Pontanusstraat 29",
+   "datum": "2018-02-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100192.01"
+  }
+ ],
+ "pontanusstraat31": [
+  {
+   "adres": "Pontanusstraat 31",
+   "datum": "2018-02-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100194.01"
+  }
+ ],
+ "pontanusstraat33": [
+  {
+   "adres": "Pontanusstraat 33",
+   "datum": "2018-02-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100211.01"
+  }
+ ],
+ "pontanusstraat50": [
+  {
+   "adres": "Pontanusstraat 50",
+   "datum": "2018-08-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106381.01"
+  }
+ ],
+ "postweg181": [
+  {
+   "adres": "Postweg 181",
+   "datum": "2018-04-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102340.01"
+  }
+ ],
+ "postweg57": [
+  {
+   "adres": "Postweg 57",
+   "datum": "2017-05-31",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.103064.01"
+  }
+ ],
+ "prinsbernhardstraat43": [
+  {
+   "adres": "Prins Bernhardstraat 43",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102239.01"
+  }
+ ],
+ "prinsbernhardstraat57": [
+  {
+   "adres": "Prins Bernhardstraat 57",
+   "datum": "2018-07-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104182.01"
+  }
+ ],
+ "prinsbernhardstraat63": [
+  {
+   "adres": "Prins Bernhardstraat 63",
+   "datum": "2018-11-22",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106389.01"
+  }
+ ],
+ "prinshendrikstraat18": [
+  {
+   "adres": "Prins Hendrikstraat 18",
+   "datum": "2018-05-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103041.01"
+  }
+ ],
+ "profcornelissenstraat1": [
+  {
+   "adres": "Professor Cornelissenstraat 1",
+   "datum": "2020-01-07",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.106803.01"
+  }
+ ],
+ "profcornelissenstraat19": [
+  {
+   "adres": "Professor Cornelissenstraat 19",
+   "datum": "2018-03-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103024.01"
+  }
+ ],
+ "profhoogveldstraat16": [
+  {
+   "adres": "Professor Hoogveldstraat 16",
+   "datum": "2018-05-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104005.01"
+  }
+ ],
+ "profmolkenboerstraat18": [
+  {
+   "adres": "Professor Molkenboerstraat 18A",
+   "datum": "2018-07-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105648.01"
+  }
+ ],
+ "profmolkenboerstraat24": [
+  {
+   "adres": "Professor Molkenboerstraat 24",
+   "datum": "2015-02-12",
+   "omschrijving": "Herinrichting bestaand kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z15.002857"
+  }
+ ],
+ "profmolkenboerstraat34": [
+  {
+   "adres": "Prof. Molkenboerstraat 34",
+   "datum": "2013-09-04",
+   "omschrijving": "Aanvraag vooroverleg Achterkant gereed maken voor kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.001513"
+  }
+ ],
+ "profschrijnenstraat4": [
+  {
+   "adres": "Professor Schrijnenstraat 4",
+   "datum": "2018-02-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100619.01"
+  }
+ ],
+ "profvanderheijdenstraat21": [
+  {
+   "adres": "Professor van der Heijdenstraat 21",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105800.01"
+  }
+ ],
+ "profvanderheijdenstraat5": [
+  {
+   "adres": "Professor van der Heijdenstraat 5",
+   "datum": "2019-11-05",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.105869.01"
+  }
+ ],
+ "raadhuisstraat16": [
+  {
+   "adres": "Raadhuisstraat 16",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105263.01"
+  }
+ ],
+ "raadhuisstraat28": [
+  {
+   "adres": "Raadhuisstraat 28",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106376.01"
+  }
+ ],
+ "remmersteinstraat6": [
+  {
+   "adres": "Remmersteinstraat 6",
+   "datum": "2016-02-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.001727.01"
+  }
+ ],
+ "rentmeesterlaan20": [
+  {
+   "adres": "Rentmeesterlaan 20",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100839.01"
+  }
+ ],
+ "roukensstraat32": [
+  {
+   "adres": "Roukensstraat 32",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105639.01"
+  }
+ ],
+ "ruisdaelstraat67": [
+  {
+   "adres": "Ruisdaelstraat 67",
+   "datum": "2016-11-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103800.01"
+  }
+ ],
+ "ruisdaelstraat72": [
+  {
+   "adres": "Ruisdaelstraat 72",
+   "datum": "2018-05-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103569.01"
+  }
+ ],
+ "scheidemakershof43": [
+  {
+   "adres": "Scheidemakershof 43",
+   "datum": "2016-08-22",
+   "omschrijving": "Verbouwen van woningen en studio's naar onzelfstandige eenheden (kamerverhuur)",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.025379"
+  }
+ ],
+ "schepenenstraat37": [
+  {
+   "adres": "Schepenenstraat 37",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103785.01"
+  }
+ ],
+ "schepenenstraat39": [
+  {
+   "adres": "Schepenenstraat 39",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103789.01"
+  }
+ ],
+ "schepenenstraat51": [
+  {
+   "adres": "Schepenenstraat 51",
+   "datum": "2018-06-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104904.01"
+  }
+ ],
+ "schepenenstraat75": [
+  {
+   "adres": "Schepenenstraat 75",
+   "datum": "2018-02-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100189.01"
+  }
+ ],
+ "schepenenstraat79": [
+  {
+   "adres": "Schepenenstraat 79",
+   "datum": "2016-12-22",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103984.01"
+  }
+ ],
+ "schepenenstraat85": [
+  {
+   "adres": "Schepenenstraat 85",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104007.01"
+  }
+ ],
+ "schepenenstraat87": [
+  {
+   "adres": "Schepenenstraat 87",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104187.01"
+  }
+ ],
+ "schoolstraat103": [
+  {
+   "adres": "Schoolstraat 103",
+   "datum": "2016-09-09",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.102556.01"
+  },
+  {
+   "adres": "Schoolstraat 103",
+   "datum": "2016-05-24",
+   "omschrijving": "realiseren van kamerverhuur binnen de bestaande bouw",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z16.002125.01"
+  }
+ ],
+ "schoolstraat105": [
+  {
+   "adres": "Schoolstraat 105",
+   "datum": "2018-07-24",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100135.01"
+  },
+  {
+   "adres": "Schoolstraat 105N",
+   "datum": "2025-05-14",
+   "omschrijving": "het omzetten van een pand van kamerverhuur met 6 kamers naar 6 zelfstandige woningen",
+   "soort": "omgevingsvergunning",
+   "zaak": "AB24.01891"
+  }
+ ],
+ "schoolstraat113": [
+  {
+   "adres": "Schoolstraat 113",
+   "datum": "2016-04-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.002324.01"
+  }
+ ],
+ "schoolstraat149": [
+  {
+   "adres": "Schoolstraat 149",
+   "datum": "2019-01-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100468.01"
+  }
+ ],
+ "schoolstraat38": [
+  {
+   "adres": "Schoolstraat 38",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105658.01"
+  }
+ ],
+ "semmelinkstraat12": [
+  {
+   "adres": "Semmelinkstraat 12",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105280.01"
+  }
+ ],
+ "semmelinkstraat31": [
+  {
+   "adres": "Semmelinkstraat 31",
+   "datum": "2019-05-14",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.100410.01"
+  }
+ ],
+ "semmelinkstraat32": [
+  {
+   "adres": "Semmelinkstraat 32",
+   "datum": "2018-05-31",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105090.01"
+  }
+ ],
+ "semmelinkstraat43": [
+  {
+   "adres": "Semmelinkstraat 43",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106147.01"
+  }
+ ],
+ "semmelinkstraat5": [
+  {
+   "adres": "Semmelinkstraat 5",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105333.01"
+  }
+ ],
+ "semmelinkstraat8": [
+  {
+   "adres": "Semmelinkstraat 8",
+   "datum": "2018-04-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103999.01"
+  }
+ ],
+ "slotemakerdebruineweg10": [
+  {
+   "adres": "Slotemaker de Bruineweg 10",
+   "datum": "2014-12-15",
+   "omschrijving": "aanvraag woningomzettingsvergunning voor kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.041703"
+  }
+ ],
+ "smetiusstraat11": [
+  {
+   "adres": "Smetiusstraat 11",
+   "datum": "2018-06-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105074.01"
+  }
+ ],
+ "smetiusstraat15": [
+  {
+   "adres": "Smetiusstraat 15",
+   "datum": "2018-04-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103049.01"
+  }
+ ],
+ "sperwerstraat17": [
+  {
+   "adres": "Sperwerstraat 17",
+   "datum": "2018-06-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100067.02"
+  }
+ ],
+ "spoorstraat23": [
+  {
+   "adres": "Spoorstraat 23T",
+   "datum": "2018-09-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106458.01"
+  }
+ ],
+ "stagnetenweg57": [
+  {
+   "adres": "St. Agnetenweg 57",
+   "datum": "2018-02-20",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108640.01"
+  },
+  {
+   "adres": "St. Agnetenweg 57",
+   "datum": "2018-08-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108640.04"
+  }
+ ],
+ "stannastraat100": [
+  {
+   "adres": "St. Annastraat 100",
+   "datum": "2013-05-08",
+   "omschrijving": "woning verbouwen tot 1 appartement en 2 studio's voor kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z13.001942"
+  }
+ ],
+ "stannastraat11": [
+  {
+   "adres": "St. Annastraat 11",
+   "datum": "2018-05-24",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100073.01"
+  }
+ ],
+ "stannastraat13": [
+  {
+   "adres": "St. Annastraat 13",
+   "datum": "2018-05-24",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100077.01"
+  }
+ ],
+ "stannastraat132": [
+  {
+   "adres": "St. Annastraat 132",
+   "datum": "2019-01-03",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105890.01"
+  }
+ ],
+ "stannastraat141": [
+  {
+   "adres": "St. Annastraat 141",
+   "datum": "2018-03-26",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100297.01"
+  }
+ ],
+ "stannastraat15": [
+  {
+   "adres": "St. Annastraat 15",
+   "datum": "2018-06-01",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100199.01"
+  }
+ ],
+ "stannastraat172": [
+  {
+   "adres": "St. Annastraat 172",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102860.01"
+  }
+ ],
+ "stannastraat173": [
+  {
+   "adres": "St. Annastraat 173",
+   "datum": "2016-04-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.001732.01"
+  }
+ ],
+ "stannastraat191": [
+  {
+   "adres": "St. Annastraat 191",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103934.01"
+  }
+ ],
+ "stannastraat207": [
+  {
+   "adres": "St. Annastraat 207",
+   "datum": "2018-05-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103975.01"
+  }
+ ],
+ "stannastraat213": [
+  {
+   "adres": "St. Annastraat 213",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105998.01"
+  }
+ ],
+ "stannastraat217": [
+  {
+   "adres": "St. Annastraat 217",
+   "datum": "2018-06-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105334.01"
+  }
+ ],
+ "stannastraat22": [
+  {
+   "adres": "St. Annastraat 22",
+   "datum": "2018-03-08",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100156.01"
+  }
+ ],
+ "stannastraat235": [
+  {
+   "adres": "St. Annastraat 235",
+   "datum": "2018-08-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106286.01"
+  }
+ ],
+ "stannastraat247": [
+  {
+   "adres": "St. Annastraat 247",
+   "datum": "2019-01-23",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.109631.01"
+  }
+ ],
+ "stannastraat273": [
+  {
+   "adres": "St. Annastraat 273",
+   "datum": "2018-03-29",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.101258.01"
+  }
+ ],
+ "stannastraat282": [
+  {
+   "adres": "St. Annastraat 282E",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106991.01"
+  }
+ ],
+ "stannastraat288": [
+  {
+   "adres": "St. Annastraat 288",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100201.01"
+  }
+ ],
+ "stannastraat40": [
+  {
+   "adres": "St. Annastraat 40",
+   "datum": "2017-12-07",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.106974.01"
+  }
+ ],
+ "stannastraat42": [
+  {
+   "adres": "St. Annastraat 42A",
+   "datum": "2017-12-20",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107131.01"
+  }
+ ],
+ "stannastraat44": [
+  {
+   "adres": "St. Annastraat 44",
+   "datum": "2018-10-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106498.01"
+  }
+ ],
+ "stannastraat47": [
+  {
+   "adres": "St. Annastraat 47",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107338.01"
+  },
+  {
+   "adres": "St. Annastraat 47",
+   "datum": "2017-06-13",
+   "omschrijving": "verbouwen van het pand tot kamerverhuurpand 14 kamers",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z16.104907.01"
+  }
+ ],
+ "stannastraat72": [
+  {
+   "adres": "St. Annastraat 72",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106005.01"
+  }
+ ],
+ "stannastraat75": [
+  {
+   "adres": "St. Annastraat 75",
+   "datum": "2018-03-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100089.01"
+  }
+ ],
+ "stannastraat78": [
+  {
+   "adres": "St. Annastraat 78",
+   "datum": "2020-04-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.110340.01"
+  }
+ ],
+ "stannastraat82": [
+  {
+   "adres": "St. Annastraat 82",
+   "datum": "2020-11-17",
+   "omschrijving": "inpandig verbouwen van 1e en 2e verdieping van kamerverhuur naar vier appartementen",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z20.105482.01"
+  }
+ ],
+ "stannastraat87": [
+  {
+   "adres": "St. Annastraat 87",
+   "datum": "2018-03-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102425.01"
+  }
+ ],
+ "staringstraat39": [
+  {
+   "adres": "Staringstraat 39",
+   "datum": "2018-02-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108181.01"
+  }
+ ],
+ "stcanisiussingel22": [
+  {
+   "adres": "St. Canisiussingel 22",
+   "datum": "2018-04-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103417.01"
+  }
+ ],
+ "stcanisiussingel24": [
+  {
+   "adres": "St. Canisiussingel 24",
+   "datum": "2018-04-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103415.01"
+  }
+ ],
+ "stcanisiussingel3": [
+  {
+   "adres": "St. Canisiussingel 3",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106232.01"
+  }
+ ],
+ "stgeertruidestraat31": [
+  {
+   "adres": "St.Geertruidestraat 31",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102541.01"
+  }
+ ],
+ "stieltjesstraat2": [
+  {
+   "adres": "Stieltjesstraat 2",
+   "datum": "2017-11-29",
+   "omschrijving": "tijdelijk 12 maanden wijzigen van noodopvang naar kamerverhuur van de 5e tm 8e verdieping",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.106049.01"
+  }
+ ],
+ "stijnbuysstraat10": [
+  {
+   "adres": "Stijn Buysstraat 10A",
+   "datum": "2019-09-17",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.100408.01"
+  }
+ ],
+ "stijnbuysstraat106": [
+  {
+   "adres": "Stijn Buysstraat 106",
+   "datum": "2018-02-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107174.01"
+  },
+  {
+   "adres": "Stijn Buysstraat 106",
+   "datum": "2018-03-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102740.01"
+  }
+ ],
+ "stijnbuysstraat110": [
+  {
+   "adres": "Stijn Buysstraat 110",
+   "datum": "2018-11-13",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105935.01"
+  }
+ ],
+ "stijnbuysstraat4": [
+  {
+   "adres": "Stijn Buysstraat 4",
+   "datum": "2018-03-08",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100003.01"
+  },
+  {
+   "adres": "Stijn Buysstraat 4A",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100251.01"
+  }
+ ],
+ "stijnbuysstraat45": [
+  {
+   "adres": "Stijn Buysstraat 45",
+   "datum": "2018-02-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108743.01"
+  }
+ ],
+ "stijnbuysstraat5": [
+  {
+   "adres": "Stijn Buysstraat 5",
+   "datum": "2018-10-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106311.01"
+  }
+ ],
+ "stijnbuysstraat6": [
+  {
+   "adres": "Stijn Buysstraat 6A",
+   "datum": "2018-02-19",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108747.01"
+  }
+ ],
+ "stijnbuysstraat8": [
+  {
+   "adres": "Stijn Buysstraat 8A",
+   "datum": "2019-08-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.100414.01"
+  }
+ ],
+ "stjacobslaan179": [
+  {
+   "adres": "St. Jacobslaan 179",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104814.01"
+  }
+ ],
+ "stjacobslaan2": [
+  {
+   "adres": "St.Jacobslaan 2",
+   "datum": "2020-07-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103357.02"
+  }
+ ],
+ "stjacobslaan290": [
+  {
+   "adres": "St. Jacobslaan 290",
+   "datum": "2018-04-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103157.01"
+  }
+ ],
+ "stjacobslaan386": [
+  {
+   "adres": "St. Jacobslaan 386",
+   "datum": "2018-03-28",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102867.01"
+  }
+ ],
+ "stjacobslaan448": [
+  {
+   "adres": "St. Jacobslaan 448",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102723.01"
+  }
+ ],
+ "stjacobslaan470": [
+  {
+   "adres": "St. Jacobslaan 470",
+   "datum": "2016-09-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.101954.01"
+  }
+ ],
+ "stjacobslaan482": [
+  {
+   "adres": "Sint Jacobslaan 482",
+   "datum": "2018-05-31",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104348.01"
+  }
+ ],
+ "stjacobslaan494": [
+  {
+   "adres": "St. Jacobslaan 494",
+   "datum": "2018-03-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.101245.01"
+  }
+ ],
+ "stjacobslaan6": [
+  {
+   "adres": "St. Jacobslaan 6",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105818.01"
+  }
+ ],
+ "stjacobslaan90": [
+  {
+   "adres": "St. Jacobslaan 90",
+   "datum": "2015-12-31",
+   "omschrijving": "aanvraag vooroverleg voor wijzigen bedrijfsruimte in kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.013200"
+  }
+ ],
+ "stjacobslaan98": [
+  {
+   "adres": "St. Jacobslaan 98",
+   "datum": "2015-12-31",
+   "omschrijving": "Verbouwing woonhuis tot studentenwoning (kamerverhuur)",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z11.010512"
+  }
+ ],
+ "stjansvlinder11": [
+  {
+   "adres": "St. Jansvlinder 11",
+   "datum": "2019-08-29",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.104040.01"
+  }
+ ],
+ "stjorisstraat36": [
+  {
+   "adres": "St. Jorisstraat 36",
+   "datum": "2018-12-06",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105564.01"
+  }
+ ],
+ "stjosephhof1": [
+  {
+   "adres": "St. Josephhof 1",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106273.01"
+  }
+ ],
+ "ststephanusstraat153": [
+  {
+   "adres": "St. Stephanusstraat 153",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106331.01"
+  },
+  {
+   "adres": "St. Stephanusstraat 153",
+   "datum": "2018-08-29",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104957.01"
+  }
+ ],
+ "ststephanusstraat62": [
+  {
+   "adres": "St. Stephanusstraat 62",
+   "datum": "2018-06-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104679.01"
+  }
+ ],
+ "ststephanusstraat70": [
+  {
+   "adres": "St. Stephanusstraat 70",
+   "datum": "2018-02-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108118.01"
+  },
+  {
+   "adres": "Sint Stephanusstraat 70",
+   "datum": "2017-10-30",
+   "omschrijving": "realiseren van een dakterras op een bestaand kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.105191.01"
+  }
+ ],
+ "ststevenskerkhof1": [
+  {
+   "adres": "St. Stevenskerkhof 1",
+   "datum": "2018-07-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105628.01"
+  }
+ ],
+ "stthomashof4": [
+  {
+   "adres": "St.Thomashof 4",
+   "datum": "2018-06-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104926.01"
+  }
+ ],
+ "sweersstraat12": [
+  {
+   "adres": "Sweersstraat 12",
+   "datum": "2018-08-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105806.01"
+  }
+ ],
+ "sweersstraat25": [
+  {
+   "adres": "Sweersstraat 25",
+   "datum": "2017-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.103170.01"
+  }
+ ],
+ "thomashof6": [
+  {
+   "adres": "Thomashof 6",
+   "datum": "2018-02-22",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108662.01"
+  }
+ ],
+ "tijgerstraat135": [
+  {
+   "adres": "Tijgerstraat 135",
+   "datum": "2018-08-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106415.01"
+  }
+ ],
+ "tijgerstraat40": [
+  {
+   "adres": "Tijgerstraat 40",
+   "datum": "2018-08-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106365.01"
+  }
+ ],
+ "tolhuis2064": [
+  {
+   "adres": "Tolhuis 2064",
+   "datum": "2018-07-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105704.01"
+  }
+ ],
+ "tolhuis3305": [
+  {
+   "adres": "Tolhuis 3305",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105562.01"
+  }
+ ],
+ "tolhuis3409": [
+  {
+   "adres": "Tolhuis 3409",
+   "datum": "2021-10-12",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z21.105497.01"
+  }
+ ],
+ "tooropstraat12": [
+  {
+   "adres": "Tooropstraat 12",
+   "datum": "2018-08-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106360.01"
+  }
+ ],
+ "tooropstraat121": [
+  {
+   "adres": "Tooropstraat 121",
+   "datum": "2018-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104678.01"
+  }
+ ],
+ "tooropstraat129": [
+  {
+   "adres": "Tooropstraat 129",
+   "datum": "2018-07-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106070.01"
+  }
+ ],
+ "tooropstraat203": [
+  {
+   "adres": "Tooropstraat 203",
+   "datum": "2020-06-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.102364.01"
+  }
+ ],
+ "tooropstraat218": [
+  {
+   "adres": "Tooropstraat 218",
+   "datum": "2018-03-22",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102553.01"
+  }
+ ],
+ "tooropstraat229": [
+  {
+   "adres": "Tooropstraat 229",
+   "datum": "2017-10-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.106324.01"
+  }
+ ],
+ "tooropstraat40": [
+  {
+   "adres": "Tooropstraat 40",
+   "datum": "2016-10-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103071.01"
+  }
+ ],
+ "tooropstraat52": [
+  {
+   "adres": "Tooropstraat 52",
+   "datum": "2019-02-19",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.108722.01"
+  }
+ ],
+ "tooropstraat61": [
+  {
+   "adres": "Tooropstraat 61",
+   "datum": "2017-08-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "samenvoeging",
+   "zaak": "W.Z17.104047.01"
+  }
+ ],
+ "tooropstraat95": [
+  {
+   "adres": "Tooropstraat 95",
+   "datum": "2019-08-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.103033.01"
+  },
+  {
+   "adres": "Tooropstraat 95T",
+   "datum": "2015-12-31",
+   "omschrijving": "verbouw woning (geschikt maken voor kamerverhuur)",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z12.017188"
+  }
+ ],
+ "treubstraat148": [
+  {
+   "adres": "Treubstraat 148",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106185.01"
+  }
+ ],
+ "treubstraat164": [
+  {
+   "adres": "Treubstraat 164",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103770.01"
+  }
+ ],
+ "triangelstraat12": [
+  {
+   "adres": "Triangelstraat 12",
+   "datum": "2016-11-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103587.01"
+  }
+ ],
+ "triangelstraat13": [
+  {
+   "adres": "Triangelstraat 13N",
+   "datum": "2023-10-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z23.102149.01"
+  }
+ ],
+ "triangelstraat95": [
+  {
+   "adres": "Triangelstraat 95N",
+   "datum": "2024-10-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "AB24.00136"
+  }
+ ],
+ "tweedeoudeheselaan103": [
+  {
+   "adres": "Tweede Oude Heselaan 103",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106495.01"
+  }
+ ],
+ "tweedeoudeheselaan109": [
+  {
+   "adres": "Tweede Oude Heselaan 109",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106329.01"
+  }
+ ],
+ "tweedeoudeheselaan161": [
+  {
+   "adres": "Tweede Oude Heselaan 161",
+   "datum": "2020-12-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.109088.01"
+  }
+ ],
+ "tweedeoudeheselaan95": [
+  {
+   "adres": "Tweede Oude Heselaan 95",
+   "datum": "2018-04-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104004.01"
+  }
+ ],
+ "tweedewalstraat137": [
+  {
+   "adres": "Tweede Walstraat 137",
+   "datum": "2018-09-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106312.01"
+  },
+  {
+   "adres": "Tweede Walstraat 137T",
+   "datum": "2015-12-31",
+   "omschrijving": "verbouwen kamerverhuurpanden",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z10.021264"
+  }
+ ],
+ "tweedewalstraat139": [
+  {
+   "adres": "Tweede Walstraat 139",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106316.01"
+  }
+ ],
+ "tweedewalstraat143": [
+  {
+   "adres": "Tweede Walstraat 143",
+   "datum": "2018-10-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106319.01"
+  }
+ ],
+ "tweedewalstraat155": [
+  {
+   "adres": "Tweede Walstraat 155A",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104812.01"
+  }
+ ],
+ "tweedewalstraat159": [
+  {
+   "adres": "Tweede Walstraat 159",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106408.01"
+  }
+ ],
+ "tweedewalstraat7": [
+  {
+   "adres": "Tweede Walstraat 7",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102748.01"
+  }
+ ],
+ "ubbergseweg84": [
+  {
+   "adres": "Ubbergseweg 84",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105478.01"
+  }
+ ],
+ "vanberchenstraat4": [
+  {
+   "adres": "van Berchenstraat 4",
+   "datum": "2018-02-07",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108734.01"
+  }
+ ],
+ "vanbroeckhuysenstraat10": [
+  {
+   "adres": "Van Broeckhuysenstraat 10",
+   "datum": "2018-10-30",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105933.01"
+  }
+ ],
+ "vanbroeckhuysenstraat18": [
+  {
+   "adres": "Van Broeckhuysenstraat 18",
+   "datum": "2018-04-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103054.01"
+  }
+ ],
+ "vanbroeckhuysenstraat30": [
+  {
+   "adres": "Van Broeckhuysenstraat 30",
+   "datum": "2018-02-22",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100195.01"
+  }
+ ],
+ "vanbroeckhuysenstraat7": [
+  {
+   "adres": "van Broeckhuysenstraat 7",
+   "datum": "2018-07-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105044.01"
+  }
+ ],
+ "vanbroeckhuysenstraat8": [
+  {
+   "adres": "van Broeckhuysenstraat 8",
+   "datum": "2018-10-30",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105930.01"
+  }
+ ],
+ "vandenhavestraat90": [
+  {
+   "adres": "Van den Havestraat 90",
+   "datum": "2018-06-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105075.01"
+  }
+ ],
+ "vanderkempstraat15": [
+  {
+   "adres": "van der Kempstraat 15",
+   "datum": "2018-06-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102852.01"
+  }
+ ],
+ "vanderkempstraat17": [
+  {
+   "adres": "van der Kempstraat 17",
+   "datum": "2018-05-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103925.01"
+  }
+ ],
+ "vanderkempstraat21": [
+  {
+   "adres": "van der Kempstraat 21",
+   "datum": "2018-12-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100528.01"
+  }
+ ],
+ "vandulckenstraat39": [
+  {
+   "adres": "van Dulckenstraat 39",
+   "datum": "2016-12-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.104006.01"
+  }
+ ],
+ "vandulckenstraat44": [
+  {
+   "adres": "Van Dulckenstraat 44",
+   "datum": "2016-01-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z15.101280.01"
+  }
+ ],
+ "vandulckenstraat49": [
+  {
+   "adres": "van Dulckenstraat 49A",
+   "datum": "2018-07-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104541.01"
+  }
+ ],
+ "vangoorstraat5": [
+  {
+   "adres": "Van Goorstraat 5A",
+   "datum": "2018-02-22",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100018.01"
+  }
+ ],
+ "vanhaapsstraat54": [
+  {
+   "adres": "Van Haapsstraat 54",
+   "datum": "2018-09-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106134.01"
+  }
+ ],
+ "vanhaapsstraat62": [
+  {
+   "adres": "Van Haapsstraat 62",
+   "datum": "2018-05-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104084.01"
+  }
+ ],
+ "vanheutszstraat21": [
+  {
+   "adres": "Van Heutszstraat 21",
+   "datum": "2018-03-13",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100225.01"
+  }
+ ],
+ "vanheutszstraat50": [
+  {
+   "adres": "van Heutszstraat 50B",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102428.01"
+  }
+ ],
+ "vanheutszstraat52": [
+  {
+   "adres": "Van Heutszstraat 52A",
+   "datum": "2018-02-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100209.01"
+  },
+  {
+   "adres": "Van Heutszstraat 52",
+   "datum": "2018-03-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100547.01"
+  }
+ ],
+ "vanheutsztraat54": [
+  {
+   "adres": "Van Heutsztraat 54",
+   "datum": "2018-02-20",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108098.01"
+  }
+ ],
+ "vanlangeveldstraat2": [
+  {
+   "adres": "Van Langeveldstraat 2",
+   "datum": "2018-03-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100815.01"
+  }
+ ],
+ "vanlangeveldstraat22": [
+  {
+   "adres": "van Langeveldstraat 22",
+   "datum": "2016-10-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.103062.01"
+  },
+  {
+   "adres": "van Langeveldstraat 22",
+   "datum": "2018-10-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100481.01"
+  }
+ ],
+ "vanlangeveldstraat30": [
+  {
+   "adres": "van Langeveldstraat 30",
+   "datum": "2018-05-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103022.01"
+  }
+ ],
+ "vanlangeveldstraat34": [
+  {
+   "adres": "van Langeveldstraat 34",
+   "datum": "2018-05-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104543.01"
+  },
+  {
+   "adres": "Van Langeveldstraat 34",
+   "datum": "2014-06-11",
+   "omschrijving": "Verbouwen naar kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z10.013155"
+  }
+ ],
+ "vannispenstraat186": [
+  {
+   "adres": "Van Nispenstraat 186",
+   "datum": "2018-06-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105506.01"
+  }
+ ],
+ "vannispenstraat224": [
+  {
+   "adres": "van Nispenstraat 224",
+   "datum": "2019-09-24",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.104232.01"
+  }
+ ],
+ "vannispenstraat234": [
+  {
+   "adres": "Van Nispenstraat 234",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106144.01"
+  }
+ ],
+ "vannispenstraat99": [
+  {
+   "adres": "van Nispenstraat 99",
+   "datum": "2016-10-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "samenvoeging",
+   "zaak": "W.Z16.103263.01"
+  }
+ ],
+ "vanoldenbarneveltstraat26": [
+  {
+   "adres": "Van Oldenbarneveltstraat 26",
+   "datum": "2019-10-08",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.103640.01"
+  }
+ ],
+ "vanoldenbarneveltstraat28": [
+  {
+   "adres": "Van Oldenbarneveltstraat 28",
+   "datum": "2019-10-02",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.103639.01"
+  }
+ ],
+ "vanoldenbarneveltstraat30": [
+  {
+   "adres": "Van Oldenbarneveltstraat 30",
+   "datum": "2019-10-02",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.103633.01"
+  }
+ ],
+ "vanoldenbarneveltstraat75": [
+  {
+   "adres": "Van Oldenbarneveltstraat 75",
+   "datum": "2018-03-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100222.01"
+  }
+ ],
+ "vanpeltlaan188": [
+  {
+   "adres": "Van Peltlaan 188",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103828.01"
+  }
+ ],
+ "vanpeltlaan34": [
+  {
+   "adres": "van Peltlaan 34",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103306.01"
+  }
+ ],
+ "vanpeltlaan36": [
+  {
+   "adres": "Van Peltlaan 36",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103303.01"
+  }
+ ],
+ "vanpeltlaan40": [
+  {
+   "adres": "Van Peltlaan 40",
+   "datum": "2018-02-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108686.01"
+  }
+ ],
+ "vanschaeckmathonsingel63": [
+  {
+   "adres": "van Schaeck Mathonsingel 63",
+   "datum": "2018-08-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106073.01"
+  }
+ ],
+ "vanschaeckmathonsingel65": [
+  {
+   "adres": "Van Schaeck Mathonsingel 65",
+   "datum": "2018-06-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105232.01"
+  }
+ ],
+ "vanschaeckmathonsingel67": [
+  {
+   "adres": "Van Schaeck Mathonsingel 67",
+   "datum": "2018-04-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103945.01"
+  }
+ ],
+ "vanschaeckmathonsingel79": [
+  {
+   "adres": "Van Schaeck Mathonsingel 79",
+   "datum": "2018-06-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104811.01"
+  }
+ ],
+ "vanschaeckmathonsingel83": [
+  {
+   "adres": "Van Schaeck Mathonsingel 83",
+   "datum": "2018-04-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103947.01"
+  }
+ ],
+ "vanschaeckmathonsingel85": [
+  {
+   "adres": "Van Schaeck Mathonsingel 85",
+   "datum": "2018-05-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104590.01"
+  }
+ ],
+ "vanslichtenhorststraat101": [
+  {
+   "adres": "Van Slichtenhorststraat 101",
+   "datum": "2018-02-23",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107334.01"
+  }
+ ],
+ "vanslichtenhorststraat12": [
+  {
+   "adres": "van Slichtenhorststraat 12A",
+   "datum": "2018-07-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106372.01"
+  }
+ ],
+ "vanslichtenhorststraat14": [
+  {
+   "adres": "Van Slichtenhorststraat 14",
+   "datum": "2018-09-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106038.01"
+  }
+ ],
+ "vanslichtenhorststraat40": [
+  {
+   "adres": "van Slichtenhorststraat 40",
+   "datum": "2016-04-07",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z15.101006.01"
+  }
+ ],
+ "vanslichtenhorststraat46": [
+  {
+   "adres": "Van Slichtenhorststraat 46",
+   "datum": "2018-09-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104523.01"
+  },
+  {
+   "adres": "Van Slichtenhorststraat 46A",
+   "datum": "2018-09-19",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106564.01"
+  }
+ ],
+ "vanslichtenhorststraat53": [
+  {
+   "adres": "van Slichtenhorststraat 53",
+   "datum": "2018-08-29",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104714.01"
+  }
+ ],
+ "vansomerenstraat12": [
+  {
+   "adres": "Van Somerenstraat 12",
+   "datum": "2018-05-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103821.01"
+  }
+ ],
+ "vansomerenstraat50": [
+  {
+   "adres": "van Somerenstraat 50",
+   "datum": "2022-07-28",
+   "omschrijving": "verbouwen kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z22.102385.01"
+  },
+  {
+   "adres": "van Somerenstraat 50",
+   "datum": "2024-01-29",
+   "omschrijving": "Intrekken omgevingsvergunning W.Z22.102385.01  voor het verbouwen van een kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z22.102385.02"
+  }
+ ],
+ "vanspaenstraat21": [
+  {
+   "adres": "van Spaenstraat 21",
+   "datum": "2018-12-06",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106090.01"
+  }
+ ],
+ "vantrieststraat1": [
+  {
+   "adres": "van Trieststraat 1",
+   "datum": "2015-12-31",
+   "omschrijving": "wijzigen van de 1e verdieping van het pand in kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z14.001154"
+  }
+ ],
+ "vantsantstraat137": [
+  {
+   "adres": "van t Santstraat 137",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105610.01"
+  }
+ ],
+ "vanwelderenstraat109": [
+  {
+   "adres": "Van Welderenstraat 109",
+   "datum": "2018-02-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.107982.02"
+  }
+ ],
+ "vanwelderenstraat112": [
+  {
+   "adres": "Van Welderenstraat 112E",
+   "datum": "2018-02-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100134.01"
+  }
+ ],
+ "vanwelderenstraat115": [
+  {
+   "adres": "van Welderenstraat 115",
+   "datum": "2022-08-29",
+   "omschrijving": "transformeren van een bestaand kamerverhuurpand tot vier zelfstandige wooneenheden",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z22.102232.01"
+  }
+ ],
+ "vanwelderenstraat119": [
+  {
+   "adres": "Van Welderenstraat 119",
+   "datum": "2018-06-14",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100198.01"
+  }
+ ],
+ "vanwelderenstraat21": [
+  {
+   "adres": "Van Welderenstraat 21",
+   "datum": "2018-02-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100159.01"
+  }
+ ],
+ "vanwelderenstraat42": [
+  {
+   "adres": "Van Welderenstraat 42",
+   "datum": "2018-06-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104697.01"
+  }
+ ],
+ "vanwelderenstraat48": [
+  {
+   "adres": "Van Welderenstraat 48",
+   "datum": "2018-04-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102749.01"
+  }
+ ],
+ "vanwelderenstraat52": [
+  {
+   "adres": "van Welderenstraat 52",
+   "datum": "2018-08-13",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106370.01"
+  }
+ ],
+ "vanwelderenstraat53": [
+  {
+   "adres": "Van Welderenstraat 53",
+   "datum": "2018-03-05",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100233.01"
+  }
+ ],
+ "vanwelderenstraat55": [
+  {
+   "adres": "van Welderenstraat 55",
+   "datum": "2018-03-05",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100235.01"
+  }
+ ],
+ "vanwelderenstraat60": [
+  {
+   "adres": "van Welderenstraat 60",
+   "datum": "2018-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103847.01"
+  }
+ ],
+ "vanwelderenstraat62": [
+  {
+   "adres": "van Welderenstraat 62",
+   "datum": "2018-04-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103848.01"
+  }
+ ],
+ "vanwelderenstraat68": [
+  {
+   "adres": "Van Welderenstraat 68",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105251.01"
+  }
+ ],
+ "vanwelderenstraat70": [
+  {
+   "adres": "van Welderenstraat 70",
+   "datum": "2019-06-08",
+   "omschrijving": "verbouwing winkel naar woning met 5 onzelfstandige kamers tbv kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.110849.02"
+  }
+ ],
+ "vanwelderenstraat74": [
+  {
+   "adres": "Van Welderenstraat 74",
+   "datum": "2018-06-19",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105093.01"
+  }
+ ],
+ "vanwelderenstraat77": [
+  {
+   "adres": "van Welderenstraat 77",
+   "datum": "2020-10-05",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105901.01"
+  }
+ ],
+ "vanwelderenstraat85": [
+  {
+   "adres": "van Welderenstraat 85",
+   "datum": "2018-08-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106356.01"
+  }
+ ],
+ "vanwelderenstraat93": [
+  {
+   "adres": "Van Welderenstraat 93",
+   "datum": "2018-07-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106309.01"
+  }
+ ],
+ "venusstraat34": [
+  {
+   "adres": "Venusstraat 34",
+   "datum": "2018-06-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105002.01"
+  }
+ ],
+ "vondelstraat1": [
+  {
+   "adres": "Vondelstraat 1H",
+   "datum": "2019-01-25",
+   "omschrijving": "verbouwen van de kapel tot 17 wooneenheden tbv kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z18.107148.01"
+  }
+ ],
+ "vondelstraat34": [
+  {
+   "adres": "Vondelstraat 34",
+   "datum": "2018-02-28",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108273.01"
+  }
+ ],
+ "vondelstraat39": [
+  {
+   "adres": "Vondelstraat 39",
+   "datum": "2020-09-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.103694.01"
+  }
+ ],
+ "vondelstraat44": [
+  {
+   "adres": "Vondelstraat 44",
+   "datum": "2018-02-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100826.01"
+  }
+ ],
+ "vondelstraat6": [
+  {
+   "adres": "Vondelstraat 6",
+   "datum": "2017-11-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.106179.01"
+  }
+ ],
+ "voorstadslaan125": [
+  {
+   "adres": "Voorstadslaan 125",
+   "datum": "2018-02-21",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100204.01"
+  }
+ ],
+ "voorstadslaan135": [
+  {
+   "adres": "Voorstadslaan 135",
+   "datum": "2018-05-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104354.01"
+  }
+ ],
+ "voorstadslaan189": [
+  {
+   "adres": "Voorstadslaan 189",
+   "datum": "2018-02-15",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100984.01"
+  }
+ ],
+ "voorstadslaan244": [
+  {
+   "adres": "Voorstadslaan 244",
+   "datum": "2015-12-31",
+   "omschrijving": "Realiseren kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z13.028400"
+  }
+ ],
+ "voorstadslaan68": [
+  {
+   "adres": "Voorstadslaan 68",
+   "datum": "2017-02-08",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.104710.01"
+  }
+ ],
+ "vossenlaan177": [
+  {
+   "adres": "Vossenlaan 177",
+   "datum": "2018-06-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104747.01"
+  }
+ ],
+ "vossenlaan418": [
+  {
+   "adres": "Vossenlaan 418",
+   "datum": "2018-03-12",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102224.01"
+  }
+ ],
+ "vossenlaan428": [
+  {
+   "adres": "Vossenlaan 428",
+   "datum": "2018-05-01",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103806.01"
+  }
+ ],
+ "vossenlaan446": [
+  {
+   "adres": "Vossenlaan 446",
+   "datum": "2018-03-27",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103078.01"
+  }
+ ],
+ "vossenlaan84": [
+  {
+   "adres": "Vossenlaan 84N",
+   "datum": "2024-01-25",
+   "omschrijving": "verbouwen pand naar kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z23.106139.01"
+  }
+ ],
+ "vrouweudasingel211": [
+  {
+   "adres": "Vrouwe Udasingel 211T",
+   "datum": "2018-03-26",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.102333.01"
+  }
+ ],
+ "waldeckpyrmontsingel67": [
+  {
+   "adres": "Waldeck Pyrmontsingel 67",
+   "datum": "2019-11-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.108291.01"
+  }
+ ],
+ "waterstraat115": [
+  {
+   "adres": "Waterstraat 115",
+   "datum": "2018-11-13",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.108618.01"
+  }
+ ],
+ "watertorstraat3": [
+  {
+   "adres": "Watertorstraat 3",
+   "datum": "2016-11-02",
+   "leefbaarheidsonderzoek": false,
+   "soort": "samenvoeging",
+   "zaak": "W.Z16.103161.01"
+  }
+ ],
+ "wedesteinbroek1545": [
+  {
+   "adres": "Wedesteinbroek 1545",
+   "datum": "2018-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103179.01"
+  }
+ ],
+ "wegdoorjonkerbos27": [
+  {
+   "adres": "Weg door Jonkerbos 27",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.101284.01"
+  }
+ ],
+ "weidestraat74": [
+  {
+   "adres": "Weidestraat 74",
+   "datum": "2019-04-10",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.110366.01"
+  }
+ ],
+ "weurtseweg157": [
+  {
+   "adres": "Weurtseweg 157",
+   "datum": "2018-07-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105971.01"
+  }
+ ],
+ "wezenlaan185": [
+  {
+   "adres": "Wezenlaan 185",
+   "datum": "2018-02-23",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100174.01"
+  }
+ ],
+ "wezenlaan2": [
+  {
+   "adres": "Wezenlaan 2",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104282.01"
+  }
+ ],
+ "wilhelminasingel42": [
+  {
+   "adres": "Wilhelminasingel 42",
+   "datum": "2019-01-03",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105520.01"
+  }
+ ],
+ "willemsweg100": [
+  {
+   "adres": "Willemsweg 100",
+   "datum": "2018-04-12",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100079.01"
+  }
+ ],
+ "willemsweg14": [
+  {
+   "adres": "Willemsweg 14",
+   "datum": "2018-08-06",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105918.01"
+  }
+ ],
+ "willemsweg20": [
+  {
+   "adres": "Willemsweg 20",
+   "datum": "2018-07-10",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105201.01"
+  }
+ ],
+ "willemsweg251": [
+  {
+   "adres": "Willemsweg 251",
+   "datum": "2017-01-18",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103239.01"
+  }
+ ],
+ "willemsweg46": [
+  {
+   "adres": "Willemsweg 46",
+   "datum": "2018-02-16",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z17.108289.01"
+  }
+ ],
+ "willemsweg57": [
+  {
+   "adres": "Willemsweg 57",
+   "datum": "2017-09-15",
+   "omschrijving": "realiseren van een dakopbouw tbv vergroten van 4 bestaande kamers kamerverhuur boven bestaand cafe",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z17.102165.01"
+  }
+ ],
+ "willemsweg59": [
+  {
+   "adres": "Willemsweg 59",
+   "datum": "2016-07-05",
+   "omschrijving": "uitbreiden kamerverhuurpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z16.100776.01"
+  }
+ ],
+ "willemsweg71": [
+  {
+   "adres": "Willemsweg 71",
+   "datum": "2016-02-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.001803.01"
+  }
+ ],
+ "winkelsteegseweg18": [
+  {
+   "adres": "Winkelsteegseweg 18",
+   "datum": "2018-06-20",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104686.01"
+  }
+ ],
+ "winkelsteegseweg64": [
+  {
+   "adres": "Winkelsteegseweg 64",
+   "datum": "2020-07-20",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z20.101967.01"
+  }
+ ],
+ "wintersoord26": [
+  {
+   "adres": "Wintersoord 26",
+   "datum": "2018-06-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104781.01"
+  }
+ ],
+ "wintersoord30": [
+  {
+   "adres": "Wintersoord 30",
+   "datum": "2018-03-08",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100148.01"
+  }
+ ],
+ "wolfskuilseweg108": [
+  {
+   "adres": "Wolfskuilseweg 108",
+   "datum": "2015-10-13",
+   "omschrijving": "kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z15.100507.01"
+  }
+ ],
+ "wolfskuilseweg38": [
+  {
+   "adres": "Wolfskuilseweg 38",
+   "datum": "2018-11-15",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106732.01"
+  }
+ ],
+ "wolfskuilseweg99": [
+  {
+   "adres": "Wolfskuilseweg 99",
+   "datum": "2014-06-05",
+   "omschrijving": "Verbouw woonfunctie naar kamerverhuur woon-winkelpand",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z11.009616"
+  }
+ ],
+ "wolfstraat120": [
+  {
+   "adres": "Wolfstraat 120",
+   "datum": "2016-11-24",
+   "leefbaarheidsonderzoek": false,
+   "soort": "omzetting",
+   "zaak": "W.Z16.103764.01"
+  }
+ ],
+ "wolfstraat156": [
+  {
+   "adres": "Wolfstraat 156",
+   "datum": "2018-05-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103275.01"
+  }
+ ],
+ "wolfstraat164": [
+  {
+   "adres": "Wolfstraat 164",
+   "datum": "2018-04-11",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.103079.01"
+  }
+ ],
+ "wolfstraat92": [
+  {
+   "adres": "Wolfstraat 92",
+   "datum": "2018-07-04",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.105538.01"
+  }
+ ],
+ "zellersacker2034": [
+  {
+   "adres": "Zellersacker 2034",
+   "datum": "2018-10-30",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106733.01"
+  }
+ ],
+ "ziekerstraat116": [
+  {
+   "adres": "Ziekerstraat 116A",
+   "datum": "2018-08-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.106212.01"
+  }
+ ],
+ "ziekerstraat132": [
+  {
+   "adres": "Ziekerstraat 132E",
+   "datum": "2015-12-31",
+   "omschrijving": "het verbouwing van commerciële ruimte en de bovenwoningen aanpassen naar kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "Z13.001443"
+  }
+ ],
+ "ziekerstraat83": [
+  {
+   "adres": "Ziekerstraat 83",
+   "datum": "2018-05-17",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104095.01"
+  }
+ ],
+ "ziekerstraat94": [
+  {
+   "adres": "Ziekerstraat 94",
+   "datum": "2018-06-14",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.104906.01"
+  }
+ ],
+ "zijpendaalstraat3": [
+  {
+   "adres": "Zijpendaalstraat 3A",
+   "datum": "2020-10-22",
+   "omschrijving": "verlengen tijdelijk gebruik van het pand tbv kamerverhuur",
+   "soort": "omgevingsvergunning",
+   "zaak": "W.Z20.107869.01"
+  }
+ ],
+ "zwaluwstraat59": [
+  {
+   "adres": "Zwaluwstraat 59",
+   "datum": "2017-04-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z16.103557.01"
+  },
+  {
+   "adres": "Zwaluwstraat 59",
+   "datum": "2019-08-20",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.104426.01"
+  }
+ ],
+ "zwanenveld1601": [
+  {
+   "adres": "Zwanenveld 1601",
+   "datum": "2018-05-03",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100932.01"
+  }
+ ],
+ "zwanenveld1611": [
+  {
+   "adres": "Zwanenveld 1611",
+   "datum": "2019-08-21",
+   "leefbaarheidsonderzoek": true,
+   "soort": "onttrekking",
+   "zaak": "W.Z19.104805.01"
+  }
+ ],
+ "zwanenveld2708": [
+  {
+   "adres": "Zwanenveld 2708",
+   "datum": "2020-07-30",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "W.Z18.100178.01"
+  }
+ ],
+ "zwanenveld3109": [
+  {
+   "adres": "Zwanenveld 3109N",
+   "datum": "2025-02-25",
+   "leefbaarheidsonderzoek": false,
+   "soort": "onttrekking",
+   "zaak": "AB24.01151"
+  }
+ ]
+}
