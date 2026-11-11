@@ -124,70 +124,12 @@ jobs:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           set -o pipefail
-          terugcommitten() {
-          set -x
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          for f in publicatie_velden.json publicatie_velden_stand.json; do
-            [ -f "$f" ] && git add "$f"
-          done
-          if git diff --cached --quiet; then
-            echo "Niets gewijzigd, niets te committen"
-            return 0
-          fi
-          git commit -m "Velden uit de bekendmakingen $(date +%F)"
-          # EEN RONDE DIE GEGEVENS TERUGSCHRIJFT VERANDERT GEEN BRONCODE.
-          # Op 13 oktober draaide een ronde van 102 minuten zes
-          # broncodebestanden en drie eisen terug, omdat zij de hele index
-          # van haar eigen checkout committeerde. Deze toets houdt dat tegen.
-          geen_broncode() {
-            local raakt
-            raakt=$(git diff --name-only HEAD~1 HEAD -- '*.py' '*.yml' 2>/dev/null || true)
-            if [ -n "$raakt" ]; then
-              echo "GESTOPT: deze commit raakt broncode: $raakt"
-              echo "Een ronde die gegevens terugschrijft hoort geen code te veranderen."
-              return 1
-            fi
-            return 0
-          }
-          for poging in 1 2 3; do
-            geen_broncode || return 1
-            if git push; then
-              echo "Teruggecommit gelukt"
-              return 0
-            fi
-            echo "Push mislukt, poging $poging; opnieuw bovenop de remote"
-            git rebase --abort 2>/dev/null || true
-            if ! git fetch origin "${GITHUB_REF_NAME}"; then
-              echo "Kan ${GITHUB_REF_NAME} niet ophalen van de remote"
-              return 1
-            fi
-            # MIXED EN NIET SOFT. Soft laat de hele index van de oude
-            # checkout staan, en dan schrijft de commit die index als nieuwe
-            # boom terug: alles wat tijdens de ronde is gemerged gaat dan
-            # weg. Mixed zet de index leeg en daarna voegen wij alleen onze
-            # eigen bestanden weer toe.
-            git reset "origin/${GITHUB_REF_NAME}"
-            for f in publicatie_velden.json publicatie_velden_stand.json; do
-              [ -f "$f" ] && git add "$f"
-            done
-            # NAMETEN DAT ER NIETS ANDERS IN DE INDEX STAAT. Beloven is niet
-            # genoeg; dit is te toetsen.
-            VREEMD=$(git diff --cached --name-only | grep -v -E '^publicatie_velden(_stand)?\.json$' || true)
-            if [ -n "$VREEMD" ]; then
-              echo "GESTOPT: er staan andere bestanden klaar: $VREEMD"
-              return 1
-            fi
-            if git diff --cached --quiet; then
-              echo "Na het opnieuw zetten is er niets te committen"
-              return 0
-            fi
-            git commit -m "Velden uit de bekendmakingen $(date +%F)"
-          done
-          echo "Na drie pogingen niet gelukt"
-          return 1
-          }
-          terugcommitten 2>&1 | tee -a "$RUNNER_TEMP/ronde.log"
+          # De lus staat in terugcommitten.sh (11 november); dit was een eigen
+          # kopie daarvan.
+          ./terugcommitten.sh "Velden uit de bekendmakingen $(date -u +%F)" \
+            publicatie_velden.json publicatie_velden_stand.json \
+            2>&1 | tee -a "$RUNNER_TEMP/ronde.log"
+          exit "${PIPESTATUS[0]}"
 
       - name: Melden in een issue als er iets is mislukt
         # De reden van een mislukking hoort in een kanaal dat van buiten te
