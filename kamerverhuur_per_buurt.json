@@ -44,9 +44,9 @@
   },
   "Bottendaal": {
    "alleen_melding_of_besluit": 14,
-   "alleen_vergunning": 61,
+   "alleen_vergunning": 62,
    "beide": 3,
-   "totaal": 78
+   "totaal": 79
   },
   "Brakkenstein": {
    "alleen_melding_of_besluit": 3,
@@ -173,12 +173,6 @@
    "alleen_vergunning": 2,
    "beide": 0,
    "totaal": 4
-  },
-  "Methen": {
-   "alleen_melding_of_besluit": 0,
-   "alleen_vergunning": 1,
-   "beide": 0,
-   "totaal": 1
   },
   "Neerbosch-Oost": {
    "alleen_melding_of_besluit": 5,
