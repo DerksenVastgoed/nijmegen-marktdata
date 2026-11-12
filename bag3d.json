@@ -143999,6 +143999,109 @@
    "b3_kwaliteitsindicator": true,
    "identificatie": "NL.IMBAG.Pand.0268100000015211",
    "opgehaald": "2026-11-12"
+  },
+  "0268100000111058": {
+   "leeg": true
+  },
+  "0268100000008088": {
+   "leeg": true
+  },
+  "0268100000016666": {
+   "b3_opp_buitenmuur": 153.6,
+   "b3_opp_dak_plat": 9.56,
+   "b3_opp_dak_schuin": 73.76,
+   "b3_opp_grond": 73.61,
+   "b3_bouwlagen": 3,
+   "b3_h_nok": 31.925127029418945,
+   "b3_h_maaiveld": 23.524999618530273,
+   "b3_dak_type": "slanted",
+   "b3_volume_lod13": 517.62939453125,
+   "b3_kwaliteitsindicator": true,
+   "identificatie": "NL.IMBAG.Pand.0268100000016666",
+   "opgehaald": "2026-11-12"
+  },
+  "0268100000017596": {
+   "b3_opp_buitenmuur": 225.12,
+   "b3_opp_dak_plat": 16.1,
+   "b3_opp_dak_schuin": 126.78,
+   "b3_opp_grond": 103.29,
+   "b3_bouwlagen": 2,
+   "b3_h_nok": 26.001832962036133,
+   "b3_h_maaiveld": 17.820999145507812,
+   "b3_dak_type": "slanted",
+   "b3_volume_lod13": 605.369140625,
+   "b3_kwaliteitsindicator": true,
+   "identificatie": "NL.IMBAG.Pand.0268100000017596",
+   "opgehaald": "2026-11-12"
+  },
+  "0268100000008094": {
+   "leeg": true
+  },
+  "0268100000110741": {
+   "leeg": true
+  },
+  "0268100000018242": {
+   "b3_opp_buitenmuur": 79.48,
+   "b3_opp_dak_plat": 6.18,
+   "b3_opp_dak_schuin": 49.92,
+   "b3_opp_grond": 49.27,
+   "b3_bouwlagen": 3,
+   "b3_h_nok": 17.529651641845703,
+   "b3_h_maaiveld": 9.621000289916992,
+   "b3_dak_type": "slanted",
+   "b3_volume_lod13": 366.69488525390625,
+   "b3_kwaliteitsindicator": true,
+   "identificatie": "NL.IMBAG.Pand.0268100000018242",
+   "opgehaald": "2026-11-12"
+  },
+  "0268100000085775": {
+   "b3_opp_buitenmuur": 1206.39,
+   "b3_opp_dak_plat": 103.29,
+   "b3_opp_dak_schuin": 473.77,
+   "b3_opp_grond": 528.55,
+   "b3_bouwlagen": 3,
+   "b3_h_maaiveld": 9.765000343322754,
+   "b3_dak_type": "slanted",
+   "b3_volume_lod13": 5774.46875,
+   "b3_kwaliteitsindicator": true,
+   "identificatie": "NL.IMBAG.Pand.0268100000085775",
+   "opgehaald": "2026-11-12"
+  },
+  "0268100000106017": {
+   "leeg": true
+  },
+  "0268100000106134": {
+   "leeg": true
+  },
+  "0268100000106864": {
+   "leeg": true
+  },
+  "0268100000109745": {
+   "leeg": true
+  },
+  "0268100000108221": {
+   "leeg": true
+  },
+  "0268100000108327": {
+   "leeg": true
+  },
+  "0268100000108328": {
+   "leeg": true
+  },
+  "0268100000108333": {
+   "leeg": true
+  },
+  "0268100000108334": {
+   "leeg": true
+  },
+  "0268100000108335": {
+   "leeg": true
+  },
+  "0268100000108336": {
+   "leeg": true
+  },
+  "0268100000109484": {
+   "leeg": true
   }
  },
  "bijgewerkt": "2026-11-12",
