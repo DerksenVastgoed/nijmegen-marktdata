@@ -8,7 +8,7 @@
 - asvolgorde omgewisseld: nee
 - zonefeld: **TARIEF_ZONE**
 - velden en hun waarden:
-  - `DD_BIJGEWERKT`: 2026-11-11
+  - `DD_BIJGEWERKT`: 2026-11-12
   - `DD_BRONBESTAND`: , 2025-12-01, 2025-12-03, 2026-01-20, 2026-07-21
   - `ID`: 1, 10, 100, 12, 13, 15, 16, 17, 18, 2, 20, 2000
   - `OPMERKINGEN`: , Bij Hoge School Arnhem en Nijmegen, Ingang via Bijleveldsingel, Let op! Met een parkeervergunning mag u de hele week tussen , Let op! u kunt buiten de openingstijden dit parkeerterrein w, Maximale parkeertijd: 30 minuten, Ter hoogte van Radboud UMC, Voor openingstijden en kosten zie radboudumc.nl, Waalkade is afgesloten. U bereikt de Oude Haven via de Rode , Waalkade is afgesloten. U bereikt parkeerterrein Lage Markt , Westelijk van centrum van Nijmegen, langs spoorlijn, Wijk Ooyse Schependom
@@ -23,7 +23,7 @@
 - asvolgorde omgewisseld: nee
 - zonefeld: **GEBIED**
 - velden en hun waarden:
-  - `DD_BIJGEWERKT`: 2026-11-11
+  - `DD_BIJGEWERKT`: 2026-11-12
   - `DD_BRONBESTAND`: 2024-10-16
   - `GEBIED`: 1e Schil, 2e Schil, Binnenstad, Buitengebied, Centrumgebied, Rest bebouwde kom
   - `ID`: 1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 2
