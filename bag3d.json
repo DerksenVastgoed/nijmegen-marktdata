@@ -144102,9 +144102,25 @@
   },
   "0268100000109484": {
    "leeg": true
+  },
+  "0268100000038674": {
+   "b3_opp_buitenmuur": 258.77,
+   "b3_opp_dak_plat": 26.07,
+   "b3_opp_dak_schuin": 64.27,
+   "b3_opp_grond": 73.56,
+   "b3_bouwlagen": 3,
+   "b3_h_maaiveld": 8.454999923706055,
+   "b3_dak_type": "slanted",
+   "b3_volume_lod13": 531.2151489257812,
+   "b3_kwaliteitsindicator": true,
+   "identificatie": "NL.IMBAG.Pand.0268100000038674",
+   "opgehaald": "2026-11-13"
+  },
+  "0268100000108332": {
+   "leeg": true
   }
  },
- "bijgewerkt": "2026-11-12",
+ "bijgewerkt": "2026-11-13",
  "bron": "3D BAG, TU Delft en 3DGI, op basis van de BAG en het AHN; CC BY 4.0",
  "mislukt": {
   "0268100000106134": 1,
