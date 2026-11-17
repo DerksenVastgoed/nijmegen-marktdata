@@ -4057,6 +4057,18 @@
   "buurt": "St. Anna",
   "straat": "Hatertseweg"
  },
+ "hatertseweg164": {
+  "adres": "Hatertseweg 164",
+  "bronnen": [
+   {
+    "bron": "besluit",
+    "jaar": "2026",
+    "soort": "besluit kamerverhuur"
+   }
+  ],
+  "buurt": "St. Anna",
+  "straat": "Hatertseweg"
+ },
  "hatertseweg175": {
   "adres": "Hatertseweg 175",
   "bronnen": [
@@ -7240,6 +7252,11 @@
     "bron": "vergunning",
     "jaar": "2016",
     "soort": "onttrekking"
+   },
+   {
+    "bron": "besluit",
+    "jaar": "2026",
+    "soort": "besluit kamerverhuur"
    }
   ],
   "buurt": "Nije Veld",
@@ -10234,6 +10251,11 @@
   "adres": "Tweede Oude Heselaan 209",
   "bronnen": [
    {
+    "bron": "melding",
+    "jaar": "2026",
+    "soort": "melding brandveilig gebruik"
+   },
+   {
     "bron": "besluit",
     "jaar": "2026",
     "soort": "besluit kamerverhuur"
@@ -12032,6 +12054,18 @@
     "bron": "vergunning",
     "jaar": "2018",
     "soort": "onttrekking"
+   }
+  ],
+  "buurt": "Nije Veld",
+  "straat": "Willemsweg"
+ },
+ "willemsweg25": {
+  "adres": "Willemsweg 25",
+  "bronnen": [
+   {
+    "bron": "besluit",
+    "jaar": "2026",
+    "soort": "besluit kamerverhuur"
    }
   ],
   "buurt": "Nije Veld",

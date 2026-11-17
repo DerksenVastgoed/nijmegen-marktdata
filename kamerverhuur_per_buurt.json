@@ -3,7 +3,7 @@
   "2023": 13,
   "2024": 1,
   "2025": 102,
-  "2026": 102
+  "2026": 103
  },
  "per_buurt": {
   "'t Acker": {
@@ -181,10 +181,10 @@
    "totaal": 23
   },
   "Nije Veld": {
-   "alleen_melding_of_besluit": 4,
-   "alleen_vergunning": 14,
-   "beide": 0,
-   "totaal": 18
+   "alleen_melding_of_besluit": 5,
+   "alleen_vergunning": 13,
+   "beide": 1,
+   "totaal": 19
   },
   "Ressen": {
    "alleen_melding_of_besluit": 0,
@@ -193,10 +193,10 @@
    "totaal": 1
   },
   "St. Anna": {
-   "alleen_melding_of_besluit": 7,
+   "alleen_melding_of_besluit": 8,
    "alleen_vergunning": 57,
    "beide": 1,
-   "totaal": 65
+   "totaal": 66
   },
   "Stadscentrum": {
    "alleen_melding_of_besluit": 35,
