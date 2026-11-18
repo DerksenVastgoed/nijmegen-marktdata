@@ -3,10 +3,15 @@
 Wat nog niet klopt sinds de splitsing van 11 november 2026.
 
 
-- **Of de geplande tijden van GitHub in deze repo op tijd vuren, is nog niet
-  nagemeten.** In de repo van de brief startte een geplande run tot uren te
-  laat of nooit. De voorraadronde, de publicaties, de cijfers en de velden
-  worden daarom ook van buitenaf gestart door de geplande taken van de brief;
-  regelgeving (zondag) en gezichten (maandag) alleen door hun eigen schema.
-  Nameten na een week: welke runs hebben event "schedule", en hoe laat.
+- **De geplande tijden van GitHub vuren hier uren te laat.** Nagemeten op 18
+  november om 16:20 UTC, runs met event "schedule" vanaf 12 november:
+  cijfers (01:07) tussen 07:30 en 09:00 UTC; publicatievelden (05:25) tussen
+  12:21 en 14:44; voorraad (04:40) tussen 11:42 en 13:47; publicaties (vier
+  keer per dag) 16 keer in plaats van 27; regelgeving (zondag 00:05) om
+  06:16; gezicht (maandag 03:17) om 11:30. Geen dagelijkse workflow sloeg een
+  dag over.
+  Publicaties, cijfers en velden worden daarom door de brief zelf gestart
+  voor hij ze leest. De voorraad draait alleen op zijn eigen cron; een dag
+  oud is daar genoeg (zie voorraad.yml). Regelgeving en gezicht ook; met één
+  run elk is nog niet te zeggen of hun vertraging vast is.
 - **bestemming.yml heeft geen schema**, bewust: hij draait met de hand.
