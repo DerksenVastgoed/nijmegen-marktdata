@@ -10,10 +10,11 @@
 #   bekendmakingen_archief.json  per adres: bekendmakingen over gebruik,
 #                                verbouwing en handhaving, sinds 2012
 #
-# WANNEER. Vier keer per dag, en met de hand. De brief start om 02:48 UTC; de
-# ronde van 01:37 is er dan. Een geplande cron vuurt op GitHub soms uren te
-# laat, daarom start de wachter van de brief deze workflow ook van buitenaf
-# voordat hij de brief start. Hoe oud de gegevens zijn, staat in
+# WANNEER. Vier keer per dag volgens het schema, en met de hand. Het schema
+# is niet te vertrouwen: van 12 november tot 18 november 16:20 UTC vuurde het
+# 16 keer in plaats van 27, vaak uren te laat. Daarom start de brief deze workflow sinds
+# 18 november zelf, vlak voordat hij de gegevens leest, en wacht hij op het
+# resultaat. Hoe oud de gegevens zijn, staat in
 # bekendmakingen_recent.json onder "opgehaald".
 name: Publicaties van Nijmegen
 

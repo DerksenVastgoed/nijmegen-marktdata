@@ -22,8 +22,8 @@
 # de brief pas later gebruikt. Dat hoort niet in dezelfde job als iets dat om
 # 02:48 de deur uit moet.
 #
-# Deze workflow doet alleen de voorraad. Hij draait op werkdagen na de brief en
-# is met de hand te starten voor een snel antwoord.
+# Deze workflow doet alleen de voorraad. Hij draait elke dag op zijn eigen
+# cron en is met de hand te starten voor een snel antwoord.
 
 name: Voorraad van de ring
 
@@ -34,10 +34,20 @@ on:
     # in dezelfde repo. Die botsing bestaat niet meer: de brief draait in een
     # andere repo en werkt voorraad.json niet meer bij.
     #
-    # Deze cron is terugval, geen regeling. Gemeten op 12 oktober 2026 vuurde
-    # hij om 12:25 UTC, 7 uur en 45 minuten te laat. De geplande taak
-    # "Voorraadronde op tijd starten" start de run om 03:18 UTC van buitenaf en
-    # die begint binnen een halve minuut.
+    # DEZE CRON IS DE REGELING, en hij vuurt uren te laat. Gemeten van 12 tot
+    # en met 18 november 2026: tussen 11:42 en 13:47 UTC, 7 tot 9 uur na
+    # 04:40, en geen dag overgeslagen. Dat is geen probleem. De voorraad
+    # verandert per dag weinig (18 november: 5 nieuwe en 29 bijgewerkte van
+    # 24.455 woningen) en de brief van 02:48 UTC las ook vroeger al de ronde
+    # van de dag ervoor.
+    #
+    # Tot 14 november startte een geplande taak buiten deze repo ("Voorraadronde
+    # op tijd starten") de run om 03:18 UTC van buitenaf. Die is op 18 november
+    # verwijderd: hij startte na de brief, dus maakte de brief niet verser, en
+    # hij had gereedschap nodig (add_repo) dat op 16 en 18 november ontbrak.
+    # Zet hem niet terug zonder dat er iets is dat de voorraad eerder nodig
+    # heeft dan rond 13:00 UTC. Of de ronde loopt, meet het gezondheidsrapport
+    # van de brief.
     #
     # Hier staat met opzet geen toets "is er vandaag al een ronde geweest",
     # anders dan bij de brief. Een tweede ronde op dezelfde dag stuurt niemand
