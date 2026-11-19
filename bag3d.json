@@ -144270,9 +144270,37 @@
    "b3_kwaliteitsindicator": true,
    "identificatie": "NL.IMBAG.Pand.0268100000008550",
    "opgehaald": "2026-11-18"
+  },
+  "0268100000014151": {
+   "b3_opp_buitenmuur": 188.23,
+   "b3_opp_dak_plat": 19.52,
+   "b3_opp_dak_schuin": 69.43,
+   "b3_opp_grond": 58.31,
+   "b3_bouwlagen": 3,
+   "b3_h_nok": 34.67768859863281,
+   "b3_h_maaiveld": 23.260000228881836,
+   "b3_dak_type": "slanted",
+   "b3_volume_lod13": 508.157470703125,
+   "b3_kwaliteitsindicator": true,
+   "identificatie": "NL.IMBAG.Pand.0268100000014151",
+   "opgehaald": "2026-11-19"
+  },
+  "0268100000035346": {
+   "b3_opp_buitenmuur": 219.14,
+   "b3_opp_dak_plat": 11.44,
+   "b3_opp_dak_schuin": 145.75,
+   "b3_opp_grond": 125.23,
+   "b3_bouwlagen": 3,
+   "b3_h_nok": 17.138263702392578,
+   "b3_h_maaiveld": 8.23799991607666,
+   "b3_dak_type": "slanted",
+   "b3_volume_lod13": 837.7080078125,
+   "b3_kwaliteitsindicator": true,
+   "identificatie": "NL.IMBAG.Pand.0268100000035346",
+   "opgehaald": "2026-11-19"
   }
  },
- "bijgewerkt": "2026-11-18",
+ "bijgewerkt": "2026-11-19",
  "bron": "3D BAG, TU Delft en 3DGI, op basis van de BAG en het AHN; CC BY 4.0",
  "mislukt": {
   "0268100000106134": 1,
