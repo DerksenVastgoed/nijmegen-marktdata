@@ -1,6 +1,6 @@
 {
- "opgehaald": "2026-11-20T21:29:07+00:00",
- "vanaf": "2026-10-21",
+ "opgehaald": "2026-11-21T02:49:06+00:00",
+ "vanaf": "2026-10-22",
  "bron": "https://repository.overheid.nl/sru",
  "records": [
   {
@@ -2932,6 +2932,12 @@
    "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-496910.html"
   },
   {
+   "titel": "uitschrijving basisregistratie personen",
+   "datum": "2026-10-22",
+   "type": "uitschrijving basisregistratie personen",
+   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492582.html"
+  },
+  {
    "titel": "Vrijgekomen dag voor een marktplaats in Hatert",
    "datum": "2026-10-22",
    "type": "andere voorlichtingsinformatie",
@@ -3058,12 +3064,6 @@
    "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-494910.html"
   },
   {
-   "titel": "Beschikking ambtshalve uitschrijving uit de basisregistratie personen",
-   "datum": "2026-10-22",
-   "type": "uitschrijving basisregistratie personen",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492582.html"
-  },
-  {
    "titel": "Algemene plaatselijke verordening gemeente Nijmegen",
    "datum": "2026-10-22",
    "type": "algemeen verbindend voorschrift (verordening)",
@@ -3110,162 +3110,6 @@
    "datum": "2026-10-22",
    "type": "omgevingsvergunning",
    "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-494331.html"
-  },
-  {
-   "titel": "Verzoek voor omgevingsvergunning aan Pastoor Wichersstraat 17, 6525TL Nijmegen is vergunningsvrij",
-   "datum": "2026-10-21",
-   "type": "andere vergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-490400.html"
-  },
-  {
-   "titel": "Vergunning verleend - wijziging leidinggevende alcoholvergunning - Grote Markt 34 te Nijmegen",
-   "datum": "2026-10-21",
-   "type": "andere beschikking",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-490603.html"
-  },
-  {
-   "titel": "Vergunning verleend - wijziging leidinggevende alcoholvergunning - Dennenstraat 17 te Nijmegen",
-   "datum": "2026-10-21",
-   "type": "andere beschikking",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491818.html"
-  },
-  {
-   "titel": "Sloopmelding hoogspanningsmasten trace Bemmel Nijmegen, aan Woerdsestraat, Verlengde Herckenrathweg, Parksingel, Heuvelsestraat, Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsmelding",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492024.html"
-  },
-  {
-   "titel": "Sloopmelding geheel slopen 2 maisonettegebouwen, aan Balladestraat 1-143 (oneven), Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsmelding",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492166.html"
-  },
-  {
-   "titel": "Melding voor het verwijderen van asbest (regulier) 3/3 op de locatie Zwanenveld 2304-2329-2358-2604-2613-3018-3403-3413-3546-3554 te Nijmegen zaaknummer Z26MA.2295",
-   "datum": "2026-10-21",
-   "type": "omgevingsmelding",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-489965.html"
-  },
-  {
-   "titel": "Melding voor het verwijderen van asbest (particulier) op de locatie Hazenkampseweg 96 te Nijmegen zaaknummer Z26MA.2267",
-   "datum": "2026-10-21",
-   "type": "omgevingsmelding",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-489961.html"
-  },
-  {
-   "titel": "Melding voor het verwijderen van asbest (mutatiewoning) op de locatie Weezenhof 8302 te Nijmegen zaaknummer Z26MA.2274",
-   "datum": "2026-10-21",
-   "type": "omgevingsmelding",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-489963.html"
-  },
-  {
-   "titel": "Melding voor het toepassen van grond of baggerspecie op de locatie Kadastraal perceel LEN00-A-4438, nabij Bekkersland te Lent zaaknummer Z26MA.2282",
-   "datum": "2026-10-21",
-   "type": "omgevingsmelding",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-489964.html"
-  },
-  {
-   "titel": "Melding voor het op de landbodem opslaan, zeven, mechanisch ontwateren of samenvoegen van zonder bewerking herbruikbare grond of baggerspecie op de locatie nabij Bekkersland te Lent zaaknummer Z26MA.2273",
-   "datum": "2026-10-21",
-   "type": "omgevingsmelding",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-489962.html"
-  },
-  {
-   "titel": "Melding bouwmelding Wkb voor het herbouwen van een woning op de bestaande fundering, aan Huygensweg 27, 6522HK Nijmegen",
-   "datum": "2026-10-21",
-   "type": "andere melding",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492295.html"
-  },
-  {
-   "titel": "Kennisgeving termijnverlenging Z2026-00003662, Reijershofstraat 1, 6663BX Lent",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-490449.html"
-  },
-  {
-   "titel": "Intrekking verzoek voor Plaatsen bouwobjecten Tweede Walstraat 27H vanaf 21-08-2026 t/m 28-08-2026",
-   "datum": "2026-10-21",
-   "type": "andere vergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492250.html"
-  },
-  {
-   "titel": "Besluit voor het wijzigen van de constructie op de begane grond , aan Groesbeeksedwarsweg 161, 6521DG Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491084.html"
-  },
-  {
-   "titel": "Besluit voor het vergroten van de kelder, aan Witsenburgselaan 18, 6524TJ Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491013.html"
-  },
-  {
-   "titel": "Besluit voor het realiseren van een brandscheiding en het uitbreiden met een verdiepingsvloer, aan Winselingseweg 12, 6541AK Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492167.html"
-  },
-  {
-   "titel": "Besluit voor het realiseren van 3 gastenkamers , aan St. Anthoniusplaats 10, 6511TR Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491216.html"
-  },
-  {
-   "titel": "Besluit voor het plaatsen van een nieuw raam, aan Oranjesingel 34, 6511NV Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491187.html"
-  },
-  {
-   "titel": "Besluit voor 'Plaatsen puinbak aan de Semmelinkstraat 21 te Nijmegen van 19-10-26 t/m 19-01-27'",
-   "datum": "2026-10-21",
-   "type": "andere vergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491207.html"
-  },
-  {
-   "titel": "Besluit voor 'Plaatsen bouwobjecten aan de Merwedestraat 1 t/m 20 te Nijmegen van 19-10-26 t/m 12-02-27'",
-   "datum": "2026-10-21",
-   "type": "andere vergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492193.html"
-  },
-  {
-   "titel": "Aanvraag omgevingsvergunning voor het wijzigen van de winkelpui in de voorgevel bij een gemeentelijk monument, aan Molenstraat 44, 6511HE Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491180.html"
-  },
-  {
-   "titel": "Aanvraag omgevingsvergunning voor het vervangen van de kozijnen en het realiseren van een berging aan de voorzijde, aan Horstacker 2135, 6546GE Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491712.html"
-  },
-  {
-   "titel": "Aanvraag omgevingsvergunning voor het verhuren van 4 kamers in de woning , aan Sneeuwhaasstraat 4, 6531MW Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491058.html"
-  },
-  {
-   "titel": "Aanvraag omgevingsvergunning voor het kappen van een boom aan de Annabellastraat 39, 6515CG in Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492027.html"
-  },
-  {
-   "titel": "Aanvraag omgevingsvergunning voor het kappen van bomen naast de Oude Dukenburgseweg, in Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-492006.html"
-  },
-  {
-   "titel": "Aanvraag omgevingsvergunning voor geschakelde woning: realiseren extra verdieping op de woning, aan Troelstrastraat 3, 6535XL Nijmegen",
-   "datum": "2026-10-21",
-   "type": "omgevingsvergunning",
-   "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-491957.html"
   }
  ],
  "fout": ""
