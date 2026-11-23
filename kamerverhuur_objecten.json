@@ -103,6 +103,11 @@
   "bronnen": [
    {
     "bron": "melding",
+    "jaar": "2026",
+    "soort": "melding brandveilig gebruik"
+   },
+   {
+    "bron": "melding",
     "jaar": "2025",
     "soort": "melding brandveilig gebruik"
    }
