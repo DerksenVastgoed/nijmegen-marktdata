@@ -537,6 +537,12 @@ def main():
 
     oude_stand = _lees(STAND_PAD, {})
     al_gemeld = nieuwe_titels(oude_stand, resultaten)
+    # In het log welke lijststukken nieuw waren, ook als het filter ze liet
+    # liggen: dan is na te gaan of het filter iets mist. Op 24 november stonden
+    # er twee nieuwe punten op de termijnagenda en kwam er niets in de
+    # meldingen, en was niet te zien welke het waren.
+    for titel in al_gemeld:
+        print(f"  nieuw op een lijst: {_schoon(titel)[:100]}", file=sys.stderr)
     stand, regels = verwerk(oude_stand, resultaten, nu)
     stand, docregels = verwerk_zoeken(stand, zoekresultaten, nu, al_gemeld)
     with open(STAND_PAD, "w", encoding="utf-8") as f:

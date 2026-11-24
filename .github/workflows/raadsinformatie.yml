@@ -19,7 +19,8 @@
 #
 # DUUR. robots.txt van het portaal vraagt vijf seconden tussen verzoeken. Zes
 # lijsten, samen ongeveer zestig bladzijden, en daarna tien zoektermen van
-# hooguit drie pagina's: op de testtak gemeten in de PR.
+# hooguit drie pagina's. Gemeten op 24 november 2026 (run 45488894225):
+# tien en een halve minuut.
 name: Raadsinformatie
 
 on:
