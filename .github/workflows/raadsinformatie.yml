@@ -18,7 +18,9 @@
 # wijziging meteen tegen het echte portaal wordt nagemeten.
 #
 # DUUR. robots.txt van het portaal vraagt vijf seconden tussen verzoeken. Zes
-# lijsten, samen ongeveer zestig bladzijden: zo'n vijf minuten.
+# lijsten, samen ongeveer zestig bladzijden, en daarna tien zoektermen van
+# hooguit drie pagina's. Gemeten op 24 november 2026 (run 45488894225):
+# tien en een halve minuut.
 name: Raadsinformatie
 
 on:
