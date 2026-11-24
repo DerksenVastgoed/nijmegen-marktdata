@@ -537,9 +537,9 @@
    "ff897113-38e2-456b-8f58-e289575a472a",
    "ff8eef2e-ecf1-4540-9124-b6b751406e1d"
   ],
-  "laatste_poging": "2026-11-24T14:02Z",
+  "laatste_poging": "2026-11-24T14:08Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T14:02Z"
+  "opgehaald": "2026-11-24T14:08Z"
  },
  "initiatiefvoorstellen": {
   "aantal_op_portaal": 34,
@@ -579,13 +579,12 @@
    "e286700c-0aee-4dbf-9ad2-046fe2c49b3a",
    "f745896d-0852-439d-aa09-f85179314c1b"
   ],
-  "laatste_poging": "2026-11-24T14:02Z",
+  "laatste_poging": "2026-11-24T14:08Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T14:02Z"
+  "opgehaald": "2026-11-24T14:08Z"
  },
  "moties": {
   "aantal_op_portaal": 1625,
-  "fout": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
   "gezien": [
    "0048ad02-3d01-450e-8b49-a469ab5d0cc5",
    "0072ed51-9209-4438-a440-fe9596c71f73",
@@ -2213,13 +2212,12 @@
    "ff922f50-7f5e-4d84-88ba-a960cd77e8f1",
    "ffdb35d5-00d7-49b9-b497-9539b9a7a3ab"
   ],
-  "laatste_poging": "2026-11-24T14:02Z",
+  "laatste_poging": "2026-11-24T14:08Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T13:55Z"
+  "opgehaald": "2026-11-24T14:08Z"
  },
  "schriftelijke_vragen": {
   "aantal_op_portaal": 899,
-  "fout": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
   "gezien": [
    "007712ee-7bb3-4801-b6bc-523e74ed059f",
    "00baa082-547f-4dea-a2b9-a2a606727720",
@@ -3121,9 +3119,9 @@
    "ffa269d2-e961-4dac-a4ad-04262aa8701b",
    "ffd5b1f3-8464-48be-9d7c-b31dfb8fb6ff"
   ],
-  "laatste_poging": "2026-11-24T14:02Z",
+  "laatste_poging": "2026-11-24T14:08Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T13:55Z"
+  "opgehaald": "2026-11-24T14:08Z"
  },
  "termijnagenda": {
   "aantal_op_portaal": 899,
@@ -4028,9 +4026,9 @@
    "ff6210c6-36c4-4238-bad5-cc0904fd83b8",
    "ffaafeca-4d7d-48ca-9c2b-389ab7b0243c"
   ],
-  "laatste_poging": "2026-11-24T14:02Z",
+  "laatste_poging": "2026-11-24T14:08Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T14:02Z"
+  "opgehaald": "2026-11-24T14:08Z"
  },
  "toezeggingen": {
   "aantal_op_portaal": 1828,
@@ -5864,8 +5862,8 @@
    "ffcd8031-fc12-4087-a98b-639c8fe3b50e",
    "ffd4b4a3-dffe-4d92-89e0-048a27587f42"
   ],
-  "laatste_poging": "2026-11-24T14:02Z",
+  "laatste_poging": "2026-11-24T14:08Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T14:02Z"
+  "opgehaald": "2026-11-24T14:08Z"
  }
 }
