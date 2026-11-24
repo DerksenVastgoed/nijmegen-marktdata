@@ -185,6 +185,37 @@ def regel(naam, rij, reden):
     return tekst
 
 
+def _bladzijde(s, lijst_id, start, pauze, pogingen=3):
+    """
+    Een bladzijde, met herhaalpogingen.
+
+    WAAROM. De tweede ronde op 24 november 2026 (run 45409724212) verloor
+    moties en schriftelijke vragen aan "Remote end closed connection without
+    response", midden in een lijst, terwijl de ronde ervoor alles las. Een
+    hele lijst opgeven om een losse verbroken verbinding is te veel; drie
+    keer proberen met oplopende pauze, en pas daarna opgeven.
+    """
+    laatste = None
+    for poging in range(1, pogingen + 1):
+        try:
+            r = s.post(f"{BASIS}/Reports/GetReportData/{lijst_id}",
+                       data={"draw": 1, "start": start, "length": PAGINA},
+                       headers=HEADERS, timeout=(15, 60))
+            if r.status_code != 200:
+                raise RuntimeError(f"HTTP {r.status_code} bij start={start}: "
+                                   f"{r.text[:120]!r}")
+            try:
+                return r.json()
+            except Exception:
+                raise RuntimeError(f"geen JSON bij start={start}: "
+                                   f"{r.text[:120]!r}")
+        except Exception as e:
+            laatste = e
+            if poging < pogingen:
+                time.sleep(pauze * 2 * poging)
+    raise RuntimeError(f"na {pogingen} pogingen: {laatste}")
+
+
 def haal_lijst(lijst_id, sessie=None, pauze=PAUZE):
     """
     Alle rijen van een lijst, bladzijde voor bladzijde.
@@ -197,16 +228,7 @@ def haal_lijst(lijst_id, sessie=None, pauze=PAUZE):
     s = sessie or requests.Session()
     rijen, totaal, start = [], None, 0
     while True:
-        r = s.post(f"{BASIS}/Reports/GetReportData/{lijst_id}",
-                   data={"draw": 1, "start": start, "length": PAGINA},
-                   headers=HEADERS, timeout=(15, 60))
-        if r.status_code != 200:
-            raise RuntimeError(f"HTTP {r.status_code} bij start={start}: "
-                               f"{r.text[:120]!r}")
-        try:
-            j = r.json()
-        except Exception:
-            raise RuntimeError(f"geen JSON bij start={start}: {r.text[:120]!r}")
+        j = _bladzijde(s, lijst_id, start, pauze)
         totaal = j.get("recordsTotal")
         deel = j.get("data") or []
         rijen.extend(deel)
