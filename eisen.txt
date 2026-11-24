@@ -705,6 +705,25 @@ waarom: 24 november 2026. Op 25 september misten we een aangekondigde
   tussen mislukt en leeg komen na een storing alle stukken opnieuw.
 proef: raadsinformatie:de nulmeting meldt; raadsinformatie:een mislukte ronde wist wat we al zagen; raadsinformatie:filter neemt een stuk mee dat er niet over gaat
 soort: gegevens
-let op: het filter leest titel, beleidsveld en stand van zaken, niet de
-  tekst van raadsvoorstellen of notulen. Een woord dat alleen in een bijlage
-  valt, ziet het niet.
+let op: het filter op de lijsten leest titel, beleidsveld en stand van
+  zaken. De volledige tekst komt uit de zoekfunctie, alleen op ZOEKTERMEN
+  (zie de volgende eis).
+
+---
+eis: Een raadsdocument waarin een zoekterm staat, komt een keer in de
+  meldingen, ook als hetzelfde stuk onder een ander id aan een tweede
+  vergadering hangt. Een antwoord van de zoekfunctie dat geen treffers heeft
+  en ook niet "Geen resultaten gevonden" zegt, telt als niet gelezen. Na
+  MAX_DOCUMENTEN regels komen alleen nog titels.
+waarom: 24 november 2026. Gemeten over drie maanden: 146 unieke documenten
+  bij elf termen, in golven van 41 en 34 per week. Het raadsvoorstel
+  huisvestingsverordening stond onder drie id's, de motie over verkamerde
+  panden als Overzichtsitem en als document "M ...". Zonder ontdubbelen en
+  afkappen staat een golf drie keer in de brief; zonder het onderscheid
+  tussen leeg en onleesbaar maakt een nieuw ontwerp van het portaal de
+  monitor stil zonder dat iemand het ziet.
+proef: raadsinformatie:een nieuw document komt niet precies een keer; raadsinformatie:een foutpagina telt als 'geen treffers'; raadsinformatie:een golf documenten wordt niet afgekapt
+soort: gegevens
+let op: de datum bij een treffer is die van de vergadering, niet van
+  publicatie. Een nieuw stuk bij een oude vergadering dat niet op de eerste
+  drie pagina's van een term staat, ziet hij niet.
