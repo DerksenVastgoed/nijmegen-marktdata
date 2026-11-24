@@ -497,6 +497,18 @@
   "buurt": "Hunnerberg",
   "straat": "Berg en Dalseweg"
  },
+ "bergendalseweg25": {
+  "adres": "Berg en Dalseweg 25",
+  "bronnen": [
+   {
+    "bron": "melding",
+    "jaar": "2026",
+    "soort": "melding brandveilig gebruik"
+   }
+  ],
+  "buurt": "Hunnerberg",
+  "straat": "Berg en Dalseweg"
+ },
  "bergendalseweg287": {
   "adres": "Berg en Dalseweg 287",
   "bronnen": [
@@ -9676,6 +9688,18 @@
   "buurt": "Stadscentrum",
   "straat": "St. Josephhof"
  },
+ "ststephanusstraat1": {
+  "adres": "St. Stephanusstraat 1",
+  "bronnen": [
+   {
+    "bron": "melding",
+    "jaar": "2026",
+    "soort": "melding brandveilig gebruik"
+   }
+  ],
+  "buurt": "Bottendaal",
+  "straat": "St. Stephanusstraat"
+ },
  "ststephanusstraat11": {
   "adres": "St. Stephanusstraat 11",
   "bronnen": [
@@ -12258,6 +12282,18 @@
    {
     "bron": "besluit",
     "jaar": "2023",
+    "soort": "besluit kamerverhuur"
+   }
+  ],
+  "buurt": "Wolfskuil",
+  "straat": "Wolfskuilseweg"
+ },
+ "wolfskuilseweg83": {
+  "adres": "Wolfskuilseweg 83",
+  "bronnen": [
+   {
+    "bron": "besluit",
+    "jaar": "2026",
     "soort": "besluit kamerverhuur"
    }
   ],

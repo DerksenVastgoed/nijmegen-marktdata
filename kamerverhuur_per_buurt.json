@@ -3,7 +3,7 @@
   "2023": 13,
   "2024": 1,
   "2025": 102,
-  "2026": 105
+  "2026": 107
  },
  "per_buurt": {
   "'t Acker": {
@@ -43,10 +43,10 @@
    "totaal": 46
   },
   "Bottendaal": {
-   "alleen_melding_of_besluit": 14,
+   "alleen_melding_of_besluit": 15,
    "alleen_vergunning": 62,
    "beide": 3,
-   "totaal": 79
+   "totaal": 80
   },
   "Brakkenstein": {
    "alleen_melding_of_besluit": 3,
@@ -133,10 +133,10 @@
    "totaal": 43
   },
   "Hunnerberg": {
-   "alleen_melding_of_besluit": 12,
+   "alleen_melding_of_besluit": 13,
    "alleen_vergunning": 38,
    "beide": 2,
-   "totaal": 52
+   "totaal": 53
   },
   "Kerkenbos": {
    "alleen_melding_of_besluit": 1,
@@ -211,10 +211,10 @@
    "totaal": 7
   },
   "Wolfskuil": {
-   "alleen_melding_of_besluit": 6,
+   "alleen_melding_of_besluit": 7,
    "alleen_vergunning": 20,
    "beide": 0,
-   "totaal": 26
+   "totaal": 27
   },
   "Zwanenveld": {
    "alleen_melding_of_besluit": 2,
