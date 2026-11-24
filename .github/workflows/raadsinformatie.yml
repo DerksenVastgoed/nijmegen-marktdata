@@ -1,0 +1,95 @@
+# Wat er in de gemeenteraad van Nijmegen speelt over wonen en vastgoed.
+#
+# WAAROM. Een besluit staat in de bekendmakingen als het genomen is. In de raad
+# is het dan al maanden een onderwerp: een motie, schriftelijke vragen, een
+# voorstel op de termijnagenda. Zie de docstring van raadsinformatie.py.
+#
+# WAT HIJ MAAKT.
+#   raadsinformatie_stand.json      per lijst wat we al zagen en of het lukte
+#   raadsinformatie_meldingen.json  nieuwe stukken over wonen en vastgoed, met
+#                                   datum; de brief meldt ze een keer
+#
+# WANNEER. Elke dag om 04:41 UTC, ruim voor de brief van 07:00 Nederlandse
+# tijd. Een keer per dag is genoeg en ook nodig: meldingen.py in de brief
+# onthoudt tot welke DATUM hij gemeld heeft, dus een tweede ronde op een dag
+# waarop de brief al gelezen heeft, wordt pas gezien als er de volgende dag
+# een nieuwe melding komt. Start hem dus niet met de hand na zevenen.
+# Ook bij een push die de module of deze workflow verandert, zodat een
+# wijziging meteen tegen het echte portaal wordt nagemeten.
+#
+# DUUR. robots.txt van het portaal vraagt vijf seconden tussen verzoeken. Zes
+# lijsten, samen ongeveer zestig bladzijden: zo'n vijf minuten.
+name: Raadsinformatie
+
+on:
+  schedule:
+    - cron: "41 4 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - raadsinformatie.py
+      - .github/workflows/raadsinformatie.yml
+
+concurrency:
+  group: raadsinformatie
+  cancel-in-progress: false
+
+jobs:
+  raadsinformatie:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Repo ophalen
+        uses: actions/checkout@v4
+
+      - name: Python klaarzetten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencies installeren
+        run: pip install requests
+
+      - name: De proef, voordat er iets wordt opgehaald
+        run: python raadsinformatie.py --proef
+
+      - name: Lijsten van het raadsportaal ophalen
+        # Mislukt een lijst, dan blijft wat we al zagen staan en komt de reden
+        # in de stand en in diagnose/raadsinformatie.txt. De stap wordt rood,
+        # het terugcommitten loopt door, en de meldstap zet het in een issue.
+        id: raad
+        continue-on-error: true
+        run: python raadsinformatie.py
+
+      - name: Terugcommitten
+        run: |
+          set -o pipefail
+          ./terugcommitten.sh "Raadsinformatie $(date -u +%F)" \
+            raadsinformatie_stand.json raadsinformatie_meldingen.json \
+            diagnose/raadsinformatie.txt \
+            2>&1 | tee /tmp/terugcommit.log
+          exit "${PIPESTATUS[0]}"
+
+      - name: Melden in een issue als er iets is mislukt
+        if: failure() || steps.raad.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          KOP="Raadsinformatie niet gelezen op $(date -u +%F)"
+          {
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo '```'
+            cat diagnose/raadsinformatie.txt 2>/dev/null || true
+            tail -c 1500 /tmp/terugcommit.log 2>/dev/null || true
+            echo '```'
+          } > /tmp/melding.md
+          BESTAAND=$(gh issue list --state open --search "$KOP in:title" \
+            --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$BESTAAND" ] && [ "$BESTAAND" != "null" ]; then
+            gh issue comment "$BESTAAND" --body-file /tmp/melding.md
+          else
+            gh issue create --title "$KOP" --body-file /tmp/melding.md
+          fi

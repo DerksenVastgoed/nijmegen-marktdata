@@ -690,3 +690,21 @@ soort: gegevens
 let op: dat het zoekprofiel, HubSpot en de beheer-app geen eigen lijst hebben,
   meten die repo's zelf na. KEUZES in wijken.py is onze indeling; welke
   buurten in een CBS-wijk liggen, komt van het CBS en staat niet in de code.
+
+---
+eis: Een stuk van de gemeenteraad komt een keer in de meldingen, als het
+  nieuw is en over wonen of vastgoed gaat. Een lijst die niet gelezen kon
+  worden telt nooit als "niets nieuws", en de eerste keer dat een lijst wordt
+  gelezen is een nulmeting zonder meldingen.
+waarom: 24 november 2026. Op 25 september misten we een aangekondigde
+  wijziging van het omgevingsplan over short stay, omdat we geen raadsstukken
+  volgden; een koppeling werd toen niet gebouwd bij gebrek aan een testbare
+  ingang. Die ingang is er (iBabs, /Reports/GetReportData). Gemeten op die
+  dag stonden er 1.625 moties en 899 punten op de termijnagenda: zonder
+  nulmeting staan die op dag een allemaal in de brief, en zonder onderscheid
+  tussen mislukt en leeg komen na een storing alle stukken opnieuw.
+proef: raadsinformatie:de nulmeting meldt; raadsinformatie:een mislukte ronde wist wat we al zagen; raadsinformatie:filter neemt een stuk mee dat er niet over gaat
+soort: gegevens
+let op: het filter leest titel, beleidsveld en stand van zaken, niet de
+  tekst van raadsvoorstellen of notulen. Een woord dat alleen in een bijlage
+  valt, ziet het niet.
