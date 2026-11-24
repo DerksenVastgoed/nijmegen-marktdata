@@ -1,25 +1,31 @@
-import re, requests, time, html as H, datetime as dt
+import re, requests, time, html as H, datetime as dt, collections
 B="https://nijmegen.bestuurlijkeinformatie.nl"
 MND={m:i+1 for i,m in enumerate("januari februari maart april mei juni juli augustus september oktober november december".split())}
 s=requests.Session(); s.headers["User-Agent"]="NijmegenVastgoedMonitor/1.0"
 h=s.get(B+"/Search",timeout=60).text
 tok=re.search(r'name="__RequestVerificationToken" type="hidden" value="([^"]+)"',h).group(1)
-TERMEN=["splits*","verkamer*","kamerverhuur","onzelfstandig*","opkoopbescherming","short stay","vakantieverhuur","huisvestingsverordening","transformatie","optoppen","middenhuur","erfpacht","woningsplitsing","omgevingsplan","plint*","leegstand"]
+TERMEN=["verkamer*","kamerverhuur","onzelfstandig*","woningsplitsing","splitsen","opkoopbescherming","short stay","middenhuur","optoppen","plint*","huisvestingsverordening"]
 grens=dt.date(2026,8,26)
+docs={}
 for term in TERMEN:
-    data=[]; totaal=None
-    for page in range(1,6):
+    for page in range(1,13):
         time.sleep(5)
-        r=s.post(B+"/Search/Results",data={"Page":page,"Query":term,"OrderBy":"1","__RequestVerificationToken":tok},headers={"X-Requested-With":"XMLHttpRequest"},timeout=60)
-        t=r.text
-        m=re.search(r'van (\d+) resultaten',t); totaal=m.group(1) if m else totaal
-        ds=[]
-        for p in re.finditer(r'<p>\s*(\d{1,2}) (\w+) (\d{4}) --',t):
-            try: ds.append(dt.date(int(p.group(3)),MND[p.group(2)],int(p.group(1))))
-            except Exception: pass
-        titels=[H.unescape(re.sub(r'<[^>]+>',' ',x)).split() for x in re.findall(r'<h3.*?</h3>',t,re.S)]
-        data+=list(zip(ds,[" ".join(x)[:70] for x in titels]))
-        if not ds or min(ds)<grens: break
-    recent=[x for x in data if x[0]>=grens]
-    print("TERM",term,"totaal",totaal,"sinds 26-08:",len(recent),"(pagina's gelezen tot",min([d for d,_ in data]) if data else None,")")
-    for d,ti in recent[:6]: print("   ",d,ti)
+        t=s.post(B+"/Search/Results",data={"Page":page,"Query":term,"OrderBy":"1","__RequestVerificationToken":tok},headers={"X-Requested-With":"XMLHttpRequest"},timeout=60).text
+        panels=re.split(r'<div class="panel" aria-live',t)[1:]
+        if not panels: break
+        oud=False
+        for p in panels:
+            href=re.search(r'href="([^"]+)"',p); m=re.search(r'<p>\s*(\d{1,2}) (\w+) (\d{4}) --',p)
+            ti=" ".join(H.unescape(re.sub(r'<[^>]+>',' ',re.search(r'<h3.*?</h3>',p,re.S).group(0))).split())[:80]
+            soort=re.search(r'aria-label="([^"]+)"',p); 
+            if not (href and m): continue
+            d=dt.date(int(m.group(3)),MND[m.group(2)],int(m.group(1)))
+            if d<grens: oud=True; continue
+            k=H.unescape(href.group(1))
+            docs.setdefault(k,{"d":d,"t":ti,"s":soort.group(1) if soort else "?","termen":set()})["termen"].add(term)
+        if oud: break
+print("UNIEK sinds 26-08:",len(docs))
+print("SOORT",collections.Counter(v["s"] for v in docs.values()))
+wk=collections.Counter(v["d"].isocalendar()[1] for v in docs.values()); print("PERWEEK",sorted(wk.items()))
+for term in TERMEN: print("ALLEEN",term,sum(1 for v in docs.values() if v["termen"]=={term}), "totaal", sum(1 for v in docs.values() if term in v["termen"]))
+for k,v in sorted(docs.items(),key=lambda x:x[1]["d"],reverse=True): print("DOC",v["d"],v["s"][:5],"|",v["t"],"|",",".join(sorted(v["termen"])))
