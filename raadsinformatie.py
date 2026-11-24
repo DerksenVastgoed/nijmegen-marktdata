@@ -289,6 +289,14 @@ def main():
     with open(STAND_PAD, "w", encoding="utf-8") as f:
         json.dump(stand, f, ensure_ascii=False, indent=1, sort_keys=True)
 
+    # HET BESTAND IS ER OOK ZONDER MELDING. De brief leest een ontbrekend
+    # meldingenbestand als "niet gekeken" (meldingen.py daar). Na de nulmeting
+    # zijn er nog geen meldingen; zonder dit lege bestand stond de brief dan
+    # elke ochtend "overgeslagen" te melden terwijl alles goed ging.
+    if not os.path.exists(MELDINGEN_PAD) and not all(
+            isinstance(u, Exception) for u in resultaten.values()):
+        with open(MELDINGEN_PAD, "w", encoding="utf-8") as f:
+            json.dump([], f)
     if regels:
         from regelgeving_monitor import voeg_melding_toe
         kop = ("**Gemeenteraad Nijmegen: nieuw over wonen en vastgoed** "
