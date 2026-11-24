@@ -320,6 +320,11 @@ ZOEKTERMEN = (
 )
 ZOEK_PAGINAS = 3
 MAX_DOCUMENTEN = 12   # daarna alleen titels, zodat een golf de brief niet vult
+# Hoe lang een melding hooguit is. De brief leest dit getal hier uit voor de
+# grens waarop hij het digest afkapt (brief_verhalend.py daar), zodat de twee
+# niet uiteenlopen. pas_in() dwingt het af, ook bij titels die het portaal
+# niet inkort.
+MAX_TEKENS = 7000
 _MAANDEN = {m: i + 1 for i, m in enumerate(
     "januari februari maart april mei juni juli augustus september oktober "
     "november december".split())}
@@ -480,6 +485,23 @@ def verwerk_zoeken(stand, resultaten, nu, al_gemeld=()):
     return stand, regels
 
 
+def pas_in(regels, budget):
+    """
+    Regels tot ze samen in budget passen; wat niet past wordt een slotregel
+    met het aantal. Een regel die alleen al te lang is, wordt ingekort.
+    """
+    uit, lengte = [], 0
+    for i, r in enumerate(regels):
+        r = r if len(r) <= budget // 2 else r[:budget // 2 - 3] + "..."
+        if lengte + len(r) + 1 > budget - 80:
+            uit.append(f"- En nog {len(regels) - i} regels die niet meer in "
+                       f"deze melding passen; zie het raadsportaal {BASIS}")
+            return uit
+        uit.append(r)
+        lengte += len(r) + 1
+    return uit
+
+
 def nieuwe_titels(stand, resultaten):
     """Titels van lijststukken die deze ronde nieuw zijn, voor het ontdubbelen."""
     uit = []
@@ -489,6 +511,32 @@ def nieuwe_titels(stand, resultaten):
         gezien = set(stand[naam]["gezien"])
         uit += [r.get("title") or "" for r in rijen if r.get("DT_RowId") not in gezien]
     return uit
+
+
+KOP_LIJSTEN = ("**Gemeenteraad Nijmegen: nieuw over wonen en vastgoed** (op "
+               "titel en beleidsveld geselecteerd; tussen haken staat waarop)")
+KOP_DOCUMENTEN = ("**Raadsdocumenten waarin deze woorden staan** (gezocht in de "
+                  "volledige tekst; een treffer zegt dat het woord erin staat, "
+                  "niet dat het stuk erover gaat; de datum is die van de "
+                  "vergadering)")
+
+
+def melding_tekst(regels, docregels):
+    """De tekst van een melding, nooit langer dan MAX_TEKENS. Leeg als er niets is."""
+    if not (regels or docregels):
+        return ""
+    vrij = MAX_TEKENS - len(KOP_LIJSTEN) - len(KOP_DOCUMENTEN) - 10
+    # De lijststukken krijgen hooguit de helft als er ook documenten zijn: een
+    # motie is schaarser en zegt meer dan een treffer in een bijlage.
+    deel_l = vrij // 2 if docregels else vrij
+    l = pas_in(regels, deel_l) if regels else []
+    d = pas_in(docregels, vrij - sum(len(x) + 1 for x in l)) if docregels else []
+    blokken = []
+    if l:
+        blokken.append(KOP_LIJSTEN + "\n" + "\n".join(l))
+    if d:
+        blokken.append(KOP_DOCUMENTEN + "\n" + "\n".join(d))
+    return "\n\n".join(blokken)
 
 
 def _lees(pad, standaard):
@@ -556,19 +604,10 @@ def main():
             isinstance(u, Exception) for u in resultaten.values()):
         with open(MELDINGEN_PAD, "w", encoding="utf-8") as f:
             json.dump([], f)
-    blokken = []
-    if regels:
-        blokken.append("**Gemeenteraad Nijmegen: nieuw over wonen en vastgoed** "
-                       "(op titel en beleidsveld geselecteerd; tussen haken "
-                       "staat waarop)\n" + "\n".join(regels))
-    if docregels:
-        blokken.append("**Raadsdocumenten waarin deze woorden staan** (gezocht "
-                       "in de volledige tekst; een treffer zegt dat het woord "
-                       "erin staat, niet dat het stuk erover gaat; de datum is "
-                       "die van de vergadering)\n" + "\n".join(docregels))
+    blokken = melding_tekst(regels, docregels)
     if blokken:
         from regelgeving_monitor import voeg_melding_toe
-        voeg_melding_toe(MELDINGEN_PAD, "\n\n".join(blokken))
+        voeg_melding_toe(MELDINGEN_PAD, blokken)
     print(f"Raadsinformatie: {len(regels)} nieuwe lijststukken, "
           f"{len(docregels)} regels met documenten", file=sys.stderr)
 
@@ -809,6 +848,16 @@ def proef_zoeken():
     volg = [x.split(" (")[0][2:] for x in r5]
     if volg != ["Drie", "Twee", "Een"]:
         fouten.append(f"volgorde is niet: meeste woorden, dan nieuwste: {volg}")
+    # De melding blijft binnen MAX_TEKENS, hoe lang de titels ook zijn.
+    lang = [f"- {'Een heel lange titel ' * 40} {i}" for i in range(40)]
+    m = melding_tekst(lang, lang)
+    if len(m) > MAX_TEKENS:
+        fouten.append(f"de melding is {len(m)} tekens, langer dan MAX_TEKENS")
+    if "En nog" not in m or KOP_DOCUMENTEN not in m or KOP_LIJSTEN not in m:
+        fouten.append("een te lange melding verliest een kop of zegt niet "
+                      "hoeveel er wegviel")
+    if melding_tekst(["- kort"], []) != KOP_LIJSTEN + "\n- kort":
+        fouten.append("een korte melding wordt verbouwd")
     return fouten
 
 
