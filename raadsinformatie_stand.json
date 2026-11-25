@@ -5,6 +5,7 @@
    "00b52b6a-c209-4357-ab85-44764433a1a4",
    "0244b7ad-6b4e-4cc5-b220-b28e4e1ab76e",
    "0367d8ef-5599-4607-a90b-f3188bc091e4",
+   "037720e7-d23c-47a9-aa78-e5ca2adec45a",
    "04287659-8b05-4843-9ffe-9326ba32189f",
    "0466a29e-e5e4-4e0c-9acc-03eb9f6763b8",
    "046efdd4-ba8a-43c0-a7bb-9aa9f052bf31",
@@ -41,6 +42,7 @@
    "104f52b2-5717-4944-bb3b-dbb7f9920c02",
    "1093c12d-bf7e-473c-8059-6047a6890eae",
    "112368c2-b9e2-44ca-9be9-f4520ca320b8",
+   "11d87b9d-62bb-4ad6-b5d9-e5f630c03d65",
    "12b21fac-f19a-4096-9533-9208fd04ccc3",
    "13211f1a-fafa-40f3-a9e2-892c889225f7",
    "13225bc9-be6e-4c80-966d-df4e7546bc6f",
@@ -169,6 +171,7 @@
    "527f3d74-9a17-41a0-b569-1cff94ec22a5",
    "52c7a340-934b-4dd2-8fe6-8ac5e6736976",
    "548be0a0-001b-410c-b51b-df3f4f607a6b",
+   "54d378ca-d0e4-4dab-ace9-0a47ce34d8b4",
    "5658ad66-94aa-429c-a77f-bb4d09dd97b1",
    "56b4e25f-506d-413c-97c6-b3f22fce117e",
    "5753e6c5-2811-4030-a62a-b6b87431ba9f",
@@ -298,6 +301,7 @@
    "9551203c-f811-4959-bce5-15db989c521b",
    "95542c57-08ba-4879-a028-3160019aeae7",
    "9597b9ab-1fff-47b9-9156-5e95a3ff0da0",
+   "96a48a87-9b92-4c79-93e3-c66680e8a543",
    "9714e168-712d-4d45-9de4-9581a0b3266b",
    "9715eee4-f717-43e7-8369-50ba0f040a07",
    "9753fe03-6ebd-4d46-a5de-371db1b28893",
@@ -311,6 +315,7 @@
    "9a900af5-2143-4ec3-99ba-4014d64e8f68",
    "9aebf358-82d4-4dee-8a48-94e353816372",
    "9b9d6246-5946-49b8-a935-6fde5c06b28f",
+   "9c46ed1d-c4e2-42a5-9fd6-020bb0ca9830",
    "9c9056dd-426e-4167-998c-48411bdb0f5c",
    "9d53f999-a200-4417-8e94-6e1ba8a05cba",
    "9da91fcb-7f00-442c-b7a2-aea6a010276a",
@@ -329,6 +334,7 @@
    "a4c78666-42b2-4ea4-b371-5854b0424f91",
    "a59f77fc-bce8-4f96-b7d8-9be100eefebf",
    "a5e11818-140f-4c7b-a45e-35c66306e646",
+   "a5ea6fdb-21f3-4aae-8fa5-d191307230c7",
    "a644ca03-2525-4ea2-8b53-dd7d30e19118",
    "a75c90cb-577a-42a8-8c9a-760baa4c4c16",
    "a7b6761f-4abc-460a-bd16-923f665b4648",
@@ -400,6 +406,7 @@
    "c5f488e3-ec84-436a-a2bc-7a531bded35a",
    "c649f471-063b-4ad7-9fd4-82a866250848",
    "c6b37b44-6691-4f34-a132-231ddbe211bf",
+   "c6fed142-ea01-4462-8c2f-a00960cd9fa1",
    "c7644229-6d3a-421a-b2f6-83ef91fb8cd2",
    "c794a7d2-487e-4776-819d-1c2507c205a7",
    "c7afca80-104d-43b0-8909-5178449dc240",
@@ -435,8 +442,10 @@
    "d5879976-9f37-4216-938b-e5308e6bf0b4",
    "d59d11f3-967c-4058-8885-a295b090bc39",
    "d5c75a69-5a0b-4960-8d53-9274ddf5ed64",
+   "d68d7db1-ed66-41a4-9998-ec12ba5b59ce",
    "d6c5c5cd-6d5c-4cbe-a67a-2d6b2e2a3ec5",
    "d73b162e-53de-42ae-8aa9-e759114d10ed",
+   "d7db7871-5a99-4b95-b289-29688e7bb0fa",
    "d7e0edf5-29b6-4a83-8271-855f538007ab",
    "d7f07142-d6e3-47dc-a070-6006e7e5c643",
    "d7f6f2b5-342b-4fcf-9a02-bd1534614e1c",
@@ -447,14 +456,18 @@
    "d9a05a3a-8820-4c33-b5ed-094d0500948d",
    "da6ba3da-a02a-48ac-a053-39881b548582",
    "dadc80e9-6b68-4e6a-84d4-58870bd6c76a",
+   "db173bc5-7360-4375-995a-2b4b5cc97573",
    "db2aa7d1-1436-49d9-8e55-98e5733394c2",
    "dbd9d04e-64b7-4272-b5bc-6cadfb14714d",
    "dbe660ae-3cb0-41e7-9936-bebcc796d961",
+   "dc812699-7421-4db5-aab2-db2fc5ed8bb3",
    "dd024955-d75c-4005-a851-2145c97dfe81",
    "dd045bea-4eec-4d6a-a2ea-16350b846c30",
+   "dd584713-352f-4d83-aa97-6c442d730159",
    "dd9a01dd-460d-4c4c-acdb-d0909d8a8c01",
    "ddf3c4bc-23e6-4a56-801c-77bb1793ff71",
    "deebd41a-4021-4cf3-8832-03a6382f00d0",
+   "df02d35b-c3f4-4830-a9ec-b9bf6cef6274",
    "df7d89e5-3548-4331-9b5c-e0ee70fd81fe",
    "e068e4d2-d101-4244-a12b-b546b1d844bc",
    "e0c73386-3190-4486-84fb-2a54f848b8f2",
@@ -504,6 +517,7 @@
    "f37c8b8c-76c3-479b-85eb-ee19dd0fef94",
    "f3a93417-c3ad-4b4e-b60e-ce644ca6396c",
    "f3b036dc-da96-4cf8-9378-cac61fb6c8d1",
+   "f3db7c4c-b467-45f3-b842-d2ca32eb3cc3",
    "f40ad4a1-de5a-477e-a729-8271185c18af",
    "f455d9ea-7aff-4dc9-a9dc-273556db5ea4",
    "f4f18402-9eea-494d-8522-e86a164925c0",
@@ -537,9 +551,9 @@
    "ff897113-38e2-456b-8f58-e289575a472a",
    "ff8eef2e-ecf1-4540-9124-b6b751406e1d"
   ],
-  "laatste_poging": "2026-11-24T21:52Z",
+  "laatste_poging": "2026-11-25T14:52Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T21:52Z"
+  "opgehaald": "2026-11-25T14:52Z"
  },
  "initiatiefvoorstellen": {
   "aantal_op_portaal": 34,
@@ -579,9 +593,9 @@
    "e286700c-0aee-4dbf-9ad2-046fe2c49b3a",
    "f745896d-0852-439d-aa09-f85179314c1b"
   ],
-  "laatste_poging": "2026-11-24T21:52Z",
+  "laatste_poging": "2026-11-25T14:52Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T21:52Z"
+  "opgehaald": "2026-11-25T14:52Z"
  },
  "moties": {
   "aantal_op_portaal": 1625,
@@ -1374,6 +1388,7 @@
    "7a1e97fc-6733-42c9-95c0-297fdb929c33",
    "7a31b3a7-8140-4afc-a4c7-a8287feb7d5b",
    "7a354c41-27a6-41fb-b9b4-3d6fb4348e4a",
+   "7a3cfd9e-51af-4df1-ac44-42d61d1bf1f9",
    "7a3f4e32-fb56-4373-99da-4fefee94abf6",
    "7a3fb268-4da3-45d4-af8d-61f5b9cf3a55",
    "7a57b12f-873b-4b44-b39b-96a7be9941a2",
@@ -2212,12 +2227,12 @@
    "ff922f50-7f5e-4d84-88ba-a960cd77e8f1",
    "ffdb35d5-00d7-49b9-b497-9539b9a7a3ab"
   ],
-  "laatste_poging": "2026-11-24T21:52Z",
+  "laatste_poging": "2026-11-25T14:52Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T21:52Z"
+  "opgehaald": "2026-11-25T14:52Z"
  },
  "schriftelijke_vragen": {
-  "aantal_op_portaal": 899,
+  "aantal_op_portaal": 901,
   "gezien": [
    "007712ee-7bb3-4801-b6bc-523e74ed059f",
    "00baa082-547f-4dea-a2b9-a2a606727720",
@@ -2691,6 +2706,7 @@
    "86261dd5-efbf-4023-b8e4-94c5cc3fb3c1",
    "86309032-4bbc-4106-9239-0bd992f9f5da",
    "86786c14-f0cb-4088-8e84-3b37530f966b",
+   "867d8c22-d573-46e4-8746-e5dba39ee344",
    "86849a6b-3305-4492-84ff-5e071e8c44fd",
    "86b12ecf-28d6-4032-a4fb-111108edda8a",
    "86ca507a-c3c3-4adc-b67c-43c6a0ca9179",
@@ -2891,6 +2907,7 @@
    "bff1d5f8-95f4-499e-a144-b7cabbdbfd83",
    "c02426d9-6d93-417b-8b5d-5a2973eb22be",
    "c04df016-a942-4dcb-91ad-a96ee92d88a8",
+   "c057d09e-c9f9-485b-bee9-c2d9d1d6bde1",
    "c0b2e1e6-9b3a-4a1f-b908-c2f5e7abd795",
    "c0dd18b9-84d2-4f60-9f65-4351d6b60774",
    "c0fc18c9-1b59-4233-bb37-d6aef0704699",
@@ -3119,12 +3136,12 @@
    "ffa269d2-e961-4dac-a4ad-04262aa8701b",
    "ffd5b1f3-8464-48be-9d7c-b31dfb8fb6ff"
   ],
-  "laatste_poging": "2026-11-24T21:52Z",
+  "laatste_poging": "2026-11-25T14:52Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T21:52Z"
+  "opgehaald": "2026-11-25T14:52Z"
  },
  "termijnagenda": {
-  "aantal_op_portaal": 900,
+  "aantal_op_portaal": 901,
   "gezien": [
    "0018fe68-d8a2-4683-9cde-28089e3a67ab",
    "00579f4f-c644-453b-bf6d-b0ef43c907e6",
@@ -3132,6 +3149,7 @@
    "008829e1-c155-4ccc-84cd-bae0b3672a74",
    "01bb4f31-b810-4686-ad92-47f066c3a032",
    "01fcd33b-92fc-4e5f-9614-670b7ea2c8ad",
+   "021428fa-335d-473f-9870-7633b7132679",
    "0282353a-2b3f-4135-b362-db8030545474",
    "0310d955-48db-4edc-bda8-bf1aa40b61a9",
    "0315746f-0db8-4bb9-bd65-be3a58380c8a",
@@ -3178,6 +3196,7 @@
    "1109055e-deff-439f-9ec0-fbfdc97fd018",
    "11350ded-58b9-41c2-9bf9-30e06410ec9e",
    "11aa3914-6959-4d88-a5d3-29bfb5a5c4fb",
+   "12456b6f-674f-4d13-adea-ee62746b146d",
    "125d6368-810f-4e49-93ac-3ac40b13746e",
    "132edf74-8039-43b8-89cb-f95e405f4842",
    "135439be-318c-4417-8cfe-1d3161d09d40",
@@ -3724,6 +3743,7 @@
    "a688e0b2-c0c1-47ac-bd6d-3c4ac20e626b",
    "a69dc1bd-31a5-4883-be16-afe82d32dd95",
    "a6a8bcc4-2d4b-4f6b-8cd0-bf9d767faae6",
+   "a6d895a3-8890-443b-ac8f-61b9571b4898",
    "a6f6b759-6e33-409f-bf4a-7f4f776293e9",
    "a72f45c5-871e-45d6-b760-1db3c091f39c",
    "a767c828-80a9-4f35-822b-c185acf28865",
@@ -3753,6 +3773,7 @@
    "afcfaa58-3fd7-4049-b112-4d5716b747db",
    "afd07540-077b-42a5-bc8b-68ab7d8b5d42",
    "afdfafdc-4dc4-4bb6-bdaf-1d0288a9bbb5",
+   "b017d3d7-b4b7-47bb-8814-ade8bbf93586",
    "b0691659-c0a2-476a-9f43-6545df27b64d",
    "b074021c-5ada-45ad-9bd5-4c9f3e85e0ac",
    "b0c86399-f287-4006-be17-417ae50151fe",
@@ -4028,9 +4049,9 @@
    "ff6210c6-36c4-4238-bad5-cc0904fd83b8",
    "ffaafeca-4d7d-48ca-9c2b-389ab7b0243c"
   ],
-  "laatste_poging": "2026-11-24T21:52Z",
+  "laatste_poging": "2026-11-25T14:52Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T21:52Z"
+  "opgehaald": "2026-11-25T14:52Z"
  },
  "toezeggingen": {
   "aantal_op_portaal": 1828,
@@ -5019,6 +5040,7 @@
    "8b8f3f41-b27e-480a-917d-e26c463936d6",
    "8c1ac66e-5cfd-434b-be8a-3462087ddf5b",
    "8c882f89-6a20-4756-82ec-3d55c29b4a16",
+   "8ca589f2-6370-440e-99e7-24563873ba0c",
    "8cbfbe5e-7845-4d12-98da-273f953cf913",
    "8cc9b506-47f1-4179-8e0c-e9f820c7ae8f",
    "8cd949ab-ee3c-46dd-9cce-23fb5b149410",
@@ -5728,6 +5750,7 @@
    "ee27c680-cc60-4ff4-8217-7f47d3bf9051",
    "ee4b7bdb-7b49-4b98-9c65-43993426c2c0",
    "ee505e64-39f0-4dbd-b610-d504ff8251cc",
+   "ee75715b-0904-442a-9734-24d828952185",
    "ee845d97-17ca-4b16-a7ab-b21154f4babe",
    "ee92ffa2-27c7-4327-a900-502b73e05b14",
    "ee949376-d99d-42b1-a8b6-83e78ebb3691",
@@ -5864,9 +5887,9 @@
    "ffcd8031-fc12-4087-a98b-639c8fe3b50e",
    "ffd4b4a3-dffe-4d92-89e0-048a27587f42"
   ],
-  "laatste_poging": "2026-11-24T21:52Z",
+  "laatste_poging": "2026-11-25T14:52Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-24T21:52Z"
+  "opgehaald": "2026-11-25T14:52Z"
  },
  "zoeken": {
   "huisvestingsverordening": {
@@ -5880,10 +5903,12 @@
     "2e35d309-6c25-4046-b5d8-fa2547aeccb0",
     "3ae19ee2-6512-48c0-9699-5a90633a684e",
     "47b038cf-45c1-4e95-b7cd-d15be4de3cd4",
+    "617f25f2-add0-40d2-b318-4b5290f6817a",
     "68700d9c-47af-481d-868e-39bc7a5ba533",
     "68ca34a8-7b19-4b89-9421-f057006b837a",
     "79e413c0-a76b-43f2-9bab-944705807d60",
     "7b8fbdf5-538f-47f9-9e61-b54fb0456482",
+    "86a4e862-9e61-49b4-b216-fd9957d3ac96",
     "8cf7dbf4-6bdc-48be-b939-45944e21de03",
     "994d5373-425a-45b1-b132-f4b41f680386",
     "a2499a77-a780-4ef4-a36d-1ab9396475a9",
@@ -5902,9 +5927,9 @@
     "https://nijmegen.bestuurlijkeinformatie.nl/Agenda/Index/54e5d949-4876-4978-bbb3-57b700fba345#21837380-36d7-4ddc-a733-d67a30ba4fab",
     "https://nijmegen.bestuurlijkeinformatie.nl/Agenda/Index/54e5d949-4876-4978-bbb3-57b700fba345#3092a464-98ab-49f7-bd34-eac7fe1eb64d"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "kamerverhuur": {
    "gezien": [
@@ -5939,9 +5964,9 @@
     "f44bd0d5-f1fc-4618-9725-014cbbda4508",
     "ff611639-511c-46b7-8d1c-9449087919af"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "middenhuur": {
    "gezien": [
@@ -5971,14 +5996,15 @@
     "c0ec03b5-a463-4f36-b8c3-7aace2bcad4e",
     "c680cb51-b354-4033-8d9f-eaf0c210874b",
     "dab84110-f91f-4ec3-a71a-3dd45ef1cf1e",
+    "e4c5f8e3-9e09-4586-9663-bc478a6fba80",
     "e867480d-aa83-47b1-af53-99c7b80e687f",
     "eb7fa1ef-60aa-42aa-a877-6d8bc161535f",
     "f595ded0-4440-47a5-b92b-efd7b1cd9ca8",
     "f9ea446e-3674-4d72-9f60-ca3944a212ab"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "onzelfstandig*": {
    "gezien": [
@@ -6014,9 +6040,9 @@
     "f44bd0d5-f1fc-4618-9725-014cbbda4508",
     "ff611639-511c-46b7-8d1c-9449087919af"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "opkoopbescherming": {
    "gezien": [
@@ -6051,9 +6077,9 @@
     "efea92d0-6c07-4fd6-bc11-d0e9a6121251",
     "f44bd0d5-f1fc-4618-9725-014cbbda4508"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "optoppen": {
    "gezien": [
@@ -6088,9 +6114,9 @@
     "f678f086-8acb-475e-96f0-1945c55e022a",
     "fa8d223a-8960-44f9-8893-cf20e1bb07ca"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "plint*": {
    "gezien": [
@@ -6125,9 +6151,9 @@
     "f44bd0d5-f1fc-4618-9725-014cbbda4508",
     "ff611639-511c-46b7-8d1c-9449087919af"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "short stay": {
    "gezien": [
@@ -6162,12 +6188,13 @@
     "edf18495-c1ae-4b68-9a38-cc711def7aff",
     "f76b50dc-b73e-4912-9fac-ca961ab41048"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "verkamer*": {
    "gezien": [
+    "037720e7-d23c-47a9-aa78-e5ca2adec45a",
     "0e38c62f-0c0b-4ec8-b7d0-3404af564b9d",
     "10085a39-c672-464e-8ba5-ed9fb1c29fb7",
     "2e35d309-6c25-4046-b5d8-fa2547aeccb0",
@@ -6199,9 +6226,9 @@
     "e32bab60-b90f-45f8-af97-dce24779a2b9",
     "eb7fa1ef-60aa-42aa-a877-6d8bc161535f"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   },
   "woningsplitsing": {
    "gezien": [
@@ -6236,9 +6263,9 @@
     "e4549580-2d98-4f20-9846-707747556d13",
     "ec28e311-398e-4d95-8dfb-58e6f38274b7"
    ],
-   "laatste_poging": "2026-11-24T21:52Z",
+   "laatste_poging": "2026-11-25T14:52Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-24T21:52Z"
+   "opgehaald": "2026-11-25T14:52Z"
   }
  },
  "zoeken_titels": [
@@ -6256,6 +6283,7 @@
   "8verslagenstadsgesprekkenmetorganisaties",
   "9verslagenstadsgesprekkenopeninloop",
   "aanbevelingseniorenraadtavseniorenhofindevossenpels",
+  "aangenomenmotiespolitiekeavond14oktober2026",
   "adviesbriefvandeauditcommissieoverdestadsbegroting20272030dd20oktober2026geanoni",
   "adviescompanenprijsgrenzennijmegen",
   "afgehaaktgemaaktopdewoningmarkt",
@@ -6286,6 +6314,8 @@
   "briefaanderaadstadscentrummonitor20252026",
   "briefaanderaadstartnotitienotaomgevingskwaliteit",
   "briefaanderaaduitvoeringmotieknibbelknabbelknuisjewaarinzithiergeenhuisje",
+  "briefaanderaaduitvoeringmotiesocialewoonambitie",
+  "briefaanderaaduitvoeringvandeaangenomenmotiestijdensdepolitiekeavond14oktober202",
   "briefaanderaadwoneneerstjongvolwassenen",
   "briefaanfractiesspenproinvesteerderskopenwoningenop",
   "collegevoorstelbuitenplanseomgevingsplanactiviteit72bopa20260720doekenborg",
