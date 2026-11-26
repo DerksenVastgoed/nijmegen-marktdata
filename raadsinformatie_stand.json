@@ -551,9 +551,9 @@
    "ff897113-38e2-456b-8f58-e289575a472a",
    "ff8eef2e-ecf1-4540-9124-b6b751406e1d"
   ],
-  "laatste_poging": "2026-11-25T14:52Z",
+  "laatste_poging": "2026-11-26T14:22Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-25T14:52Z"
+  "opgehaald": "2026-11-26T14:22Z"
  },
  "initiatiefvoorstellen": {
   "aantal_op_portaal": 34,
@@ -593,9 +593,9 @@
    "e286700c-0aee-4dbf-9ad2-046fe2c49b3a",
    "f745896d-0852-439d-aa09-f85179314c1b"
   ],
-  "laatste_poging": "2026-11-25T14:52Z",
+  "laatste_poging": "2026-11-26T14:22Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-25T14:52Z"
+  "opgehaald": "2026-11-26T14:22Z"
  },
  "moties": {
   "aantal_op_portaal": 1625,
@@ -2227,9 +2227,9 @@
    "ff922f50-7f5e-4d84-88ba-a960cd77e8f1",
    "ffdb35d5-00d7-49b9-b497-9539b9a7a3ab"
   ],
-  "laatste_poging": "2026-11-25T14:52Z",
+  "laatste_poging": "2026-11-26T14:22Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-25T14:52Z"
+  "opgehaald": "2026-11-26T14:22Z"
  },
  "schriftelijke_vragen": {
   "aantal_op_portaal": 901,
@@ -3136,12 +3136,12 @@
    "ffa269d2-e961-4dac-a4ad-04262aa8701b",
    "ffd5b1f3-8464-48be-9d7c-b31dfb8fb6ff"
   ],
-  "laatste_poging": "2026-11-25T14:52Z",
+  "laatste_poging": "2026-11-26T14:22Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-25T14:52Z"
+  "opgehaald": "2026-11-26T14:22Z"
  },
  "termijnagenda": {
-  "aantal_op_portaal": 901,
+  "aantal_op_portaal": 900,
   "gezien": [
    "0018fe68-d8a2-4683-9cde-28089e3a67ab",
    "00579f4f-c644-453b-bf6d-b0ef43c907e6",
@@ -3699,6 +3699,7 @@
    "94858b72-de68-49ba-8a1f-8d9e443beddb",
    "951194a4-dc39-413e-b25a-2309a6624afd",
    "951360ea-693f-4fd3-9e78-fed430f623fa",
+   "951c95f8-49d4-4e72-a517-561b1f8eb90b",
    "95e903c1-7984-450a-a6b3-6a1b964ea395",
    "96010f2a-3ce6-4e99-b288-cfc44a1da597",
    "96398211-5702-455f-8975-fd2a805b2c58",
@@ -4049,12 +4050,12 @@
    "ff6210c6-36c4-4238-bad5-cc0904fd83b8",
    "ffaafeca-4d7d-48ca-9c2b-389ab7b0243c"
   ],
-  "laatste_poging": "2026-11-25T14:52Z",
+  "laatste_poging": "2026-11-26T14:22Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-25T14:52Z"
+  "opgehaald": "2026-11-26T14:22Z"
  },
  "toezeggingen": {
-  "aantal_op_portaal": 1828,
+  "aantal_op_portaal": 1834,
   "gezien": [
    "0027c001-f8d8-430a-87f2-677f2436a5d8",
    "004c4dff-c474-4818-84d2-5c1da9bf08c0",
@@ -4092,6 +4093,7 @@
    "039c2da2-721d-49a5-b066-5eeb13bdafe9",
    "03fa795d-ee06-4230-ae20-96eec06ad463",
    "0455c072-9032-4e5b-9691-c408f617fe29",
+   "045d2465-2e7c-4247-8515-ab0525b4a490",
    "04657e51-4ec5-4a0c-a3a1-9b9248fe3f14",
    "04a1977f-c464-4dab-ac22-73e19d3f970f",
    "050ffd24-71fd-42a3-b382-86ee43c4a98a",
@@ -4287,6 +4289,7 @@
    "1e660be4-f816-40f7-9e64-7c32b23854da",
    "1e816649-e96b-40af-9fb1-249a46fa81d3",
    "1e8417ca-dea3-4874-86d2-97729d417efa",
+   "1e9dc2e2-b0ca-48d7-8fc5-baafeb75b46d",
    "1ea4b702-1e75-49b3-8158-90927f65cb61",
    "1f205580-f1ef-4399-99b8-64c8943eaebb",
    "1f2820e7-a8b9-47d7-aab0-67943bc5de93",
@@ -4449,6 +4452,7 @@
    "37beec79-9a36-4495-b58a-359596e1b922",
    "37d17463-6bbb-4165-af15-367a27145e83",
    "37d77759-21b1-4803-8ee4-f924121c2720",
+   "37ec9d4c-9dcd-4caa-ac71-9c7095ea6ac1",
    "37ed8d4b-a205-48ee-9d49-270f0f796ab1",
    "3818764b-a5bc-4efc-a7b9-6bdcc2f07197",
    "381e2d64-8902-45ae-9d74-776a3b49d7a7",
@@ -5255,6 +5259,7 @@
    "a7ded59c-a967-4b84-bd5a-8c504f466d52",
    "a8583deb-4a24-437d-9c7e-72e8291a5565",
    "a8874bb0-d883-41e7-8972-476a22113288",
+   "a8a6f164-5c39-4959-88eb-1f1862094108",
    "a8ea24f1-077c-4a33-8867-0c4c17b8535a",
    "a8eb3393-5cf8-4ae4-b221-a0351576730f",
    "a8ebdc01-cd59-40f3-a255-7b263d99e046",
@@ -5372,6 +5377,7 @@
    "b6ad4ef7-150f-44e9-9b29-5673e8a68de5",
    "b6c8b543-52ab-4fcd-bb3a-20e08b0d9535",
    "b6ca5ea1-b3a3-4be5-b006-957ea08a46a1",
+   "b714b6f1-8454-4d76-9da2-ebfdc0b908bf",
    "b71681c5-ee4d-4836-8e4c-93037718a80a",
    "b71c2cb1-92cb-4cf4-a8c5-d26a3198dea7",
    "b74e46ca-e981-420f-8ea0-5fd22c3c40d4",
@@ -5545,6 +5551,7 @@
    "cfca7381-d576-4b47-9404-1bcea94bd112",
    "d029ce09-3ca1-4da1-850d-3dff77a63fc1",
    "d0b52c43-1fca-47f4-a462-bca07566069c",
+   "d1342822-76ab-4f74-afad-617c8b9aea7d",
    "d193b5b8-6413-452a-a968-e90bfb9d402e",
    "d1a4cc18-1b83-4dee-b103-74c9c77a1a3d",
    "d1a607b2-8e39-491f-95e8-e8a18ee4fb85",
@@ -5887,9 +5894,9 @@
    "ffcd8031-fc12-4087-a98b-639c8fe3b50e",
    "ffd4b4a3-dffe-4d92-89e0-048a27587f42"
   ],
-  "laatste_poging": "2026-11-25T14:52Z",
+  "laatste_poging": "2026-11-26T14:22Z",
   "nulmeting": "2026-11-24T13:55Z",
-  "opgehaald": "2026-11-25T14:52Z"
+  "opgehaald": "2026-11-26T14:22Z"
  },
  "zoeken": {
   "huisvestingsverordening": {
@@ -5927,9 +5934,9 @@
     "https://nijmegen.bestuurlijkeinformatie.nl/Agenda/Index/54e5d949-4876-4978-bbb3-57b700fba345#21837380-36d7-4ddc-a733-d67a30ba4fab",
     "https://nijmegen.bestuurlijkeinformatie.nl/Agenda/Index/54e5d949-4876-4978-bbb3-57b700fba345#3092a464-98ab-49f7-bd34-eac7fe1eb64d"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "kamerverhuur": {
    "gezien": [
@@ -5964,9 +5971,9 @@
     "f44bd0d5-f1fc-4618-9725-014cbbda4508",
     "ff611639-511c-46b7-8d1c-9449087919af"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "middenhuur": {
    "gezien": [
@@ -6002,9 +6009,9 @@
     "f595ded0-4440-47a5-b92b-efd7b1cd9ca8",
     "f9ea446e-3674-4d72-9f60-ca3944a212ab"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "onzelfstandig*": {
    "gezien": [
@@ -6040,9 +6047,9 @@
     "f44bd0d5-f1fc-4618-9725-014cbbda4508",
     "ff611639-511c-46b7-8d1c-9449087919af"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "opkoopbescherming": {
    "gezien": [
@@ -6077,9 +6084,9 @@
     "efea92d0-6c07-4fd6-bc11-d0e9a6121251",
     "f44bd0d5-f1fc-4618-9725-014cbbda4508"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "optoppen": {
    "gezien": [
@@ -6114,9 +6121,9 @@
     "f678f086-8acb-475e-96f0-1945c55e022a",
     "fa8d223a-8960-44f9-8893-cf20e1bb07ca"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "plint*": {
    "gezien": [
@@ -6151,9 +6158,9 @@
     "f44bd0d5-f1fc-4618-9725-014cbbda4508",
     "ff611639-511c-46b7-8d1c-9449087919af"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "short stay": {
    "gezien": [
@@ -6188,9 +6195,9 @@
     "edf18495-c1ae-4b68-9a38-cc711def7aff",
     "f76b50dc-b73e-4912-9fac-ca961ab41048"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "verkamer*": {
    "gezien": [
@@ -6226,9 +6233,9 @@
     "e32bab60-b90f-45f8-af97-dce24779a2b9",
     "eb7fa1ef-60aa-42aa-a877-6d8bc161535f"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   },
   "woningsplitsing": {
    "gezien": [
@@ -6263,9 +6270,9 @@
     "e4549580-2d98-4f20-9846-707747556d13",
     "ec28e311-398e-4d95-8dfb-58e6f38274b7"
    ],
-   "laatste_poging": "2026-11-25T14:52Z",
+   "laatste_poging": "2026-11-26T14:22Z",
    "nulmeting": "2026-11-24T21:13Z",
-   "opgehaald": "2026-11-25T14:52Z"
+   "opgehaald": "2026-11-26T14:22Z"
   }
  },
  "zoeken_titels": [
