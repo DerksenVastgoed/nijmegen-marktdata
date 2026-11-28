@@ -126,6 +126,23 @@ def namen_uit(antwoord):
     return namen
 
 
+def velden_uit(antwoord):
+    """
+    De properties van elk feature, zonder geometrie, voor het verslag.
+
+    WAAROM. Tot 28 november ging het ruwe antwoord afgekapt op 600 tekens in
+    het verslag; bij de aanduidingslagen viel die grens midden in de
+    coördinaten, en de veldnamen waren niet te zien.
+    """
+    try:
+        d = json.loads(antwoord)
+    except Exception:
+        return antwoord[:300]
+    return json.dumps([(f or {}).get("properties") or {}
+                       for f in d.get("features") or []],
+                      ensure_ascii=False)
+
+
 def punten_per_pand(pad="voorraad.json", met_niet_woningen=False):
     """
     Per pand in de ring één punt (lat, lon) en een adres.
@@ -224,7 +241,7 @@ def verken(punten_adres):
             try:
                 ruw = _verzoek(laag, lat, lon)
                 r.append(f"- {laag}: namen {namen_uit(ruw)!r}")
-                r.append(f"  ruw: `{ruw[:600]}`")
+                r.append(f"  velden: `{velden_uit(ruw)[:1500]}`")
             except Exception as e:
                 r.append(f"- {laag}: FOUT {type(e).__name__}: {str(e)[:200]}")
             time.sleep(PAUZE)
