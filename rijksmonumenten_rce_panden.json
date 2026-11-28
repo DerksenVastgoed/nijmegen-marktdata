@@ -1674,6 +1674,72 @@
    "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
    "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
   },
+  "520314": {
+   "naam": null,
+   "panden": [
+    "0268100000050041"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520313": {
+   "naam": null,
+   "panden": [
+    "0268100000015206"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520312": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520311": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520309": {
+   "naam": null,
+   "panden": [],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "520308": {
+   "naam": null,
+   "panden": [
+    "0268100000015207"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522952": {
+   "naam": null,
+   "panden": [
+    "0268100000018653"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522951": {
+   "naam": null,
+   "panden": [
+    "0268100000018561"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
+  "522950": {
+   "naam": "Museum Kam",
+   "panden": [
+    "0268100000018653"
+   ],
+   "klasse": "http://inspire.ec.europa.eu/codelist/ProtectionClassificationValue/cultural",
+   "aanduiding": "https://data.cultureelerfgoed.nl/term/id/rn/2/fc966a68-8863-4970-a83e-110f96006c21"
+  },
   "522933": {
    "naam": "Park Brakkenstein",
    "panden": [],

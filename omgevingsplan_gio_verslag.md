@@ -2,45 +2,113 @@
 
 Regeling: `https://lokaleregelgeving.overheid.nl/CVDR696550`
 
-- eindadres `https://lokaleregelgeving.overheid.nl/CVDR696550`, 3698292 bytes, 31 informatieobjecten met een JOIN-identificatie
-- waarvan 2 met een naam die op erfgoed wijst
+- eindadres `https://lokaleregelgeving.overheid.nl/CVDR696550`, 4223963 bytes, 51 informatieobjecten met een JOIN-identificatie
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/44849203ac17444184629d0565a44394/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/5edec514974d4c96b8da2a890e54812c/nld@2025-10-08;18215983: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/0d410ba16ffb45faba53edfa74aac6d3/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/b1bafb0db34d4c85bfa2bae7a388195a/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/5ccc298c601b46c794187d1d3cefeb19/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/46afc36a8b3e4a6f985eac7174601613/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/841cb4e406ab4d7ca2c088224b300788/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/97b3f293cec342a28cda5d4b88b7d845/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/7c868819cee346acb47a34165085fc9e/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/fc057ba8a73b44158e0952e2013251fd/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/23d64a32fd9b459383fd71dd2e8b5977/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/9ed32ec591a0499880640d07fa17c646/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/62fd10d965d943249dd07d0a3bb77afe/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/a26a80d500d14268969aaa71f89e9323/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/5feaa2e87eed4f548544bb53e485d924/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/919da1cb68b2418bb94847528876620e/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/1747a7d8383f48db8285bbfa3b9f240e/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/81a4b406c29d47b697398dd746e321f0/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/49ff20e32c174eb9b796147d8126f537/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/b1b2610a884f4076bc44f86d4a9babf0/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/734997aa87764f75bc523d1558a5a333/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/a7ba285e4c424f22904611c37e7483ee/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/057ed04dd242494590ecf1bd4c96027a/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/ab21d17e2fb9402192624a2f772bc177/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/34aad304581a426da7500084764fc022/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/2a395513054a41f282b341ae97cf3e38/nld@2025-10-08;18215983: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/c79bb8d0bbab462c84d2408d700bede4/nld@2025-10-08;18215983: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/ebd46ce99b5f45c782cf19847884458d/nld@2025-10-08;18215983: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/af5966d07921438fab4ff7c68b987240/nld@2025-04-17;09524121: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2024/0a41e2797307477bae75521a31371dc5/nld@2025-10-08;18215983: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/4539d71add434268bfb28a90b14ff072/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/cff32f3b4bc64355aa0bf2c93bd0b98f/nld@2025-10-08;18215983: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/74eb855925074aa3bb39b225548c101d/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/9cd10413d65c48fba475f9cc74158b1f/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/476c806b68824a84847fb1eb3e9a5d24/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/6b0916180e5d41f8a7326a12fb114fa7/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/65786acedb4f4de18edfa750828334bd/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/58603ffd5ca543e4b6bedccd952942e5/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/dde5f0b504d04345b1307dbbbb03afb1/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/0861d187cbe64da9b2009889a6b9260e/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/14d3313658634de3a1a8e9e5ba1e96d1/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/af61869fb1854008afaa735af11fa0a0/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/fac89bafd4ff4591a55fca98055ce236/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/cb069f7c63444ada9a9ba4cba34187a1/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/48181376867442029376de7161bbaf1e/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/0e44f3a1b1764c8fbe73dca7c67cd9d3/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/9d83960a8ded405ab96cc4a54fa44435/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/c050a5bae89f424db2f97fd5d7ea798b/nld@2026-03-12;15473785: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2025/74553638bbc6462996e9f5cd8fea6bd6/nld@2025-10-08;18215983: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/c085a5566b584def9b3b1f1f4ed0ae2e/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- FOUT https://identifier.officielebekendmakingen.nl/join/id/regdata/gm0268/2026/066a17f54322475d9d8741c28c4b84e7/nld@2026-09-24;11132691: HTTPError HTTP Error 403: Forbidden
+- waarvan 0 met een naam die op erfgoed wijst
 
 ## Alle namen
 
-- Archeologisch Rijksmonument
-- Bebouwingscontour houtkap
-- Belemmeringengebied energie - interferentiegebied
-- bodem - deelgebied 1900 tot 1945
-- bodem - deelgebied 1945 tot 1965
-- bodem - deelgebied 1965 tot heden
-- bodem - deelgebied tot 1900
-- bodem - deelgebied Veur Lent
-- bodem - deelgebied Waalsprong
-- bodem - deelgebied Waalsprong kassen
-- bodem - deelgebied Waalsprong ophoging
-- Bodembeheergebied
-- Bodemkwaliteitsgebied - bestaande stad 1945 tot 1965
-- Bodemkwaliteitsgebied - bestaande stad tot 1945
-- Bodemkwaliteitsgebied - bestaande stad vanaf 1965
-- Bodemkwaliteitsgebied - Veur Lent
-- Bodemkwaliteitsgebied - Waalsprong
-- Gebied met archeologische (verwachtings)waarden
-- Hoogte in meters ten opzichte van NAP
-- Neder-Germaanse Limes: bufferzone aquaduct
-- Reparatie Winkelsteeg - kwetsbaar of zeer kwetsbaar gebouw toevoegen
-- Vrijgestelde verticale bouwdiepte in meters ten opzichte van NAP
-- Waardengebied archeologie - (zeer) grote archeologische waarde
-- Waardengebied archeologie - hoge verwachtingswaarde
-- Waardengebied archeologie - lage verwachtingswaarde
-- Waardengebied archeologie - maatwerk
-- Waardengebied archeologie - maatwerk 2
-- Waardengebied archeologie - middeleeuwse kern
-- Waardengebied archeologie - middelhoge verwachtingswaarde
-- Waardengebied archeologie - uitzonderlijk universele of vastgestelde waarde
-- Waardengebied cultureel erfgoed - molenbiotoop
+- /join/id/regdata/gm0268/2025/44849203ac17444184629d0565a44394/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/5edec514974d4c96b8da2a890e54812c/nld@2025‑10‑08;18215983
+- /join/id/regdata/gm0268/2026/0d410ba16ffb45faba53edfa74aac6d3/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2024/b1bafb0db34d4c85bfa2bae7a388195a/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2026/5ccc298c601b46c794187d1d3cefeb19/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/46afc36a8b3e4a6f985eac7174601613/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/841cb4e406ab4d7ca2c088224b300788/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/97b3f293cec342a28cda5d4b88b7d845/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/7c868819cee346acb47a34165085fc9e/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/fc057ba8a73b44158e0952e2013251fd/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/23d64a32fd9b459383fd71dd2e8b5977/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/9ed32ec591a0499880640d07fa17c646/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/62fd10d965d943249dd07d0a3bb77afe/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/a26a80d500d14268969aaa71f89e9323/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/5feaa2e87eed4f548544bb53e485d924/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/919da1cb68b2418bb94847528876620e/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2024/1747a7d8383f48db8285bbfa3b9f240e/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/81a4b406c29d47b697398dd746e321f0/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/49ff20e32c174eb9b796147d8126f537/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/b1b2610a884f4076bc44f86d4a9babf0/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2025/734997aa87764f75bc523d1558a5a333/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/a7ba285e4c424f22904611c37e7483ee/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/057ed04dd242494590ecf1bd4c96027a/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/ab21d17e2fb9402192624a2f772bc177/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/34aad304581a426da7500084764fc022/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/2a395513054a41f282b341ae97cf3e38/nld@2025‑10‑08;18215983
+- /join/id/regdata/gm0268/2024/c79bb8d0bbab462c84d2408d700bede4/nld@2025‑10‑08;18215983
+- /join/id/regdata/gm0268/2024/ebd46ce99b5f45c782cf19847884458d/nld@2025‑10‑08;18215983
+- /join/id/regdata/gm0268/2025/af5966d07921438fab4ff7c68b987240/nld@2025‑04‑17;09524121
+- /join/id/regdata/gm0268/2024/0a41e2797307477bae75521a31371dc5/nld@2025‑10‑08;18215983
+- /join/id/regdata/gm0268/2025/4539d71add434268bfb28a90b14ff072/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/cff32f3b4bc64355aa0bf2c93bd0b98f/nld@2025‑10‑08;18215983
+- /join/id/regdata/gm0268/2026/74eb855925074aa3bb39b225548c101d/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/9cd10413d65c48fba475f9cc74158b1f/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2025/476c806b68824a84847fb1eb3e9a5d24/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2026/6b0916180e5d41f8a7326a12fb114fa7/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/65786acedb4f4de18edfa750828334bd/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2025/58603ffd5ca543e4b6bedccd952942e5/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2026/dde5f0b504d04345b1307dbbbb03afb1/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2025/0861d187cbe64da9b2009889a6b9260e/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/14d3313658634de3a1a8e9e5ba1e96d1/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/af61869fb1854008afaa735af11fa0a0/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/fac89bafd4ff4591a55fca98055ce236/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/cb069f7c63444ada9a9ba4cba34187a1/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/48181376867442029376de7161bbaf1e/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/0e44f3a1b1764c8fbe73dca7c67cd9d3/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/9d83960a8ded405ab96cc4a54fa44435/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/c050a5bae89f424db2f97fd5d7ea798b/nld@2026‑03‑12;15473785
+- /join/id/regdata/gm0268/2025/74553638bbc6462996e9f5cd8fea6bd6/nld@2025‑10‑08;18215983
+- /join/id/regdata/gm0268/2026/c085a5566b584def9b3b1f1f4ed0ae2e/nld@2026‑09‑24;11132691
+- /join/id/regdata/gm0268/2026/066a17f54322475d9d8741c28c4b84e7/nld@2026‑09‑24;11132691
 
 ## Erfgoed, met geometrie
 
-- FOUT https://repository.officiele-overheidspublicaties.nl/Datacollecties/2026/dc-2026-8608/1/gml/dc-2026-8608.gml: URLError <urlopen error [Errno 101] Network is unreachable>
-- Archeologisch Rijksmonument: geen GML gevonden
-- Waardengebied cultureel erfgoed - molenbiotoop: 2 vlakken, bewaard als omgevingsplan_gio_01.gml

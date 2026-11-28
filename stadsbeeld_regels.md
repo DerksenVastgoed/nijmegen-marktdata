@@ -257,7 +257,7 @@ naast elkaar bestaan.
 ## Omgevingsplan Nijmegen
 
 - het woord stadsbeeld staat 0 keer in de hele tekst
-- `https://lokaleregelgeving.overheid.nl/CVDR696550`, 1324 artikelen gelezen, 1 over stadsbeelden
+- `https://lokaleregelgeving.overheid.nl/CVDR696550`, 1572 artikelen gelezen, 1 over stadsbeelden
 
 ### Artikel 22.279 Omgevingsplanactiviteit: beoordelingsregel omgevingsvergunning slopen van een bouwwerk
 

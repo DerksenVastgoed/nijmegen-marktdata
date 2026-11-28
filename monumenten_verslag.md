@@ -5,16 +5,21 @@
 
 
 ## https://www.nijmegen.nl/cultuur/monumentenlijst/
-- eindadres `https://www.nijmegen.nl/cultuur/monumentenlijst/`, 61790 bytes
+- eindadres `https://www.nijmegen.nl/monumenten-cultuur-kunst/monumentenlijst/`, 58143 bytes
 - iframes: []
 - links:
-  - /cultuur/monumentenlijst/
-  - /cultuur/monumentenlijst/#c36492
+  - /monumenten-cultuur-kunst/
+  - /monumenten-cultuur-kunst/beschermde-stadsgezichten/
+  - /monumenten-cultuur-kunst/monumentenlijst/
+  - /monumenten-cultuur-kunst/monumentenlijst/#c36492
+  - /monumenten-cultuur-kunst/monumentenlijst/#c37375
+  - /monumenten-cultuur-kunst/monumentenlijst/#c37376
+  - /monumenten-cultuur-kunst/monumentenlijst/#c37377
   - /paspoort-id-kaart/
   - /verbouwen/monument-verbouwen-en-onderhouden/
   - /verduurzamen/monument-duurzamer-maken/
   - /voor-uw-woning/financiele-steun-monument/
   - /voor-uw-woning/monumentenschildje-aanvragen/
-  - https://www.nijmegen.nl/cultuur/monumentenlijst/
+  - https://www.nijmegen.nl/monumenten-cultuur-kunst/monumentenlijst/
 
 - FOUT https://services.nijmegen.nl/geoservices/ows?service=WMS&request=GetCapabilities: HTTPError HTTP Error 401: 

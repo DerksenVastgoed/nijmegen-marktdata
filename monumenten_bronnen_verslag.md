@@ -1,11 +1,11 @@
 # Gemeentelijke monumenten: twee open bronnen
 
 ## Gemeenteblad (SRU)
-- NIET OPGEHAALD https://repository.overheid.nl/sru?operation=searchRetrieve&version=2.0&query=dt.creator%3D%22Nijmegen%22+and+cql.textAndIndexes%3D%22gemeentelijk+monument%22&maximumRecords=200: robots.txt van https://repository.overheid.nl niet te lezen: <urlopen error [Errno 101] Network is unreachable>
+- NIET OPGEHAALD https://repository.overheid.nl/sru?operation=searchRetrieve&version=2.0&query=dt.creator%3D%22Nijmegen%22+and+cql.textAndIndexes%3D%22gemeentelijk+monument%22&maximumRecords=200: robots.txt van https://repository.overheid.nl staat dit niet toe
 - `dt.creator="Nijmegen" and cql.textAndIndexes="gemeentelijk monument"`: totaal None, gelezen onleesbaar
-- NIET OPGEHAALD https://repository.overheid.nl/sru?operation=searchRetrieve&version=2.0&query=dt.creator%3D%22Nijmegen%22+and+dt.title+any+%22monument%22&maximumRecords=200: robots.txt van https://repository.overheid.nl niet te lezen: <urlopen error [Errno 101] Network is unreachable>
+- NIET OPGEHAALD https://repository.overheid.nl/sru?operation=searchRetrieve&version=2.0&query=dt.creator%3D%22Nijmegen%22+and+dt.title+any+%22monument%22&maximumRecords=200: robots.txt van https://repository.overheid.nl staat dit niet toe
 - `dt.creator="Nijmegen" and dt.title any "monument"`: totaal None, gelezen onleesbaar
-- NIET OPGEHAALD https://repository.overheid.nl/sru?operation=searchRetrieve&version=2.0&query=cql.textAndIndexes%3D%22Nijmegen%22+and+cql.textAndIndexes%3D%22aanwijzing+gemeentelijk+monument%22&maximumRecords=200: robots.txt van https://repository.overheid.nl niet te lezen: <urlopen error [Errno 101] Network is unreachable>
+- NIET OPGEHAALD https://repository.overheid.nl/sru?operation=searchRetrieve&version=2.0&query=cql.textAndIndexes%3D%22Nijmegen%22+and+cql.textAndIndexes%3D%22aanwijzing+gemeentelijk+monument%22&maximumRecords=200: robots.txt van https://repository.overheid.nl staat dit niet toe
 - `cql.textAndIndexes="Nijmegen" and cql.textAndIndexes="aanwijzing gemeentelijk monument"`: totaal None, gelezen onleesbaar
 
 ## Wikidata
