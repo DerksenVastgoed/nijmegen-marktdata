@@ -45,7 +45,16 @@ jobs:
       contents: write
       actions: write
     steps:
+      # DE NIEUWSTE STAND, NIET DIE VAN HET MOMENT VAN STARTEN (28 november).
+      # Zonder ref haalt checkout de commit op van het moment dat de run in
+      # de wachtrij kwam. Een run die achter een andere wachtte (05:12 in de
+      # rij, 07:06 gestart), begon zo met een bestemmingen.json van voor de vorige
+      # ronde, en zette dat oudere bestand terug: van 1.864 panden met
+      # verwijzingen bleven er 1.295 over. Met de naam van de tak haalt
+      # checkout de stand op bij de start.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Proef
         run: python3 bestemming.py --proef
