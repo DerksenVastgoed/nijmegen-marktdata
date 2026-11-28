@@ -44,13 +44,17 @@ GEMEENTELIJK = [
                     "onttrekking en de WOZ-grenzen voor kamerverhuur"),
     ("erfgoed", "Erfgoedverordening: monumenten en beschermde stadsbeelden"),
     ("parkeer", "Parkeerverordening: parkeereis en vergunningen bij splitsing"),
-    # De Beleidsregels Kamerverhuur 2021 vervallen op 16 november 2026, en
-    # daarop zijn de kamertoets en de herroeping van Professor
-    # Molkenboerstraat 20A gebaseerd. Een opvolger of een quotum moet hier
-    # verschijnen zodra hij gepubliceerd is.
-    ("kamerverhuur", "Beleidsregels Kamerverhuur: insluiting, "
-                     "aaneenschakeling, afval, fietsen en geluid; vervallen per "
-                     "16 november 2026"),
+    # De Beleidsregels Kamerverhuur 2021 zijn per 16 november 2026 vervallen.
+    # De opvolger staat in het omgevingsplan (wijziging 2026-01, gemeenteblad
+    # 2026 nr. 219215): de paragraaf over verkameren, met informatieplicht bij
+    # drie en vergunningplicht vanaf vier onzelfstandige woonruimten, en
+    # dezelfde toetspunten (insluiting, aaneenschakeling, geluid). Die volgt
+    # deze monitor via de term 'omgevingsplan'. Deze term blijft staan: een
+    # nieuwe beleidsregel of een quotum zou hier verschijnen. (Opgeschoond op
+    # 28 november; het oude commentaar zei nog dat de opvolger moest komen.)
+    ("kamerverhuur", "Beleidsregels Kamerverhuur: vervallen per 16 november "
+                     "2026, opgevolgd door het omgevingsplan; een nieuwe "
+                     "beleidsregel of quotum is nieuws"),
     ("leegstand", "Leegstandverordening: Nijmegen heeft er bewust geen, zie "
                   "BEWUST_AFWEZIG; een treffer hier is dus nieuws"),
     ("bouw", "Bouwverordening"),
