@@ -102,8 +102,7 @@ def tekst_uit(html):
     # De eerste kop op ruimtelijkeplannen.nl is de plannaam (gemeten 28
     # november: 61 keer de plannaam als titel). De artikelnaam staat als
     # regel "Artikel 10 Gemengd - 3"; die heeft voorrang.
-    artikel = next((r for r in tekst.splitlines()
-                    if re.match(r"^Artikel \d+[a-z]?\b", r)), "")
+    artikel = artikel_uit_tekst(tekst)
     titel = artikel or p.titel
     if not titel:
         m = re.search(r"<title>(.*?)</title>", html or "", re.S)
@@ -151,14 +150,82 @@ def bepalingen(tekst):
     return uit
 
 
-def artikeltitel(art):
-    """De regel "Artikel 10 Gemengd - 3" uit de tekst, anders de titel.
-    Teksten van voor 28 november hebben de plannaam als titel, en worden pas
-    na HERHAAL_DAGEN opnieuw gehaald."""
-    for r in (art.get("tekst") or "").splitlines():
+def artikel_uit_tekst(tekst):
+    """
+    De naam van het artikel uit de tekst van de pagina.
+
+    Eerst de regel "direct naar inhoud van Artikel 10 Gemengd - 3", die
+    bovenaan elke pagina staat. De eerste regel die met "Artikel" begint, kan
+    uit het menu komen: gemeten 28 november, een paar pagina's kregen zo
+    "Artikel 1 Begrippen".
+    """
+    for r in (tekst or "").splitlines():
+        m = re.match(r"^direct naar inhoud van (Artikel \d+[a-z]?\b.*)$", r)
+        if m:
+            return m.group(1).strip()
+    for r in (tekst or "").splitlines():
         if re.match(r"^Artikel \d+[a-z]?\b", r):
             return r
-    return art.get("titel") or ""
+    return ""
+
+
+def artikel_deel(tekst, fragment):
+    """
+    Het stuk van een pagina dat bij een artikel hoort, voor plannen die al
+    hun regels op een pagina hebben. Het #-deel van de link noemt het
+    artikel: "_15_Wonen" is artikel 15. None als het niet te vinden is.
+
+    WAAROM (28 november 2026). De links worden zonder #-deel opgehaald, zodat
+    een pagina een keer komt. Bij de plannen BPa1000, BPa2000 en BPa3000
+    staat alles op een pagina, en las de functieruimte daar de eerste
+    bestemming van de pagina (Bedrijf) in plaats van Wonen: 145 panden met
+    Wonen kregen zo 'bedrijven' als hoofdfunctie. Gemeten: 353 van de 1.295
+    links naar een enkelbestemming hebben een #-deel.
+    """
+    m = re.match(r"^_(\d+[a-z]?)_", fragment or "")
+    if not m:
+        return None
+    nr = m.group(1)
+    regels = (tekst or "").splitlines()
+    for i, r in enumerate(regels):
+        if not re.match(rf"^Artikel {re.escape(nr)}\b", r):
+            continue
+        if i + 1 >= len(regels) or not re.match(
+                rf"^{re.escape(nr)}\.1\b", regels[i + 1]):
+            continue  # de inhoudsopgave, niet het artikel zelf
+        uit = [r]
+        for r2 in regels[i + 1:]:
+            m2 = re.match(r"^Artikel (\d+[a-z]?)\b", r2)
+            if m2 and m2.group(1) != nr:
+                break
+            uit.append(r2)
+        return "\n".join(uit)
+    return None
+
+
+def tekst_voor(link, artikelen):
+    """
+    (titel, tekst) van het artikel waar een link naar wijst, of (None, None)
+    als het niet is opgehaald. Met een #-deel alleen dat artikel; is dat in
+    de pagina niet te vinden, dan (titel van de pagina, None).
+    """
+    basis, _, frag = (link or "").partition("#")
+    art = artikelen.get(basis)
+    if not art or not art.get("tekst"):
+        return None, None
+    if frag and re.match(r"^_\d", frag):
+        deel = artikel_deel(art["tekst"], frag)
+        if deel is None:
+            return artikeltitel(art), None
+        return deel.splitlines()[0], deel
+    return artikeltitel(art), art["tekst"]
+
+
+def artikeltitel(art):
+    """De naam van het artikel uit de tekst, anders de opgeslagen titel.
+    Teksten van voor 28 november hebben de plannaam als titel, en worden pas
+    na HERHAAL_DAGEN opnieuw gehaald."""
+    return artikel_uit_tekst(art.get("tekst") or "") or art.get("titel") or ""
 
 
 def bepaling_aanduiding(rec, artikelen):
@@ -169,23 +236,151 @@ def bepaling_aanduiding(rec, artikelen):
     in (dan kan hij in een algemeen hoofdstuk staan); None als titel: het
     artikel is niet opgehaald. Die twee zeggen iets anders dan "geen".
     """
-    links = [(v.get("tekst") or "").split("#")[0]
+    links = [v.get("tekst") or ""
              for v in ((rec.get("verwijzingen") or {}).get("enkelbestemming")
                        or []) if v.get("tekst")]
     uit = []
     for naam in rec.get("functieaanduiding") or []:
         titel, gevonden = None, None
         for u in links:
-            art = artikelen.get(u)
-            if not art or not art.get("tekst"):
+            t, tekst = tekst_voor(u, artikelen)
+            if t is None:
                 continue
-            titel = artikeltitel(art) or u
-            b = bepalingen(art["tekst"]).get(gelijk(naam))
+            titel = t
+            if not tekst:
+                continue
+            b = bepalingen(tekst).get(gelijk(naam))
             if b:
                 gevonden = b
                 break
         uit.append((naam, titel, gevonden))
     return uit
+
+
+# DE FUNCTIES VAN EEN BESTEMMING (28 november 2026). Lid 1 heeft in elk plan
+# de vorm "De voor 'X' aangewezen gronden zijn bestemd voor:" met genummerde
+# onderdelen. Gemeten op de 61 artikelen: wat geen aanduiding is, is een
+# hoofdfunctie of een bijzaak. De bijzaken en de woordenlijst hieronder komen
+# uit die meting, niet uit een aanname.
+BIJZAAK = ("bijbehorende", "wadi", "ondergeschikte", "ondersteunende",
+           "aan huis verbonden", "ontsluitingswegen", "opslag en uitstalling")
+FUNCTIES = ("wonen", "detailhandel", "dienstverlening", "horeca", "kantoren",
+            "maatschappelijke voorzieningen", "cultuur en ontspanning",
+            "bedrijven", "hotel")
+# Een hotel noemt een bepaling letterlijk; 'pension' en 'logies' tellen mee.
+_HOTEL = re.compile(r"hotel|pension|logies", re.I)
+
+
+def lid_een(tekst):
+    """De onderdelen van de bestemmingsomschrijving, of None zonder lid 1."""
+    regels = (tekst or "").splitlines()
+    for i, r in enumerate(regels):
+        m = re.match(r"^(\d+[a-z]?)\.1\s+Bestemmingsomschrijving$", r, re.I)
+        if m and i + 1 < len(regels) and regels[i + 1].startswith("De voor"):
+            uit = []
+            for r2 in regels[i + 2:]:
+                if re.match(rf"^{re.escape(m.group(1))}\.2\b", r2):
+                    break
+                uit.append(r2)
+            return uit
+    return None
+
+
+def functies_in(tekst):
+    """De functies uit de woordenlijst die in een tekst staan, op volgorde."""
+    t = (tekst or "").lower()
+    # Als heel woord: 'horecabedrijven' is horeca, geen 'bedrijven' (gemeten
+    # 28 november: zonder woordgrens telde 'bedrijven' 389 keer als extra).
+    uit = [f for f in FUNCTIES
+           if f != "hotel" and re.search(rf"\b{re.escape(f)}\b", t)]
+    if "horecabedrijven" in t and "horeca" not in uit:
+        uit.append("horeca")
+    if _HOTEL.search(t):
+        uit.append("hotel")
+    return uit
+
+
+def hoofdfuncties(tekst):
+    """
+    De functies die de bestemming zelf toestaat (zonder aanduiding en
+    zonder bijzaken), of None als het artikel geen lid 1 heeft.
+    """
+    lid = lid_een(tekst)
+    if lid is None:
+        return None
+    uit = []
+    for r in lid:
+        m = re.match(r"^[a-z]{1,2}\.\s*(.*)$", r)
+        if not m:
+            continue
+        x = m.group(1)
+        if re.search(r"ter plaats", x, re.I):
+            continue
+        x = re.split(r",?\s*met dien verstande", x)[0]
+        if x.lower().startswith(BIJZAAK):
+            continue
+        for f in functies_in(x):
+            if f not in uit:
+                uit.append(f)
+    return uit
+
+
+# HUIDIG GEBRUIK UIT DE BAG, naar dezelfde woorden. Alleen de doelen die
+# eenduidig zijn; een bijeenkomstfunctie kan horeca, cultuur of
+# maatschappelijk zijn en blijft daarom zonder vertaling.
+BAG_NAAR_FUNCTIE = {"woonfunctie": "wonen", "winkelfunctie": "detailhandel",
+                    "kantoorfunctie": "kantoren", "logiesfunctie": "hotel",
+                    "industriefunctie": "bedrijven"}
+
+
+def functieruimte(rec, artikelen, bag_doelen=()):
+    """
+    Wat het plan op dit pand toestaat, naast wat er nu is.
+
+    Geeft None als marktdata het pand nog niet heeft opgehaald of het
+    artikel van de bestemming niet heeft; anders een dict met
+    bestemming, artikel, hoofdfuncties, aanduidingen [(naam, functies,
+    bepaling)], toegestaan (alle functies), huidig (uit de BAG, vertaald
+    waar eenduidig), extra (toegestaan min huidig) en hotel (letterlijk).
+
+    WAAROM (28 november 2026). Mark: een pand dat te koop staat en meer
+    functies kan hebben, hoort zichtbaar te zijn, ook als het niet in een
+    verhuur- of splitsingsscenario past. Dit kijkt vanuit het plan in
+    plaats van vanuit de verhuursom.
+    """
+    if not rec or "verwijzingen" not in rec:
+        return None
+    eb = ((rec.get("verwijzingen") or {}).get("enkelbestemming") or [])
+    tekst = titel = None
+    for v in eb:
+        titel, tekst = tekst_voor(v.get("tekst") or "", artikelen)
+        if tekst:
+            naam = v.get("naam") or ""
+            break
+    if not tekst:
+        return None
+    hf = hoofdfuncties(tekst) or []
+    aand = []
+    for n, _titel, bep in bepaling_aanduiding(rec, artikelen):
+        aand.append((n, functies_in(bep["tekst"]) if bep else [],
+                     bep["tekst"].rstrip(" ;") if bep else None))
+    toegestaan = list(hf)
+    for _n, fs, _b in aand:
+        for f in fs:
+            if f not in toegestaan:
+                toegestaan.append(f)
+    huidig = []
+    for d in bag_doelen or ():
+        f = BAG_NAAR_FUNCTIE.get(d)
+        if f and f not in huidig:
+            huidig.append(f)
+    extra = [f for f in toegestaan if f not in huidig]
+    return {"bestemming": naam, "artikel": titel,
+            "hoofdfuncties": hf, "aanduidingen": aand,
+            "toegestaan": toegestaan, "huidig": huidig,
+            "huidig_bag": list(bag_doelen or ()), "extra": extra,
+            "hotel": any("hotel" in fs for _n, fs, _b in aand)
+            or "hotel" in hf}
 
 
 def te_halen(link, opgeslagen, vandaag=None):
@@ -379,6 +574,81 @@ def proef():
         afw.append(f"een aanduiding die niet in het artikel staat: {ba[1]}")
     if bepaling_aanduiding(rec, {})[0][1] is not None:
         afw.append("een niet opgehaald artikel krijgt toch een titel")
+
+    # FUNCTIERUIMTE, op lid 1 van echte artikelen (28 november).
+    g3 = "\n".join([
+        "direct naar inhoud van Artikel 10 Gemengd - 3",
+        "Artikel 1 Begrippen",
+        "10.1 Bestemmingsomschrijving",
+        "10.1 Bestemmingsomschrijving",
+        "De voor 'Gemengd - 3' aangewezen gronden zijn bestemd voor:",
+        "a. cultuur en ontspanning, detailhandel en wonen, met dien verstande "
+        "dat nieuwe geluidsgevoelige functies alleen zijn toegestaan;",
+        "b. bedrijven voor zover deze voorkomen in categorie 1 of 2;",
+        "l. ter plaatse van de aanduiding 'specifieke vorm van horeca-2' "
+        "tevens voor een hotel;",
+        "q. ondersteunende horeca zoals bedoeld in artikel 32.4;",
+        "r. bijbehorende voorzieningen zoals verhardingen, parkeer- en "
+        "groenvoorzieningen;",
+        "10.2 Bouwregels",
+        "a. hoofdgebouwen mogen uitsluitend worden opgericht binnen het "
+        "bouwvlak, ook voor kantoren;"])
+    if artikel_uit_tekst(g3) != "Artikel 10 Gemengd - 3":
+        afw.append(f"artikelnaam uit het menu: {artikel_uit_tekst(g3)}")
+    if hoofdfuncties(g3) != ["wonen", "detailhandel", "cultuur en ontspanning",
+                             "bedrijven"]:
+        afw.append(f"hoofdfuncties Gemengd - 3: {hoofdfuncties(g3)}")
+    wonen = ("19.1 Bestemmingsomschrijving\nDe voor 'Wonen' aangewezen gronden "
+             "zijn bestemd voor:\na. wonen;\nb. aan huis verbonden beroeps- "
+             "en bedrijfsactiviteiten;\nc. bijbehorende voorzieningen;\n"
+             "19.2 Bouwregels")
+    if hoofdfuncties(wonen) != ["wonen"]:
+        afw.append(f"bijzaken tellen als functie bij Wonen: "
+                   f"{hoofdfuncties(wonen)}")
+    if functies_in("tevens voor horecabedrijven in categorie 1a") != ["horeca"]:
+        afw.append(f"horecabedrijven telt als bedrijven: "
+                   f"{functies_in('tevens voor horecabedrijven in categorie 1a')}")
+    if hoofdfuncties("geen lid een") is not None:
+        afw.append("een artikel zonder lid 1 geeft toch functies")
+    _a = {BRON + "g3.html": {"titel": "x", "tekst": g3}}
+    _r = {"functieaanduiding": ["specifieke vorm van horeca - .2"],
+          "verwijzingen": {"enkelbestemming": [
+              {"naam": "Gemengd - 3", "tekst": BRON + "g3.html"}]}}
+    fr = functieruimte(_r, _a, ["woonfunctie", "bijeenkomstfunctie"])
+    if not fr or fr["extra"] != ["detailhandel", "cultuur en ontspanning",
+                                 "bedrijven", "hotel"] or not fr["hotel"] \
+            or fr["huidig"] != ["wonen"]:
+        afw.append(f"functieruimte: {fr}")
+    if functieruimte({"enkelbestemming": ["Wonen"]}, _a) is not None:
+        afw.append("een niet opgehaald pand krijgt toch een functieruimte")
+
+    # EEN PAGINA MET ALLE REGELS: het #-deel kiest het artikel.
+    heel = "\n".join([
+        "Artikel 3 Bedrijf", "Artikel 15 Wonen",  # inhoudsopgave
+        "Artikel 3 Bedrijf", "3.1 bestemmingsomschrijving",
+        "De voor 'Bedrijf' aangewezen gronden zijn bestemd voor:",
+        "a. bedrijven voor zover deze zijn opgenomen in de Staat;",
+        "3.2 bouwregels",
+        "Artikel 15 Wonen", "15.1 bestemmingsomschrijving",
+        "De voor 'Wonen' aangewezen gronden zijn bestemd voor:",
+        "a. wonen;", "b. ter plaatse van de aanduiding 'praktijkruimte' "
+        "tevens voor kantoren;", "15.2 bouwregels",
+        "Artikel 16 Waarde - Archeologie"])
+    _h = {BRON + "h.html": {"titel": "Oud West", "tekst": heel}}
+    _hr = {"functieaanduiding": ["praktijkruimte"], "verwijzingen": {
+        "enkelbestemming": [{"naam": "Wonen",
+                             "tekst": BRON + "h.html#_15_Wonen"}]}}
+    fh = functieruimte(_hr, _h, [])
+    if not fh or fh["hoofdfuncties"] != ["wonen"] or \
+            fh["artikel"] != "Artikel 15 Wonen":
+        afw.append(f"op een pagina met alle regels wordt het verkeerde "
+                   f"artikel gelezen: {fh}")
+    if bepaling_aanduiding(_hr, _h)[0][2] is None:
+        afw.append("de aanduiding in een artikel op een pagina met alle "
+                   "regels wordt niet gevonden")
+    if tekst_voor(BRON + "h.html#_99_Niets", _h)[1] is not None:
+        afw.append("een artikel dat niet op de pagina staat, telt als "
+                   "gevonden")
 
     vandaag = dt.date(2026, 11, 28)
     if not te_halen("x", {}, vandaag):

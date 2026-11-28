@@ -27,5 +27,6 @@ Wat nog niet klopt sinds de splitsing van 11 november 2026.
   bestemming naar wijst, en koppelt elke functieaanduiding aan zijn bepaling
   (232 van 240 na de eerste ronde; de rest staat niet in het artikel van de
   bestemming, mogelijk in een algemeen hoofdstuk, dat nog niet wordt gelezen).
-  Het dossier toont de bepaling. Nog niet gebouwd: het gebruik op de
-  shortlist van de brief (ruimte en wrijving).
+  Het dossier toont de bepaling. Sinds de functieruimte (28 november) ook per
+  pand: welke functies het plan toestaat naast het huidige gebruik, voor het
+  blok Functieruimte in de brief.
