@@ -1,7 +1,7 @@
 # Planregels
 
-- links in bestemmingen.json: 61
-- deze ronde opgehaald: 61
+- links in bestemmingen.json: 55
+- deze ronde opgehaald: 0
 - mislukt: 0
 - nog te doen (tijd op): 0
 - artikelen in planregels.json: 61
