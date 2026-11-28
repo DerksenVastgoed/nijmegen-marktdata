@@ -63,7 +63,7 @@ AANDUIDINGEN = ("functieaanduiding", "bouwaanduiding", "gebiedsaanduiding")
 # volgens artikel 10.2.2 van Nijmegen Centrum - Binnenstad. Voor optoppen of
 # een dakopbouw is dat het getal dat telt.
 LAGEN = ("dubbelbestemming", "enkelbestemming") + AANDUIDINGEN + (
-    "bestemmingsplangebied", "maatvoering")
+    "bestemmingsplangebied", "maatvoering", "plangebied")
 UIT_PAD = "bestemmingen.json"
 VERSLAG = "bestemming_verslag.md"
 PAUZE = 0.2
@@ -139,7 +139,11 @@ def verwijzingen_uit(antwoord):
         v = {"naam": naam.strip(),
              "plan": (props.get("plangebied") or "").strip(),
              "artikel": (props.get("artikelnummer") or "").strip(),
-             "tekst": (props.get("verwijzingnaartekst") or "").strip()}
+             "tekst": (props.get("verwijzingnaartekst") or "").strip(),
+             # Of de regel al geldt: een ontwerp of een voorbereidingsbesluit
+             # staat in dezelfde lagen als het vastgestelde plan.
+             "typeplan": (props.get("typeplan") or "").strip(),
+             "planstatus": (props.get("planstatus") or "").strip()}
         # DE WAARDEN BIJ EEN MAATVOERING, gemeten 28 november met verken op
         # vier panden: het veld 'maatvoering' bevat ze als
         # "maximum bouwhoogte (m)"="13", "maximum goothoogte (m)"="10".
@@ -518,6 +522,44 @@ def aanduidingregels(rec):
     maat = maatvoering_tekst(rec)
     if maat:
         uit.append(("maatvoering", maat, BRONNAAM))
+    komend = in_voorbereiding(rec)
+    if komend:
+        uit.append(("in voorbereiding", "; ".join(komend) + ". Dit geldt nog "
+                    "niet, maar kan wat hier mag veranderen: nakijken in "
+                    "Regels op de kaart voor een aankoop.", BRONNAAM))
+    return uit
+
+
+VASTGESTELD = {"vastgesteld", "onherroepelijk", "geheel onherroepelijk",
+               "geheel onherroepelijk in werking"}
+
+
+def in_voorbereiding(rec):
+    """
+    Plannen op dit punt die nog niet gelden: een voorbereidingsbesluit, of
+    een plan met een andere planstatus dan vastgesteld (bijvoorbeeld een
+    ontwerp). Als 'naam (typeplan, planstatus)', een keer per plan.
+
+    WAAROM (28 november). Een ontwerpplan of voorbereidingsbesluit verandert
+    wat er straks mag, zoals de inperking van winkel naar wonen op de begane
+    grond in de binnenstad. De lagen geven ze naast het geldende plan, en
+    tot nu toe zag het dossier het verschil niet.
+    """
+    uit, gezien = [], set()
+    for laag, verw in (rec.get("verwijzingen") or {}).items():
+        for v in verw or []:
+            tp = (v.get("typeplan") or "").lower()
+            st = (v.get("planstatus") or "").lower()
+            if not tp and not st:
+                continue
+            if tp != "voorbereidingsbesluit" and (not st or st in VASTGESTELD):
+                continue
+            sleutel = v.get("plan") or v.get("naam")
+            if sleutel in gezien:
+                continue
+            gezien.add(sleutel)
+            uit.append(f"{v.get('naam')} ({tp or 'onbekend type'}, "
+                       f"{st or 'status onbekend'})")
     return uit
 
 
@@ -743,6 +785,30 @@ def proef():
     zonder_maten.update({l: [] for l in LAGEN})
     if te_vragen(zonder_maten, dt.date(2026, 11, 28)) != ["maatvoering"]:
         afw.append("een maatvoering zonder maten wordt niet opnieuw gevraagd")
+
+    # IN VOORBEREIDING: ontwerp en voorbereidingsbesluit wel, vastgesteld niet.
+    vb = {"verwijzingen": {
+        "plangebied": [
+            {"naam": "Binnenstad", "plan": "A", "typeplan": "bestemmingsplan",
+             "planstatus": "vastgesteld"},
+            {"naam": "Winkels begane grond", "plan": "B",
+             "typeplan": "voorbereidingsbesluit", "planstatus": "vastgesteld"},
+            {"naam": "Herziening", "plan": "C", "typeplan": "bestemmingsplan",
+             "planstatus": "ontwerp"}],
+        "enkelbestemming": [
+            {"naam": "Gemengd - 3", "plan": "C", "typeplan": "bestemmingsplan",
+             "planstatus": "ontwerp"}]}}
+    kv = in_voorbereiding(vb)
+    if kv != ["Winkels begane grond (voorbereidingsbesluit, vastgesteld)",
+              "Herziening (bestemmingsplan, ontwerp)"]:
+        afw.append(f"plannen in voorbereiding: {kv}")
+    if in_voorbereiding({"verwijzingen": {"plangebied": [
+            {"naam": "Binnenstad", "plan": "A", "typeplan": "bestemmingsplan",
+             "planstatus": "vastgesteld"}]}}):
+        afw.append("een vastgesteld plan telt als in voorbereiding")
+    if in_voorbereiding({"verwijzingen": {"plangebied": [
+            {"naam": "Oud", "plan": "D"}]}}):
+        afw.append("een record zonder status telt als in voorbereiding")
 
     # DE KETEN STOPT als er niets meer te doen is of niets meer lukt.
     if rest_stand(10, 10, 0)["rest"] != 0 or rest_stand(10, 3, 1)["rest"] != 7:
