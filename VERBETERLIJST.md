@@ -15,8 +15,8 @@ Wat nog niet klopt sinds de splitsing van 11 november 2026.
   oud is daar genoeg (zie voorraad.yml). Regelgeving en gezicht ook; met één
   run elk is nog niet te zeggen of hun vertraging vast is.
 - **bestemming.yml draait sinds 28 november wekelijks** (woensdag, cron 02:23
-  UTC; vertraging zoals hierboven verwacht). Eerste ronde vult de nieuwe lagen
-  aan voor ruim 10.000 panden; dat kost meerdere runs van 120 minuten.
-  Nog niet nagemeten: de veldnamen in het antwoord van de aanduidingslagen.
-  Eerst `verken` draaien en in bestemming_verslag.md kijken of
-  Smetiusstraat 15 'horeca' teruggeeft.
+  UTC; vertraging zoals hierboven verwacht). De veldnamen zijn op 28 november
+  gemeten (zie verwijzingen_uit). Elk pand zonder verwijzingen wordt een keer
+  helemaal opnieuw gevraagd: de hele ring, zes lagen per pand. Dat kost
+  meerdere runs van 120 minuten; met alleen het wekelijkse schema duurt het
+  weken, dus de eerste rondes met de hand achter elkaar starten.

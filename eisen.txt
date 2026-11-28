@@ -524,6 +524,20 @@ proef: bestemming:functieaanduiding horeca staat niet in het dossier
 soort: gegevens
 
 ---
+eis: De bestemmingen worden alleen uit het veld 'naam' gelezen, en per pand
+  staan plan, artikel en link naar de planregels erbij.
+waarom: 28 november, gemeten met verken op vier panden en zes lagen. De
+  oude lezer nam elk veld met 'bestemming' in de sleutel of dat op 'naam'
+  eindigde, en las zo bij Smetiusstraat 15 een technische verwijzing
+  ('bestemmingsvlak') als functieaanduiding, en bij Groesbeekseweg 118A een
+  zin over de plangrens ('locatienaam') als plannaam. Het antwoord bevat ook
+  het plan en de link naar het artikel in de planregels; zonder plan is
+  'Gemengd - 3' niet te koppelen aan de regels, want dezelfde naam kan in
+  een ander plan iets anders betekenen.
+proef: bestemming:de lezer neemt andere velden dan 'naam'
+soort: gegevens
+
+---
 eis: Of een pand in een rijksbeschermd gezicht ligt, wordt per pand gemeten
   op het vlak van de RCE, niet per buurt aangenomen.
 waarom: 17 oktober. BESCHERMD_GEZICHT stond per buurt als vaste tekst, met
