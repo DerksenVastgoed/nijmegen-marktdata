@@ -22,3 +22,8 @@ Wat nog niet klopt sinds de splitsing van 11 november 2026.
   inhaal-3dbag.yml) start een ronde met alles zichzelf opnieuw tot de
   wachtrij leeg is, met maximaal 15 schakels. De maten van de maatvoering
   (zevende laag) staan in het veld 'maatvoering', gemeten op 28 november.
+
+- **planregels.py (28 november)** haalt de tekst op van elk artikel waar een
+  bestemming naar wijst. Nog niet gebouwd: de tabel die per aanduiding uit die
+  tekst afleidt wat er mag (bijvoorbeeld of een hotel kan), en het gebruik
+  daarvan in het dossier en op de shortlist van de brief.

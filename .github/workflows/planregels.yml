@@ -1,0 +1,44 @@
+# De tekst van de artikelen in de planregels, per link uit
+# bestemmingen.json. Zie planregels.py.
+#
+# EIGEN WORKFLOW EN WACHTRIJ (28 november). In de wachtrij van de keten van
+# bestemming.yml mag een run met alles een wachtende ronde annuleren; deze
+# hoort daar dus niet. Donderdag, de dag na de wekelijkse ronde van
+# bestemming.yml, zodat nieuwe links meteen tekst krijgen.
+
+name: Planregels
+
+on:
+  schedule:
+    - cron: "41 3 * * 4"
+  workflow_dispatch:
+    inputs:
+      minuten:
+        description: "Tijdbudget in minuten."
+        default: "20"
+
+concurrency:
+  group: planregels
+  cancel-in-progress: false
+
+jobs:
+  ophalen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Proef
+        run: python3 planregels.py --proef
+
+      - name: Ophalen
+        run: python3 planregels.py --minuten "${{ github.event.inputs.minuten || '20' }}"
+
+      - name: Terugcommitten
+        run: |
+          set -o pipefail
+          ./terugcommitten.sh "Planregels $(date -u +%F)" planregels.json planregels_verslag.md \
+            2>&1 | tee /tmp/terugcommit.log
+          exit "${PIPESTATUS[0]}"
