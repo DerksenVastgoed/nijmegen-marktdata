@@ -1,0 +1,71 @@
+# Planregels
+
+- links in bestemmingen.json: 61
+- deze ronde opgehaald: 61
+- mislukt: 0
+- nog te doen (tijd op): 0
+- artikelen in planregels.json: 61
+
+## Titels
+
+- Nijmegen Oost: 5780 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.19.html`
+- Nijmegen Oost: 7337 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.21.html`
+- Nijmegen Oost: 4585 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.22.html`
+- Nijmegen Oost: 6216 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.3.html`
+- Nijmegen Oost: 7703 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.8.html`
+- Nijmegen Oost: 7526 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.9.html`
+- Nijmegen Oost: 1137 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_3.26.html`
+- Nijmegen Oost: 352 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_index.html`
+- Nijmegen Oost: 431 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/t_NL.IMRO.0268.BP13000-VG01_index.html`
+- Nijmegen Centrum - Binnenstad: 11483 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.10.html`
+- Nijmegen Centrum - Binnenstad: 10381 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.11.html`
+- Nijmegen Centrum - Binnenstad: 10475 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.12.html`
+- Nijmegen Centrum - Binnenstad: 7067 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.22.html`
+- Nijmegen Centrum - Binnenstad: 7050 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.25.html`
+- Nijmegen Centrum - Binnenstad: 4561 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.26.html`
+- Nijmegen Centrum - Binnenstad: 4582 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.27.html`
+- Nijmegen Centrum - Binnenstad: 2108 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.28.html`
+- Nijmegen Centrum - Binnenstad: 5881 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.8.html`
+- Nijmegen Centrum - Binnenstad: 8399 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.9.html`
+- Nijmegen Centrum - Binnenstad: 3444 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_3.33.html`
+- Nijmegen Centrum - Binnenstad: 386 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_index.html`
+- Nijmegen Centrum - Binnenstad: 516 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5000-VG01/t_NL.IMRO.0268.BP5000-VG01_index.html`
+- Nijmegen Centrum - Stationsomgeving: 6400 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5500-VG01/r_NL.IMRO.0268.BP5500-VG01_2.17.html`
+- Nijmegen Centrum - Stationsomgeving: 7062 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5500-VG01/r_NL.IMRO.0268.BP5500-VG01_2.20.html`
+- Nijmegen Centrum - Stationsomgeving: 4565 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5500-VG01/r_NL.IMRO.0268.BP5500-VG01_2.21.html`
+- Nijmegen Centrum - Stationsomgeving: 7153 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5500-VG01/r_NL.IMRO.0268.BP5500-VG01_2.7.html`
+- Nijmegen Centrum - Stationsomgeving: 4358 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5500-VG01/r_NL.IMRO.0268.BP5500-VG01_3.27.html`
+- Nijmegen Centrum - Stationsomgeving: 398 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5500-VG01/r_NL.IMRO.0268.BP5500-VG01_index.html`
+- Nijmegen Centrum - Stationsomgeving: 484 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP5500-VG01/t_NL.IMRO.0268.BP5500-VG01_index.html`
+- Nijmegen Bottendaal Galgenveld: 5052 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/r_NL.IMRO.0268.BP7000-VG02_2.16.html`
+- Nijmegen Bottendaal Galgenveld: 8241 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/r_NL.IMRO.0268.BP7000-VG02_2.17.html`
+- Nijmegen Bottendaal Galgenveld: 7639 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/r_NL.IMRO.0268.BP7000-VG02_2.18.html`
+- Nijmegen Bottendaal Galgenveld: 4574 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/r_NL.IMRO.0268.BP7000-VG02_2.19.html`
+- Nijmegen Bottendaal Galgenveld: 4186 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/r_NL.IMRO.0268.BP7000-VG02_2.5.html`
+- Nijmegen Bottendaal Galgenveld: 10097 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/r_NL.IMRO.0268.BP7000-VG02_2.6.html`
+- Nijmegen Bottendaal Galgenveld: 3021 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/r_NL.IMRO.0268.BP7000-VG02_3.23.html`
+- Nijmegen Bottendaal Galgenveld: 404 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/r_NL.IMRO.0268.BP7000-VG02_index.html`
+- Nijmegen Bottendaal Galgenveld: 652 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP7000-VG02/t_NL.IMRO.0268.BP7000-VG02_index.html`
+- Nijmegen Groenewoud Kwakkenberg: 5698 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP9000-VG02/r_NL.IMRO.0268.BP9000-VG02_2.17.html`
+- Nijmegen Groenewoud Kwakkenberg: 6764 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP9000-VG02/r_NL.IMRO.0268.BP9000-VG02_2.21.html`
+- Nijmegen Groenewoud Kwakkenberg: 390 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP9000-VG02/r_NL.IMRO.0268.BP9000-VG02_index.html`
+- Nijmegen Groenewoud Kwakkenberg: 424 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP9000-VG02/t_NL.IMRO.0268.BP9000-VG02_index.html`
+- Nijmegen Zuid 2017: 191338 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BPa1000-VG01/r_NL.IMRO.0268.BPa1000-VG01.html`
+- Nijmegen Zuid 2017: 276336 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BPa1000-VG01/t_NL.IMRO.0268.BPa1000-VG01.html`
+- Nijmegen Midden 2015: 182684 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BPa2000-VG01/r_NL.IMRO.0268.BPa2000-VG01.html`
+- Nijmegen Midden 2015: 309519 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BPa2000-VG01/t_NL.IMRO.0268.BPa2000-VG01.html`
+- Nijmegen Oud West 2015: 184654 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BPa3000-VG01/r_NL.IMRO.0268.BPa3000-VG01.html`
+- Nijmegen Oud West 2015: 307350 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BPa3000-VG01/t_NL.IMRO.0268.BPa3000-VG01.html`
+- Facetbestemmingsplan Archeologie 2023: 64296 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.FBPArcheologie2023-VG01/r_NL.IMRO.0268.FBPArcheologie2023-VG01.html`
+- Facetbestemmingsplan Archeologie 2023: 69145 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.FBPArcheologie2023-VG01/t_NL.IMRO.0268.FBPArcheologie2023-VG01.html`
+- Facetbestemmingsplan Kamerverhuur: 8690 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.FBPKamerverhuur-VG01/r_NL.IMRO.0268.FBPKamerverhuur-VG01.html`
+- Facetbestemmingsplan Kamerverhuur: 37448 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.FBPKamerverhuur-VG01/t_NL.IMRO.0268.FBPKamerverhuur-VG01.html`
+- Facetbestemmingsplan Molenbiotoop: 9691 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.FBPMolenbiotoop-VG01/r_NL.IMRO.0268.FBPMolenbiotoop-VG01.html`
+- Facetbestemmingsplan Molenbiotoop: 44537 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.FBPMolenbiotoop-VG01/t_NL.IMRO.0268.FBPMolenbiotoop-VG01.html`
+- Facetbestemmingsplan Parkeren: 6262 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.FBPParkeren-VG01/r_NL.IMRO.0268.FBPParkeren-VG01.html`
+- Facetbestemmingsplan Parkeren: 11171 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.FBPParkeren-VG01/t_NL.IMRO.0268.FBPParkeren-VG01.html`
+- (geen titel): 3451943 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.026800008000-/t_NL.IMRO.026800008000-.pdf`
+- Nijmegen Waalfront: 6734 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.026800008000-/v_NL.IMRO.026800008000-.html`
+- Nijmegen Waalfront: 3166 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.026800008000-/v_NL.IMRO.026800008000-_art05.html`
+- Nijmegen Waalfront: 2355 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.026800008000-/v_NL.IMRO.026800008000-_art25.html`
+- (geen titel): 584464 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.026800008000-/vb_NL.IMRO.026800008000-.pdf`
