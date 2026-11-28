@@ -503,6 +503,8 @@ def aanduidingregels(rec):
         fa = rec["functieaanduiding"]
         if fa is None:
             tekst = "het antwoord van de bron was niet te lezen"
+        elif fa and _bepalingen_tekst(rec):
+            tekst = f"{_bepalingen_tekst(rec)}. {VOORBEHOUD}"
         elif fa:
             tekst = (f"{', '.join(fa)}. Een functieaanduiding staat hier een "
                      f"functie toe naast wat de bestemming zegt; bij "
@@ -532,6 +534,48 @@ def aanduidingregels(rec):
                     "niet, maar kan wat hier mag veranderen: nakijken in "
                     "Regels op de kaart voor een aankoop.", BRONNAAM))
     return uit
+
+
+_PLANREGELS = {}
+
+
+def _artikelen(pad="planregels.json"):
+    """De artikelteksten van planregels.py, een keer gelezen; {} zonder."""
+    if pad not in _PLANREGELS:
+        try:
+            with open(pad, encoding="utf-8") as f:
+                _PLANREGELS[pad] = json.load(f).get("artikelen") or {}
+        except (FileNotFoundError, json.JSONDecodeError):
+            _PLANREGELS[pad] = {}
+    return _PLANREGELS[pad]
+
+
+def _bepalingen_tekst(rec, artikelen=None):
+    """
+    De bepaling uit het artikel per functieaanduiding, als een regel; leeg
+    als geen enkel artikel is opgehaald (dan blijft de algemene uitleg).
+
+    WAAROM (28 november). De algemene uitleg noemde Smetiusstraat 15 als
+    voorbeeld, maar in een ander plan betekent 'horeca' iets anders, en
+    sommige aanduidingen staan letterlijk een hotel toe ('specifieke vorm van
+    horeca - 2' in Binnenstad, 'specifieke vorm van gemengd - 3' in Oost).
+    De lezer hoort de bepaling zelf te zien. Een aanduiding die niet in het
+    artikel van de bestemming staat, krijgt "niet gevonden in het artikel":
+    dat is niet "geen".
+    """
+    import planregels
+    artikelen = _artikelen() if artikelen is None else artikelen
+    delen = []
+    for naam, titel, bep in planregels.bepaling_aanduiding(rec, artikelen):
+        if titel is None:
+            return ""
+        if bep:
+            delen.append(f"{naam} ({titel}, lid {bep['lid']}): "
+                         f"{bep['tekst'].rstrip(' ;')}")
+        else:
+            delen.append(f"{naam}: niet gevonden in {titel}; de bepaling kan "
+                         f"in een algemeen hoofdstuk van het plan staan")
+    return "; ".join(delen)
 
 
 def artikel_links(rec):
@@ -812,6 +856,43 @@ def proef():
     zonder_maten.update({l: [] for l in LAGEN})
     if te_vragen(zonder_maten, dt.date(2026, 11, 28)) != ["maatvoering"]:
         afw.append("een maatvoering zonder maten wordt niet opnieuw gevraagd")
+
+    # BEPALINGEN IN HET DOSSIER: de echte tekst, niet gevonden, niet gehaald.
+    _arts = {"https://ruimtelijkeplannen.nl/documents/A/a.html": {
+        "titel": "Artikel 10 Gemengd - 3",
+        "tekst": "l. ter plaatse van de aanduiding 'specifieke vorm van "
+                 "horeca-2' tevens voor een hotel;"}}
+    _rec = {"functieaanduiding": ["specifieke vorm van horeca - .2",
+                                  "onderwijs"],
+            "verwijzingen": {"enkelbestemming": [
+                {"naam": "Gemengd - 3",
+                 "tekst": "https://ruimtelijkeplannen.nl/documents/A/a.html"}]}}
+    _bt = _bepalingen_tekst(_rec, _arts)
+    if "tevens voor een hotel" not in _bt or \
+            "onderwijs: niet gevonden in Artikel 10" not in _bt:
+        afw.append(f"bepalingen in het dossier: {_bt!r}")
+    if _bepalingen_tekst(_rec, {}):
+        afw.append("zonder opgehaald artikel komt er toch een bepalingstekst")
+    # En via het dossier zelf: de bepaling moet in de regel staan.
+    fd, _dp = tempfile.mkstemp(suffix=".json")
+    os.close(fd)
+    with open(_dp, "w", encoding="utf-8") as f:
+        json.dump({"panden": {"G": dict(_rec, dubbelbestemming=[],
+                                        enkelbestemming=["Gemengd - 3"])}}, f)
+    _oud = _PLANREGELS.get("planregels.json")
+    _PLANREGELS["planregels.json"] = _arts
+    try:
+        _fa = [t for o, t, _b in dossierregels("G", _dp)
+               if o == "functieaanduiding"]
+        if not _fa or "tevens voor een hotel" not in _fa[0]:
+            afw.append(f"de bepaling staat niet in het dossier: {_fa}")
+    finally:
+        if _oud is None:
+            _PLANREGELS.pop("planregels.json", None)
+        else:
+            _PLANREGELS["planregels.json"] = _oud
+        os.unlink(_dp)
+        _cache.pop(_dp, None)
 
     # ARTIKEL-LINKS: bestemmingen met link, plangebied met kommalijst niet.
     al = artikel_links({"verwijzingen": {

@@ -24,6 +24,8 @@ Wat nog niet klopt sinds de splitsing van 11 november 2026.
   (zevende laag) staan in het veld 'maatvoering', gemeten op 28 november.
 
 - **planregels.py (28 november)** haalt de tekst op van elk artikel waar een
-  bestemming naar wijst. Nog niet gebouwd: de tabel die per aanduiding uit die
-  tekst afleidt wat er mag (bijvoorbeeld of een hotel kan), en het gebruik
-  daarvan in het dossier en op de shortlist van de brief.
+  bestemming naar wijst, en koppelt elke functieaanduiding aan zijn bepaling
+  (232 van 240 na de eerste ronde; de rest staat niet in het artikel van de
+  bestemming, mogelijk in een algemeen hoofdstuk, dat nog niet wordt gelezen).
+  Het dossier toont de bepaling. Nog niet gebouwd: het gebruik op de
+  shortlist van de brief (ruimte en wrijving).

@@ -99,11 +99,93 @@ def tekst_uit(html):
     p.feed(html or "")
     regels = [" ".join(r.split()) for r in "".join(p.delen).split("\n")]
     tekst = "\n".join(r for r in regels if r)
-    titel = p.titel
+    # De eerste kop op ruimtelijkeplannen.nl is de plannaam (gemeten 28
+    # november: 61 keer de plannaam als titel). De artikelnaam staat als
+    # regel "Artikel 10 Gemengd - 3"; die heeft voorrang.
+    artikel = next((r for r in tekst.splitlines()
+                    if re.match(r"^Artikel \d+[a-z]?\b", r)), "")
+    titel = artikel or p.titel
     if not titel:
         m = re.search(r"<title>(.*?)</title>", html or "", re.S)
         titel = " ".join(_html.unescape(m.group(1)).split()) if m else ""
     return titel, tekst
+
+
+# DE BEPALINGEN PER AANDUIDING (28 november 2026). Gemeten op de 61
+# artikelen na de eerste ronde: de vorm "x. ter plaatse van de aanduiding
+# 'naam' tevens voor ..." komt in elk plan voor, maar het plan Oost (BP13000)
+# gebruikt dubbele of ongelijke aanhalingstekens, afkortingen ("b", "prr")
+# en een tikfout ("specfieke"), en PDOK schrijft de naam anders dan de tekst
+# ("horeca van categorie .1a" tegen 'horeca van horecacategorie 1a',
+# "specifieke vorm van dienstverlening - .50%" tegen '...-50%'). Zonder deze
+# gelijkmaking koppelden 165 van de 240 aanduidingen.
+_BEPALING = re.compile(
+    r"^(?P<lid>[a-z]{1,2})\.\s*ter plaats(?:e)? van de (?:middels de "
+    r"aanduiding \S+ verbonden )?aanduiding(?:en)?\s+"
+    r"[\'\"\u2018\u2019\u201c\u201d](?P<naam>[^\'\"\u2018\u2019\u201c\u201d]+)"
+    r"[\'\"\u2018\u2019\u201c\u201d]+\s*(?P<rest>.*)$", re.I)
+# Afkortingen zoals ze in de tekst staan, alleen wat gemeten is.
+AFKORTINGEN = {"b": "bedrijf", "prr": "praktijkruimte"}
+
+
+def gelijk(naam):
+    """Een naam van een aanduiding gelijkgemaakt voor de koppeling."""
+    n = (naam or "").lower().replace("specfieke", "specifieke")
+    n = n.replace("horecacategorie", "categorie")
+    n = re.sub(r"\(.*?\)", "", n)
+    n = re.sub(r"[^a-z0-9%]", "", n)
+    return AFKORTINGEN.get(n, n)
+
+
+def bepalingen(tekst):
+    """{gelijke naam: {"lid", "naam", "tekst"}} uit een artikeltekst."""
+    uit = {}
+    for regel in (tekst or "").splitlines():
+        m = _BEPALING.match(regel.strip())
+        if not m:
+            continue
+        sleutel = gelijk(m.group("naam"))
+        uit.setdefault(sleutel, {"lid": m.group("lid"),
+                                 "naam": m.group("naam").strip(),
+                                 "tekst": m.group("rest").strip()})
+    return uit
+
+
+def artikeltitel(art):
+    """De regel "Artikel 10 Gemengd - 3" uit de tekst, anders de titel.
+    Teksten van voor 28 november hebben de plannaam als titel, en worden pas
+    na HERHAAL_DAGEN opnieuw gehaald."""
+    for r in (art.get("tekst") or "").splitlines():
+        if re.match(r"^Artikel \d+[a-z]?\b", r):
+            return r
+    return art.get("titel") or ""
+
+
+def bepaling_aanduiding(rec, artikelen):
+    """
+    Per functieaanduiding van een pand de bepaling uit het artikel van zijn
+    enkelbestemming: [(aanduiding, artikeltitel of None, bepaling of None)].
+    None als bepaling: het artikel is er, maar de aanduiding staat er niet
+    in (dan kan hij in een algemeen hoofdstuk staan); None als titel: het
+    artikel is niet opgehaald. Die twee zeggen iets anders dan "geen".
+    """
+    links = [(v.get("tekst") or "").split("#")[0]
+             for v in ((rec.get("verwijzingen") or {}).get("enkelbestemming")
+                       or []) if v.get("tekst")]
+    uit = []
+    for naam in rec.get("functieaanduiding") or []:
+        titel, gevonden = None, None
+        for u in links:
+            art = artikelen.get(u)
+            if not art or not art.get("tekst"):
+                continue
+            titel = artikeltitel(art) or u
+            b = bepalingen(art["tekst"]).get(gelijk(naam))
+            if b:
+                gevonden = b
+                break
+        uit.append((naam, titel, gevonden))
+    return uit
 
 
 def te_halen(link, opgeslagen, vandaag=None):
@@ -193,6 +275,29 @@ def ophalen(minuten, bestemmingen_pad=BESTEMMINGEN, uit_pad=UIT_PAD,
     return 0
 
 
+def hotel(bestemmingen_pad=BESTEMMINGEN, uit_pad=UIT_PAD):
+    """
+    Panden waar de bepaling van een functieaanduiding letterlijk 'hotel',
+    'pension' of 'logies' noemt. Letterlijk, omdat een horecacategorie per
+    plan anders kan zijn ingevuld; die afleiding hoort niet in deze lijst.
+    """
+    with open(bestemmingen_pad, encoding="utf-8") as f:
+        panden = json.load(f).get("panden") or {}
+    artikelen = lees(uit_pad).get("artikelen") or {}
+    rijen = []
+    for p, rec in panden.items():
+        for naam, titel, bep in bepaling_aanduiding(rec, artikelen):
+            if bep and re.search(r"hotel|pension|logies", bep["tekst"], re.I):
+                rijen.append((rec.get("adres") or p, naam, titel,
+                              bep["tekst"].rstrip(" ;")))
+    for r in sorted(rijen):
+        print("\t".join(r))
+    met = sum(1 for r in panden.values() if "verwijzingen" in r)
+    print(f"{len(rijen)} panden, van {met} met verwijzingen (de rest is nog "
+          f"niet opgehaald)", file=sys.stderr)
+    return 0
+
+
 def proef():
     import tempfile
     afw = []
@@ -231,6 +336,49 @@ def proef():
                               "10.1 Bestemmingsomschrijving", "a. wonen;",
                               "b. horeca categorie 1b"]:
         afw.append(f"tekst: menu, script of opmaak niet weg: {tekst!r}")
+
+    # BEPALINGEN, op regels uit de echte artikelen van 28 november.
+    echt = "\n".join([
+        "Artikel 10 Gemengd - 3",
+        "f. ter plaatse van de aanduiding 'horeca' tevens voor horecabedrijven "
+        "voor zover deze voorkomen in categorie 1a, 1b of 2 van de Staat van "
+        "horeca-activiteiten;",
+        "h. ter plaatse van de aanduiding 'horeca van horecacategorie 1a' "
+        "tevens voor horecabedrijven in categorie 1a;",
+        "k. ter plaatse van de aanduiding 'specifieke vorm van "
+        "dienstverlening-50%' is tevens dienstverlening toegestaan tot "
+        "maximaal 50%;",
+        "l. ter plaatse van de aanduiding 'specifieke vorm van horeca-2' "
+        "tevens voor een hotel;",
+        "b. ter plaatse van de aanduiding \"b\" tevens voor bedrijven zoals "
+        "opgenomen in milieucategorie 1;",
+        "b. ter plaatse van de aanduiding 'specfieke vorm van gemengd 1\" "
+        "tevens voor horeca in categorie 1A, 1B en 2A;"])
+    bp = bepalingen(echt)
+    for pdok, lid in (("horeca", "f"), ("horeca van categorie .1a", "h"),
+                      ("specifieke vorm van dienstverlening - .50%", "k"),
+                      ("specifieke vorm van horeca - .2", "l"),
+                      ("bedrijf", "b"),
+                      ("specifieke vorm van gemengd - 1", "b")):
+        if (bp.get(gelijk(pdok)) or {}).get("lid") != lid:
+            afw.append(f"de PDOK-naam '{pdok}' vindt lid {lid} niet: "
+                       f"{sorted(bp)}")
+    if tekst_uit("<h1>Nijmegen Centrum - Binnenstad</h1><p>Artikel 10 "
+                 "Gemengd - 3</p>")[0] != "Artikel 10 Gemengd - 3":
+        afw.append("de titel is niet de artikelnaam")
+    arts = {BRON + "a.html": {"titel": "Nijmegen Centrum - Binnenstad",
+                              "tekst": echt}}
+    rec = {"functieaanduiding": ["specifieke vorm van horeca - .2",
+                                 "praktijkruimte"],
+           "verwijzingen": {"enkelbestemming": [
+               {"naam": "Gemengd - 3", "tekst": BRON + "a.html"}]}}
+    ba = bepaling_aanduiding(rec, arts)
+    if ba[0][2] is None or "hotel" not in ba[0][2]["tekst"]:
+        afw.append(f"de bepaling voor horeca-2 wordt niet gevonden: {ba}")
+    if ba[1][1] != "Artikel 10 Gemengd - 3" or ba[1][2] is not None:
+        afw.append(f"een aanduiding die niet in het artikel staat: {ba[1]}")
+    if bepaling_aanduiding(rec, {})[0][1] is not None:
+        afw.append("een niet opgehaald artikel krijgt toch een titel")
 
     vandaag = dt.date(2026, 11, 28)
     if not te_halen("x", {}, vandaag):
@@ -286,9 +434,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--proef", action="store_true")
     ap.add_argument("--minuten", type=float, default=10)
+    ap.add_argument("--hotel", action="store_true",
+                    help="panden waar een bepaling letterlijk hotel, "
+                         "pension of logies noemt")
     a = ap.parse_args()
     if a.proef:
         return proef()
+    if a.hotel:
+        return hotel()
     return ophalen(a.minuten)
 
 
