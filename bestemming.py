@@ -25,13 +25,27 @@ Omgevingsloket. Wat dit script vindt is dus een aanwijzing om na te kijken, en
 "niets gevonden" is niet hetzelfde als "geen dubbelbestemming".
 
 HOE. Per pand één punt (het verblijfsobject uit de voorraad), en daarop een
-GetFeatureInfo op beide lagen. Het antwoord wordt bewaard in bestemmingen.json,
-zodat een pand maar één keer wordt gevraagd; de bron verandert twee keer per
+GetFeatureInfo per laag. Het antwoord wordt bewaard in bestemmingen.json,
+zodat een pand alleen opnieuw wordt gevraagd als er een laag bij is gekomen of
+als het antwoord ouder is dan HERHAAL_DAGEN; de bron verandert twee keer per
 jaar.
+
+DE AANDUIDINGEN (28 november 2026). Smetiusstraat 15: café met kamerverhuur
+wordt een hotel van 14 kamers, vergund op 25 november 2026 (Z2026-00002909).
+Volgens de ruimtelijke onderbouwing kon dat zonder buitenplanse afwijking
+omdat het pand binnen 'Gemengd - 3' de functieaanduiding 'horeca' heeft, en
+logiesverstrekkende horeca ook op de verdiepingen mag. De enkelbestemming
+alleen zegt dat dus niet: de aanduiding beslist. Daarom vraagt dit script nu
+ook functieaanduiding, bouwaanduiding, gebiedsaanduiding en de naam van het
+bestemmingsplan op. En het pand zelf stond niet in bestemmingen.json, omdat
+de ronde alleen panden met een woning nam: 661 panden met alleen een
+niet-woning (horeca, winkel, kantoor) ontbraken, en dat zijn juist de panden
+waar een transformatie speelt. Die gaan nu mee.
 
   python3 bestemming.py --verken      # een handvol bekende panden, met het
                                       # ruwe antwoord in het verslag
   python3 bestemming.py --minuten 60  # de ring ophalen, hervatbaar
+  python3 bestemming.py --zoek horeca # panden met die functieaanduiding
   python3 bestemming.py --proef
 """
 import argparse
@@ -43,10 +57,15 @@ import urllib.parse
 import urllib.request
 
 WMS = "https://service.pdok.nl/kadaster/ruimtelijke-plannen/wms/v1_0"
-LAGEN = ("dubbelbestemming", "enkelbestemming")
+AANDUIDINGEN = ("functieaanduiding", "bouwaanduiding", "gebiedsaanduiding")
+LAGEN = ("dubbelbestemming", "enkelbestemming") + AANDUIDINGEN + (
+    "bestemmingsplangebied",)
 UIT_PAD = "bestemmingen.json"
 VERSLAG = "bestemming_verslag.md"
 PAUZE = 0.2
+# De bron wordt twee keer per jaar bijgewerkt; een antwoord ouder dan dit
+# wordt opnieuw gevraagd, zodat een gewijzigd plan vanzelf binnenkomt.
+HERHAAL_DAGEN = 183
 
 # Panden waarvan we uit een besluit weten wat er ligt, om de bron aan te
 # toetsen. Groesbeekseweg 118A: 'Cultuurhistorie - 2' volgens besluit
@@ -56,6 +75,11 @@ BEKEND = {
     "Groesbeekseweg 118A": "Cultuurhistorie",
     "Bronsgeeststraat 11": None,
     "Heydenrijckstraat 40": None,
+    # Z2026-00002909: 'Gemengd - 3' met functieaanduiding 'horeca' en
+    # 'Waarde - Cultuurhistorie 2', volgens besluit en ruimtelijke
+    # onderbouwing. Toets voor de nieuwe lagen.
+    "Smetiusstraat 15": "Gemengd - 3, functieaanduiding horeca, "
+                        "Cultuurhistorie 2",
 }
 
 
@@ -102,18 +126,70 @@ def namen_uit(antwoord):
     return namen
 
 
-def punten_per_pand(pad="voorraad.json"):
-    """Per pand in de ring één punt (lat, lon) en een adres."""
+def punten_per_pand(pad="voorraad.json", met_niet_woningen=False):
+    """
+    Per pand in de ring één punt (lat, lon) en een adres.
+
+    met_niet_woningen neemt ook de panden met alleen een niet-woning mee
+    (horeca, winkel, kantoor). Standaard uit, omdat gezicht.py deze functie
+    ook gebruikt en zijn telling op de woonpanden heeft gemeten; de ronde
+    hier zet hem aan. Een pand met een woning houdt het punt van de woning.
+    """
     with open(pad, encoding="utf-8") as f:
         v = json.load(f)
     uit = {}
-    for rec in (v.get("adressen") or {}).values():
-        if rec.get("herkomst") != "focusbuurt":
-            continue
-        p, punt = rec.get("pand"), rec.get("punt")
-        if p and punt and len(punt) == 2 and p not in uit:
-            uit[p] = {"lat": punt[1], "lon": punt[0], "adres": rec.get("adres")}
+    delen = ("adressen", "niet_woningen") if met_niet_woningen else (
+        "adressen",)
+    for deel in delen:
+        for rec in (v.get(deel) or {}).values():
+            if rec.get("herkomst") != "focusbuurt":
+                continue
+            p, punt = rec.get("pand"), rec.get("punt")
+            if p and punt and len(punt) == 2 and p not in uit:
+                uit[p] = {"lat": punt[1], "lon": punt[0],
+                          "adres": rec.get("adres")}
     return uit
+
+
+def te_vragen(rec, vandaag=None):
+    """
+    Welke lagen voor een pand nog gevraagd moeten worden.
+
+    Geen record of een antwoord ouder dan HERHAAL_DAGEN: alle lagen. Anders
+    alleen de lagen die er nog niet in staan (None telt als gevraagd maar
+    onleesbaar, en wordt bij de volgende verversing opnieuw gevraagd).
+    """
+    if not rec:
+        return list(LAGEN)
+    vandaag = vandaag or dt.date.today()
+    try:
+        gezien = dt.date.fromisoformat(rec.get("gezien") or "")
+    except ValueError:
+        return list(LAGEN)
+    if (vandaag - gezien).days > HERHAAL_DAGEN:
+        return list(LAGEN)
+    return [laag for laag in LAGEN if laag not in rec]
+
+
+def zoek(tekst, bestemming=None, pad=UIT_PAD):
+    """
+    Panden met een functieaanduiding die `tekst` bevat (hoofdletters maken
+    niet uit), eventueel alleen binnen een enkelbestemming die `bestemming`
+    bevat. Geeft [(pand, adres, enkelbestemmingen, functieaanduidingen,
+    dubbelbestemmingen)], gesorteerd op adres.
+    """
+    t, b = tekst.lower(), (bestemming or "").lower()
+    uit = []
+    for p, rec in (lees(pad).get("panden") or {}).items():
+        fa = rec.get("functieaanduiding") or []
+        eb = rec.get("enkelbestemming") or []
+        if not any(t in n.lower() for n in fa):
+            continue
+        if b and not any(b in n.lower() for n in eb):
+            continue
+        uit.append((p, rec.get("adres") or "", eb, fa,
+                    rec.get("dubbelbestemming") or []))
+    return sorted(uit, key=lambda r: r[1])
 
 
 def lees(pad=UIT_PAD):
@@ -162,16 +238,22 @@ def verken(punten_adres):
 def ophalen(minuten):
     opgeslagen = lees()
     panden = opgeslagen.setdefault("panden", {})
-    punten = punten_per_pand()
-    wachtrij = [p for p in punten if p not in panden]
+    punten = punten_per_pand(met_niet_woningen=True)
+    wachtrij = [(p, te_vragen(panden.get(p))) for p in punten]
+    wachtrij = [(p, lagen) for p, lagen in wachtrij if lagen]
     begin, gedaan, fout = time.monotonic(), 0, 0
-    for p in wachtrij:
+    for p, lagen in wachtrij:
         if minuten and time.monotonic() - begin > minuten * 60:
             break
         pt = punten[p]
-        rec = {"adres": pt["adres"], "gezien": dt.date.today().isoformat()}
+        # Alle lagen: een nieuw record, zodat oude antwoorden niet blijven
+        # hangen. Een paar lagen: aanvullen op wat er al staat.
+        if len(lagen) == len(LAGEN):
+            rec = {"adres": pt["adres"]}
+        else:
+            rec = dict(panden[p])
         try:
-            for laag in LAGEN:
+            for laag in lagen:
                 namen = namen_uit(_verzoek(laag, pt["lat"], pt["lon"]))
                 # None is "niet te lezen", [] is "gekeken en niets gevonden".
                 rec[laag] = namen
@@ -183,8 +265,16 @@ def ophalen(minuten):
                       file=sys.stderr)
                 break
             continue
+        if len(lagen) == len(LAGEN):
+            rec["gezien"] = dt.date.today().isoformat()
         panden[p] = rec
         gedaan += 1
+    telling = {}
+    for rec in panden.values():
+        for n in rec.get("functieaanduiding") or []:
+            telling[n] = telling.get(n, 0) + 1
+    opgeslagen["telling_functieaanduiding"] = dict(
+        sorted(telling.items(), key=lambda kv: -kv[1]))
     opgeslagen["bron"] = ("Ruimtelijke plannen (Wro), ruimtelijkeplannen.nl via "
                           "PDOK, CC-0; niet volledig, twee keer per jaar "
                           "bijgewerkt, zonder plannen in de nieuwe standaard")
@@ -289,6 +379,44 @@ def dossierregels(pand_id, pad=UIT_PAD):
         uit.append(("bij uitbreiden of graven",
                     f"{', '.join(arch)}; dan kan archeologisch onderzoek "
                     f"nodig zijn", BRONNAAM))
+    uit.extend(aanduidingregels(rec))
+    return uit
+
+
+def aanduidingregels(rec):
+    """
+    De regels over plan en aanduidingen, alleen voor lagen die gevraagd zijn.
+
+    EEN LAAG DIE NOG NIET IS GEVRAAGD GEEFT GEEN REGEL. De panden van voor 28
+    november hebben deze lagen nog niet; de ronde vult ze aan. Een regel als
+    "niet nagekeken" zou dan in duizenden dossiers staan tot de ronde klaar
+    is, en dat onderscheidt niets. Gevraagd en leeg krijgt wel een eigen
+    tekst, en onleesbaar ook, zodat die drie nooit hetzelfde woord delen.
+    """
+    uit = []
+    plan = rec.get("bestemmingsplangebied")
+    if plan:
+        uit.append(("bestemmingsplan", ", ".join(plan), BRONNAAM))
+    if "functieaanduiding" in rec:
+        fa = rec["functieaanduiding"]
+        if fa is None:
+            tekst = "het antwoord van de bron was niet te lezen"
+        elif fa:
+            tekst = (f"{', '.join(fa)}. Een functieaanduiding staat hier een "
+                     f"functie toe naast wat de bestemming zegt; bij "
+                     f"Smetiusstraat 15 maakte 'horeca' binnen Gemengd - 3 een "
+                     f"hotel mogelijk zonder buitenplanse afwijking "
+                     f"(Z2026-00002909). Wat de aanduiding precies toestaat "
+                     f"staat in de planregels. Dit is een aanwijzing: "
+                     f"{VOORBEHOUD}")
+        else:
+            tekst = (f"geen op dit punt; wat er mag volgt uit de bestemming "
+                     f"en de planregels. {VOORBEHOUD}")
+        uit.append(("functieaanduiding", tekst, BRONNAAM))
+    for laag in ("bouwaanduiding", "gebiedsaanduiding"):
+        namen = rec.get(laag)
+        if namen:
+            uit.append((laag, ", ".join(namen), BRONNAAM))
     return uit
 
 
@@ -344,6 +472,102 @@ def proef():
     finally:
         os.unlink(pad)
         _cache.pop(pad, None)
+
+    # AANDUIDINGEN: gevraagd met horeca, gevraagd en leeg, onleesbaar, en
+    # nog niet gevraagd geven elk iets anders.
+    fa_wel = aanduidingregels({"functieaanduiding": ["horeca"],
+                               "bestemmingsplangebied": ["Binnenstad"]})
+    fa_leeg = aanduidingregels({"functieaanduiding": []})
+    fa_ruis = aanduidingregels({"functieaanduiding": None})
+    fa_niet = aanduidingregels({"enkelbestemming": ["Wonen"]})
+    if [o for o, _t, _b in fa_wel] != ["bestemmingsplan", "functieaanduiding"] \
+            or not fa_wel[1][1].startswith("horeca"):
+        afw.append(f"functieaanduiding horeca staat niet in het dossier: "
+                   f"{fa_wel}")
+    if not fa_leeg or not fa_leeg[0][1].startswith("geen") \
+            or not fa_ruis or fa_ruis[0][1] == fa_leeg[0][1]:
+        afw.append("functieaanduiding: leeg en onleesbaar krijgen dezelfde "
+                   "tekst, of geen tekst")
+    if fa_niet:
+        afw.append(f"een niet gevraagde aanduidingslaag geeft toch een regel: "
+                   f"{fa_niet}")
+    fd, dpad = tempfile.mkstemp(suffix=".json")
+    os.close(fd)
+    with open(dpad, "w", encoding="utf-8") as f:
+        json.dump({"panden": {"S": {
+            "dubbelbestemming": [], "enkelbestemming": ["Gemengd - 3"],
+            "functieaanduiding": ["horeca"]}}}, f)
+    try:
+        if "functieaanduiding" not in [o for o, _t, _b
+                                       in dossierregels("S", dpad)]:
+            afw.append("functieaanduiding horeca staat niet in het dossier "
+                       "van het pand")
+    finally:
+        os.unlink(dpad)
+        _cache.pop(dpad, None)
+
+    # WELKE LAGEN NOG GEVRAAGD WORDEN.
+    vandaag = dt.date(2026, 11, 28)
+    oud = {"gezien": "2026-10-17", "dubbelbestemming": [],
+           "enkelbestemming": ["Wonen"]}
+    if te_vragen(oud, vandaag) != [l for l in LAGEN if l not in oud]:
+        afw.append(f"een oud record krijgt niet alleen de nieuwe lagen: "
+                   f"{te_vragen(oud, vandaag)}")
+    vol = dict(oud, **{l: [] for l in LAGEN})
+    if te_vragen(vol, vandaag):
+        afw.append("een volledig record wordt opnieuw gevraagd")
+    if te_vragen(dict(vol, gezien="2026-01-01"), vandaag) != list(LAGEN):
+        afw.append("een record ouder dan HERHAAL_DAGEN wordt niet ververst")
+    if te_vragen(None, vandaag) != list(LAGEN):
+        afw.append("een nieuw pand krijgt niet alle lagen")
+
+    # NIET-WONINGEN GAAN MEE, en een pand met een woning houdt dat punt.
+    fd, vpad = tempfile.mkstemp(suffix=".json")
+    os.close(fd)
+    with open(vpad, "w", encoding="utf-8") as f:
+        json.dump({"adressen": {
+            "a": {"herkomst": "focusbuurt", "pand": "W", "punt": [5.1, 51.1],
+                  "adres": "Woonstraat 1"}},
+            "niet_woningen": {
+            "b": {"herkomst": "focusbuurt", "pand": "H", "punt": [5.2, 51.2],
+                  "adres": "Cafestraat 1"},
+            "c": {"herkomst": "focusbuurt", "pand": "W", "punt": [5.3, 51.3],
+                  "adres": "Woonstraat 1a"},
+            "d": {"herkomst": "bekendmaking", "pand": "X", "punt": [5.4, 51.4],
+                  "adres": "Buiten 1"}}}, f)
+    try:
+        alleen_w = punten_per_pand(vpad)
+        beide = punten_per_pand(vpad, met_niet_woningen=True)
+        if set(alleen_w) != {"W"}:
+            afw.append(f"zonder vlag horen alleen woonpanden erin: {alleen_w}")
+        if set(beide) != {"W", "H"}:
+            afw.append(f"met vlag horen woon- en horecapand erin, niet het "
+                       f"pand buiten de ring: {sorted(beide)}")
+        if beide.get("W", {}).get("adres") != "Woonstraat 1":
+            afw.append("een pand met een woning krijgt het punt van de "
+                       "niet-woning")
+    finally:
+        os.unlink(vpad)
+
+    # ZOEKEN op functieaanduiding en bestemming.
+    fd, zpad = tempfile.mkstemp(suffix=".json")
+    os.close(fd)
+    with open(zpad, "w", encoding="utf-8") as f:
+        json.dump({"panden": {
+            "1": {"adres": "B 1", "enkelbestemming": ["Gemengd - 3"],
+                  "functieaanduiding": ["horeca"]},
+            "2": {"adres": "A 1", "enkelbestemming": ["Wonen"],
+                  "functieaanduiding": ["Horeca"]},
+            "3": {"adres": "C 1", "enkelbestemming": ["Gemengd - 3"],
+                  "functieaanduiding": []}}}, f)
+    try:
+        if [r[0] for r in zoek("horeca", pad=zpad)] != ["2", "1"]:
+            afw.append(f"zoeken op horeca: {zoek('horeca', pad=zpad)}")
+        if [r[0] for r in zoek("horeca", "gemengd", zpad)] != ["1"]:
+            afw.append("zoeken binnen een bestemming filtert niet")
+    finally:
+        os.unlink(zpad)
+
     for a in afw:
         print("AFWIJKING: " + a, file=sys.stderr)
     print(f"Proef bestemming: {len(afw)} afwijkingen", file=sys.stderr)
@@ -355,11 +579,22 @@ def main():
     ap.add_argument("--proef", action="store_true")
     ap.add_argument("--verken", action="store_true")
     ap.add_argument("--minuten", type=float, default=0)
+    ap.add_argument("--zoek", metavar="AANDUIDING")
+    ap.add_argument("--bestemming", metavar="TEKST")
     a = ap.parse_args()
     if a.proef:
         return proef()
     if a.verken:
         return verken(BEKEND)
+    if a.zoek:
+        rijen = zoek(a.zoek, a.bestemming)
+        for _p, adres, eb, fa, db in rijen:
+            print(f"{adres}\t{', '.join(eb)}\t{', '.join(fa)}\t"
+                  f"{', '.join(db)}")
+        print(f"{len(rijen)} panden met functieaanduiding '{a.zoek}'"
+              + (f" binnen '{a.bestemming}'" if a.bestemming else ""),
+              file=sys.stderr)
+        return 0
     return ophalen(a.minuten)
 
 

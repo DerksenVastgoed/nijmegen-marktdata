@@ -510,6 +510,20 @@ proef: bestemming:niet gevraagd, onleesbaar en niets gevonden krijgen
 soort: gegevens
 
 ---
+eis: Het dossier van een pand noemt de functieaanduiding uit het
+  bestemmingsplan, en de ronde neemt ook de panden met alleen een
+  niet-woning mee.
+waarom: 28 november. Smetiusstraat 15 werd een hotel zonder buitenplanse
+  afwijking omdat het pand binnen 'Gemengd - 3' de functieaanduiding
+  'horeca' heeft (Z2026-00002909); de enkelbestemming alleen zegt dat niet.
+  Het pand stond niet in bestemmingen.json: de ronde nam alleen panden met
+  een woning, en 661 panden met alleen een niet-woning ontbraken. Een laag
+  die nog niet gevraagd is geeft geen regel; gevraagd en leeg, en
+  onleesbaar, krijgen elk een eigen tekst.
+proef: bestemming:functieaanduiding horeca staat niet in het dossier
+soort: gegevens
+
+---
 eis: Of een pand in een rijksbeschermd gezicht ligt, wordt per pand gemeten
   op het vlak van de RCE, niet per buurt aangenomen.
 waarom: 17 oktober. BESCHERMD_GEZICHT stond per buurt als vaste tekst, met

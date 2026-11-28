@@ -6,10 +6,17 @@
 # in bestemming_verslag.md. Pas als dat verslag laat zien dat de bron
 # Groesbeekseweg 118A als cultuurhistorie herkent, draait hij met "alles".
 # Zie bestemming.py voor de bron en de voorbehouden.
+#
+# SINDS 28 NOVEMBER OOK OP SCHEMA. De ronde vraagt nu ook de aanduidingen
+# (horeca!) en de panden met alleen een niet-woning, en ververst een pand
+# als het antwoord ouder is dan een half jaar. Wekelijks met "alles" doet
+# dat vanzelf: hervatbaar, en klaar in seconden als er niets te vragen is.
 
 name: Bestemmingen per pand
 
 on:
+  schedule:
+    - cron: "23 2 * * 3"
   workflow_dispatch:
     inputs:
       modus:
@@ -37,7 +44,9 @@ jobs:
 
       - name: Ophalen
         run: |
-          if [ "${{ github.event.inputs.modus }}" = "alles" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python3 bestemming.py --minuten 120
+          elif [ "${{ github.event.inputs.modus }}" = "alles" ]; then
             python3 bestemming.py --minuten "${{ github.event.inputs.minuten }}"
           else
             python3 bestemming.py --verken
