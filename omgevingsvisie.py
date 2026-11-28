@@ -42,11 +42,15 @@ zinnen van de pagina, letterlijk.
 """
 import argparse
 import datetime as dt
+import glob
 import json
+import os
 import re
 import sys
 import urllib.request
+import xml.etree.ElementTree as ET
 
+import gezicht
 import planregels
 import ring
 
@@ -276,7 +280,8 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
     haal = haal or _haal
     r = ["# Omgevingsvisie per stadsdeel", "", f"Regeling: `{REGELING}`", ""]
     try:
-        tekst = tekst_van(haal(REGELING))
+        html = haal(REGELING)
+        tekst = tekst_van(html)
     except Exception as e:
         # Niet opgehaald is geen lege visie: het vorige bestand blijft staan.
         r.append(f"- niet opgehaald: {type(e).__name__} {e}; {uit_pad} is "
@@ -314,6 +319,8 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
                           for sd, d in delen.items()},
            "buurten": koppel, "buurten_zonder_stadsdeel": zonder,
            "labeldoel": labeldoel(tekst)}
+    bijlage = werkingsgebieden(html)
+    uit["werkingsgebieden"] = {sd: bijlage.get(sleutel(sd)) for sd in delen}
     with open(uit_pad, "w", encoding="utf-8") as f:
         json.dump(uit, f, ensure_ascii=False, indent=1)
     r.append(f"- {len(tekst)} tekens, {len(delen)} stadsdeelparagrafen")
@@ -339,6 +346,27 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
     r.extend([f"- {x['paragraaf']}: \u201c{x['zin']}\u201d" for x in ld]
              or ["- geen zin over een energielabel met een jaartal gevonden"])
     r.append("")
+    r.append("## Werkingsgebieden")
+    r.append("")
+    vl = vlakken()
+    for sd, w in sorted(uit["werkingsgebieden"].items()):
+        r.append(f"- {sd}: " + (f"`{w}`, " + ("GML aanwezig" if w in vl
+                                              else "GML ontbreekt in "
+                                              f"{GIO_MAP}/")
+                                if w else "niet in Bijlage I gevonden"))
+    kt = kaart_tegen_tekst(koppel, uit["werkingsgebieden"])
+    if kt:
+        r.append("")
+        r.append("Per ringbuurt, adressen uit voorraad.json per werkingsgebied:")
+        for b in ring.BUURTEN:
+            telling = kt.get(b) or {}
+            meest = max(telling, key=telling.get) if telling else None
+            r.append(f"- {b}: " + ", ".join(f"{s} {n}" for s, n in sorted(
+                telling.items(), key=lambda x: -x[1]))
+                + ("" if not meest or meest == koppel.get(b) else
+                   f" (de tekst zegt {koppel.get(b) or 'niets'}, de kaart "
+                   f"vooral {meest})"))
+    r.append("")
     r.append("## Ringbuurten")
     r.append("")
     for b in ring.BUURTEN:
@@ -348,6 +376,122 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
         f.write("\n".join(r) + "\n")
     print("\n".join(r))
     return 0
+
+
+# DE WERKINGSGEBIEDEN (28 november 2026). De visie wijst per stadsdeel een
+# werkingsgebied aan (Bijlage I, "Overzicht Informatieobjecten"): negen
+# GIO's, een polygoon per stadsdeel. GitHub krijgt 403 op
+# identifier.officielebekendmakingen.nl, dus Mark heeft ze met de hand
+# gedownload; ze staan in omgevingsvisie_gio/, een bestand per
+# FRBRWork-identificatie. Gemeten: negen geldige polygonen zonder gaten,
+# samen 57,63 km2, zonder overlap en zonder gat ertussen. Welk bestand bij welk
+# stadsdeel hoort, komt uit Bijlage I van de pagina, niet uit deze code.
+#
+# Waarom de kaart en niet alleen de opsommingszin: de stadsdeelgrens volgt
+# niet overal de buurtgrens. Gemeten op voorraad.json: 112 adressen van buurt
+# Stadscentrum (van Diemerbroeckstraat 99, Prins Hendrikstraat 9, van
+# Trieststraat 4) liggen in werkingsgebied Oost, 75 van Altrade
+# (Bijleveldsingel 60, Prins Bernhardstraat 12, Prins Hendrikstraat 3) in
+# Centrum. Per pand is de kaart hard, de buurt afgeleid.
+GIO_MAP = "omgevingsvisie_gio"
+_GML = "{http://www.opengis.net/gml/3.2}"
+_GEO = "{https://standaarden.overheid.nl/stop/imop/geo/}"
+_BIJLAGE = re.compile(
+    r"<dt>(?:\s*<a [^>]*>\s*</a>)*\s*(Stadsdeel [^<]+?)\s*</dt>\s*<dd>.*?"
+    r"/join/id/regdata/gm\d{4}/\d{4}/([0-9a-f]{32})", re.S)
+
+
+def sleutel(naam):
+    """'Stadsdeel Nijmegen-Oost', 'Nijmegen-Oost' en 'Oost' worden 'oost'.
+    De paragraaf heet "6.9 DUKENBURG", de bijlage "Stadsdeel
+    Nijmegen-Dukenburg"."""
+    n = re.sub(r"^stadsdeel\s+", "", (naam or "").strip(), flags=re.I)
+    return re.sub(r"^nijmegen-", "", n, flags=re.I).lower()
+
+
+def werkingsgebieden(html):
+    """{sleutel: FRBRWork-identificatie} uit Bijlage I van de pagina."""
+    return {sleutel(n): w for n, w in _BIJLAGE.findall(html or "")}
+
+
+def _ringen(el):
+    uit = []
+    for pl in el.iter(_GML + "posList"):
+        g = [float(x) for x in (pl.text or "").split()]
+        uit.append(list(zip(g[0::2], g[1::2])))
+    return uit
+
+
+def vlakken(map_=GIO_MAP):
+    """{FRBRWork-identificatie: [(buitenring, [gaten])]} in RD, uit de
+    GML-bestanden zelf; de identificatie komt uit het bestand, niet uit de
+    bestandsnaam."""
+    uit = {}
+    for pad in sorted(glob.glob(os.path.join(map_, "*.gml"))):
+        boom = ET.parse(pad).getroot()
+        werk = (boom.findtext(f".//{_GEO}FRBRWork") or "").rsplit("/", 1)[-1]
+        polys = []
+        for pg in boom.iter(_GML + "Polygon"):
+            buiten = [_ringen(e) for e in pg.iter(_GML + "exterior")]
+            gaten = [r for e in pg.iter(_GML + "interior") for r in _ringen(e)]
+            if buiten and buiten[0]:
+                polys.append((buiten[0][0], gaten))
+        if werk and polys:
+            uit[werk] = polys
+    return uit
+
+
+def _binnen(x, y, polys):
+    return any(gezicht._in_ring(x, y, b) and
+               not any(gezicht._in_ring(x, y, g) for g in gaten)
+               for b, gaten in polys)
+
+
+_VLAKKEN = {}
+
+
+def stadsdeel_van(punt, pad=UIT_PAD, map_=GIO_MAP):
+    """
+    Het stadsdeel van een punt [lon, lat] volgens de werkingsgebieden van de
+    visie, of None als het punt in geen gebied ligt of de gebieden er niet
+    zijn. Dit is de harde koppeling per pand; buurt_naar_stadsdeel is de
+    afgeleide per buurt.
+    """
+    wg = lees(pad).get("werkingsgebieden") or {}
+    if not wg or not punt:
+        return None
+    if map_ not in _VLAKKEN:
+        _VLAKKEN[map_] = vlakken(map_)
+    x, y = gezicht.wgs84_naar_rd(punt[1], punt[0])
+    for sd, werk in wg.items():
+        if werk and _binnen(x, y, _VLAKKEN[map_].get(werk) or []):
+            return sd
+    return None
+
+
+def kaart_tegen_tekst(koppel, wg, map_=GIO_MAP, voorraad="voorraad.json"):
+    """
+    {buurt: {stadsdeel volgens de kaart: aantal adressen}} uit voorraad.json,
+    om de koppeling per buurt uit de tekst na te meten. Leeg als er geen
+    voorraad is.
+    """
+    try:
+        with open(voorraad, encoding="utf-8") as f:
+            adressen = json.load(f).get("adressen") or {}
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+    vl = vlakken(map_)
+    uit = {}
+    for a in adressen.values():
+        if not a.get("punt"):
+            continue
+        x, y = gezicht.wgs84_naar_rd(a["punt"][1], a["punt"][0])
+        sd = next((s for s, w in wg.items()
+                   if _binnen(x, y, vl.get(w) or [])), "geen gebied")
+        for b in a.get("buurten") or []:
+            uit.setdefault(b, {}).setdefault(sd, 0)
+            uit[b][sd] += 1
+    return uit
 
 
 def lees(pad=UIT_PAD):
@@ -394,6 +538,36 @@ def _kop(tag, nr, naam):
 # Zo breekt de bron een alinea af (gemeten 28 november): een regelovergang
 # en spaties midden in een zin.
 _AF = "\n                              "
+
+
+def _bijlage(naam, werk):
+    """Een regel van Bijlage I zoals de bron hem heeft (28 november)."""
+    return ('<dt><a id="cmp_o_1__content_o_1__list_o_1__item_o_1"></a><a id='
+            '"gm0268_7bbb67a1f9724003af04f177dfab2121__cmp_o_1__content_o_1__'
+            f'list_o_1__item_o_1"></a>{naam} </dt>{_AF}<dd>{_AF}<p>{_AF}'
+            '<a href="https://identifier.officielebekendmakingen.nl/join/id/'
+            f'regdata/gm0268/2025/{werk}/nld@2025-09-15;06575985" id="x">'
+            f'/join/id/regdata/gm0268/2025/{werk}/nld@2025\u201109\u201115;'
+            f'06575985</a>{_AF}</p>{_AF}</dd>')
+
+
+# Punten uit voorraad.json van 28 november, met het werkingsgebied waarin
+# ze liggen (nagemeten met shapely/pyproj). Bijleveldsingel 37 ligt 2,4 m van
+# de grens, binnen Centrum, en hoort bij buurt Altrade; van Diemerbroeckstraat
+# 125 hoort bij buurt Stadscentrum en ligt in Oost.
+PROEF_PUNTEN = {
+    "Molenstraat 28": ([5.863142, 51.845155], "Nijmegen-Centrum"),
+    "Daalseweg 257": ([5.875411, 51.838358], "Nijmegen-Oost"),
+    "St. Annastraat 300": ([5.856568, 51.825213], "Nijmegen-Midden"),
+    "van Diemerbroeckstraat 125": ([5.853457, 51.841354], "Nijmegen-Oost"),
+    "Bijleveldsingel 37": ([5.868951, 51.841974], "Nijmegen-Centrum"),
+    "Voorstadslaan 234": ([5.840791, 51.846099], "Nijmegen-Oud-West"),
+}
+PROEF_WERK = {"Nijmegen-Centrum": "2de7feb8ebda4d75b6d02f4b723069df",
+              "Nijmegen-Oost": "afe0e3e675444c4c9a09293cd5d4e181",
+              "Nijmegen-Midden": "f2989ade73104255b5371bd9c5ea7b85",
+              "Nijmegen-Oud-West": "d10323ed2c9a48ae9e61e19fdb35e758",
+              "Dukenburg": "9f88cca68f834f6bb2852d1f5fad0f58"}
 
 
 def _lijst(*punten):
@@ -468,6 +642,12 @@ PROEF_HTML = "".join([
     'class="figure__source">Studio D / gemeente Nijmegen</span></figcaption>'
     " </figure>",
     _kop("h2", "7", "STURINGSFILOSOFIE"),
+    _kop("h2", "Bijlage I", "Overzicht Informatieobjecten"),
+    '<div data-element="tekst:Divisietekst"><dl class="dl dl--horizontal">',
+    _bijlage("Stadsdeel Nijmegen-Centrum", PROEF_WERK["Nijmegen-Centrum"]),
+    _bijlage("Stadsdeel Nijmegen-Dukenburg", PROEF_WERK["Dukenburg"]),
+    _bijlage("Stadsdeel Nijmegen-Oost", PROEF_WERK["Nijmegen-Oost"]),
+    "</dl></div>",
     _kop("h3", "7.1", "INLEIDING"),
     "<p>Ook in Galgenveld en de benedenstad sturen we op doelen.</p>"])
 
@@ -517,6 +697,18 @@ def proef():
     if [x["paragraaf"] for x in ld] != ["4.6.4.2", "4.6.4.2"] or \
             "E, F of G" not in ld[0]["zin"]:
         afw.append(f"labeldoel: {ld}")
+    wb = werkingsgebieden(PROEF_HTML)
+    if wb != {"centrum": PROEF_WERK["Nijmegen-Centrum"],
+              "dukenburg": PROEF_WERK["Dukenburg"],
+              "oost": PROEF_WERK["Nijmegen-Oost"]}:
+        afw.append(f"werkingsgebieden uit Bijlage I: {wb}")
+    if sleutel("Dukenburg") != sleutel("Stadsdeel Nijmegen-Dukenburg"):
+        afw.append("paragraafnaam en bijlagenaam van Dukenburg vallen niet "
+                   "samen")
+    vl = vlakken()
+    if len(vl) != 9 or any(len(p) != 1 for p in vl.values()):
+        afw.append(f"werkingsgebieden in {GIO_MAP}: "
+                   f"{ {w[:8]: len(p) for w, p in vl.items()} }")
     k, z = buurt_naar_stadsdeel(d)
     verwacht = {"Stadscentrum": "Nijmegen-Centrum",
                 "Benedenstad": "Nijmegen-Centrum",
@@ -588,6 +780,35 @@ def proef():
     if not dz or "geen stadsdeel" not in dz[0][1] or \
             "opsomming" not in dz[0][1]:
         afw.append("een buurt zonder stadsdeel zegt niet waarom")
+    # Een gat is geen gebied. De bron heeft geen gaten (28 november), dit
+    # meet de rekenregel: een vierkant van 100 m met een gat van 20 m.
+    gm = os.path.join(m, "gio")
+    os.makedirs(gm)
+    with open(os.path.join(gm, "x.gml"), "w", encoding="utf-8") as f:
+        f.write('<g xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geo='
+                '"https://standaarden.overheid.nl/stop/imop/geo/"><geo:FRBRWork>'
+                '/join/id/regdata/gm0268/2025/vierkant</geo:FRBRWork>'
+                '<gml:Polygon><gml:exterior><gml:LinearRing><gml:posList>'
+                '0 0 100 0 100 100 0 100 0 0</gml:posList></gml:LinearRing>'
+                '</gml:exterior><gml:interior><gml:LinearRing><gml:posList>'
+                '40 40 60 40 60 60 40 60 40 40</gml:posList></gml:LinearRing>'
+                '</gml:interior></gml:Polygon></g>')
+    vg = vlakken(gm).get("vierkant") or []
+    if not _binnen(10, 10, vg) or _binnen(50, 50, vg):
+        afw.append("een punt in een gat ligt toch in het gebied")
+    wp = os.path.join(m, "w.json")
+    with open(wp, "w", encoding="utf-8") as f:
+        json.dump({"werkingsgebieden": PROEF_WERK}, f)
+    for adres, (punt, sd) in PROEF_PUNTEN.items():
+        if stadsdeel_van(punt, wp) != sd:
+            afw.append(f"stadsdeel van een punt: {adres} geeft "
+                       f"{stadsdeel_van(punt, wp)}, verwacht {sd}")
+    if stadsdeel_van([5.0, 52.0], wp) is not None:
+        afw.append("een punt buiten Nijmegen krijgt toch een stadsdeel")
+    if (lees(up).get("werkingsgebieden") or {}).get("Nijmegen-Oost") != \
+            PROEF_WERK["Nijmegen-Oost"]:
+        afw.append(f"ophalen legt de werkingsgebieden niet vast: "
+                   f"{lees(up).get('werkingsgebieden')}")
     if dossierregels("Biezen", os.path.join(m, "bestaat-niet.json")):
         afw.append("zonder opgehaalde visie komt er toch een dossierregel")
     for a in afw:

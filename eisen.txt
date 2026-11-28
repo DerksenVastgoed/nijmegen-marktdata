@@ -808,6 +808,19 @@ waarom: 28 november, 11:26. Een fout in het lezen liet 8 koppelingen
 proef: omgevingsvisie:een ronde met minder koppelingen overschrijft het oude bestand
 soort: gegevens
 ---
+eis: Het stadsdeel van een pand komt uit de werkingsgebieden van de visie
+  (omgevingsvisie_gio/, negen GML-bestanden), via de koppeling in Bijlage I
+  van de pagina; de koppeling per buurt uit de opsommingszin is afgeleid en
+  dient als controle. Welk bestand bij welk stadsdeel hoort, staat niet in
+  de code.
+waarom: 28 november. De stadsdeelgrens volgt de buurtgrens niet: 112
+  adressen van buurt Stadscentrum liggen in Oost, 75 van Altrade in
+  Centrum, 160 van de Biezen in Nieuw-West (Winselingseweg, Laan van
+  Oost-Indie, Wilhelm Linnemannstraat). Per buurt zou zo'n pand de
+  opgave van het verkeerde stadsdeel krijgen.
+proef: omgevingsvisie:stadsdeel van een punt; omgevingsvisie:werkingsgebieden uit Bijlage I; omgevingsvisie:een punt in een gat ligt toch in het gebied
+soort: gegevens
+---
 eis: omgevingsvisie.json geeft per stadsdeel letterlijk wat de visie zegt
   (prioriteiten uit 6.N.4, zinnen over inbreiding, intensivering of
   splitsen, en zinnen die een ringbuurt bij naam noemen) en stadsbreed het
