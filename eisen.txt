@@ -755,3 +755,16 @@ soort: gegevens
 let op: de datum bij een treffer is die van de vergadering, niet van
   publicatie. Een nieuw stuk bij een oude vergadering dat niet op de eerste
   drie pagina's van een term staat, ziet hij niet.
+
+---
+eis: De tekst van elk artikel waar een bestemming naar verwijst, staat in
+  planregels.json; een mislukte ophaling laat een oude tekst staan.
+waarom: 28 november. Wat een aanduiding toestaat, staat alleen in het
+  artikel; bij Smetiusstraat 15 maakte 'horeca' binnen Gemengd - 3 een hotel
+  mogelijk omdat artikel 10 van Nijmegen Centrum - Binnenstad horeca 1a, 1b
+  en 2 toestaat. Dezelfde naam kan in een ander plan iets anders betekenen,
+  dus de tabel met planregels moet op de tekst rusten. Dezelfde dag gaf een
+  andere overheidsbron 403 aan de runner en overschreef een verkenning een
+  goede lijst met een lege; dat mag hier niet gebeuren.
+proef: planregels:een mislukte ophaling overschrijft de oude tekst
+soort: gegevens
