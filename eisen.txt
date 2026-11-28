@@ -794,3 +794,15 @@ waarom: 28 november. De eerste proef draaide op een zelfgeschreven tekst
   werd geknipt; dat zag de verzonnen tekst niet.
 proef: omgevingsvisie:stadsdelen uit de opmaak van de pagina; omgevingsvisie:buurt naar stadsdeel
 soort: gegevens
+---
+eis: omgevingsvisie.json geeft per stadsdeel letterlijk wat de visie zegt
+  (prioriteiten uit 6.N.4, zinnen over inbreiding, intensivering of
+  splitsen, en zinnen die een ringbuurt bij naam noemen) en stadsbreed het
+  labeldoel, met paragraaf. Geen oordeel: wat dat voor een strategie
+  betekent, staat in de brief.
+waarom: 28 november. Mark wil de visie gebruiken bij de selectie van
+  panden. Een eigen samenvatting van de visie zou er hard uitzien en is het
+  niet; de zin zelf wel. Een oordeel over de eigen strategie hoort niet in
+  deze openbare repo.
+proef: omgevingsvisie:intensivering in Oud-West; omgevingsvisie:buurtzinnen van Oost; omgevingsvisie:labeldoel
+soort: gegevens

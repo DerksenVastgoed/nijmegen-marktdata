@@ -103,8 +103,84 @@ def _naam(kop):
 _ZINSEINDE = re.compile(r"(?<=[.!?])(?<!\bSt\.)\s+")
 
 
+# Een kopregel na _regels: "6.12.4 Oost - Prioriteiten".
+_KOPREGEL = re.compile(r"^\d+(?:\.\d+)+\s+\S")
+
+
 def zinnen(tekst):
-    return _ZINSEINDE.split(" ".join((tekst or "").split()))
+    """Zinnen per regel. Over regels heen plakken liet de opsommingszin op
+    28 november beginnen met de kop: "6.4.2 Centrum - Kwaliteiten en
+    kenmerken Nijmegen-Centrum bestaat ..."."""
+    uit = []
+    for r in (tekst or "").splitlines():
+        uit.extend(z for z in _ZINSEINDE.split(" ".join(r.split())) if z)
+    return uit
+
+
+# Zinnen over meer bewoners of woningen in de bestaande bebouwing.
+_INTENSIVERING = re.compile(r"inbreiding|intensiver|splits|verkamer", re.I)
+
+
+def prioriteiten(deel):
+    """De lijst onder "6.N.4 ... - Prioriteiten", letterlijk, een per punt."""
+    regels = [" ".join(r.split()) for r in (deel or "").splitlines()]
+    uit, bezig = [], False
+    for r in regels:
+        if re.match(r"^6\.\d+\.4\s+.*Prioriteiten$", r, re.I):
+            bezig = True
+            continue
+        if bezig:
+            if _KOPREGEL.match(r):
+                break
+            if r:
+                uit.append(r)
+    return uit
+
+
+def _genoemd(zin, buurten=None):
+    buurten = buurten if buurten is not None else ring.BUURTEN
+    return [b for b in buurten
+            if any(re.search(rf"(?<![\w-]){re.escape(n)}(?![\w-])", zin, re.I)
+                   for n in SYNONIEMEN.get(b, (b,)))]
+
+
+def intensivering(deel):
+    """[{"zin", "buurten"}]: wat de paragraaf zegt over inbreiding,
+    intensivering, splitsen of verkameren, letterlijk, met de ringbuurten die
+    de zin zelf noemt."""
+    # Een tussenkop ("Leefbaarheid, cultuurhistorie en inbreiding", 6.12.3.3)
+    # eindigt niet op een leesteken; een punt uit de prioriteitenlijst soms
+    # ook niet, en telt wel.
+    lijst = set(prioriteiten(deel))
+    return [{"zin": z, "buurten": _genoemd(z)} for z in zinnen(deel)
+            if _INTENSIVERING.search(z) and len(z) < 500
+            and (z[-1] in ".!?:;" or z in lijst)]
+
+
+def buurtzinnen(deel):
+    """[{"zin", "buurten"}]: elke zin die een ringbuurt bij naam noemt,
+    behalve de opsommingszin. Zo komt "In sommige gebieden van Bottendaal,
+    Galgenveld en Altrade is de leefbaarheid een aandachtspunt." (6.12.3.3)
+    mee, die geen woord over intensivering bevat."""
+    wz = wijkzin(deel)
+    return [{"zin": z, "buurten": b} for z in zinnen(deel)
+            for b in [_genoemd(z)] if b and z != wz and z[-1] in ".!?:;"]
+
+
+def labeldoel(tekst):
+    """[{"paragraaf", "zin"}]: zinnen over een energielabel met een jaartal,
+    uit de hele visie, met de paragraaf waarin ze staan."""
+    uit, kop = [], ""
+    for r in _regels(tekst):
+        m = re.match(r"^(\d+(?:\.\d+)+)\s+\S", r)
+        if m:
+            kop = m.group(1)
+            continue
+        for z in _ZINSEINDE.split(r):
+            if re.search(r"energielabel|label [A-G]\b", z) and \
+                    re.search(r"\b20[3-5]\d\b", z):
+                uit.append({"paragraaf": kop, "zin": z})
+    return uit
 
 
 def wijkzin(deel):
@@ -136,7 +212,10 @@ def stadsdelen(tekst):
         deel = "\n".join(regels[i + 1:eind]).strip()
         if len(deel) > len((uit.get(naam) or {}).get("tekst", "")):
             uit[naam] = {"paragraaf": f"6.{nr}", "tekst": deel,
-                         "wijkzin": wijkzin(deel)}
+                         "wijkzin": wijkzin(deel),
+                         "prioriteiten": prioriteiten(deel),
+                         "intensivering": intensivering(deel),
+                         "buurtzinnen": buurtzinnen(deel)}
     return uit
 
 
@@ -205,7 +284,8 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
     uit = {"regeling": REGELING, "bijgewerkt": dt.date.today().isoformat(),
            "stadsdelen": {sd: dict(d, kern=kernzinnen(d["tekst"]))
                           for sd, d in delen.items()},
-           "buurten": koppel, "buurten_zonder_stadsdeel": zonder}
+           "buurten": koppel, "buurten_zonder_stadsdeel": zonder,
+           "labeldoel": labeldoel(tekst)}
     with open(uit_pad, "w", encoding="utf-8") as f:
         json.dump(uit, f, ensure_ascii=False, indent=1)
     r.append(f"- {len(tekst)} tekens, {len(delen)} stadsdeelparagrafen")
@@ -215,6 +295,21 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
                  f"{len(kernzinnen(d['tekst']))} kernzinnen; opsomming: "
                  + (f"\u201c{d['wijkzin']}\u201d" if d["wijkzin"]
                     else "geen zin met 'bestaat uit ... wijken'"))
+        r.append(f"    - prioriteiten: {len(d['prioriteiten'])}; zinnen over "
+                 f"inbreiding, intensivering of splitsen: "
+                 f"{len(d['intensivering'])}")
+        for i in d["intensivering"]:
+            r.append(f"      - {', '.join(i['buurten']) or 'stadsdeel'}: "
+                     f"\u201c{i['zin']}\u201d")
+        for i in d["buurtzinnen"]:
+            r.append(f"    - noemt {', '.join(i['buurten'])}: "
+                     f"\u201c{i['zin']}\u201d")
+    r.append("")
+    ld = uit["labeldoel"]
+    r.append("## Labeldoel")
+    r.append("")
+    r.extend([f"- {x['paragraaf']}: \u201c{x['zin']}\u201d" for x in ld]
+             or ["- geen zin over een energielabel met een jaartal gevonden"])
     r.append("")
     r.append("## Ringbuurten")
     r.append("")
@@ -268,8 +363,21 @@ def _kop(tag, nr, naam):
             f'                           \t      </{tag}>')
 
 
+def _lijst(*punten):
+    return "<ul>" + "".join(f'<li><a id="i"></a> <p>{p}</p> </li>'
+                            for p in punten) + "</ul>"
+
+
 # Zinnen letterlijk uit de visie van 28 november, in de opmaak van de pagina.
 PROEF_HTML = "".join([
+    _kop("h5", "4.6.4.2", "Hoe gaan we dit doel bereiken?"),
+    "<p> <strong>Gebouwde omgeving</strong> </p> <p>Dit doen we op de eerste "
+    "plaats door woningen te isoleren op basis van het programma Energie "
+    "Besparen Woningen 2023-2030. Doel van dit programma is om in 2030 geen "
+    "woningen meer te hebben met een energielabel E, F of G en het aantal "
+    "woningen met label D met de helft te verlagen. In het programma is het "
+    "einddoel dat in 2045 alle woningen in Nijmegen minimaal label B "
+    "hebben.&nbsp;</p>",
     _kop("h3", "6.4", "NIJMEGEN-CENTRUM"),
     _kop("h4", "6.4.2", "Centrum - Kwaliteiten en kenmerken"),
     "<p>Nijmegen-Centrum bestaat officieel uit de wijken stadscentrum en "
@@ -288,6 +396,11 @@ PROEF_HTML = "".join([
     "Waterkwartier, ook wel De Biezen genoemd. Afgelopen jaren zijn in het "
     "Waalfront bedrijven vervangen door woningbouw met hoog- en laagbouw in "
     "retro- en moderne stijl.</p>",
+    _kop("h4", "6.7.4", "Oud-West - Prioriteiten"),
+    _lijst("Meer groene beweegroutes en sociale knooppunten (BOSS).",
+           "Behoud diversiteit voorzieningen.",
+           "Meer groen en leefbaarheid krijgen in dit stadsdeel prioriteit "
+           "boven inbreiding en intensivering van bewoning."),
     _kop("h3", "6.8", "NIJMEGEN-MIDDEN"),
     _kop("h4", "6.8.2", "Midden - Kwaliteiten en kenmerken"),
     "<p>Nijmegen-Midden bestaat uit de wijken: Nije Veld, Heijendaal, "
@@ -304,6 +417,23 @@ PROEF_HTML = "".join([
     "stadsdeel om te wonen. Tegelijkertijd spelen er vraagstukken over "
     "leefbaarheid, klimaatadaptatie en vergroening en de "
     "energietransitie.</p>",
+    _kop("h5", "6.12.3.3", "Oost - Aantrekkelijke stad"),
+    "<p><strong>Leefbaarheid, cultuurhistorie en inbreiding</strong></p>"
+    "<p>Over het algemeen is de leefbaarheid in Nijmegen-Oost goed en dat "
+    "willen we zo houden. In sommige gebieden van Bottendaal, Galgenveld en "
+    "Altrade is de leefbaarheid een aandachtspunt.</p><p>We zetten daarbij "
+    "inbreiding en intensivering niet op slot.</p>",
+    _kop("h4", "6.12.4", "Oost - Prioriteiten"),
+    _lijst("Balans houden tussen groei van het aantal inwoners en "
+           "leefbaarheid, met name in de wijken rondom het centrum",
+           "Behoud van de cultuurhistorische waarden en karakteristieke "
+           "wijken&nbsp;",
+           "Verduurzamen van de woningvoorraad"),
+    _kop("h4", "6.12.5", "Oost - Belangrijkste elementen op kaart"),
+    "<figure> <figcaption>Deelgebiedskaart: Nijmegen-Oost</figcaption>"
+    "<figcaption>Belangrijkste elementen op kaart<span "
+    'class="figure__source">Studio D / gemeente Nijmegen</span></figcaption>'
+    " </figure>",
     _kop("h2", "7", "STURINGSFILOSOFIE"),
     _kop("h3", "7.1", "INLEIDING"),
     "<p>Ook in Galgenveld en de benedenstad sturen we op doelen.</p>"])
@@ -327,6 +457,33 @@ def proef():
             d.get("Nijmegen-Nieuw-West", {}).get("wijkzin"):
         afw.append("een paragraaf zonder 'bestaat uit' krijgt toch een "
                    "opsomming")
+    wz = d.get("Nijmegen-Centrum", {}).get("wijkzin", "")
+    if not wz.startswith("Nijmegen-Centrum bestaat officieel"):
+        afw.append(f"de opsommingszin begint niet bij de zin zelf: {wz}")
+    po = d.get("Nijmegen-Oost", {}).get("prioriteiten")
+    if po != ["Balans houden tussen groei van het aantal inwoners en "
+              "leefbaarheid, met name in de wijken rondom het centrum",
+              "Behoud van de cultuurhistorische waarden en karakteristieke "
+              "wijken", "Verduurzamen van de woningvoorraad"]:
+        afw.append(f"prioriteiten van Oost: {po}")
+    iw = d.get("Nijmegen-Oud-West", {}).get("intensivering") or []
+    if [i["zin"] for i in iw] != [
+            "Meer groen en leefbaarheid krijgen in dit stadsdeel prioriteit "
+            "boven inbreiding en intensivering van bewoning."]:
+        afw.append(f"intensivering in Oud-West: {iw}")
+    io = d.get("Nijmegen-Oost", {}).get("intensivering") or []
+    if [i["zin"] for i in io] != [
+            "We zetten daarbij inbreiding en intensivering niet op slot."]:
+        afw.append(f"intensivering in Oost: {io}")
+    bz = d.get("Nijmegen-Oost", {}).get("buurtzinnen") or []
+    if [(b["zin"][:26], b["buurten"]) for b in bz] != [
+            ("In sommige gebieden van Bo", ["Bottendaal", "Galgenveld",
+                                            "Altrade"])]:
+        afw.append(f"buurtzinnen van Oost (zonder de opsommingszin): {bz}")
+    ld = labeldoel(tekst)
+    if [x["paragraaf"] for x in ld] != ["4.6.4.2", "4.6.4.2"] or \
+            "E, F of G" not in ld[0]["zin"]:
+        afw.append(f"labeldoel: {ld}")
     k, z = buurt_naar_stadsdeel(d)
     verwacht = {"Stadscentrum": "Nijmegen-Centrum",
                 "Benedenstad": "Nijmegen-Centrum",
