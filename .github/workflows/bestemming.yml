@@ -29,8 +29,12 @@ on:
         description: "Volgnummer in de keten; niet met de hand invullen."
         default: "0"
 
+# EIGEN WACHTRIJ PER MODUS (28 november). In een groep mag één run wachten;
+# een nieuwe wachtende run annuleert de vorige. De keten start aan het eind
+# van elke ronde een vervolg, en zou zo een wachtende verken annuleren.
+# Verken schrijft alleen het verslag, dus naast de keten draaien kan.
 concurrency:
-  group: bestemming
+  group: bestemming-${{ github.event.inputs.modus == 'verken' && 'verken' || 'alles' }}
   cancel-in-progress: false
 
 jobs:
@@ -61,7 +65,15 @@ jobs:
           # De lus staat in terugcommitten.sh (11 november); daarvoor had deze
           # workflow een eigen kopie, met git pull --rebase.
           set -o pipefail
-          ./terugcommitten.sh "Bestemmingen $(date -u +%F)" bestemmingen.json bestemming_verslag.md \
+          # ELKE MODUS COMMIT ALLEEN ZIJN EIGEN BESTAND. Verken draait sinds 28 november naast
+          # de keten; terugcommitten.sh zet de bestanden uit de eigen checkout
+          # opnieuw neer, en een bestemmingen.json uit een oudere checkout
+          # zou de voortgang van de keten terugdraaien (en andersom het verslag).
+          BESTANDEN="bestemmingen.json"
+          if [ "${{ github.event.inputs.modus }}" = "verken" ]; then
+            BESTANDEN="bestemming_verslag.md"
+          fi
+          ./terugcommitten.sh "Bestemmingen $(date -u +%F)" $BESTANDEN \
             2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
 

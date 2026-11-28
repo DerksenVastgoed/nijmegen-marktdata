@@ -58,8 +58,12 @@ import urllib.request
 
 WMS = "https://service.pdok.nl/kadaster/ruimtelijke-plannen/wms/v1_0"
 AANDUIDINGEN = ("functieaanduiding", "bouwaanduiding", "gebiedsaanduiding")
+# maatvoering (28 november): de maximale goot- en bouwhoogte en het
+# bebouwingspercentage staan niet in de planregels maar op de verbeelding,
+# volgens artikel 10.2.2 van Nijmegen Centrum - Binnenstad. Voor optoppen of
+# een dakopbouw is dat het getal dat telt.
 LAGEN = ("dubbelbestemming", "enkelbestemming") + AANDUIDINGEN + (
-    "bestemmingsplangebied",)
+    "bestemmingsplangebied", "maatvoering")
 UIT_PAD = "bestemmingen.json"
 VERSLAG = "bestemming_verslag.md"
 PAUZE = 0.2
@@ -136,7 +140,16 @@ def verwijzingen_uit(antwoord):
              "plan": (props.get("plangebied") or "").strip(),
              "artikel": (props.get("artikelnummer") or "").strip(),
              "tekst": (props.get("verwijzingnaartekst") or "").strip()}
-        sleutel = (v["naam"], v["plan"])
+        # DE WAARDE BIJ EEN MAATVOERING. De veldnaam is nog niet gemeten
+        # (vanuit de sessie was PDOK niet bereikbaar); daarom elk niet-leeg
+        # veld met 'waarde' of 'omvang' in de sleutel. Na de eerste verken
+        # hoort hier één vaste veldnaam, zoals bij 'naam'.
+        waarden = {k: str(w).strip() for k, w in props.items()
+                   if any(t in k.lower() for t in ("waarde", "omvang"))
+                   and w not in (None, "") and str(w).strip()}
+        if waarden:
+            v["waarden"] = waarden
+        sleutel = (v["naam"], v["plan"], json.dumps(waarden, sort_keys=True))
         if sleutel not in gezien:
             gezien.add(sleutel)
             uit.append(v)
@@ -483,7 +496,27 @@ def aanduidingregels(rec):
         namen = rec.get(laag)
         if namen:
             uit.append((laag, ", ".join(namen), BRONNAAM))
+    maat = maatvoering_tekst(rec)
+    if maat:
+        uit.append(("maatvoering", maat, BRONNAAM))
     return uit
+
+
+def maatvoering_tekst(rec):
+    """
+    De maatvoering als een regel: naam met waarde waar die bekend is.
+    Leeg als de laag niet gevraagd is of er niets ligt; het dossier zegt dan
+    niets, want een ontbrekende maat is in deze bron geen 'geen maximum'.
+    """
+    verw = ((rec.get("verwijzingen") or {}).get("maatvoering")) or []
+    delen = []
+    for v in verw:
+        w = v.get("waarden") or {}
+        delen.append(f"{v['naam']} {', '.join(w.values())}".strip()
+                     if w else v["naam"])
+    if not delen:
+        delen = list(rec.get("maatvoering") or [])
+    return "; ".join(dict.fromkeys(delen))
 
 
 def proef():
@@ -662,6 +695,24 @@ def proef():
             afw.append("zoeken binnen een bestemming filtert niet")
     finally:
         os.unlink(zpad)
+
+    # MAATVOERING: de waarde komt mee en staat in het dossier.
+    mv = json.dumps({"type": "FeatureCollection", "features": [
+        {"type": "Feature", "properties": {
+            "naam": "maximum bouwhoogte (m)", "waarde": "12",
+            "plangebied": "NL.IMRO.0268.BP5000-VG01"}},
+        {"type": "Feature", "properties": {
+            "naam": "maximum goothoogte (m)", "waarde": "9",
+            "plangebied": "NL.IMRO.0268.BP5000-VG01"}}]})
+    v_mv = verwijzingen_uit(mv) or []
+    if [x.get("waarden") for x in v_mv] != [{"waarde": "12"}, {"waarde": "9"}]:
+        afw.append(f"de waarde van een maatvoering wordt niet gelezen: {v_mv}")
+    if maatvoering_tekst({"verwijzingen": {"maatvoering": v_mv}}) != \
+            "maximum bouwhoogte (m) 12; maximum goothoogte (m) 9":
+        afw.append(f"maatvoering in het dossier: "
+                   f"{maatvoering_tekst({'verwijzingen': {'maatvoering': v_mv}})}")
+    if maatvoering_tekst({"enkelbestemming": ["Wonen"]}):
+        afw.append("een niet gevraagde maatvoering geeft toch een regel")
 
     # DE KETEN STOPT als er niets meer te doen is of niets meer lukt.
     if rest_stand(10, 10, 0)["rest"] != 0 or rest_stand(10, 3, 1)["rest"] != 7:
