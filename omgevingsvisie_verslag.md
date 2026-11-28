@@ -75,6 +75,28 @@ Regeling: `https://lokaleregelgeving.overheid.nl/CVDR744138`
 - 4.6.4.2: “Doel van dit programma is om in 2030 geen woningen meer te hebben met een energielabel E, F of G en het aantal woningen met label D met de helft te verlagen.”
 - 4.6.4.2: “In het programma is het einddoel dat in 2045 alle woningen in Nijmegen minimaal label B hebben.”
 
+## Werkingsgebieden
+
+- Dukenburg: `9f88cca68f834f6bb2852d1f5fad0f58`, GML aanwezig
+- Lindenholt: `55d3c40649a644e4a65279ee846c6821`, GML aanwezig
+- Nijmegen-Centrum: `2de7feb8ebda4d75b6d02f4b723069df`, GML aanwezig
+- Nijmegen-Midden: `f2989ade73104255b5371bd9c5ea7b85`, GML aanwezig
+- Nijmegen-Nieuw-West: `42033cd25f444e009644680bc9ddd292`, GML aanwezig
+- Nijmegen-Noord: `727bf39f98de4272949f6e1dd80885ff`, GML aanwezig
+- Nijmegen-Oost: `afe0e3e675444c4c9a09293cd5d4e181`, GML aanwezig
+- Nijmegen-Oud-West: `d10323ed2c9a48ae9e61e19fdb35e758`, GML aanwezig
+- Nijmegen-Zuid: `3b3afab4346041bd86c272f25ceb4dba`, GML aanwezig
+
+Per ringbuurt, adressen uit voorraad.json per werkingsgebied:
+- Stadscentrum: Nijmegen-Centrum 4818, Nijmegen-Oost 112
+- Benedenstad: Nijmegen-Centrum 1713
+- Bottendaal: Nijmegen-Oost 2255
+- Galgenveld: Nijmegen-Oost 3119
+- Altrade: Nijmegen-Oost 3102, Nijmegen-Centrum 75
+- Biezen: Nijmegen-Oud-West 5251, Nijmegen-Nieuw-West 160
+- Hunnerberg: Nijmegen-Oost 2078
+- St. Anna: Nijmegen-Midden 1780
+
 ## Ringbuurten
 
 - Stadscentrum: Nijmegen-Centrum

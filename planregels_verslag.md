@@ -1,13 +1,29 @@
 # Planregels
 
-- links in bestemmingen.json: 55
-- deze ronde opgehaald: 0
+- links in bestemmingen.json: 71
+- deze ronde opgehaald: 16
 - mislukt: 0
 - nog te doen (tijd op): 0
-- artikelen in planregels.json: 61
+- artikelen in planregels.json: 77
 
 ## Titels
 
+- (geen titel): 3042599 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKam11Barro-3025/b_NL.IMRO.0000.BZKam11Barro-3025_bb.pdf`
+- (geen titel): 68338 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKam11Barro-3025/d_NL.IMRO.0000.BZKam11Barro-3025.pdf`
+- (geen titel): 46226 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKam11Barro-3025/t_NL.IMRO.0000.BZKam11Barro-3025.pdf`
+- Bijlagen Regeling algemene regels ruimtelijke ordening: 582 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3040/b_NL.IMRO.0000.BZKmr11Rarro-3040.html`
+- Artikel 1.1 wordt als volgt gewijzigd:: 4795 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3040/r_NL.IMRO.0000.BZKmr11Rarro-3040.html`
+- Artikel 2.1, twaalfde lid, van de Rarro bepaalt dat van alle aangewezen terreinen, gebieden, zones en objecten de geometrische plaatsbepalingen worden vastgelegd in GML-bestanden bij die regeling. Omwille van de kenbaarheid zijn die bestanden benoemd in artikel 1.1 van de Rarro, dat om die reden is aangevuld.: 6802 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3040/t_NL.IMRO.0000.BZKmr11Rarro-3040.html`
+- Bijlagen Regeling algemene regels ruimtelijke ordening: 820 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3045/b_NL.IMRO.0000.BZKmr11Rarro-3045.html`
+- Regeling algemene regels ruimtelijke ordening: 3378 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3045/r_NL.IMRO.0000.BZKmr11Rarro-3045.html`
+- Artikel 2.1, twaalfde lid, van de Rarro bepaalt dat van alle aangewezen terreinen, gebieden, zones en objecten de geometrische plaatsbepalingen worden vastgelegd in GML-bestanden bij die regeling. Omwille van de kenbaarheid zijn die bestanden benoemd in artikel 1.1 van de Rarro, dat om die reden is aangevuld.: 6559 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3045/t_NL.IMRO.0000.BZKmr11Rarro-3045.html`
+- Bijlagen Regeling algemene regels ruimtelijke ordening: 381 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3050/b_NL.IMRO.0000.BZKmr11Rarro-3050.html`
+- Artikel 2.5 wordt als volgt gewijzigd:: 2724 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3050/r_NL.IMRO.0000.BZKmr11Rarro-3050.html`
+- Artikel 2.1, twaalfde lid, van de Rarro bepaalt dat van alle aangewezen terreinen, gebieden, zones en objecten de geometrische plaatsbepalingen worden vastgelegd in GML-bestanden bij die regeling. Omwille van de kenbaarheid zijn die bestanden benoemd in artikel 1.1 van de Rarro, dat om die reden is aangevuld..: 5263 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKmr11Rarro-3050/t_NL.IMRO.0000.BZKmr11Rarro-3050.html`
+- Nationale Omgevingsvisie: 453 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKovi20Novi-3000/d_NL.IMRO.0000.BZKovi20Novi-3000.html`
+- (geen titel): 12149776 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.BZKovi20Novi-3000/t_NL.IMRO.0000.BZKovi20Novi-3000.pdf`
+- Nationaal Water Programma: 792287 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.IMsv22NWP3PNZ-3000/d_NL.IMRO.0000.IMsv22NWP3PNZ-3000.html`
+- Programma Noordzee 2022-2027: 564655 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0000.IMsv22PNZNWP3-3000/d_NL.IMRO.0000.IMsv22PNZNWP3-3000.html`
 - Nijmegen Oost: 5780 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.19.html`
 - Nijmegen Oost: 7337 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.21.html`
 - Nijmegen Oost: 4585 tekens, `https://ruimtelijkeplannen.nl/documents/NL.IMRO.0268.BP13000-VG01/r_NL.IMRO.0268.BP13000-VG01_2.22.html`
