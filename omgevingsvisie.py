@@ -16,9 +16,26 @@ gaf identifier.officielebekendmakingen.nl 403 op elke JOIN-identificatie
 halen. Een kaart is dus niet nodig: het stadsdeel van een buurt volgt uit
 waar de visie de buurt noemt.
 
-AFGELEID, NIET HARD. Een buurt hoort bij een stadsdeel als precies één
-stadsdeelparagraaf de naam noemt. Noemt geen of meer dan één paragraaf de
-naam, dan blijft de buurt zonder stadsdeel, en staat in het verslag waarom.
+WAAR DE KOPPELING OP RUST. Elke stadsdeelparagraaf heeft een subparagraaf
+"6.N.2 ... - Kwaliteiten en kenmerken" die opsomt welke wijken erbij horen:
+"Nijmegen-Oost ... bestaat uit de wijken Bottendaal, Galgenveld, Altrade,
+Hunnerberg, Hengstdal, Kwakkenberg en Groenewoud." Een buurt hoort bij een
+stadsdeel als precies één zo'n opsommingszin haar noemt. Staat ze in geen of
+in meer dan één opsommingszin, dan blijft ze zonder stadsdeel, en staat in
+het verslag waarom. Losse vermeldingen tellen niet.
+
+DE EERSTE VERSIE MAT EEN VERZONNEN TEKST (28 november 2026). Die zocht koppen
+als "6.4 Nijmegen-Centrum" op een regel en telde elke vermelding van een
+buurt. De proef draaide op een tekst die ik zelf had geschreven en was groen;
+de eerste echte ronde vond in 330.848 tekens geen enkele paragraaf. Gemeten
+op de pagina zelf: de koppen staan in hoofdletters en de pagina zet nummer
+en naam in twee <span>s, dus "6.4" en "NIJMEGEN-CENTRUM" op twee regels.
+En tellen was fout geweest: "Benedenstad" staat er alleen als "benedenstad",
+"Stadscentrum" nergens met hoofdletter, "binnenstad" ook in 6.9 Dukenburg
+("bezoekers aan de binnenstad"), en "De Biezen" ook in 6.6 Nieuw-West, waar
+het om rioolgemaal De Biezen in het Westerpark gaat. De opsommingszin noemt
+alle acht ringbuurten precies één keer. De proef gebruikt nu de opmaak en de
+zinnen van de pagina, letterlijk.
 
   python3 omgevingsvisie.py            # ophalen en vastleggen
   python3 omgevingsvisie.py --proef
@@ -36,15 +53,21 @@ import ring
 REGELING = "https://lokaleregelgeving.overheid.nl/CVDR744138"
 UIT_PAD = "omgevingsvisie.json"
 VERSLAG = "omgevingsvisie_verslag.md"
-# De koppen van hoofdstuk 6, zoals de inhoudsopgave ze noemt (28 november):
-# 6.4 Nijmegen-Centrum tot en met 6.12 Nijmegen-Oost.
-_KOP = re.compile(r"^6\.(\d{1,2})\s+(Nijmegen-[A-Za-z-]+|Dukenburg|Lindenholt)"
-                  r"\s*$")
-# Andere namen waarmee de visie een ringbuurt kan noemen. Alleen wat in de
-# tekst van 28 november staat: "Waterkwartier (ook De Biezen genoemd)".
-SYNONIEMEN = {"Biezen": ("Biezen", "Waterkwartier"),
-              "St. Anna": ("St. Anna", "Sint Anna", "St.-Anna"),
-              "Stadscentrum": ("Stadscentrum", "binnenstad", "Binnenstad")}
+# De koppen van hoofdstuk 6 zoals de pagina ze geeft (gemeten 28 november):
+# "6.4 NIJMEGEN-CENTRUM" tot en met "6.12 NIJMEGEN-OOST", in hoofdletters.
+# Nummer en naam staan op twee regels; _regels voegt ze samen.
+_KOP = re.compile(r"^6\.(\d{1,2})\s+(nijmegen-[a-z-]+|dukenburg|lindenholt)"
+                  r"\s*$", re.I)
+_NUMMER = re.compile(r"^\d+(\.\d+)*$")
+# De zin die de wijken van een stadsdeel opsomt. Gemeten 28 november:
+# "bestaat uit de wijken", "bestaat officieel uit de wijken", "bestaat uit
+# twee woonwijken". Nieuw-West ("In Nieuw West liggen de woonwijken"), Noord
+# en Dukenburg hebben geen zin met "bestaat uit"; geen ringbuurt ligt daar.
+_WIJKZIN = re.compile(r"bestaat (?:officieel )?uit (?:de |twee )?(?:woon)?wijken",
+                      re.I)
+# Andere spelling waarmee de visie een ringbuurt kan noemen, alleen wat
+# gemeten is.
+SYNONIEMEN = {"St. Anna": ("St. Anna", "Sint Anna")}
 # Zinnen met deze woorden komen letterlijk in het dossier: wat de gemeente
 # wil met bouwen, functies en ruimte.
 KERNWOORDEN = ("verdicht", "inbreiding", "intensiver", "transformatie",
@@ -52,15 +75,55 @@ KERNWOORDEN = ("verdicht", "inbreiding", "intensiver", "transformatie",
                "kantoren", "studenten", "kamer", "leefbaarheid")
 
 
+def _regels(tekst):
+    """Regels, met een los nummer ("6.4") samengevoegd met de regel erna."""
+    uit, wacht = [], None
+    for r in (tekst or "").splitlines():
+        r = r.strip()
+        if not r:
+            continue
+        if wacht is not None:
+            r, wacht = f"{wacht} {r}", None
+        elif _NUMMER.match(r):
+            wacht = r
+            continue
+        uit.append(r)
+    if wacht is not None:
+        uit.append(wacht)
+    return uit
+
+
+def _naam(kop):
+    """'NIJMEGEN-OUD-WEST' wordt 'Nijmegen-Oud-West'."""
+    return "-".join(d.capitalize() for d in kop.split("-"))
+
+
+# Zinnen splitsen, maar niet na "St." ("Goffert en St. Anna."): zonder deze
+# uitzondering viel St. Anna op 28 november uit de opsomming van Midden.
+_ZINSEINDE = re.compile(r"(?<=[.!?])(?<!\bSt\.)\s+")
+
+
+def zinnen(tekst):
+    return _ZINSEINDE.split(" ".join((tekst or "").split()))
+
+
+def wijkzin(deel):
+    """De zin die de wijken van het stadsdeel opsomt, of ''."""
+    for z in zinnen(deel):
+        if _WIJKZIN.search(z):
+            return z
+    return ""
+
+
 def stadsdelen(tekst):
     """
-    {stadsdeel: {"paragraaf": "6.12", "tekst": ...}} uit de tekst van de
-    visie. Een kop komt twee keer voor (inhoudsopgave en tekst); de langste
-    paragraaf telt.
+    {stadsdeel: {"paragraaf": "6.12", "tekst": ..., "wijkzin": ...}} uit de
+    tekst van de visie. Komt een kop twee keer voor (inhoudsopgave en
+    tekst), dan telt de langste paragraaf.
     """
-    regels = (tekst or "").splitlines()
-    koppen = [(i, m.group(1), m.group(2)) for i, r in enumerate(regels)
-              for m in [_KOP.match(r.strip())] if m]
+    regels = _regels(tekst)
+    koppen = [(i, m.group(1), _naam(m.group(2))) for i, r in enumerate(regels)
+              for m in [_KOP.match(r)] if m]
     uit = {}
     for n, (i, nr, naam) in enumerate(koppen):
         eind = len(regels)
@@ -72,26 +135,29 @@ def stadsdelen(tekst):
                 break
         deel = "\n".join(regels[i + 1:eind]).strip()
         if len(deel) > len((uit.get(naam) or {}).get("tekst", "")):
-            uit[naam] = {"paragraaf": f"6.{nr}", "tekst": deel}
+            uit[naam] = {"paragraaf": f"6.{nr}", "tekst": deel,
+                         "wijkzin": wijkzin(deel)}
     return uit
 
 
 def buurt_naar_stadsdeel(delen, buurten=ring.BUURTEN):
     """
     ({buurt: stadsdeel}, {buurt: reden zonder stadsdeel}). Een buurt hoort
-    bij het enige stadsdeel waarvan de paragraaf haar (of een synoniem)
-    noemt.
+    bij het enige stadsdeel waarvan de opsommingszin haar (of een andere
+    spelling) noemt, ongeacht hoofdletters: de visie schrijft "stadscentrum
+    en benedenstad".
     """
     koppel, zonder = {}, {}
     for b in buurten:
         namen = SYNONIEMEN.get(b, (b,))
         treffers = [sd for sd, d in delen.items()
                     if any(re.search(rf"(?<![\w-]){re.escape(n)}(?![\w-])",
-                                     d["tekst"]) for n in namen)]
+                                     d.get("wijkzin") or "", re.I)
+                           for n in namen)]
         if len(treffers) == 1:
             koppel[b] = treffers[0]
         elif not treffers:
-            zonder[b] = "door geen stadsdeelparagraaf genoemd"
+            zonder[b] = "staat in geen opsomming van wijken van een stadsdeel"
         else:
             zonder[b] = "genoemd in " + ", ".join(sorted(treffers))
     return koppel, zonder
@@ -99,8 +165,7 @@ def buurt_naar_stadsdeel(delen, buurten=ring.BUURTEN):
 
 def kernzinnen(tekst, maximum=8):
     """Zinnen met een kernwoord, letterlijk, in volgorde."""
-    zinnen = re.split(r"(?<=[.!?])\s+", " ".join((tekst or "").split()))
-    uit = [z for z in zinnen
+    uit = [z for z in zinnen(tekst)
            if any(k in z.lower() for k in KERNWOORDEN) and 20 < len(z) < 400]
     return uit[:maximum]
 
@@ -129,6 +194,9 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
     if not delen:
         r.append(f"- geen enkele stadsdeelparagraaf gevonden in {len(tekst)} "
                  f"tekens; {uit_pad} is niet overschreven")
+        zes = [x for x in _regels(tekst) if x.startswith("6.")][:12]
+        r.append("- regels die met 6. beginnen: " +
+                 ("; ".join(f"`{x[:60]}`" for x in zes) if zes else "geen"))
         with open(verslag_pad, "w", encoding="utf-8") as f:
             f.write("\n".join(r) + "\n")
         print("\n".join(r))
@@ -144,7 +212,9 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
     for sd, d in sorted(delen.items(), key=lambda x: float(x[1]["paragraaf"]
                                                             .split(".")[1])):
         r.append(f"  - {d['paragraaf']} {sd}: {len(d['tekst'])} tekens, "
-                 f"{len(kernzinnen(d['tekst']))} kernzinnen")
+                 f"{len(kernzinnen(d['tekst']))} kernzinnen; opsomming: "
+                 + (f"\u201c{d['wijkzin']}\u201d" if d["wijkzin"]
+                    else "geen zin met 'bestaat uit ... wijken'"))
     r.append("")
     r.append("## Ringbuurten")
     r.append("")
@@ -184,53 +254,101 @@ def dossierregels(buurt, pad=UIT_PAD):
     d = v["stadsdelen"].get(sd) or {}
     kern = " ".join(f"\u201c{z}\u201d" for z in (d.get("kern") or [])[:4])
     return [("omgevingsvisie",
-             f"{sd} (paragraaf {d.get('paragraaf')}, afgeleid: de visie noemt "
-             f"{buurt} in deze paragraaf)" + (f": {kern}" if kern else ""),
+             f"{sd} (paragraaf {d.get('paragraaf')}; de visie noemt {buurt} "
+             f"in de opsomming \u201c{d.get('wijkzin', '')}\u201d)"
+             + (f": {kern}" if kern else ""),
              bron)]
+
+
+def _kop(tag, nr, naam):
+    """Een kop zoals lokaleregelgeving.overheid.nl hem opmaakt (28 nov)."""
+    return (f'<{tag} class="docDivisie"><a id="div_{nr}"></a>\n'
+            f'                           \t\t<span>{nr} </span>\n'
+            f'                           \t\t<span>{naam}</span>\n'
+            f'                           \t      </{tag}>')
+
+
+# Zinnen letterlijk uit de visie van 28 november, in de opmaak van de pagina.
+PROEF_HTML = "".join([
+    _kop("h3", "6.4", "NIJMEGEN-CENTRUM"),
+    _kop("h4", "6.4.2", "Centrum - Kwaliteiten en kenmerken"),
+    "<p>Nijmegen-Centrum bestaat officieel uit de wijken stadscentrum en "
+    "benedenstad. Beleidsmatig spreken we ook vaak van de binnenstad en het "
+    "Stationsdistrict.</p>",
+    _kop("h3", "6.6", "NIJMEGEN-NIEUW-WEST"),
+    _kop("h4", "6.6.2", "Nieuw-West - Kwaliteiten en kenmerken"),
+    "<p>In Nieuw West liggen de woonwijken Neerbosch Oost, Heseveld en Hees "
+    "en een groot deel van het bedrijventerrein TPN West aan de haven en de "
+    "Waal.</p><p>Grote delen van Nijmegen en omgeving voeren af naar "
+    "rioolgemaal De Biezen in het Westerpark, vandaaruit gaat het water naar "
+    "de rioolwaterzuivering.</p>",
+    _kop("h3", "6.7", "NIJMEGEN-OUD-WEST"),
+    _kop("h4", "6.7.2", "Oud-West - Kwaliteiten en kenmerken"),
+    "<p>Nijmegen-Oud-West bestaat uit twee woonwijken, Wolfskuil en "
+    "Waterkwartier, ook wel De Biezen genoemd. Afgelopen jaren zijn in het "
+    "Waalfront bedrijven vervangen door woningbouw met hoog- en laagbouw in "
+    "retro- en moderne stijl.</p>",
+    _kop("h3", "6.8", "NIJMEGEN-MIDDEN"),
+    _kop("h4", "6.8.2", "Midden - Kwaliteiten en kenmerken"),
+    "<p>Nijmegen-Midden bestaat uit de wijken: Nije Veld, Heijendaal, "
+    "Hazenkamp, Goffert en St. Anna.</p>",
+    _kop("h3", "6.9", "DUKENBURG"),
+    "<p>Bij de A73 is een zoekgebied voor een transferium waar bezoekers aan "
+    "de binnenstad hun reis met het ov kunnen vervolgen, waardoor er minder "
+    "autoverkeer door de stad hoeft te gaan.</p>",
+    _kop("h3", "6.12", "NIJMEGEN-OOST"),
+    _kop("h4", "6.12.2", "Oost - Kwaliteiten en kenmerken"),
+    "<p>Nijmegen-Oost is eind 19e eeuw, begin 20e eeuw ontstaan. Het "
+    "stadsdeel bestaat uit de wijken Bottendaal, Galgenveld, Altrade, "
+    "Hunnerberg, Hengstdal, Kwakkenberg en Groenewoud. Het is een populair "
+    "stadsdeel om te wonen. Tegelijkertijd spelen er vraagstukken over "
+    "leefbaarheid, klimaatadaptatie en vergroening en de "
+    "energietransitie.</p>",
+    _kop("h2", "7", "STURINGSFILOSOFIE"),
+    _kop("h3", "7.1", "INLEIDING"),
+    "<p>Ook in Galgenveld en de benedenstad sturen we op doelen.</p>"])
 
 
 def proef():
     import os
     import tempfile
     afw = []
-    # Opbouw zoals de visie van 28 november: inhoudsopgave, dan de tekst.
-    tekst = "\n".join([
-        "6.4 Nijmegen-Centrum", "6.7 Nijmegen-Oud-West", "6.12 Nijmegen-Oost",
-        "Hoofdstuk 6 Stadsdelen",
-        "6.4 Nijmegen-Centrum",
-        "De binnenstad en de Benedenstad. Verdichting is hier mogelijk "
-        "binnen de historische maat.",
-        "6.7 Nijmegen-Oud-West",
-        "Wolfskuil, Waterkwartier en Waalfront. Er is "
-        "minder ruimte voor inbreiding dan elders.",
-        "6.12 Nijmegen-Oost",
-        "Bottendaal, Galgenveld, Altrade en Hunnerberg. De belangrijkste "
-        "opgave is de balans tussen groei en leefbaarheid.",
-        "7 Uitvoering", "In Galgenveld begint de uitvoering."])
+    _t, tekst = planregels.tekst_uit(PROEF_HTML)
     d = stadsdelen(tekst)
-    if sorted(d) != ["Nijmegen-Centrum", "Nijmegen-Oost", "Nijmegen-Oud-West"]:
-        afw.append(f"stadsdelen: {sorted(d)}")
+    verwacht_sd = ["Dukenburg", "Nijmegen-Centrum", "Nijmegen-Midden",
+                   "Nijmegen-Nieuw-West", "Nijmegen-Oost", "Nijmegen-Oud-West"]
+    if sorted(d) != verwacht_sd:
+        afw.append(f"stadsdelen uit de opmaak van de pagina: {sorted(d)}")
     if d.get("Nijmegen-Oost", {}).get("paragraaf") != "6.12" or \
-            "Uitvoering" in d.get("Nijmegen-Oost", {}).get("tekst", ""):
-        afw.append(f"de laatste paragraaf loopt door in hoofdstuk 7: {d}")
+            "sturen we" in d.get("Nijmegen-Oost", {}).get("tekst", ""):
+        afw.append(f"de laatste paragraaf loopt door in hoofdstuk 7: "
+                   f"{d.get('Nijmegen-Oost')}")
+    if d.get("Dukenburg", {}).get("wijkzin") or \
+            d.get("Nijmegen-Nieuw-West", {}).get("wijkzin"):
+        afw.append("een paragraaf zonder 'bestaat uit' krijgt toch een "
+                   "opsomming")
     k, z = buurt_naar_stadsdeel(d)
     verwacht = {"Stadscentrum": "Nijmegen-Centrum",
                 "Benedenstad": "Nijmegen-Centrum",
                 "Bottendaal": "Nijmegen-Oost", "Galgenveld": "Nijmegen-Oost",
                 "Altrade": "Nijmegen-Oost", "Hunnerberg": "Nijmegen-Oost",
-                "Biezen": "Nijmegen-Oud-West"}
-    if k != verwacht:
-        afw.append(f"buurt naar stadsdeel: {k}")
-    if z != {"St. Anna": "door geen stadsdeelparagraaf genoemd"}:
-        afw.append(f"buurten zonder stadsdeel: {z}")
+                "Biezen": "Nijmegen-Oud-West", "St. Anna": "Nijmegen-Midden"}
+    if k != verwacht or z:
+        afw.append(f"buurt naar stadsdeel: {k}, zonder: {z}")
     k2, z2 = buurt_naar_stadsdeel(
-        {"A": {"tekst": "Altrade ligt hier."},
-         "B": {"tekst": "Ook Altrade."}}, ("Altrade",))
+        {"A": {"wijkzin": "A bestaat uit de wijken Altrade en X."},
+         "B": {"wijkzin": "B bestaat uit de wijken Altrade en Y."}},
+        ("Altrade",))
     if k2 or "genoemd in A, B" not in z2.get("Altrade", ""):
         afw.append(f"een buurt in twee stadsdelen krijgt toch een stadsdeel: "
                    f"{k2}, {z2}")
-    kz = kernzinnen(d["Nijmegen-Oud-West"]["tekst"])
-    if kz != ["Er is minder ruimte voor inbreiding dan elders."]:
+    k3, z3 = buurt_naar_stadsdeel(
+        {"A": {"tekst": "Altrade ligt hier.", "wijkzin": ""}}, ("Altrade",))
+    if k3 or "geen opsomming" not in z3.get("Altrade", ""):
+        afw.append(f"een losse vermelding buiten de opsomming koppelt toch: "
+                   f"{k3}, {z3}")
+    kz = kernzinnen(d.get("Nijmegen-Oost", {}).get("tekst", ""))
+    if not kz or "leefbaarheid" not in kz[0]:
         afw.append(f"kernzinnen: {kz}")
     # Ophalen: mislukt laat het oude bestand staan.
     m = tempfile.mkdtemp()
@@ -245,8 +363,15 @@ def proef():
         ophalen(mis, up, vp)
         if lees(up) != {"oud": True}:
             afw.append("een mislukte ophaling overschrijft het oude bestand")
-        ophalen(lambda _u: "<p>" + tekst.replace("\n", "</p><p>") + "</p>",
-                up, vp)
+        ophalen(lambda _u: "<p>geen visie</p>", up, vp)
+        if lees(up) != {"oud": True}:
+            afw.append("een pagina zonder stadsdelen overschrijft het oude "
+                       "bestand")
+        if "regels die met 6. beginnen: geen" not in open(
+                vp, encoding="utf-8").read():
+            afw.append("het verslag zegt niet wat er wel stond als er geen "
+                       "stadsdeel gevonden is")
+        ophalen(lambda _u: PROEF_HTML, up, vp)
     finally:
         sys.stdout.close()
         sys.stdout = stdout
@@ -254,9 +379,17 @@ def proef():
         afw.append(f"ophalen legt de koppeling niet vast: {lees(up)}")
     dr = dossierregels("Biezen", up)
     if not dr or "Nijmegen-Oud-West (paragraaf 6.7" not in dr[0][1] or \
-            "inbreiding" not in dr[0][1]:
-        afw.append(f"dossierregel: {dr}")
-    if "geen stadsdeel" not in dossierregels("St. Anna", up)[0][1]:
+            "ook wel De Biezen genoemd" not in dr[0][1]:
+        afw.append(f"dossierregel zegt niet waarop de koppeling rust: {dr}")
+    v = lees(up)
+    v.setdefault("buurten", {}).pop("Altrade", None)
+    v["buurten_zonder_stadsdeel"] = {
+        "Altrade": "staat in geen opsomming van wijken van een stadsdeel"}
+    with open(up, "w", encoding="utf-8") as f:
+        json.dump(v, f)
+    dz = dossierregels("Altrade", up)
+    if not dz or "geen stadsdeel" not in dz[0][1] or \
+            "opsomming" not in dz[0][1]:
         afw.append("een buurt zonder stadsdeel zegt niet waarom")
     if dossierregels("Biezen", os.path.join(m, "bestaat-niet.json")):
         afw.append("zonder opgehaalde visie komt er toch een dossierregel")

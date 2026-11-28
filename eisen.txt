@@ -771,12 +771,26 @@ soort: gegevens
 
 ---
 eis: De Omgevingsvisie staat per stadsdeel in omgevingsvisie.json, en een
-  ringbuurt hoort alleen bij een stadsdeel als precies een
-  stadsdeelparagraaf haar noemt.
+  ringbuurt hoort alleen bij een stadsdeel als precies een opsommingszin
+  ("... bestaat uit de wijken ...") in 6.N.2 haar noemt. Losse vermeldingen
+  tellen niet.
 waarom: 28 november. De werkingsgebieden van de visie bleken de stadsdelen,
   en die waren vanaf GitHub niet op te halen (403 op elke
-  JOIN-identificatie). De tekst noemt per stadsdeel zijn buurten, dus de
-  koppeling kan uit de tekst; maar dat is afgeleid, en een buurt die in
-  twee paragrafen staat, mag niet stil bij een van beide komen.
-proef: omgevingsvisie:een buurt in twee stadsdelen krijgt toch een stadsdeel
+  JOIN-identificatie). De eerste versie telde elke vermelding en zou
+  Biezen (ook "rioolgemaal De Biezen" in 6.6) en Stadscentrum ("binnenstad"
+  ook in 6.9) zonder stadsdeel hebben gelaten; de opsommingszin noemt alle
+  acht ringbuurten precies een keer.
+proef: omgevingsvisie:een buurt in twee stadsdelen krijgt toch een stadsdeel; omgevingsvisie:een losse vermelding buiten de opsomming koppelt toch
+soort: gegevens
+---
+eis: De proef van omgevingsvisie.py draait op de opmaak en de zinnen van
+  lokaleregelgeving.overheid.nl zelf (PROEF_HTML), letterlijk overgenomen,
+  niet op een tekst die de bouwer verwacht.
+waarom: 28 november. De eerste proef draaide op een zelfgeschreven tekst
+  met koppen als "6.4 Nijmegen-Centrum" op een regel en was groen; de
+  eerste echte ronde vond in 330.848 tekens geen enkele paragraaf, want de
+  pagina schrijft "6.4" en "NIJMEGEN-CENTRUM" in hoofdletters op twee
+  regels. Met de echte zin viel ook St. Anna weg, omdat de zin na "St."
+  werd geknipt; dat zag de verzonnen tekst niet.
+proef: omgevingsvisie:stadsdelen uit de opmaak van de pagina; omgevingsvisie:buurt naar stadsdeel
 soort: gegevens
