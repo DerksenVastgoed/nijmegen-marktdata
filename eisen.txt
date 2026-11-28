@@ -768,3 +768,15 @@ waarom: 28 november. Wat een aanduiding toestaat, staat alleen in het
   goede lijst met een lege; dat mag hier niet gebeuren.
 proef: planregels:een mislukte ophaling overschrijft de oude tekst
 soort: gegevens
+
+---
+eis: De Omgevingsvisie staat per stadsdeel in omgevingsvisie.json, en een
+  ringbuurt hoort alleen bij een stadsdeel als precies een
+  stadsdeelparagraaf haar noemt.
+waarom: 28 november. De werkingsgebieden van de visie bleken de stadsdelen,
+  en die waren vanaf GitHub niet op te halen (403 op elke
+  JOIN-identificatie). De tekst noemt per stadsdeel zijn buurten, dus de
+  koppeling kan uit de tekst; maar dat is afgeleid, en een buurt die in
+  twee paragrafen staat, mag niet stil bij een van beide komen.
+proef: omgevingsvisie:een buurt in twee stadsdelen krijgt toch een stadsdeel
+soort: gegevens

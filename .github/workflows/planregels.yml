@@ -40,14 +40,22 @@ jobs:
           ref: ${{ github.ref_name }}
 
       - name: Proef
-        run: python3 planregels.py --proef
+        run: |
+          python3 planregels.py --proef
+          python3 omgevingsvisie.py --proef
 
       - name: Ophalen
         run: python3 planregels.py --minuten "${{ github.event.inputs.minuten || '20' }}"
 
+      # De Omgevingsvisie per stadsdeel (omgevingsvisie.py). Een pagina, dus
+      # mee in dezelfde wekelijkse ronde.
+      - name: Omgevingsvisie
+        continue-on-error: true
+        run: python3 omgevingsvisie.py
+
       - name: Terugcommitten
         run: |
           set -o pipefail
-          ./terugcommitten.sh "Planregels $(date -u +%F)" planregels.json planregels_verslag.md \
+          ./terugcommitten.sh "Planregels $(date -u +%F)" planregels.json planregels_verslag.md omgevingsvisie.json omgevingsvisie_verslag.md \
             2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
