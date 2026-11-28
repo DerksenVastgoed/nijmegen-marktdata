@@ -25,6 +25,9 @@ on:
       minuten:
         description: "Tijdbudget bij alles, in minuten."
         default: "120"
+      keten:
+        description: "Volgnummer in de keten; niet met de hand invullen."
+        default: "0"
 
 concurrency:
   group: bestemming
@@ -36,6 +39,7 @@ jobs:
     timeout-minutes: 150
     permissions:
       contents: write
+      actions: write
     steps:
       - uses: actions/checkout@v4
 
@@ -45,9 +49,9 @@ jobs:
       - name: Ophalen
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python3 bestemming.py --minuten 120
+            python3 bestemming.py --minuten 120 --rest /tmp/rest.json
           elif [ "${{ github.event.inputs.modus }}" = "alles" ]; then
-            python3 bestemming.py --minuten "${{ github.event.inputs.minuten }}"
+            python3 bestemming.py --minuten "${{ github.event.inputs.minuten }}" --rest /tmp/rest.json
           else
             python3 bestemming.py --verken
           fi
@@ -60,3 +64,28 @@ jobs:
           ./terugcommitten.sh "Bestemmingen $(date -u +%F)" bestemmingen.json bestemming_verslag.md \
             2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
+
+      - name: Vervolgronde
+        # ZELFDE PATROON ALS inhaal-3dbag.yml (28 november). De eerste ronde na
+        # de nieuwe lezer vraagt de hele ring opnieuw, zes lagen per pand; dat
+        # past niet in 120 minuten, en met alleen het wekelijkse schema duurt
+        # het weken. Door zolang er rest is en deze ronde iets opleverde, met
+        # een teller tegen rondzingen. Alleen bij alles en op schema, en
+        # alleen op de hoofdtak.
+        if: github.ref_name == github.event.repository.default_branch && (github.event_name == 'schedule' || github.event.inputs.modus == 'alles')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ -f /tmp/rest.json ] || { echo "Geen rest.json, geen vervolg"; exit 0; }
+          cat /tmp/rest.json; echo
+          { echo "## Bestemmingen"; echo '```'; cat /tmp/rest.json; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          REST=$(python3 -c "import json;print(json.load(open('/tmp/rest.json')).get('rest',0))")
+          OPGEHAALD=$(python3 -c "import json;print(json.load(open('/tmp/rest.json')).get('opgehaald',0))")
+          KETEN="${{ github.event.inputs.keten }}"
+          KETEN="${KETEN:-0}"
+          echo "Nog $REST te gaan, deze ronde $OPGEHAALD opgehaald, schakel $KETEN"
+          if [ "$REST" -gt 0 ] && [ "$OPGEHAALD" -gt 0 ] && [ "$KETEN" -lt 15 ]; then
+            gh workflow run bestemming.yml -f modus=alles -f minuten=120 \
+              -f keten="$((KETEN + 1))"
+            echo "Vervolgronde gestart"
+          fi
