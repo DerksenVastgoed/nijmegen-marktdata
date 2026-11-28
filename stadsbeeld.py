@@ -201,12 +201,23 @@ def naam_uit_titel(html):
     return t.split(" | ")[0].strip()
 
 
-def verken_omgevingsplan():
-    r = ["# Geografische informatieobjecten in het omgevingsplan", "",
-         f"Regeling: `{OMGEVINGSPLAN}`", ""]
-    eind, soort, inhoud = haal(OMGEVINGSPLAN, r)
+def verken_regeling(regeling, titel, lijst_pad, verslag_pad, gml_voorvoegsel,
+                    zeef=None, sleutel="erfgoed"):
+    """
+    De geografische informatieobjecten (GIO's) van een regeling op
+    lokaleregelgeving.overheid.nl: alle namen, en de geometrie van wat door
+    de zeef komt (zonder zeef: alles, tot 40 stuks).
+
+    EEN IMPLEMENTATIE (28 november 2026). Dit was verken_omgevingsplan(),
+    alleen voor het omgevingsplan en alleen erfgoed. De Omgevingsvisie
+    gemeente Nijmegen (CVDR744138, 2025) staat ook in de nieuwe standaard en
+    heeft ook werkingsgebieden; die hoort dezelfde weg te gaan.
+    """
+    r = [f"# Geografische informatieobjecten in {titel}", "",
+         f"Regeling: `{regeling}`", ""]
+    eind, soort, inhoud = haal(regeling, r)
     if inhoud is None:
-        with open(GIO_VERSLAG, "w", encoding="utf-8") as f:
+        with open(verslag_pad, "w", encoding="utf-8") as f:
             f.write("\n".join(r) + "\n")
         print("\n".join(r))
         return 0
@@ -225,19 +236,35 @@ def verken_omgevingsplan():
         paginas[u] = (e1, t1)
         benoemd.append((naam, u))
     alle = benoemd
-    erfgoed = [(n, u) for n, u in alle
-               if any(w in n.lower() for w in ERFGOEDWOORDEN)]
-    r.append(f"- waarvan {len(erfgoed)} met een naam die op erfgoed wijst")
+    # NIET OPGEHAALD IS GEEN LEGE LIJST (28 november 2026). Die dag gaf
+    # identifier.officielebekendmakingen.nl op elke JOIN-identificatie 403
+    # aan de runner, en de verkenning overschreef omgevingsplan_gio.json van
+    # oktober (31 objecten met naam) met 51 paden zonder naam. Is geen enkele
+    # objectpagina te lezen, dan blijft de vorige lijst staan en zegt alleen
+    # het verslag wat er gebeurde.
+    if alle and not any(t for _e, t in paginas.values()):
+        r.append("")
+        r.append(f"Geen enkele objectpagina te lezen ({len(alle)} geprobeerd); "
+                 f"{lijst_pad} is niet overschreven.")
+        with open(verslag_pad, "w", encoding="utf-8") as f:
+            f.write("\n".join(r) + "\n")
+        print("\n".join(r[-3:]))
+        return 0
+    gekozen = [(n, u) for n, u in alle
+               if zeef is None or any(w in n.lower() for w in zeef)]
+    if zeef is not None:
+        r.append(f"- waarvan {len(gekozen)} met een naam die op {sleutel} "
+                 f"wijst")
     r.append("")
     r.append("## Alle namen")
     r.append("")
     for n, u in alle:
         r.append(f"- {n or '(geen naam)'}")
     r.append("")
-    r.append("## Erfgoed, met geometrie")
+    r.append(f"## {sleutel.capitalize()}, met geometrie")
     r.append("")
     resultaat = []
-    for i, (naam, url) in enumerate(erfgoed[:40]):
+    for i, (naam, url) in enumerate(gekozen[:40]):
         e1, t1 = paginas.get(url, (None, ""))
         if not t1:
             continue
@@ -247,7 +274,7 @@ def verken_omgevingsplan():
             g_url = urllib.parse.urljoin(e1, gml[0])
             e2, _s2, i2 = haal(g_url, r)
             if i2 is not None:
-                pad = f"omgevingsplan_gio_{i:02d}.gml"
+                pad = f"{gml_voorvoegsel}{i:02d}.gml"
                 with open(pad, "wb") as f:
                     f.write(i2)
                 n_vlak = i2.count(b"<gml:Polygon")
@@ -257,14 +284,38 @@ def verken_omgevingsplan():
                  + (f"{rij.get('vlakken')} vlakken, bewaard als "
                     f"{rij.get('bestand')}" if rij.get("bestand")
                     else "geen GML gevonden"))
-    with open(GIO_LIJST, "w", encoding="utf-8") as f:
-        json.dump({"regeling": OMGEVINGSPLAN, "pagina": eind,
+    with open(lijst_pad, "w", encoding="utf-8") as f:
+        json.dump({"regeling": regeling, "pagina": eind,
                    "alle": [{"naam": n, "join": u} for n, u in alle],
-                   "erfgoed": resultaat}, f, ensure_ascii=False, indent=1)
-    with open(GIO_VERSLAG, "w", encoding="utf-8") as f:
+                   sleutel: resultaat}, f, ensure_ascii=False, indent=1)
+    with open(verslag_pad, "w", encoding="utf-8") as f:
         f.write("\n".join(r) + "\n")
     print("\n".join(r[:60]))
     return 0
+
+
+def verken_omgevingsplan():
+    return verken_regeling(OMGEVINGSPLAN, "het omgevingsplan", GIO_LIJST,
+                           GIO_VERSLAG, "omgevingsplan_gio_",
+                           zeef=ERFGOEDWOORDEN, sleutel="erfgoed")
+
+
+# DE OMGEVINGSVISIE (28 november 2026). Nijmegen stelde in 2025 een nieuwe
+# Omgevingsvisie vast, in de nieuwe standaard (gemeenteblad 2025 nr. 401292,
+# CVDR744138), te zien in Regels op de kaart. Ze bindt niet op pandniveau,
+# maar zegt waar de gemeente wil groeien: vooral het Stationsgebied
+# (inclusief Waalfront en Binnenstad) en de Kanaalzone-Zuid. Eerst alle
+# werkingsgebieden met hun geometrie; welke ervan voor de ring tellen,
+# beslist pas de meting.
+OMGEVINGSVISIE = "https://lokaleregelgeving.overheid.nl/CVDR744138"
+VISIE_LIJST = "omgevingsvisie_gio.json"
+VISIE_VERSLAG = "omgevingsvisie_gio_verslag.md"
+
+
+def verken_omgevingsvisie():
+    return verken_regeling(OMGEVINGSVISIE, "de Omgevingsvisie", VISIE_LIJST,
+                           VISIE_VERSLAG, "omgevingsvisie_gio_",
+                           zeef=None, sleutel="werkingsgebieden")
 
 
 # GEMEENTELIJKE MONUMENTEN. 18 oktober: het omgevingsplan heeft 31
@@ -498,6 +549,60 @@ def proef():
     if [k for k, _ in a] != ["Artikel 14 Verboden", "Artikel 15 Vergunning"] \
             or "stadsbeeld" not in a[0][1] or "Artikel 99" in t:
         afw.append(f"de artikelen worden verkeerd gesplitst: {a}")
+    # VERKEN_REGELING, met een nagebootste regeling (28 november). Twee
+    # objecten: een stadsbeeld en een groeigebied. Met de erfgoedzeef alleen
+    # het stadsbeeld, zonder zeef allebei; de sleutel volgt de aanroep.
+    import os as _os, tempfile as _tf
+    _jn = ("https://identifier.officielebekendmakingen.nl/join/id/regdata/"
+           "gm0268/2025/")
+    _pag = {
+        "REGELING": ('<a href="' + _jn + 'a/nld@1">x</a>'
+                     '<a href="' + _jn + 'b/nld@1">y</a>').encode(),
+        _jn + "a/nld@1": b"<title>Waardengebied erfgoed - stadsbeeld | O</title>"
+                         b'<a href="a.gml">gml</a>',
+        _jn + "b/nld@1": b"<title>Groeigebied Stationsgebied | O</title>"
+                         b'<a href="b.gml">gml</a>',
+        "a.gml": b"<gml:Polygon/>", "b.gml": b"<gml:Polygon/><gml:Polygon/>",
+    }
+    _oud_haal = globals()["haal"]
+    def _nep_haal(url, r):
+        sleutel = url.rsplit("/", 1)[-1] if url.endswith(".gml") else url
+        return url, "text/html", _pag.get(sleutel)
+    globals()["haal"] = _nep_haal
+    _map = _tf.mkdtemp()
+    _cwd = _os.getcwd()
+    try:
+        _os.chdir(_map)
+        verken_regeling("REGELING", "proef", "z.json", "z.md", "z_",
+                        zeef=ERFGOEDWOORDEN, sleutel="erfgoed")
+        _z = json.load(open("z.json"))
+        verken_regeling("REGELING", "proef", "v.json", "v.md", "v_",
+                        zeef=None, sleutel="werkingsgebieden")
+        _v = json.load(open("v.json"))
+        if [x["naam"] for x in _z.get("erfgoed", [])] != [
+                "Waardengebied erfgoed - stadsbeeld"] or len(_z["alle"]) != 2:
+            afw.append(f"de erfgoedzeef van verken_regeling: {_z}")
+        if [x.get("vlakken") for x in _v.get("werkingsgebieden", [])] != [1, 2]:
+            afw.append(f"zonder zeef komen niet alle werkingsgebieden met hun "
+                       f"geometrie mee: {_v}")
+        if not _os.path.exists("v_01.gml"):
+            afw.append("de geometrie van de visie wordt niet bewaard")
+        # Alle objectpagina's onbereikbaar: de vorige lijst blijft staan.
+        for _k in list(_pag):
+            if _k.startswith(_jn):
+                _pag[_k] = None
+        verken_regeling("REGELING", "proef", "v.json", "v.md", "v_",
+                        zeef=None, sleutel="werkingsgebieden")
+        if json.load(open("v.json")) != _v:
+            afw.append("een verkenning zonder een enkele leesbare objectpagina "
+                       "overschrijft de vorige lijst")
+        if "niet overschreven" not in open("v.md").read():
+            afw.append("het verslag zegt niet dat de lijst niet is "
+                       "overschreven")
+    finally:
+        _os.chdir(_cwd)
+        globals()["haal"] = _oud_haal
+
     for a in afw:
         print("AFWIJKING: " + a, file=sys.stderr)
     print(f"Proef stadsbeeld: {len(afw)} afwijkingen", file=sys.stderr)
@@ -508,6 +613,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--verken", action="store_true")
     ap.add_argument("--omgevingsplan", action="store_true")
+    ap.add_argument("--omgevingsvisie", action="store_true")
     ap.add_argument("--proef", action="store_true")
     ap.add_argument("--monumenten", action="store_true")
     ap.add_argument("--regels", action="store_true")
@@ -520,6 +626,8 @@ def main():
         return verken_monumenten()
     if a.omgevingsplan:
         return verken_omgevingsplan()
+    if a.omgevingsvisie:
+        return verken_omgevingsvisie()
     if a.verken:
         return verken()
     ap.print_help()

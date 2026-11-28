@@ -59,6 +59,7 @@ jobs:
         run: |
           python3 stadsbeeld.py --proef
           python3 stadsbeeld.py --omgevingsplan
+          python3 stadsbeeld.py --omgevingsvisie
           python3 stadsbeeld.py --monumenten
           python3 stadsbeeld.py --regels
 
@@ -96,6 +97,6 @@ jobs:
           # De lus staat in terugcommitten.sh (11 november); daarvoor had deze
           # workflow een eigen kopie, met git pull --rebase.
           set -o pipefail
-          ./terugcommitten.sh "Gezichten $(date -u +%F)" gezichten.json gezicht_verslag.md stadsbeeld_verslag.md stadsbeeld_*.gml stadsbeeld_*.json omgevingsplan_gio.json omgevingsplan_gio_verslag.md omgevingsplan_gio_*.gml monumenten_verslag.md monumenten_bronnen_verslag.md monumenten_gemeenteblad.json monumenten_wikidata.json kaartviewer_verslag.md kaartviewer_boom.json stadsbeeld_regels.md monumenten_wfs_verslag.md monumenten_his_mon_monument.geojson monumenten_his_mon_beschermde_geb.geojson rijksmonumenten_rce_punten.json rijksmonumenten_rce_verslag.md rijksmonumenten_rce_panden.json rijksmonumenten_rce_panden_verslag.md monumenten_register_panden.json monumenten_register_panden_verslag.md \
+          ./terugcommitten.sh "Gezichten $(date -u +%F)" gezichten.json gezicht_verslag.md stadsbeeld_verslag.md stadsbeeld_*.gml stadsbeeld_*.json omgevingsplan_gio.json omgevingsplan_gio_verslag.md omgevingsplan_gio_*.gml omgevingsvisie_gio.json omgevingsvisie_gio_verslag.md omgevingsvisie_gio_*.gml monumenten_verslag.md monumenten_bronnen_verslag.md monumenten_gemeenteblad.json monumenten_wikidata.json kaartviewer_verslag.md kaartviewer_boom.json stadsbeeld_regels.md monumenten_wfs_verslag.md monumenten_his_mon_monument.geojson monumenten_his_mon_beschermde_geb.geojson rijksmonumenten_rce_punten.json rijksmonumenten_rce_verslag.md rijksmonumenten_rce_panden.json rijksmonumenten_rce_panden_verslag.md monumenten_register_panden.json monumenten_register_panden_verslag.md \
             2>&1 | tee /tmp/terugcommit.log
           exit "${PIPESTATUS[0]}"
