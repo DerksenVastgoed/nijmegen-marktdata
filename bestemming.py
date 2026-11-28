@@ -522,11 +522,38 @@ def aanduidingregels(rec):
     maat = maatvoering_tekst(rec)
     if maat:
         uit.append(("maatvoering", maat, BRONNAAM))
+    links = artikel_links(rec)
+    if links:
+        uit.append(("planregels", "; ".join(f"{n}: {u}" for n, u in links),
+                    BRONNAAM))
     komend = in_voorbereiding(rec)
     if komend:
         uit.append(("in voorbereiding", "; ".join(komend) + ". Dit geldt nog "
                     "niet, maar kan wat hier mag veranderen: nakijken in "
                     "Regels op de kaart voor een aankoop.", BRONNAAM))
+    return uit
+
+
+def artikel_links(rec):
+    """
+    [(naam, link)] naar het artikel in de planregels, voor enkel- en
+    dubbelbestemming en gebiedsaanduiding, een keer per link.
+
+    WAAROM (28 november). Het dossier noemde 'Gemengd - 3', maar wat die
+    bestemming toestaat staat in het artikel, en de link daarheen zat al in
+    elk antwoord (verwijzingnaartekst). Bij een plangebied staan meerdere
+    links met een komma (regels en toelichting); die blijven weg, het
+    dossier noemt het plan al.
+    """
+    uit, gezien = [], set()
+    verw = rec.get("verwijzingen") or {}
+    for laag in ("enkelbestemming", "dubbelbestemming", "gebiedsaanduiding"):
+        for v in verw.get(laag) or []:
+            u = (v.get("tekst") or "").strip()
+            if not u or "," in u or u in gezien:
+                continue
+            gezien.add(u)
+            uit.append((v.get("naam") or laag, u))
     return uit
 
 
@@ -785,6 +812,21 @@ def proef():
     zonder_maten.update({l: [] for l in LAGEN})
     if te_vragen(zonder_maten, dt.date(2026, 11, 28)) != ["maatvoering"]:
         afw.append("een maatvoering zonder maten wordt niet opnieuw gevraagd")
+
+    # ARTIKEL-LINKS: bestemmingen met link, plangebied met kommalijst niet.
+    al = artikel_links({"verwijzingen": {
+        "enkelbestemming": [{"naam": "Gemengd - 3", "tekst": "https://r/a_2.10.html"}],
+        "dubbelbestemming": [{"naam": "Waarde - Cultuurhistorie 2",
+                              "tekst": "https://r/a_3.27.html"},
+                             {"naam": "dubbel", "tekst": "https://r/a_3.27.html"}],
+        "gebiedsaanduiding": [{"naam": "twee links",
+                               "tekst": "https://r/r.html,https://r/t.html"}],
+        "functieaanduiding": [{"naam": "horeca", "tekst": "https://r/f.html"}]}})
+    if al != [("Gemengd - 3", "https://r/a_2.10.html"),
+              ("Waarde - Cultuurhistorie 2", "https://r/a_3.27.html")]:
+        afw.append(f"artikel-links: {al}")
+    if artikel_links({"enkelbestemming": ["Wonen"]}):
+        afw.append("een record zonder verwijzingen geeft toch links")
 
     # IN VOORBEREIDING: ontwerp en voorbereidingsbesluit wel, vastgesteld niet.
     vb = {"verwijzingen": {
