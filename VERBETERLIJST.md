@@ -20,4 +20,6 @@ Wat nog niet klopt sinds de splitsing van 11 november 2026.
   helemaal opnieuw gevraagd: de hele ring, zes lagen per pand. Dat kost
   meerdere runs van 120 minuten. Sinds de vervolgronde (zelfde patroon als
   inhaal-3dbag.yml) start een ronde met alles zichzelf opnieuw tot de
-  wachtrij leeg is, met maximaal 15 schakels.
+  wachtrij leeg is, met maximaal 15 schakels. Sinds de maatvoering (zevende
+  laag) is de veldnaam van de waarde nog niet gemeten: na samenvoegen verken
+  draaien, die heeft een eigen wachtrij en commit alleen het verslag.
