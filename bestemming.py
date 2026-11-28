@@ -222,6 +222,12 @@ def te_vragen(rec, vandaag=None):
     return [laag for laag in LAGEN if laag not in rec]
 
 
+def rest_stand(wachtrij, gedaan, fout):
+    """Wat de vervolgronde nodig heeft: hoeveel er nog over is."""
+    return {"rest": max(wachtrij - gedaan, 0), "opgehaald": gedaan,
+            "fouten": fout}
+
+
 def zoek(tekst, bestemming=None, pad=UIT_PAD):
     """
     Panden met een functieaanduiding die `tekst` bevat (hoofdletters maken
@@ -286,7 +292,7 @@ def verken(punten_adres):
     return 0
 
 
-def ophalen(minuten):
+def ophalen(minuten, rest_pad=None):
     opgeslagen = lees()
     panden = opgeslagen.setdefault("panden", {})
     punten = punten_per_pand(met_niet_woningen=True)
@@ -336,6 +342,11 @@ def ophalen(minuten):
     opgeslagen["bijgewerkt"] = dt.date.today().isoformat()
     with open(UIT_PAD, "w", encoding="utf-8") as f:
         json.dump(opgeslagen, f, ensure_ascii=False, indent=1)
+    if rest_pad:
+        # Voor de vervolgronde in bestemming.yml: door zolang er rest is en
+        # deze ronde iets opleverde (zelfde regel als inhaal-3dbag.yml).
+        with open(rest_pad, "w", encoding="utf-8") as f:
+            json.dump(rest_stand(len(wachtrij), gedaan, fout), f)
     met = sum(1 for x in panden.values() if x.get("dubbelbestemming"))
     print(f"Bestemmingen: {gedaan} panden gevraagd, {fout} fouten, "
           f"{len(wachtrij) - gedaan} te gaan; {met} van {len(panden)} met een "
@@ -652,6 +663,13 @@ def proef():
     finally:
         os.unlink(zpad)
 
+    # DE KETEN STOPT als er niets meer te doen is of niets meer lukt.
+    if rest_stand(10, 10, 0)["rest"] != 0 or rest_stand(10, 3, 1)["rest"] != 7:
+        afw.append(f"de rest van de wachtrij klopt niet: "
+                   f"{rest_stand(10, 10, 0)}, {rest_stand(10, 3, 1)}")
+    if rest_stand(10, 0, 21)["opgehaald"] != 0:
+        afw.append("een ronde zonder resultaat telt als opgehaald")
+
     for a in afw:
         print("AFWIJKING: " + a, file=sys.stderr)
     print(f"Proef bestemming: {len(afw)} afwijkingen", file=sys.stderr)
@@ -664,6 +682,8 @@ def main():
     ap.add_argument("--verken", action="store_true")
     ap.add_argument("--minuten", type=float, default=0)
     ap.add_argument("--zoek", metavar="AANDUIDING")
+    ap.add_argument("--rest", metavar="PAD",
+                    help="schrijf de rest van de wachtrij als json")
     ap.add_argument("--bestemming", metavar="TEKST")
     a = ap.parse_args()
     if a.proef:
@@ -679,7 +699,7 @@ def main():
               + (f" binnen '{a.bestemming}'" if a.bestemming else ""),
               file=sys.stderr)
         return 0
-    return ophalen(a.minuten)
+    return ophalen(a.minuten, a.rest)
 
 
 if __name__ == "__main__":
