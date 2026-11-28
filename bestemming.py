@@ -140,20 +140,33 @@ def verwijzingen_uit(antwoord):
              "plan": (props.get("plangebied") or "").strip(),
              "artikel": (props.get("artikelnummer") or "").strip(),
              "tekst": (props.get("verwijzingnaartekst") or "").strip()}
-        # DE WAARDE BIJ EEN MAATVOERING. De veldnaam is nog niet gemeten
-        # (vanuit de sessie was PDOK niet bereikbaar); daarom elk niet-leeg
-        # veld met 'waarde' of 'omvang' in de sleutel. Na de eerste verken
-        # hoort hier één vaste veldnaam, zoals bij 'naam'.
-        waarden = {k: str(w).strip() for k, w in props.items()
-                   if any(t in k.lower() for t in ("waarde", "omvang"))
-                   and w not in (None, "") and str(w).strip()}
-        if waarden:
-            v["waarden"] = waarden
-        sleutel = (v["naam"], v["plan"], json.dumps(waarden, sort_keys=True))
+        # DE WAARDEN BIJ EEN MAATVOERING, gemeten 28 november met verken op
+        # vier panden: het veld 'maatvoering' bevat ze als
+        # "maximum bouwhoogte (m)"="13", "maximum goothoogte (m)"="10".
+        # Een eerste versie zocht velden met 'waarde' of 'omvang' in de
+        # sleutel en vond niets.
+        maten = maten_uit(props.get("maatvoering"))
+        if maten:
+            v["maten"] = maten
+        sleutel = (v["naam"], v["plan"], json.dumps(maten, sort_keys=True))
         if sleutel not in gezien:
             gezien.add(sleutel)
             uit.append(v)
     return uit
+
+
+def maten_uit(tekst):
+    """
+    '"maximum bouwhoogte (m)"="13", "maximum goothoogte (m)"="10"' wordt
+    {"maximum bouwhoogte (m)": "13", "maximum goothoogte (m)": "10"}.
+    Leeg bij geen of onleesbare tekst.
+    """
+    import re
+    if not isinstance(tekst, str):
+        return {}
+    return {k.strip(): w.strip()
+            for k, w in re.findall(r'"([^"]+)"\s*=\s*"([^"]*)"', tekst)
+            if k.strip() and w.strip()}
 
 
 def namen_uit(antwoord):
@@ -232,7 +245,13 @@ def te_vragen(rec, vandaag=None):
     # ontbreken. Helemaal opnieuw, één keer.
     if "verwijzingen" not in rec:
         return list(LAGEN)
-    return [laag for laag in LAGEN if laag not in rec]
+    lagen = [laag for laag in LAGEN if laag not in rec]
+    # Een maatvoering die met de eerste lezer is gevraagd, heeft namen maar
+    # geen maten; die laag nog een keer.
+    mv = (rec.get("verwijzingen") or {}).get("maatvoering") or []
+    if "maatvoering" not in lagen and any(not x.get("maten") for x in mv):
+        lagen.append("maatvoering")
+    return lagen
 
 
 def rest_stand(wachtrij, gedaan, fout):
@@ -511,9 +530,11 @@ def maatvoering_tekst(rec):
     verw = ((rec.get("verwijzingen") or {}).get("maatvoering")) or []
     delen = []
     for v in verw:
-        w = v.get("waarden") or {}
-        delen.append(f"{v['naam']} {', '.join(w.values())}".strip()
-                     if w else v["naam"])
+        m = v.get("maten") or {}
+        if m:
+            delen.extend(f"{k} {w}" for k, w in m.items())
+        else:
+            delen.append(v["naam"])
     if not delen:
         delen = list(rec.get("maatvoering") or [])
     return "; ".join(dict.fromkeys(delen))
@@ -696,23 +717,32 @@ def proef():
     finally:
         os.unlink(zpad)
 
-    # MAATVOERING: de waarde komt mee en staat in het dossier.
+    # MAATVOERING: het echte antwoord van Smetiusstraat 15 (28 november).
     mv = json.dumps({"type": "FeatureCollection", "features": [
         {"type": "Feature", "properties": {
-            "naam": "maximum bouwhoogte (m)", "waarde": "12",
-            "plangebied": "NL.IMRO.0268.BP5000-VG01"}},
-        {"type": "Feature", "properties": {
-            "naam": "maximum goothoogte (m)", "waarde": "9",
-            "plangebied": "NL.IMRO.0268.BP5000-VG01"}}]})
-    v_mv = verwijzingen_uit(mv) or []
-    if [x.get("waarden") for x in v_mv] != [{"waarde": "12"}, {"waarde": "9"}]:
-        afw.append(f"de waarde van een maatvoering wordt niet gelezen: {v_mv}")
+            "aanduiding": "Bouwvlak=NL.IMRO.0268.ID44634-00",
+            "maatvoering": '"maximum bouwhoogte (m)"="13", '
+                           '"maximum goothoogte (m)"="10"',
+            "naam": "maximale goot- en bouwhoogte (m)",
+            "plangebied": "NL.IMRO.0268.BP5000-VG01",
+            "verwijzingnaartekst": ""}}]})
+    v_mv = verwijzingen_uit(mv) or [{}]
+    if v_mv[0].get("maten") != {"maximum bouwhoogte (m)": "13",
+                                "maximum goothoogte (m)": "10"}:
+        afw.append(f"de maten van een maatvoering worden niet gelezen: {v_mv}")
     if maatvoering_tekst({"verwijzingen": {"maatvoering": v_mv}}) != \
-            "maximum bouwhoogte (m) 12; maximum goothoogte (m) 9":
+            "maximum bouwhoogte (m) 13; maximum goothoogte (m) 10":
         afw.append(f"maatvoering in het dossier: "
                    f"{maatvoering_tekst({'verwijzingen': {'maatvoering': v_mv}})}")
     if maatvoering_tekst({"enkelbestemming": ["Wonen"]}):
         afw.append("een niet gevraagde maatvoering geeft toch een regel")
+    if maten_uit(None) or maten_uit("onzin"):
+        afw.append("een lege of onleesbare maatvoering geeft toch maten")
+    zonder_maten = {"gezien": "2026-11-28", "verwijzingen": {"maatvoering": [
+        {"naam": "maximale goot- en bouwhoogte (m)"}]}}
+    zonder_maten.update({l: [] for l in LAGEN})
+    if te_vragen(zonder_maten, dt.date(2026, 11, 28)) != ["maatvoering"]:
+        afw.append("een maatvoering zonder maten wordt niet opnieuw gevraagd")
 
     # DE KETEN STOPT als er niets meer te doen is of niets meer lukt.
     if rest_stand(10, 10, 0)["rest"] != 0 or rest_stand(10, 3, 1)["rest"] != 7:
