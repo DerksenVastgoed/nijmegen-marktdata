@@ -567,8 +567,8 @@ def proef():
         ophalen(lambda _u: zonder_midden, up, vp)
         if lees(up).get("buurten", {}).get("St. Anna") != "Nijmegen-Midden" \
                 or "Kwijt: St. Anna" not in open(vp, encoding="utf-8").read():
-            afw.append("een ronde met minder koppelingen overschrijft het "
-                       "oude bestand")
+            afw.append(
+                "een ronde met minder koppelingen overschrijft het oude bestand")
     finally:
         sys.stdout.close()
         sys.stdout = stdout
