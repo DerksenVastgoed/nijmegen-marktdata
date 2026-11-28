@@ -101,29 +101,75 @@ def _verzoek(laag, lat, lon, opmaak="application/json"):
         return r.read().decode("utf-8", errors="replace")
 
 
-def namen_uit(antwoord):
+def verwijzingen_uit(antwoord):
     """
-    De bestemmingsnamen uit een GetFeatureInfo-antwoord.
+    Per feature de naam, het plan, het artikelnummer en de link naar de
+    planregels. None als het antwoord niet te lezen is, [] als er niets ligt.
 
-    De veldnaam ken ik niet zeker zonder een echt antwoord; daarom zoeken op
-    velden die 'naam' of 'bestemming' heten, en het ruwe antwoord gaat in het
-    verslag van --verken. Pas daarna hoort hier één vaste veldnaam te staan.
+    DE VELDEN ZIJN GEMETEN, 28 november 2026, met verken op vier panden en
+    alle zes lagen (bestemming_verslag.md). Het veld is altijd 'naam'. De
+    oude lezer nam ook elk veld met 'bestemming' in de sleutel of dat op
+    'naam' eindigde, en las zo bij Smetiusstraat 15 'bestemmingsvlak'
+    ("Enkelbestemming=NL.IMRO.0268.ID5198-00") als functieaanduiding, en bij
+    Groesbeekseweg 118A 'locatienaam' (een zin over de plangrens) als
+    plannaam.
+
+    'verwijzingnaartekst' is de link naar het artikel in de planregels, en
+    'plangebied' het plan waar de regel uit komt. Die twee maken de tabel met
+    planregels mogelijk: dezelfde naam ('Gemengd - 3') kan in een ander plan
+    iets anders betekenen. Bij aanduidingen is de link soms leeg; dan staat
+    het artikel bij de bestemming waar de aanduiding in ligt.
     """
     try:
         d = json.loads(antwoord)
     except Exception:
         return None
-    namen = []
+    if not isinstance(d, dict):
+        return None
+    uit, gezien = [], set()
     for f in d.get("features") or []:
         props = (f or {}).get("properties") or {}
-        for k, v in props.items():
-            kl = k.lower()
-            if isinstance(v, str) and v.strip() and (
-                    kl == "naam" or kl.endswith("naam")
-                    or "bestemming" in kl and "hoofdgroep" not in kl):
-                if v.strip() not in namen:
-                    namen.append(v.strip())
+        naam = props.get("naam")
+        if not isinstance(naam, str) or not naam.strip():
+            continue
+        v = {"naam": naam.strip(),
+             "plan": (props.get("plangebied") or "").strip(),
+             "artikel": (props.get("artikelnummer") or "").strip(),
+             "tekst": (props.get("verwijzingnaartekst") or "").strip()}
+        sleutel = (v["naam"], v["plan"])
+        if sleutel not in gezien:
+            gezien.add(sleutel)
+            uit.append(v)
+    return uit
+
+
+def namen_uit(antwoord):
+    """De namen uit een GetFeatureInfo-antwoord, zie verwijzingen_uit."""
+    v = verwijzingen_uit(antwoord)
+    if v is None:
+        return None
+    namen = []
+    for x in v:
+        if x["naam"] not in namen:
+            namen.append(x["naam"])
     return namen
+
+
+def velden_uit(antwoord):
+    """
+    De properties van elk feature, zonder geometrie, voor het verslag.
+
+    WAAROM. Tot 28 november ging het ruwe antwoord afgekapt op 600 tekens in
+    het verslag; bij de aanduidingslagen viel die grens midden in de
+    coördinaten, en de veldnamen waren niet te zien.
+    """
+    try:
+        d = json.loads(antwoord)
+    except Exception:
+        return antwoord[:300]
+    return json.dumps([(f or {}).get("properties") or {}
+                       for f in d.get("features") or []],
+                      ensure_ascii=False)
 
 
 def punten_per_pand(pad="voorraad.json", met_niet_woningen=False):
@@ -167,6 +213,11 @@ def te_vragen(rec, vandaag=None):
     except ValueError:
         return list(LAGEN)
     if (vandaag - gezien).days > HERHAAL_DAGEN:
+        return list(LAGEN)
+    # Een record zonder verwijzingen is van voor 28 november: de namen zijn
+    # gelezen met de oude lezer (zie verwijzingen_uit) en plan en link
+    # ontbreken. Helemaal opnieuw, één keer.
+    if "verwijzingen" not in rec:
         return list(LAGEN)
     return [laag for laag in LAGEN if laag not in rec]
 
@@ -224,7 +275,7 @@ def verken(punten_adres):
             try:
                 ruw = _verzoek(laag, lat, lon)
                 r.append(f"- {laag}: namen {namen_uit(ruw)!r}")
-                r.append(f"  ruw: `{ruw[:600]}`")
+                r.append(f"  velden: `{velden_uit(ruw)[:1500]}`")
             except Exception as e:
                 r.append(f"- {laag}: FOUT {type(e).__name__}: {str(e)[:200]}")
             time.sleep(PAUZE)
@@ -253,11 +304,15 @@ def ophalen(minuten):
         else:
             rec = dict(panden[p])
         try:
+            verw = dict(rec.get("verwijzingen") or {})
             for laag in lagen:
-                namen = namen_uit(_verzoek(laag, pt["lat"], pt["lon"]))
+                v = verwijzingen_uit(_verzoek(laag, pt["lat"], pt["lon"]))
                 # None is "niet te lezen", [] is "gekeken en niets gevonden".
-                rec[laag] = namen
+                rec[laag] = None if v is None else list(
+                    dict.fromkeys(x["naam"] for x in v))
+                verw[laag] = v
                 time.sleep(PAUZE)
+            rec["verwijzingen"] = verw
         except Exception as e:
             fout += 1
             if fout > 20:
@@ -432,6 +487,31 @@ def proef():
         afw.append("een leeg antwoord is niet 'gekeken en niets gevonden'")
     if namen_uit("<html>fout</html>") is not None:
         afw.append("een onleesbaar antwoord telt als niets gevonden")
+    # HET ECHTE ANTWOORD van Smetiusstraat 15, functieaanduiding, 28
+    # november (ingekort): 'bestemmingsvlak' mag geen naam worden.
+    echt = json.dumps({"type": "FeatureCollection", "features": [
+        {"type": "Feature", "properties": {
+            "aanduiding": "", "naam": "horeca",
+            "bestemmingsvlak": "Enkelbestemming=NL.IMRO.0268.ID5198-00",
+            "plangebied": "NL.IMRO.0268.BP5000-VG01",
+            "verwijzingnaartekst": ""}},
+        {"type": "Feature", "properties": {
+            "naam": "Gemengd - 3", "plangebied": "NL.IMRO.0268.BP5000-VG01",
+            "verwijzingnaartekst": "https://ruimtelijkeplannen.nl/documents/"
+            "NL.IMRO.0268.BP5000-VG01/r_NL.IMRO.0268.BP5000-VG01_2.10.html"}},
+        {"type": "Feature", "properties": {
+            "naam": "Nijmegen Bottendaal Galgenveld",
+            "locatienaam": "Het plangebied Nijmegen Bottendaal-Galgenveld "
+                           "wordt begrensd door"}}]})
+    if namen_uit(echt) != ["horeca", "Gemengd - 3",
+                           "Nijmegen Bottendaal Galgenveld"]:
+        afw.append(f"de lezer neemt andere velden dan 'naam': "
+                   f"{namen_uit(echt)}")
+    v_echt = verwijzingen_uit(echt) or [{}, {}]
+    if v_echt[1].get("plan") != "NL.IMRO.0268.BP5000-VG01" \
+            or not v_echt[1].get("tekst", "").endswith("_2.10.html"):
+        afw.append(f"plan en link naar de planregels worden niet gelezen: "
+                   f"{v_echt[1]}")
     # De drie toestanden van het dossier, op een eigen bestand.
     import tempfile, os
     fd, pad = tempfile.mkstemp(suffix=".json")
@@ -510,10 +590,14 @@ def proef():
     vandaag = dt.date(2026, 11, 28)
     oud = {"gezien": "2026-10-17", "dubbelbestemming": [],
            "enkelbestemming": ["Wonen"]}
-    if te_vragen(oud, vandaag) != [l for l in LAGEN if l not in oud]:
-        afw.append(f"een oud record krijgt niet alleen de nieuwe lagen: "
-                   f"{te_vragen(oud, vandaag)}")
-    vol = dict(oud, **{l: [] for l in LAGEN})
+    if te_vragen(oud, vandaag) != list(LAGEN):
+        afw.append(f"een record zonder verwijzingen wordt niet helemaal "
+                   f"opnieuw gevraagd: {te_vragen(oud, vandaag)}")
+    half = dict(oud, verwijzingen={})
+    if te_vragen(half, vandaag) != [l for l in LAGEN if l not in half]:
+        afw.append(f"een record met verwijzingen krijgt niet alleen de "
+                   f"ontbrekende lagen: {te_vragen(half, vandaag)}")
+    vol = dict(half, **{l: [] for l in LAGEN})
     if te_vragen(vol, vandaag):
         afw.append("een volledig record wordt opnieuw gevraagd")
     if te_vragen(dict(vol, gezien="2026-01-01"), vandaag) != list(LAGEN):
