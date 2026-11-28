@@ -792,7 +792,20 @@ waarom: 28 november. De eerste proef draaide op een zelfgeschreven tekst
   pagina schrijft "6.4" en "NIJMEGEN-CENTRUM" in hoofdletters op twee
   regels. Met de echte zin viel ook St. Anna weg, omdat de zin na "St."
   werd geknipt; dat zag de verzonnen tekst niet.
+  Daarna nog een keer (11:26): de bron breekt alinea's af op vaste breedte
+  ("ook wel\n   De Biezen genoemd."), de proef-HTML niet; per regel
+  splitsen brak de zinnen en vier ringbuurten raakten hun stadsdeel kwijt.
+  De proef-HTML breekt nu af waar de bron afbreekt.
 proef: omgevingsvisie:stadsdelen uit de opmaak van de pagina; omgevingsvisie:buurt naar stadsdeel
+soort: gegevens
+---
+eis: Een ronde die minder ringbuurten aan een stadsdeel koppelt dan het
+  bestaande omgevingsvisie.json, overschrijft het niet; het verslag noemt
+  de buurten die kwijt zouden raken.
+waarom: 28 november, 11:26. Een fout in het lezen liet 8 koppelingen
+  zakken naar 4, en de bewaking keek alleen of er nul stadsdelen waren. Het
+  kapotte bestand stond op main, waar de brief het leest.
+proef: omgevingsvisie:een ronde met minder koppelingen overschrijft het oude bestand
 soort: gegevens
 ---
 eis: omgevingsvisie.json geeft per stadsdeel letterlijk wat de visie zegt

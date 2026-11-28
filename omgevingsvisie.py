@@ -249,6 +249,22 @@ def kernzinnen(tekst, maximum=8):
     return uit[:maximum]
 
 
+def tekst_van(html):
+    """
+    De tekst van de pagina, een regel per blokelement (alinea, kop,
+    lijstpunt).
+
+    WAAROM (28 november 2026). De bron van lokaleregelgeving.overheid.nl breekt
+    de tekst binnen een <p> af op vaste breedte: "Wolfskuil en Waterkwartier,
+    ook wel\n                              De Biezen genoemd." tekst_uit maakt van
+    elke regelovergang een regel, dus een zin brak in tweeën en Biezen,
+    Altrade, Hunnerberg en St. Anna verloren hun stadsdeel. Eerst alle
+    witruimte in de HTML tot een spatie: dan komt een regelovergang alleen
+    nog van een blokelement.
+    """
+    return planregels.tekst_uit(re.sub(r"\s+", " ", html or ""))[1]
+
+
 def _haal(url):
     req = urllib.request.Request(url, headers={
         "User-Agent": "NijmegenVastgoedMonitor/1.0"})
@@ -260,7 +276,7 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
     haal = haal or _haal
     r = ["# Omgevingsvisie per stadsdeel", "", f"Regeling: `{REGELING}`", ""]
     try:
-        _titel, tekst = planregels.tekst_uit(haal(REGELING))
+        tekst = tekst_van(haal(REGELING))
     except Exception as e:
         # Niet opgehaald is geen lege visie: het vorige bestand blijft staan.
         r.append(f"- niet opgehaald: {type(e).__name__} {e}; {uit_pad} is "
@@ -281,6 +297,18 @@ def ophalen(haal=None, uit_pad=UIT_PAD, verslag_pad=VERSLAG):
         print("\n".join(r))
         return 0
     koppel, zonder = buurt_naar_stadsdeel(delen)
+    vorig = lees(uit_pad).get("buurten") or {}
+    if len(koppel) < len(vorig):
+        # Minder koppelingen dan de vorige keer is eerder een fout in het
+        # lezen dan een nieuwe visie (28 november: 8 werd 4 door afgebroken
+        # zinnen). Het oude bestand blijft staan tot iemand kijkt.
+        r.append(f"- {len(koppel)} ringbuurten gekoppeld, de vorige keer "
+                 f"{len(vorig)}; {uit_pad} is niet overschreven. Kwijt: "
+                 + ", ".join(sorted(set(vorig) - set(koppel))))
+        with open(verslag_pad, "w", encoding="utf-8") as f:
+            f.write("\n".join(r) + "\n")
+        print("\n".join(r))
+        return 0
     uit = {"regeling": REGELING, "bijgewerkt": dt.date.today().isoformat(),
            "stadsdelen": {sd: dict(d, kern=kernzinnen(d["tekst"]))
                           for sd, d in delen.items()},
@@ -363,6 +391,11 @@ def _kop(tag, nr, naam):
             f'                           \t      </{tag}>')
 
 
+# Zo breekt de bron een alinea af (gemeten 28 november): een regelovergang
+# en spaties midden in een zin.
+_AF = "\n                              "
+
+
 def _lijst(*punten):
     return "<ul>" + "".join(f'<li><a id="i"></a> <p>{p}</p> </li>'
                             for p in punten) + "</ul>"
@@ -374,14 +407,14 @@ PROEF_HTML = "".join([
     "<p> <strong>Gebouwde omgeving</strong> </p> <p>Dit doen we op de eerste "
     "plaats door woningen te isoleren op basis van het programma Energie "
     "Besparen Woningen 2023-2030. Doel van dit programma is om in 2030 geen "
-    "woningen meer te hebben met een energielabel E, F of G en het aantal "
-    "woningen met label D met de helft te verlagen. In het programma is het "
-    "einddoel dat in 2045 alle woningen in Nijmegen minimaal label B "
+    f"woningen{_AF}meer te hebben met een energielabel E, F of G en het aantal "
+    f"woningen met label D met{_AF}de helft te verlagen. In het programma is het "
+    f"einddoel dat in 2045 alle woningen in{_AF}Nijmegen minimaal label B "
     "hebben.&nbsp;</p>",
     _kop("h3", "6.4", "NIJMEGEN-CENTRUM"),
     _kop("h4", "6.4.2", "Centrum - Kwaliteiten en kenmerken"),
     "<p>Nijmegen-Centrum bestaat officieel uit de wijken stadscentrum en "
-    "benedenstad. Beleidsmatig spreken we ook vaak van de binnenstad en het "
+    f"benedenstad. Beleidsmatig{_AF}spreken we ook vaak van de binnenstad en het "
     "Stationsdistrict.</p>",
     _kop("h3", "6.6", "NIJMEGEN-NIEUW-WEST"),
     _kop("h4", "6.6.2", "Nieuw-West - Kwaliteiten en kenmerken"),
@@ -393,34 +426,34 @@ PROEF_HTML = "".join([
     _kop("h3", "6.7", "NIJMEGEN-OUD-WEST"),
     _kop("h4", "6.7.2", "Oud-West - Kwaliteiten en kenmerken"),
     "<p>Nijmegen-Oud-West bestaat uit twee woonwijken, Wolfskuil en "
-    "Waterkwartier, ook wel De Biezen genoemd. Afgelopen jaren zijn in het "
+    f"Waterkwartier, ook wel{_AF}De Biezen genoemd. Afgelopen jaren zijn in het "
     "Waalfront bedrijven vervangen door woningbouw met hoog- en laagbouw in "
     "retro- en moderne stijl.</p>",
     _kop("h4", "6.7.4", "Oud-West - Prioriteiten"),
     _lijst("Meer groene beweegroutes en sociale knooppunten (BOSS).",
            "Behoud diversiteit voorzieningen.",
            "Meer groen en leefbaarheid krijgen in dit stadsdeel prioriteit "
-           "boven inbreiding en intensivering van bewoning."),
+           f"boven inbreiding en{_AF}intensivering van bewoning."),
     _kop("h3", "6.8", "NIJMEGEN-MIDDEN"),
     _kop("h4", "6.8.2", "Midden - Kwaliteiten en kenmerken"),
     "<p>Nijmegen-Midden bestaat uit de wijken: Nije Veld, Heijendaal, "
-    "Hazenkamp, Goffert en St. Anna.</p>",
+    f"Hazenkamp, Goffert en{_AF}St. Anna.</p>",
     _kop("h3", "6.9", "DUKENBURG"),
     "<p>Bij de A73 is een zoekgebied voor een transferium waar bezoekers aan "
     "de binnenstad hun reis met het ov kunnen vervolgen, waardoor er minder "
     "autoverkeer door de stad hoeft te gaan.</p>",
     _kop("h3", "6.12", "NIJMEGEN-OOST"),
     _kop("h4", "6.12.2", "Oost - Kwaliteiten en kenmerken"),
-    "<p>Nijmegen-Oost is eind 19e eeuw, begin 20e eeuw ontstaan. Het "
-    "stadsdeel bestaat uit de wijken Bottendaal, Galgenveld, Altrade, "
+    "<p>Nijmegen-Oost is eind 19<sup>e</sup> eeuw, begin 20e eeuw ontstaan. "
+    f"Het stadsdeel bestaat uit de wijken Bottendaal, Galgenveld,{_AF}Altrade, "
     "Hunnerberg, Hengstdal, Kwakkenberg en Groenewoud. Het is een populair "
     "stadsdeel om te wonen. Tegelijkertijd spelen er vraagstukken over "
     "leefbaarheid, klimaatadaptatie en vergroening en de "
     "energietransitie.</p>",
     _kop("h5", "6.12.3.3", "Oost - Aantrekkelijke stad"),
-    "<p><strong>Leefbaarheid, cultuurhistorie en inbreiding</strong></p>"
-    "<p>Over het algemeen is de leefbaarheid in Nijmegen-Oost goed en dat "
-    "willen we zo houden. In sommige gebieden van Bottendaal, Galgenveld en "
+    f"<p>{_AF}<strong>Leefbaarheid, cultuurhistorie en inbreiding</strong>"
+    f"{_AF}</p>{_AF}<p>Over het algemeen is de leefbaarheid in Nijmegen-Oost "
+    f"goed en dat willen we zo houden.{_AF}In sommige gebieden van Bottendaal, Galgenveld en "
     "Altrade is de leefbaarheid een aandachtspunt.</p><p>We zetten daarbij "
     "inbreiding en intensivering niet op slot.</p>",
     _kop("h4", "6.12.4", "Oost - Prioriteiten"),
@@ -443,7 +476,7 @@ def proef():
     import os
     import tempfile
     afw = []
-    _t, tekst = planregels.tekst_uit(PROEF_HTML)
+    tekst = tekst_van(PROEF_HTML)
     d = stadsdelen(tekst)
     verwacht_sd = ["Dukenburg", "Nijmegen-Centrum", "Nijmegen-Midden",
                    "Nijmegen-Nieuw-West", "Nijmegen-Oost", "Nijmegen-Oud-West"]
@@ -529,6 +562,13 @@ def proef():
             afw.append("het verslag zegt niet wat er wel stond als er geen "
                        "stadsdeel gevonden is")
         ophalen(lambda _u: PROEF_HTML, up, vp)
+        # Een ronde die minder buurten koppelt, overschrijft niet.
+        zonder_midden = PROEF_HTML.replace("St. Anna.</p>", "Brakkenstein.</p>")
+        ophalen(lambda _u: zonder_midden, up, vp)
+        if lees(up).get("buurten", {}).get("St. Anna") != "Nijmegen-Midden" \
+                or "Kwijt: St. Anna" not in open(vp, encoding="utf-8").read():
+            afw.append(
+                "een ronde met minder koppelingen overschrijft het oude bestand")
     finally:
         sys.stdout.close()
         sys.stdout = stdout
