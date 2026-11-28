@@ -19,11 +19,11 @@ Start: `https://kaart.nijmegen.nl/menu/index.html`
 - https://services.nijmegen.nl/geoservices/extern_GEO_Gebiedsindelingen/wms?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=26851&TRANSPARENT=true&LAYERS=GEO_IND_GEMEENTEGRENS&WIDTH=1280&HEIGHT=720&CRS=EPSG%3A28992&BBOX=171372.99999801104%2C420632.4374988812%2C199375.00000198896%2C4
 
 ## Alle andere opgevraagde adressen
-- blob:https://kaart.nijmegen.nl/ed90e3e4-a94c-4596-b5c1-56d88acff92e
+- blob:https://kaart.nijmegen.nl/18b9a5b3-ad11-4821-b866-eb75c1c0b0da
 - https://kaart.nijmegen.nl/?@Historie
 - https://kaart.nijmegen.nl/admin/rest/auth/check
-- https://kaart.nijmegen.nl/admin/rest/auth/myself?time=1795848744685
-- https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu/announcement?time=1795848745323
+- https://kaart.nijmegen.nl/admin/rest/auth/myself?time=1792443631897
+- https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu/announcement?time=1792443632638
 - https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu/background
 - https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu/item/1/background
 - https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu/item/10/background
@@ -33,7 +33,7 @@ Start: `https://kaart.nijmegen.nl/menu/index.html`
 - https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu/item/5/background
 - https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu/item/6/background
 - https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu/logo
-- https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu?time=1795848745323
+- https://kaart.nijmegen.nl/admin/rest/kaartviewerapi/menu?time=1792443632638
 - https://kaart.nijmegen.nl/admin/v2/kaartviewerapi/bookmark/10/announcement
 - https://kaart.nijmegen.nl/admin/v2/kaartviewerapi/bookmark/10/bookmarkpresentation/2/presentation
 - https://kaart.nijmegen.nl/admin/v2/kaartviewerapi/bookmark/10/bookmarkpresentation/2923/presentation

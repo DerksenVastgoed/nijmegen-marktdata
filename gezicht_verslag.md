@@ -1,6 +1,6 @@
 # Verkenning rijksbeschermde gezichten
 
-Op 2026-11-28, bron: Beschermde Gebieden - Cultuurhistorie, RCE via PDOK, CC BY 4.0; alleen rijksbeschermde gezichten, vlakken mits beschikbaar.
+Op 2026-11-23, bron: Beschermde Gebieden - Cultuurhistorie, RCE via PDOK, CC BY 4.0; alleen rijksbeschermde gezichten, vlakken mits beschikbaar.
 
 Meting: {"objecten": 25, "buiten_bbox": 0, "paginas": 1, "naamruimtes": {"nlps-stadsendorpsgezichten": 3, "nlps-werelderfgoed": 1, "nlps-rijksmonumenten": 21}}
 

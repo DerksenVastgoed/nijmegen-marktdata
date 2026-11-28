@@ -236,6 +236,20 @@ def verken_regeling(regeling, titel, lijst_pad, verslag_pad, gml_voorvoegsel,
         paginas[u] = (e1, t1)
         benoemd.append((naam, u))
     alle = benoemd
+    # NIET OPGEHAALD IS GEEN LEGE LIJST (28 november 2026). Die dag gaf
+    # identifier.officielebekendmakingen.nl op elke JOIN-identificatie 403
+    # aan de runner, en de verkenning overschreef omgevingsplan_gio.json van
+    # oktober (31 objecten met naam) met 51 paden zonder naam. Is geen enkele
+    # objectpagina te lezen, dan blijft de vorige lijst staan en zegt alleen
+    # het verslag wat er gebeurde.
+    if alle and not any(t for _e, t in paginas.values()):
+        r.append("")
+        r.append(f"Geen enkele objectpagina te lezen ({len(alle)} geprobeerd); "
+                 f"{lijst_pad} is niet overschreven.")
+        with open(verslag_pad, "w", encoding="utf-8") as f:
+            f.write("\n".join(r) + "\n")
+        print("\n".join(r[-3:]))
+        return 0
     gekozen = [(n, u) for n, u in alle
                if zeef is None or any(w in n.lower() for w in zeef)]
     if zeef is not None:
@@ -573,6 +587,18 @@ def proef():
                        f"geometrie mee: {_v}")
         if not _os.path.exists("v_01.gml"):
             afw.append("de geometrie van de visie wordt niet bewaard")
+        # Alle objectpagina's onbereikbaar: de vorige lijst blijft staan.
+        for _k in list(_pag):
+            if _k.startswith(_jn):
+                _pag[_k] = None
+        verken_regeling("REGELING", "proef", "v.json", "v.md", "v_",
+                        zeef=None, sleutel="werkingsgebieden")
+        if json.load(open("v.json")) != _v:
+            afw.append("een verkenning zonder een enkele leesbare objectpagina "
+                       "overschrijft de vorige lijst")
+        if "niet overschreven" not in open("v.md").read():
+            afw.append("het verslag zegt niet dat de lijst niet is "
+                       "overschreven")
     finally:
         _os.chdir(_cwd)
         globals()["haal"] = _oud_haal
